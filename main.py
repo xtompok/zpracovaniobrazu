@@ -29,7 +29,7 @@ def ctverecek(p, x, y, r):
     for j in range(y-r, y+r):
       c = p[(i,j)]
       for k in range(3):
-	s[k] += c[k]
+        s[k] += c[k]
   return s
 
 def t1():
@@ -44,14 +44,14 @@ def t1():
     for y in range(4, i.size[1]-4):
       c = p[ (x,y) ]
       if c[1]>200 and c[0]<200:
-	m = ctverecek(p,x,y,3)
-	if m[1]/(m[0]+1.0)>1.3:
-	  if m[1]>max:
-	    maxx = x
-	    maxy = y
-	    max = m[1]
+        m = ctverecek(p,x,y,3)
+        if m[1]/(m[0]+1.0)>1.3:
+          if m[1]>max:
+            maxx = x
+            maxy = y
+            max = m[1]
       else:
-	p2[(x,y)] = (0,0,0)
+        p2[(x,y)] = (0,0,0)
   print max
   if max>2000:  
     d = ImageDraw.Draw(i2)
@@ -156,11 +156,11 @@ def t2(i):
     for y in range(4, i.size[1]-4):
       c = p[ (x,y) ]
       if c[0]>60:
-	m = ctverecek(p,x,y,3)
-	if m[1]>max:
-	  maxx = x
-	  maxy = y
-	  max = m[1]
+        m = ctverecek(p,x,y,3)
+        if m[1]>max:
+          maxx = x
+          maxy = y
+          max = m[1]
   print maxx, maxy
   return (maxx, maxy)
 
@@ -179,7 +179,7 @@ def graftrans(maxx, maxy):
     for y in range (i3a.size[1]):
       c = p3[ (x,y) ]
       if c[1]>200:
-	(xgraf, ygraf) = (x*2,y*2)
+        (xgraf, ygraf) = (x*2,y*2)
   return (xgraf+5, ygraf+5)
 
 def pomery(kalibP,kalibK):

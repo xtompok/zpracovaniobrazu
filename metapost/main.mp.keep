@@ -1,0 +1,66 @@
+beginfig(1);
+j=1mm;
+pair aO,bO,dO;
+aO=(0,0);
+bO=(0,100);
+dO=(100,0);
+
+pair a,b,c,d;
+
+a=(1j,1j);
+b=(0j,8j);
+c=(9j,9j);
+d=(8j,0j);
+
+
+
+draw a--b--c--d--cycle;
+draw aO--bO--(xpart dO,ypart bO)--dO--cycle;
+
+b:=b shifted -a;
+d:=d shifted -a;
+c:=c shifted -a;
+a:=a shifted -a;
+
+draw a--b--c--d--cycle withcolor .8white;
+
+numeric uhel;
+pair c.b;
+uhel:=angle(b);
+b:= b rotated(90-uhel);
+c.b:= c rotated(90-uhel);
+
+draw a--b--c--d--cycle  withcolor .7white;
+draw fullcircle scaled 1mm shifted d withcolor blue;
+
+numeric uhel;
+pair c.d;
+uhel:=angle(d);
+d:= d rotated(-uhel);
+c.d:= c rotated(-uhel);
+
+c:=(b--c.b) intersectionpoint (d--c.d);
+
+draw a--b--c--d--cycle  withcolor (1,0,1);
+draw fullcircle scaled 1mm shifted d withcolor blue;
+
+numeric pomer;
+pomer=(ypart bO/ypart b);
+show pomer;
+b:= b scaled pomer;
+c:= c scaled pomer;
+d:= d scaled pomer;
+
+draw a--b--c--d--cycle  withcolor .7white;
+draw fullcircle scaled 1mm shifted d withcolor blue;
+
+numeric pomer;
+pomer=(xpart dO/xpart d);
+show pomer;
+d:= d scaled pomer;
+c:= c scaled pomer;
+
+draw a--b--c--d--cycle  withcolor red;
+
+endfig;
+end
