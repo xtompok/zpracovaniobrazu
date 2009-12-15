@@ -12,6 +12,21 @@ kalibK = [(0,0)]*4
 kalibP[1]=(790, 590)
 kalibP[2]=(790,590)
 
+kkonst=[]
+
+def vypocti_kkonst(kalibK,kalibP):
+  kkonst[1][0]=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
+  kkonst[1][1]=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
+
+  kkonst[2][0]=(-kalibK[0][0]+kalibK[3][0])/(kalibP[2][1]*1.0)
+  kkonst[2][1]=(-kalibK[0][1]+kalibK[3][1])/(kalibP[2][1]*1.0)
+
+  kkonst[3][0]=(kalibK[1][0]-kalibK[0][0])/(kalibP[1][0]*1.0)
+  kkonst[3][1]=(kalibK[1][1]-kalibK[0][1])/(kalibP[1][0]*1.0)
+
+  kkonst[4][0]=kalibK[0][0]
+  kkonst[4][1]=kalibK[0][1]
+
 def gi():
   init.root_stat.config(text='Cekam na obrazek')
   i = cam1.get_image()
@@ -64,44 +79,30 @@ def t1():
   maxy2 = maxy
   maxx3 = maxx
   maxy3 = maxy
-  maxxj = maxx
-  maxyj = maxy
   xgraf = maxx
   ygraf = maxy
-  xkarel2 = maxx
-  ykarel2 = maxy
   maxx = maxx*1024/320
   maxy = maxy*768/240
   (xgraf,ygraf) = graftrans(xgraf,ygraf)
   (maxx2, maxy2) = petrans(maxx2,maxy2)  
-  #(maxx3, maxy3) = karltrans(maxx3,maxy3)
-  (maxxj, maxyj)= jethrotrans(maxxj,maxyj)
-  ##(xkarel2,ykarel2)=kareltrans2(xkarel2,ykarel2)
+  (maxx3, maxy3) = karltrans(maxx3,maxy3)
   d = ImageDraw.Draw(i3)
   krizek(xgraf, ygraf,200, 200, 0,d)
   krizek(maxx, maxy, 255, 0, 0,d)
   krizek(maxx2, maxy2, 255, 0, 255,d)
-  krizek(maxxj,maxyj, 0,0,255, d)
-  krizek(maxx3,maxy3, 0, 100, 100,d)
-  #krizek(xkarel2, ykarel2, 255,0,255,d)
+  krizek(maxx3,maxy3, 0, 0, 255,d)
   init.labdraw(i3, init.proj_lab)
   return i
 
 def krizek(x,y,r,g,b,d):
   d.line((x-15, y-15, x+15, y+15), fill=(r, g, b))
   d.line((x+15, y-15, x-15, y+15), fill=(r, g, b))
-  
 
 def kobr(x,y, r=10, w=800, h=600):
   i = Image.new('RGB', (w,h))
   d = ImageDraw.Draw(i)
   d.rectangle((x-r/2, y-r/2, x+r/2, y+r/2), fill=(255, 0, 0))
   init.labdraw(i, init.proj_lab)
-
-#def sleduj():
-  # t1
-  # trans
-  # krizek
 
 def kal(w=800, h=600):
   kobr(-100, -100)
@@ -128,8 +129,8 @@ def kal(w=800, h=600):
     #kalibP[j] = (x,y)
     print "Proj (%d, %d) -> Camera (%d, %d)"%(x, y, cx, cy)
   init.labdraw(i, init.root_lab2)
+  vypocti_kkonst(kalibK,kalibP)
 
-#def ts(x,y)
   
 def rozdil(i1,i2):
     p1 = i1.load()
@@ -218,17 +219,14 @@ def kvadrat(a,b,c):
 #kalibK = [(0,0)]*4 23
 def karltrans(x,y):
   if x<=0 or y<=0: return (-100, -100)
-  c1x=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
-  c1y=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
-
-  c2x=(-kalibK[0][0]+kalibK[3][0])/(kalibP[2][1]*1.0)
-  c2y=(-kalibK[0][1]+kalibK[3][1])/(kalibP[2][1]*1.0)
-
-  c3x=(kalibK[1][0]-kalibK[0][0])/(kalibP[1][0]*1.0)
-  c3y=(kalibK[1][1]-kalibK[0][1])/(kalibP[1][0]*1.0)
-
-  c4x=kalibK[0][0]
-  c4y=kalibK[0][1]
+  c1x=kkonst[1][0]
+  c1y=kkonst[1][1]
+  c2x=kkonst[2][0]
+  c2y=kkonst[2][1]
+  c3x=kkonst[3][0]
+  c3y=kkonst[3][1]
+  c4x=kkonst[4][0]
+  c4y=kkonst[4][1]
 
   d1=c1x*c2y+c2x*c1y
   d2=c1y*c4x-x*c1y+c2y*c3x-c2x*c3y+c4x*c1x-c1x*y
@@ -241,64 +239,6 @@ def karltrans(x,y):
   print xtrans, ytrans
   return (xtrans,ytrans)
 
-def posun(x,y,ax,ay,bx,by,cx,cy):
-  x-=ax
-  y-=ay
-  bx-=ax
-  by-=ay
-  cx-=ax
-  cy-=ay
-  return (x,y,bx,by,cx,cy)
-
-def otoc2(x,y,bx,by,cx,cy):
-  l=sqrt(x*x*1.0+y*y)
-  fi1=atan(by/bx*1.0)
-  fi2=atan(cx/cy*1.0)
-  alpha=atan(y/x*1.0)
-  uhel=alpha-fi1+fi2
-  x=l*cos(uhel)
-  y=l*sin(uhel)
-  lx=sqrt(bx*bx*1.0+by*by)
-  ly=sqrt(cx*cx*1.0+cy*cy)
-  return (x,y,lx,ly)
-
-def otoc(x,y,bx,by,cx,cy):
-  lx=sqrt(bx*bx*1.0+by*by)
-  cosfi=bx/lx
-  sinfi=by/lx
-  xtrans= x*cosfi-y*sinfi
-  ytrans= y*cosfi-x*sinfi
-  ly=sqrt(cx*cx*1.0+cy*cy)
-  cosfi=cx/ly
-  sinfi=cy/ly
-  xtrans= xtrans*cosfi+ytrans*sinfi
-  ytrans= ytrans*cosfi+xtrans*sinfi
-  return (xtrans,ytrans, lx,ly)
-
-def roztahni(x,y,lx,ly,celkx,celky):
-  x*=celkx/lx
-  y*=celky/ly
-  return (x,y)
-
-
-
-def jethrotrans(x,y):
-  (x,y,bx,by,cx,cy)=posun(x,y,kalibK[0][0],kalibK[0][1],kalibK[1][0],kalibK[1][1],kalibK[3][0],kalibK[3][1])
-  (x,y, lx, ly) = otoc(x,y,bx,by,cx,cy)
-  (x,y) = roztahni (x,y,lx,ly,kalibP[1][0],kalibP[2][1])
-  return (x,y)
-
-def kareltrans2(x,y):
-  (x,y,bx,by,cx,cy)=posun(x,y,kalibK[0][0],kalibK[0][1],kalibK[1][0],kalibK[1][1],kalibK[3][0],kalibK[3][1])
-  alpha=atan(y/x*1.0)
-  fi=atan(bx/by*1.0)
-  ysdc=tan(alpha-fi)
-  r=sqrt(x*x+y*y*1.0)
-  rsdc=sqrt(1+ysdc*ysdc)
-  ysc=r*ysdc/rsdc
-  xsc=r/rsdc
-  return (xsc,ysc)
-  
 cam1 = Kamera(dir='kamera2/', cmd="", clear=False)
 #cam1 = KameraThread(lab=init.root_lab1, dir='kamera1/', cmd="". clear=False)
 #init.labdraw(i, init.proj_lab)
