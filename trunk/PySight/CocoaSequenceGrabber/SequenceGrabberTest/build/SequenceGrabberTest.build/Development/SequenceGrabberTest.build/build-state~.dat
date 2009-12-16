@@ -1,243 +1,0 @@
-TSequenceGrabberTest
-v7
-r0
-t281982680.856782
-cCheck dependencies
-cProcessInfoPlistFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist Info.plist
-cStripNIB /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib
-cCopyStringsFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-cProcessPCH /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch.gch SequenceGrabberTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-
-N/Library/Frameworks/CocoaSequenceGrabber.framework/CocoaSequenceGrabber
-c00000000000000000000000000000000
-t2
-s0
-
-N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
-s42464
-
-N/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
-c0000000040C4AA6800000000000001E5
-t1086630504
-s485
-
-N/System/Library/Frameworks/QuickTime.framework/QuickTime
-c000000004A67D46100000000007836D0
-t1248318561
-s7878352
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/InfoPlist.strings
-c00000000423BB39D000000000000010C
-t1111208861
-s268
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib
-c00000000423BAAA700000000000000AA
-t1111206567
-s170
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch
-c00000000423BA87000000000000000A9
-t1111206000
-s169
-i<Cocoa/Cocoa.h>
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.h
-c00000000423BB39B0000000000000133
-t1111208859
-s307
-i<Cocoa/Cocoa.h>
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m
-c00000000423BB39D00000000000003AB
-t1111208861
-s939
-i"TestController.h"
-i<CocoaSequenceGrabber/CocoaSequenceGrabber.h>
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
-t2
-s0
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist
-t1260289863
-s735
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest
-t2
-s0
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/PkgInfo
-t1260289863
-s8
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1260289863
-s268
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/MainMenu.nib
-t1260289864
-s14797
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/SequenceGrabberTest.LinkFileList
-c000000004B1E7F47000000000000015E
-t1260289863
-s350
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o
-t2
-s0
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o
-t1260289880
-s4872
-
-N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m
-c00000000423BB39D0000000000000104
-t1111208861
-s260
-i<Cocoa/Cocoa.h>
-
-N/var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch.gch
-t1260289879
-s56694608
-
-NInfo.plist
-c00000000423BA8700000000000000318
-t1111206000
-s792
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies281982663#281982663#0(0"0(0#1#0"4300885448#0"0#
-
-CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s281982680.094913
-e281982680.856677
-r0
-xCompileC
-xbuild/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o
-x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:11:54: error: CocoaSequenceGrabber/CocoaSequenceGrabber.h: No such file or directory
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: In function '-[TestController awakeFromNib]':
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:27: warning: receiver 'CSGCamera' is a forward class and corresponding @interface may not exist
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: no '-startWithSize:' method found
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: (Messages without a matching method signature
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: will be assumed to return 'id' and accept
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: '...' as arguments.)
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: At top level:
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:41: error: expected ')' before 'CSGImage'
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: In function '-[TestController windowWillClose:]':
-o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:50: warning: multiple methods named '-stop' found
-o/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h:140: warning: using '-(void)stop'
-o/System/Library/Frameworks/AppKit.framework/Headers/NSSound.h:62: warning: also found '-(BOOL)stop'
-o{standard input}:198:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:198:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:187:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"
-o{standard input}:187:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:179:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
-o{standard input}:179:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:170:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
-o{standard input}:170:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:161:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
-o{standard input}:161:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:141:non-relocatable subtraction expression, "LC1" minus "L00000000002$pb"
-o{standard input}:141:symbol: "LC1" can't be undefined in a subtraction expression
-o{standard input}:138:non-relocatable subtraction expression, "LC0" minus "L00000000002$pb"
-o{standard input}:138:symbol: "LC0" can't be undefined in a subtraction expression
-o{standard input}:128:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:128:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:115:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
-o{standard input}:115:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:109:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:109:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:106:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000002$pb"
-o{standard input}:106:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:67:non-relocatable subtraction expression, "L_OBJC_CLASS_TestController" minus "L00000000001$pb"
-o{standard input}:67:symbol: "L_OBJC_CLASS_TestController" can't be undefined in a subtraction expression
-o{standard input}:59:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:59:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_TestController
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol LC0
-o{standard input}:unknown:Undefined local symbol LC1
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
-lSLF07#2@97"Compile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m281982680#281982680#0(5809"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:11:54: error: CocoaSequenceGrabber/CocoaSequenceGrabber.h: No such file or directory/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: In function '-[TestController awakeFromNib]':/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:27: warning: receiver 'CSGCamera' is a forward class and corresponding @interface may not exist/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: no '-startWithSize:' method found/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: (Messages without a matching method signature/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: will be assumed to return 'id' and accept/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:29: warning: '...' as arguments.)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: At top level:/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:41: error: expected ')' before 'CSGImage'/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m: In function '-[TestController windowWillClose:]':/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m:50: warning: multiple methods named '-stop' found/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h:140: warning: using '-(void)stop'/System/Library/Frameworks/AppKit.framework/Headers/NSSound.h:62: warning: also found '-(BOOL)stop'{standard input}:198:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:198:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:187:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"{standard input}:187:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:179:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:179:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:170:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:170:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:161:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:161:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:141:non-relocatable subtraction expression, "LC1" minus "L00000000002$pb"{standard input}:141:symbol: "LC1" can't be undefined in a subtraction expression{standard input}:138:non-relocatable subtraction expression, "LC0" minus "L00000000002$pb"{standard input}:138:symbol: "LC0" can't be undefined in a subtraction expression{standard input}:128:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:128:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:115:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:115:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:109:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:109:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:106:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000002$pb"{standard input}:106:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:67:non-relocatable subtraction expression, "L_OBJC_CLASS_TestController" minus "L00000000001$pb"{standard input}:67:symbol: "L_OBJC_CLASS_TestController" can't be undefined in a subtraction expression{standard input}:59:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:59:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_TestController{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol LC0{standard input}:unknown:Undefined local symbol LC1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_99(4@70"CocoaSequenceGrabber/CocoaSequenceGrabber.h: No such file or directory281982680#0#175#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#11#0#11#0#28"*: No such file or directory0(22@82"Receiver 'CSGCamera' is a forward class and corresponding @interface may not exist281982680#312#186#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#27#0#27#0#0"0(22@33"No '-startWithSize:' method found281982680#498#137#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#29#0#29#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)281982680#635#149#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#29#0#29#0#0"0(23@13"At top level:281982680#1053#105#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#0#0#0#0#0"0(4@30"Expected ')' before 'CSGImage'281982680#1158#132#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#41#0#41#0#19"expected * before *0(22@36"Multiple methods named '-stop' found281982680#1431#140#0(6@89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m132901661#50#0#50#0#0"0(22@19"Using '-(void)stop'281982680#1571#106#0(6@71"/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h269501189#140#0#140#0#0"0(22@24"Also found '-(BOOL)stop'281982680#1677#100#0(6@61"/System/Library/Frameworks/AppKit.framework/Headers/NSSound.h270010923#62#0#62#0#0"0(0#0#89"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m4300885448#1484"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/TestController.m -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o1#
-
-CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s281982680.076452
-e281982680.846625
-r1
-xCompileC
-xbuild/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o
-x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m281982680#281982680#0(0"0(0#0#79"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m4300885448#1464"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/main.m -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o0#
-
-CCopyStringsFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s281982663.032603
-e281982663.390470
-r1
-xCopyStringsFile
-x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/InfoPlist.strings
-xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings281982663#281982663#0(0"0(0#0#104"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/InfoPlist.strings4300885448#452"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj0#
-
-CLd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest normal i386
-r0
-
-CProcessInfoPlistFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist Info.plist
-s281982663.026641
-e281982663.030495
-r1
-xProcessInfoPlistFile
-x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist
-xInfo.plist
-lSLF07#2@18"Process Info.plist281982663#281982663#0(0"0(0#0#83"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/Info.plist4300885448#440"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    builtin-infoPlistUtility Info.plist -genpkginfo /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist0#
-
-CProcessPCH /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch.gch SequenceGrabberTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s281982664.044504
-e281982680.076219
-r1
-xProcessPCH
-x/var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch.gch
-xSequenceGrabberTest_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@41"Precompile SequenceGrabberTest_Prefix.pch281982664#281982680#0(0"0(0#0#103"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch4300885448#1320"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch -o /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-dyaenjzpudgxhnbhgckzpofglsgy/SequenceGrabberTest_Prefix.pch.gch0#
-
-CStripNIB /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib
-s281982663.030624
-e281982664.044357
-r1
-xStripNIB
-x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib
-lSLF07#2@35"StripNIB English.lproj/MainMenu.nib281982663#281982664#0(0"0(0#0#99"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib4300885448#415"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest    /Developer/usr/bin/ibtool --strip /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/English.lproj/MainMenu.nib0#
-
-CTouch /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
-r0
-
