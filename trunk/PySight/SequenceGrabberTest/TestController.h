@@ -13,6 +13,17 @@
 @interface TestController : NSWindowController
 {
 	IBOutlet NSImageView *cameraView;
+	IBOutlet NSImageView *editView;
+	
+	NSImage * editImage;
+	NSBitmapImageRep * editRep;
+	NSBitmapImageRep * origRep;
+	NSSize size;
+	unsigned char * origbuffer;
+	//unsigned char * outputbuffer;
+	unsigned char outputbuffer[307200];
+	unsigned char * outputbufptr;
+	unsigned char ** outrepptr;
 	
 	CSGCamera *camera;
 }

@@ -26,11 +26,18 @@
 	// Start recording
 	camera = [[CSGCamera alloc] init];
 	[camera setDelegate:self];
-	[camera startWithSize:NSMakeSize(640, 480)];
+	[camera startWithSize:NSMakeSize(320, 240)];
+	
+	size.height=240;
+	size.width=320;
+	//outputbuffer=malloc(sizeof(char)*320*240*4);
+	
 	
 	// Make sure we don't distort the video as the user resizes the window
 	NSWindow *window = [self window];
-	[window setAspectRatio:[window frame].size];
+	//[window setAspectRatio:[window frame].size];
+	
+	
 	
 	// Show the window
 	[self showWindow:nil];
@@ -41,6 +48,36 @@
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
 	[cameraView setImage:aFrame];
+	//NSArray * pole;
+	//pole=;
+	origRep = [[aFrame representations] lastObject];
+	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
+	int i;
+	for(i=0;i<307200;i++)
+	{
+		outputbuffer[i]=origbuffer[i];
+		if (((i+1)%4)!=0) {
+			outputbuffer[i]=255-outputbuffer[i];
+		}
+	}
+	
+	outputbufptr=&outputbuffer[0];
+	outrepptr=&outputbufptr;
+	editRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:(unsigned char **)outrepptr 
+						pixelsWide:(NSInteger)size.width 
+						pixelsHigh:(NSInteger)size.height 
+						bitsPerSample:8 
+						samplesPerPixel:4
+						hasAlpha:YES
+						isPlanar:NO 
+						colorSpaceName:NSCalibratedRGBColorSpace 
+						bytesPerRow:320*4
+						bitsPerPixel:32 ];
+	editImage = [[NSImage alloc] initWithSize:size];
+	[editImage addRepresentation:editRep];
+	[editView setImage:editImage];
+	[editImage release];
+	[editRep release];
 }
 
 // NSWindow delegate

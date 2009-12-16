@@ -1,5 +1,20 @@
 // !$*UTF8*$!
 {
+	22D1432407EBE06300476199 /* TestController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 416}}";
+			sepNavSelRange = "{502, 0}";
+			sepNavVisRange = "{193, 402}";
+		};
+	};
+	22D1432507EBE06300476199 /* TestController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 1144}}";
+			sepNavSelRange = "{1192, 0}";
+			sepNavVisRange = "{894, 910}";
+			sepNavWindowFrame = "{{66, 213}, {750, 558}}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Development;
 		activeExecutable = 4B75843810D947F8008E6ACC /* SequenceGrabberTest */;
@@ -16,7 +31,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -31,8 +46,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 282675192;
-			PBXWorkspaceStateSaveDate = 282675192;
+			PBXPerProjectTemplateStateSaveDate = 282675902;
+			PBXWorkspaceStateSaveDate = 282675902;
+		};
+		perUserProjectItems = {
+			4B9A1CE510D94AD700A69CF1 /* PBXBookmark */ = 4B9A1CE510D94AD700A69CF1 /* PBXBookmark */;
+			4B9A1D6D10D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D6D10D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D6E10D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D6E10D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D6F10D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D6F10D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D7210D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D7210D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D7510D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D7510D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D7610D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D7610D9583200A69CF1 /* PBXTextBookmark */;
+			4B9A1D7710D9583200A69CF1 /* PBXTextBookmark */ = 4B9A1D7710D9583200A69CF1 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4B75845110D947F9008E6ACC /* Source Control */;
 		userBuildSettings = {
@@ -54,6 +79,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -61,9 +87,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = SequenceGrabberTest;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	4B75845110D947F9008E6ACC /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -78,6 +108,77 @@
 	4B75845210D947F9008E6ACC /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	4B9A1CE510D94AD700A69CF1 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 22D1432507EBE06300476199 /* TestController.m */;
+	};
+	4B9A1D6D10D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432507EBE06300476199 /* TestController.m */;
+		name = "TestController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 323;
+		vrLoc = 0;
+	};
+	4B9A1D6E10D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432407EBE06300476199 /* TestController.h */;
+		name = "TestController.h: 26";
+		rLen = 0;
+		rLoc = 564;
+		rType = 0;
+		vrLen = 385;
+		vrLoc = 173;
+	};
+	4B9A1D6F10D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432407EBE06300476199 /* TestController.h */;
+		name = "TestController.h: 24";
+		rLen = 0;
+		rLoc = 502;
+		rType = 0;
+		vrLen = 402;
+		vrLoc = 193;
+	};
+	4B9A1D7210D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432507EBE06300476199 /* TestController.m */;
+		name = "TestController.m: 60";
+		rLen = 0;
+		rLoc = 1192;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 894;
+	};
+	4B9A1D7510D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432407EBE06300476199 /* TestController.h */;
+		name = "TestController.h: 20";
+		rLen = 0;
+		rLoc = 564;
+		rType = 0;
+		vrLen = 395;
+		vrLoc = 0;
+	};
+	4B9A1D7610D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432507EBE06300476199 /* TestController.m */;
+		rLen = 0;
+		rLoc = 9223372036854776743;
+		rType = 0;
+	};
+	4B9A1D7710D9583200A69CF1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 22D1432507EBE06300476199 /* TestController.m */;
+		name = "TestController.m: 52";
+		rLen = 0;
+		rLoc = 953;
+		rType = 0;
+		vrLen = 816;
+		vrLoc = 537;
 	};
 	8D1107260486CEB800E47090 /* SequenceGrabberTest */ = {
 		activeExec = 0;
