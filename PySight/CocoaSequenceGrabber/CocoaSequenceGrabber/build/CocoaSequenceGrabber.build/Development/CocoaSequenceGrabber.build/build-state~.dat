@@ -1,0 +1,302 @@
+TCocoaSequenceGrabber
+v7
+r0
+t281982629.213306
+cCheck dependencies
+cSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current A
+cSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources Versions/Current/Resources
+cSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers Versions/Current/Headers
+cSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber Versions/Current/CocoaSequenceGrabber
+cProcessInfoPlistFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/Info.plist Info.plist
+cCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGCamera.h CSGCamera.h
+cCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGImage.h CSGImage.h
+cCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CocoaSequenceGrabber.h CocoaSequenceGrabber.h
+cCopyStringsFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cProcessPCH /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch.gch CocoaSequenceGrabber_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGCamera.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGImage.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber normal i386
+cTouch /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004A1500B60000000000000659
+t1242890422
+s1625
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004A67D46100000000007836D0
+t1248318561
+s7878352
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.h
+c00000000423BB37F0000000000000496
+t1111208831
+s1174
+i<Cocoa/Cocoa.h>
+i<QuickTime/QuickTime.h>
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m
+c0000000042817F820000000000002D30
+t1115783042
+s11568
+i"CSGCamera.h"
+i"CSGImage.h"
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.h
+c00000000423BB37F0000000000000140
+t1111208831
+s320
+i<Cocoa/Cocoa.h>
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m
+c00000000423BB37F0000000000000208
+t1111208831
+s520
+i"CSGImage.h"
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber.h
+c00000000423BB37F000000000000010D
+t1111208831
+s269
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber_Prefix.pch
+c00000000423BA60900000000000000AC
+t1111205385
+s172
+i<Cocoa/Cocoa.h>
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/English.lproj/InfoPlist.strings
+c00000000423BAD3A0000000000000110
+t1111207226
+s272
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGCamera.o
+t1260289827
+s31344
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGImage.o
+t1260289826
+s8196
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CocoaSequenceGrabber.LinkFileList
+c000000004B1E7F0E0000000000000163
+t1260289806
+s355
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework
+t1260289829
+s204
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber
+t3
+s37
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers
+t3
+s24
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources
+t3
+s26
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber
+t1260289829
+s26564
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGCamera.h
+t1260289806
+s1174
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGImage.h
+t1260289806
+s320
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CocoaSequenceGrabber.h
+t1260289806
+s269
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+t1260289806
+s272
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/Info.plist
+t1260289806
+s626
+
+N/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current
+t3
+s1
+
+N/var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch.gch
+t1260289825
+s56694608
+
+NInfo.plist
+c00000000423BAD2300000000000002DB
+t1111207203
+s731
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies281982606#281982606#0(0"0(0#1#0"8462656583597253632#0"0#
+
+CCompileC build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGCamera.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s281982625.933235
+e281982627.379849
+r1
+xCompileC
+xbuild/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGCamera.o
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera startWithSize:]':
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:112: warning: 'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:112: warning: 'GetPortPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4484)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:118: warning: 'GetMainDevice' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:3384)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera stop]':
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:207: warning: 'DisposeGWorld' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:230)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera(Private) _imageFromGWorld:]':
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:278: warning: 'GetGWorldPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:484)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:279: warning: 'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:282: warning: 'GetPortBounds' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4527)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:316: warning: 'GetPixRowBytes' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:380)
+o/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:350: warning: 'UnlockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:200)
+lSLF07#2@93"Compile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m281982626#281982627#0(2653"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera startWithSize:]':/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:112: warning: 'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:112: warning: 'GetPortPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4484)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:118: warning: 'GetMainDevice' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:3384)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera stop]':/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:207: warning: 'DisposeGWorld' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:230)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m: In function '-[CSGCamera(Private) _imageFromGWorld:]':/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:278: warning: 'GetGWorldPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:484)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:279: warning: 'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:282: warning: 'GetPortBounds' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4527)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:316: warning: 'GetPixRowBytes' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:380)/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m:350: warning: 'UnlockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:200)9(22@147"'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)281982627#130#248#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#112#0#112#0#33"'*' is deprecated (declared at *)0(22@152"'GetPortPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4484)281982627#378#253#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#112#0#112#0#33"'*' is deprecated (declared at *)0(22@152"'GetMainDevice' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:3384)281982627#631#253#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#118#0#118#0#33"'*' is deprecated (declared at *)0(22@150"'DisposeGWorld' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:230)281982627#1004#251#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#207#0#207#0#33"'*' is deprecated (declared at *)0(22@152"'GetGWorldPixMap' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:484)281982627#1397#253#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#278#0#278#0#33"'*' is deprecated (declared at *)0(22@147"'LockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:188)281982627#1650#248#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#279#0#279#0#33"'*' is deprecated (declared at *)0(22@152"'GetPortBounds' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QuickdrawAPI.h:4527)281982627#1898#253#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#282#0#282#0#33"'*' is deprecated (declared at *)0(22@151"'GetPixRowBytes' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:380)281982627#2151#252#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#316#0#316#0#33"'*' is deprecated (declared at *)0(22@149"'UnlockPixels' is deprecated (declared at /System/Library/Frameworks/ApplicationServices.framework/Frameworks/QD.framework/Headers/QDOffscreen.h:200)281982627#2403#250#0(6@85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m137475842#350#0#350#0#33"'*' is deprecated (declared at *)0(0#0#85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m5144627475140407296#1471"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/CocoaSequenceGrabber.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.m -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGCamera.o0#
+
+CCompileC build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGImage.o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s281982626.061242
+e281982626.974975
+r1
+xCompileC
+xbuild/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGImage.o
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m281982626#281982626#0(0"0(0#0#84"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m4300885448#1469"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/CocoaSequenceGrabber.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.m -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CSGImage.o0#
+
+CCopyStringsFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s281982606.546447
+e281982606.878331
+r1
+xCopyStringsFile
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings281982606#281982606#0(0"0(0#0#105"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/English.lproj/InfoPlist.strings4300885448#463"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/English.lproj0#
+
+CCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGCamera.h CSGCamera.h
+s281982606.476607
+e281982606.535191
+r1
+xCpHeader
+xbuild/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGCamera.h
+xCSGCamera.h
+lSLF07#2@16"Copy CSGCamera.h281982606#281982606#0(0"0(0#0#85"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.h4300885448#457"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGCamera.h /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers0#
+
+CCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGImage.h CSGImage.h
+s281982606.477526
+e281982606.534962
+r1
+xCpHeader
+xbuild/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CSGImage.h
+xCSGImage.h
+lSLF07#2@15"Copy CSGImage.h281982606#281982606#0(0"0(0#0#84"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.h4300885448#456"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CSGImage.h /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers0#
+
+CCpHeader build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CocoaSequenceGrabber.h CocoaSequenceGrabber.h
+s281982606.479430
+e281982606.546340
+r1
+xCpHeader
+xbuild/Development/CocoaSequenceGrabber.framework/Versions/A/Headers/CocoaSequenceGrabber.h
+xCocoaSequenceGrabber.h
+lSLF07#2@27"Copy CocoaSequenceGrabber.h281982606#281982606#0(0"0(0#0#96"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber.h4300885448#468"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber.h /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Headers0#
+
+CLd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber normal i386
+s281982627.379952
+e281982629.199265
+r1
+xLd
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber
+xnormal
+xi386
+lSLF07#2@159"Link /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber281982627#281982629#0(0"0(0#0#0"4300885448#898"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /Developer/usr/bin/gcc-4.2 -arch i386 -dynamiclib -L/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development -filelist /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/Objects-normal/i386/CocoaSequenceGrabber.LinkFileList -install_name /Users/jethro/Library/Frameworks/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber -framework Cocoa -framework QuickTime -single_module -compatibility_version 1 -current_version 1 -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/CocoaSequenceGrabber0#
+
+CProcessInfoPlistFile /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/Info.plist Info.plist
+s281982606.470325
+e281982606.476518
+r1
+xProcessInfoPlistFile
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist281982606#281982606#0(0"0(0#0#84"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/Info.plist4300885448#317"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/A/Resources/Info.plist0#
+
+CProcessPCH /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch.gch CocoaSequenceGrabber_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s281982606.878580
+e281982625.933030
+r1
+xProcessPCH
+x/var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch.gch
+xCocoaSequenceGrabber_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@42"Precompile CocoaSequenceGrabber_Prefix.pch281982606#281982625#0(0"0(0#0#105"/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber_Prefix.pch4300885448#1315"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/CocoaSequenceGrabber.hmap -F/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/include -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources/i386 -I/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/CocoaSequenceGrabber.build/Development/CocoaSequenceGrabber.build/DerivedSources -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber_Prefix.pch -o /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/CocoaSequenceGrabber_Prefix-ewzvwxilgeopftaqguznulvtkdnz/CocoaSequenceGrabber_Prefix.pch.gch0#
+
+CSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber Versions/Current/CocoaSequenceGrabber
+s281982606.466463
+e281982606.470245
+r1
+xSymLink
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber
+xVersions/Current/CocoaSequenceGrabber
+lSLF07#2@151"Process /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber281982606#281982606#0(0"0(0#0#0"4300885448#279"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /bin/ln -sf Versions/Current/CocoaSequenceGrabber /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/CocoaSequenceGrabber0#
+
+CSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers Versions/Current/Headers
+s281982606.465311
+e281982606.470003
+r1
+xSymLink
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers
+xVersions/Current/Headers
+lSLF07#2@138"Process /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers281982606#281982606#0(0"0(0#0#0"4300885448#253"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /bin/ln -sf Versions/Current/Headers /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Headers0#
+
+CSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources Versions/Current/Resources
+s281982606.413577
+e281982606.466363
+r1
+xSymLink
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@140"Process /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources281982606#281982606#0(0"0(0#0#0"4300885448#257"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /bin/ln -sf Versions/Current/Resources /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Resources0#
+
+CSymLink /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current A
+s281982606.395916
+e281982606.465142
+r1
+xSymLink
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current
+xA
+lSLF07#2@147"Process /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current281982606#281982606#0(0"0(0#0#0"31244233522610284#239"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /bin/ln -sf A /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework/Versions/Current0#
+
+CTouch /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework
+s281982629.199562
+e281982629.213230
+r1
+xTouch
+x/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework
+lSLF07#2@128"Touch /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework281982629#281982629#0(0"0(0#0#0"4300885448#226"    cd /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber    /usr/bin/touch -c /Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/build/Development/CocoaSequenceGrabber.framework0#
+
