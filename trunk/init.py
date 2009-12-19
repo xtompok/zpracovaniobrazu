@@ -15,7 +15,7 @@ proj_lab = None
 imgs = {}
 
 
-def proj_open(x=1024, y=0, w=800, h=600):
+def proj_open(x=1280, y=0, w=800, h=600):
   global proj, proj_lab
   if proj:
     return

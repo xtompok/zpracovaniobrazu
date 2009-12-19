@@ -1,7 +1,7 @@
 TSequenceGrabberTest
 v7
 r0
-t282679342.726132
+t282818879.030049
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist Info.plist
 cStripNIB /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib
@@ -9,6 +9,7 @@ cCopyStringsFile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberT
 cProcessPCH /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch.gch SequenceGrabberTest_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/zpracovani.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest normal i386
 cTouch /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
 
@@ -64,8 +65,8 @@ t1111208861
 s268
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib
-c000000004B2913EE00000000000000AA
-t1260983278
+c000000004B29252300000000000000AA
+t1260987683
 s170
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch
@@ -75,29 +76,31 @@ s169
 i<Cocoa/Cocoa.h>
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.h
-c000000004B291FA30000000000000253
-t1260986275
-s595
+c000000004B2A8BB1000000000000029E
+t1261079473
+s670
 i<Cocoa/Cocoa.h>
+i"zpracovani.h"
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m
-c000000004B29206E000000000000075F
-t1260986478
-s1887
+c000000004B2B41BB00000000000009C9
+t1261126075
+s2505
 i"TestController.h"
 i<CocoaSequenceGrabber/CocoaSequenceGrabber.h>
+i"zpracovani.h"
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
-t1260986480
-s102
+t1261126079
+s136
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist
 t1260983112
 s735
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest
-t1260986480
-s18548
+t1261126079
+s19920
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/PkgInfo
 t1260983112
@@ -108,27 +111,43 @@ t1260983112
 s268
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/MainMenu.nib
-t1260983826
-s17713
+t1261040228
+s17660
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/SequenceGrabberTest.LinkFileList
-c000000004B2913480000000000000152
-t1260983112
-s338
+c000000004B2A614300000000000001FC
+t1261068611
+s508
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o
-t1260986480
-s22672
+t1261126078
+s24612
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o
 t1260983116
 s4860
+
+N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/zpracovani.o
+t1261126032
+s9076
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m
 c00000000423BB39D0000000000000104
 t1111208861
 s260
 i<Cocoa/Cocoa.h>
+
+N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.h
+c000000004B2B4187000000000000029C
+t1261126023
+s668
+i<Cocoa/Cocoa.h>
+
+N/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m
+c000000004B2B418300000000000003C8
+t1261126019
+s968
+i"zpracovani.h"
 
 N/var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch.gch
 t1260983116
@@ -141,11 +160,11 @@ s792
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies282679342#282679342#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies282818876#282818876#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s282679279.997554
-e282679280.852168
+s282818876.636842
+e282818878.509819
 r1
 xCompileC
 xbuild/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o
@@ -154,9 +173,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m: In function '-[TestController awakeFromNib]':
-o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m:37: warning: unused variable 'window'
-lSLF07#2@91"Compile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m282679279#282679280#0(253"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m: In function '-[TestController awakeFromNib]':/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m:37: warning: unused variable 'window'1(22@24"Unused variable 'window'282679280#131#122#0(6@83"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m282679278#37#0#37#0#19"unused variable '*'0(0#0#83"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m4300885448#1436"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/include -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o0#
+lSLF07#2@91"Compile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m282818876#282818878#0(0"0(0#0#83"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m4300885448#1436"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/include -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o0#
 
 CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s282675916.653664
@@ -171,6 +188,23 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@81"Compile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m282675916#282675916#0(0"0(0#0#73"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m4300885448#1416"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/include -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/main.m -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/main.o0#
 
+CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/zpracovani.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s282818823.623051
+e282818833.084803
+r1
+xCompileC
+xbuild/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/zpracovani.o
+x/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m: In function '-[zpracovani initWithBuffer:withsize:lenght:]':
+o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m:31: warning: control reaches end of non-void function
+o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m: At top level:
+o/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m:63: warning: method possibly missing a [super dealloc] call
+lSLF07#2@87"Compile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m282818823#282818833#0(511"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m: In function '-[zpracovani initWithBuffer:withsize:lenght:]':/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m:31: warning: control reaches end of non-void function/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m: At top level:/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m:63: warning: method possibly missing a [super dealloc] call3(22@40"Control reaches end of non-void function282818825#142#134#0(6@79"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m282818819#31#0#31#0#40"control reaches end of non-void function0(23@13"At top level:282818826#276#95#0(6@79"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m282818819#0#0#0#0#0"0(22@46"Method possibly missing a [super dealloc] call282818826#371#140#0(6@79"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m282818819#63#0#63#0#46"method possibly missing a [super dealloc] call0(0#0#79"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m4300885448#1428"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/include -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/zpracovani.m -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/zpracovani.o0#
+
 CCopyStringsFile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 s282675912.497831
 e282675912.756663
@@ -181,14 +215,14 @@ xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings282675912#282675912#0(0"0(0#0#98"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/InfoPlist.strings4300885448#440"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj0#
 
 CLd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest normal i386
-s282679280.852272
-e282679280.907601
+s282818878.510057
+e282818879.026663
 r1
 xLd
 x/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest
 xnormal
 xi386
-lSLF07#2@148"Link /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest282679280#282679280#0(0"0(0#0#0"4300885448#729"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /Developer/usr/bin/gcc-4.2 -arch i386 -L/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -filelist /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/SequenceGrabberTest.LinkFileList -framework Cocoa -framework QuickTime -framework CocoaSequenceGrabber -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest0#
+lSLF07#2@148"Link /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest282818878#282818879#0(0"0(0#0#0"4300885448#729"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /Developer/usr/bin/gcc-4.2 -arch i386 -L/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -filelist /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/SequenceGrabberTest.LinkFileList -framework Cocoa -framework QuickTime -framework CocoaSequenceGrabber -o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/MacOS/SequenceGrabberTest0#
 
 CProcessInfoPlistFile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist Info.plist
 s282675912.433421
@@ -213,18 +247,18 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@41"Precompile SequenceGrabberTest_Prefix.pch282675912#282675916#0(0"0(0#0#97"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch4300885448#1278"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -mfix-and-continue -gdwarf-2 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/SequenceGrabberTest.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development -F/Users/tim/Products -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/include -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/DerivedSources -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/SequenceGrabberTest_Prefix.pch -o /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/SequenceGrabberTest_Prefix-gsjhydtwtotflvacbqmcywcjwuxa/SequenceGrabberTest_Prefix.pch.gch0#
 
 CStripNIB /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib
-s282676625.992354
-e282676626.150771
+s282733028.026103
+e282733028.976336
 r1
 xStripNIB
 x/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib
-lSLF07#2@35"StripNIB English.lproj/MainMenu.nib282676625#282676626#0(0"0(0#0#93"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib8465185593501902848#397"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /Developer/usr/bin/ibtool --strip /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib0#
+lSLF07#2@35"StripNIB English.lproj/MainMenu.nib282733028#282733028#0(0"0(0#0#93"/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib4300885448#397"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /Developer/usr/bin/ibtool --strip /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Resources/English.lproj/MainMenu.nib --output-format human-readable-text /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib0#
 
 CTouch /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
-s282679280.907715
-e282679280.911073
+s282818879.026799
+e282818879.030007
 r1
 xTouch
 x/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app
-lSLF07#2@114"Touch /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app282679280#282679280#0(0"0(0#0#0"4300885448#205"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /usr/bin/touch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app0#
+lSLF07#2@114"Touch /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app282818879#282818879#0(0"0(0#0#0"4300885448#205"    cd /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest    /usr/bin/touch -c /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app0#
 
