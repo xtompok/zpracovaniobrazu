@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "zpracovani.h"
 
 @class CSGCamera;
 
@@ -22,8 +23,11 @@
 	unsigned char * origbuffer;
 	//unsigned char * outputbuffer;
 	unsigned char outputbuffer[307200];
+	unsigned char * zpracBuf;
 	unsigned char * outputbufptr;
 	unsigned char ** outrepptr;
+	
+	zpracovani * pracImg;
 	
 	CSGCamera *camera;
 }

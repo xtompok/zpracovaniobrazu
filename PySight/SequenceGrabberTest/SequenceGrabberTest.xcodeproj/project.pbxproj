@@ -10,6 +10,7 @@
 		22D1432107EBE05300476199 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D1432007EBE05300476199 /* QuickTime.framework */; };
 		22D1432607EBE06300476199 /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D1432507EBE06300476199 /* TestController.m */; };
 		2343240E083165EC00E6DBB6 /* CocoaSequenceGrabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2343240D083165EC00E6DBB6 /* CocoaSequenceGrabber.framework */; };
+		4B6E753310DA98B10044F1FB /* zpracovani.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E753210DA98B10044F1FB /* zpracovani.m */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -29,6 +30,8 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* SequenceGrabberTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceGrabberTest_Prefix.pch; sourceTree = "<group>"; };
+		4B6E753110DA98B10044F1FB /* zpracovani.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zpracovani.h; sourceTree = "<group>"; };
+		4B6E753210DA98B10044F1FB /* zpracovani.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zpracovani.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SequenceGrabberTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SequenceGrabberTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +53,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E753110DA98B10044F1FB /* zpracovani.h */,
+				4B6E753210DA98B10044F1FB /* zpracovani.m */,
 				22D1432407EBE06300476199 /* TestController.h */,
 				22D1432507EBE06300476199 /* TestController.m */,
 			);
@@ -181,6 +186,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				22D1432607EBE06300476199 /* TestController.m in Sources */,
+				4B6E753310DA98B10044F1FB /* zpracovani.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
