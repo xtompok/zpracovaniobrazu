@@ -1,0 +1,46 @@
+#summary Popis systému zpracování obrazu a návazností mezi jednotlivými částmi
+#labels Featured,Phase-Design
+
+= Úvod =
+
+Celý projekt se rozvíjí současně mnoha různými směry a zde je popis, jak spolu jednotlivé části souvisí a kde co ještě chybí nebo se bude dále rozvíjet. 
+
+
+= Souhrn =
+
+V zakresleném [http://zpracovaniobrazu.googlecode.com/svn/trunk/doc/Schema_zpracovani.cmap schématu] můžete vidět návaznosti jednotlivých částí kódu na sebe. Tučná cesta znamená aktuálně používaný proces, cesta kurzívou je proces, kterého se snažím dosáhnout. Naopak červená spojnice či bublina znamená, že daná činnost ještě není hotová.
+Celý systém pracuje v těchto krocích:
+# Zachytit obrázek z kamery
+# Naléz na tomto obrázku nasvícený bod
+# Přepočítat jeho pozici na skutečnou pozici v obraze
+# Vykreslit tento bod
+
+Mimo tuto řadu ještě spadá kalibrace, kde se určuje, jak je zkreslený obraz webkamery.
+
+= Popis jednotlivých částí =
+
+== Uložit ==
+
+=== Linux ===
+Na Linuxu je využívaný skript, který pomocí mplayeru ukládá jednotlivé snímky do zadaného adresáře.
+
+=== Mac OS X ===
+V Mac OSu je princip obdobný, akorát na zachycování se používá program BTV Pro 6.0b1, který má mnoho nešvarů, například maximálně zvládne uložit 9999 snímků a hlavně vytěžuje jedno jádro procesoru na 100%
+
+== Načíst ==
+Z adresáře je pak načítá Pythonovský skript kamera.py a pomocí PIL vrací načtené pole, s nímž je dále pracováno.
+
+== Přímo načíst z kamery ==
+Přímé načtení z kamery je jen v Mac OSu a využívá frameworku CocoaSequenceGrabber, s jejíž pomocí jsou zachytávány jednotlivé snímky
+
+=== PyObjC ===
+PyObjC je vazba Pythonu na Objective C. Pomocí této vazby je z Pythonu zpřístupněn framework a jsou volány jeho funkce. Tato metoda vypadala velmi příjemně na použití, ale bohužel v ní špatně funguje dealokace objektů, takže dochází k neustálému alokování RAM, kterému se mi nepodařilo zabránit. Pokud by tato cesta fungovala, opět  předá hledacímu algoritmu v main.py pole s informacemi o jednotlivých bodech obrázku.
+
+=== Cocoa ===
+Zatím nejperspektivnější metodou získávání obrázků z kamery je přímé využití frameworku nativně v Objective C. Protože je tento jazyk pro mne nový, je zde postup značně pomalejší, ale zatím vypadá velmi nadějně. Pomocí frameworku je načten obrázek, ten je převeden na pole a nyní se pracuje na vyhledávání nasvíceného bodu v tomto obrázku (poli). Dále by měl pomocí NSTask předávat souřadice nalezeného bodu transformační funkci v main.py, ale na tomto kódu se zatím ještě nepracuje.
+
+== Transformace ==
+Další částí systému je transformace. Při prvním vývoji vzniklo několik druhů transformace, avšak teoreticky správná a rychlá byla pouze jedna a to Karlova, který v současné podobě pracuje na jejím zlepšení. Další z transormací jsou buď nepřesné (Petrova), či pomalé (grafická). Všechny tyto transformace se nachází v souboru main.py 
+
+== Vykreslení výsledku ==
+K finálnímu vykreslení výsledku se opět používá PIL a Tk. vykreslovací funkce se opět nachází v souboru main.py 
