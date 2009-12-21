@@ -76,7 +76,7 @@
 	//outputbufptr=&outputbuffer[0];
 	outputbufptr=&pracImg.buffer[0];
 	outrepptr=&outputbufptr;
-	editRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:(unsigned char **)outrepptr 
+	editRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:(unsigned char **)&outputbufptr//outrepptr 
 						pixelsWide:(NSInteger)size.width 
 						pixelsHigh:(NSInteger)size.height 
 						bitsPerSample:8 

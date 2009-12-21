@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'HledaniBodu' target in the 'HledaniBodu' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
