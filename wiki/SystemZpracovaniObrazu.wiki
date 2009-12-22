@@ -10,10 +10,10 @@ Celý projekt se rozvíjí současně mnoha různými směry a zde je popis, jak
 
 V zakresleném [http://zpracovaniobrazu.googlecode.com/svn/trunk/doc/Schema_zpracovani.cmap schématu] můžete vidět návaznosti jednotlivých částí kódu na sebe. Tučná cesta znamená aktuálně používaný proces, cesta kurzívou je proces, kterého se snažím dosáhnout. Naopak červená spojnice či bublina znamená, že daná činnost ještě není hotová.
 Celý systém pracuje v těchto krocích:
-# Zachytit obrázek z kamery
-# Naléz na tomto obrázku nasvícený bod
-# Přepočítat jeho pozici na skutečnou pozici v obraze
-# Vykreslit tento bod
+  # Zachytit obrázek z kamery
+  # Naléz na tomto obrázku nasvícený bod
+  # Přepočítat jeho pozici na skutečnou pozici v obraze
+  # Vykreslit tento bod
 
 Mimo tuto řadu ještě spadá kalibrace, kde se určuje, jak je zkreslený obraz webkamery.
 
