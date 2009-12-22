@@ -1,7 +1,7 @@
 TSequenceGrabberTest
 v7
 r0
-t283035762.774049
+t283092999.743246
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/build/Development/SequenceGrabberTest.app/Contents/Info.plist Info.plist
 cStripNIB /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/English.lproj/MainMenu.nib
@@ -160,7 +160,7 @@ s792
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies283035748#283035748#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies283092999#283092999#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/SequenceGrabberTest.build/Development/SequenceGrabberTest.build/Objects-normal/i386/TestController.o /Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/TestController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s283035748.394971
