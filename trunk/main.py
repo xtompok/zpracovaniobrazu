@@ -122,10 +122,10 @@ def kal(w=800, h=600):
     s= [(a,a), (w-a, a), (w-a, h-a), (a, h-a)]
     x, y = s[j]
     kobr(x, y)
-    time.sleep(0.5)
+    time.sleep(1.5)
     i1 = gi()
     kobr(-100, -100)
-    time.sleep(0.2)
+    time.sleep(1.2)
     #i2 = Image.eval(i1, lambda x:255-x)
     #i3 = Image.blend(i0, i2, 0.5)
     i3 = rozdil(i1, i0)
