@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4B17E34810E042C6000F3861</string>
+						<string>4B17E36D10E0CF66000F3861</string>
 						<key>history</key>
 						<array>
 							<string>4B17E2FC10E03E8A000F3861</string>
@@ -367,7 +367,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4B17E34710E042C6000F3861</string>
+										<string>4B17E36C10E0CF66000F3861</string>
 										<key>history</key>
 										<array>
 											<string>4B17E16E10DF8756000F3861</string>
@@ -571,14 +571,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4B17E34B10E042C6000F3861</string>
+		<string>4B17E36E10E0CF66000F3861</string>
 		<string>4B17E17910DF8756000F3861</string>
 		<string>4B17E17A10DF8756000F3861</string>
 		<string>/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu.xcodeproj</string>
 		<string>4B17E13A10DF6F43000F3861</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>4B17E34910E042C6000F3861</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>4B17E19310DF88E1000F3861</string>
 	</array>
 	<key>WindowString</key>
