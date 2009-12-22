@@ -81,23 +81,25 @@
 			//&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
+			//printf("index: %d R: %d G: %d B: %d\n",i,aScore[0],aScore[1],aScore[2]);
 			if (aScore[1]>maxScore[1]) {
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
 				maxScore[2]=aScore[2];
 				maxScoreIndex=i;
+				
 			}
 		}
 	}
-	origbuffer[maxScoreIndex]=255;
-	origbuffer[maxScoreIndex+1]=255;
-	origbuffer[maxScoreIndex+2]=255;
-	printf("msindex=%d\n",maxScoreIndex);
+	origbuffer[maxScoreIndex]=0;
+	origbuffer[maxScoreIndex+1]=0;
+	origbuffer[maxScoreIndex+2]=0;
+	//printf("msindex=%d\n",maxScoreIndex);
 	int pole[3];
 	[self getSumSquareAtX:160 andY:120 toArray:(int *)&pole];
-	printf("%d\n",pole[0]);
+	//printf("%d\n",pole[0]);
 	[self getSumSquareAtIndex:160000 toArray:(int *)&pole];
-	printf("%d\n",pole[0]);
+	//printf("%d\n",pole[0]);
 	[cameraView setImage:aFrame];
 }
 
@@ -144,11 +146,11 @@
 	int lrIndex;
 	int i,j;
 	sum[0]=sum[1]=sum[2]=0;  
-	ulIndex=index-2*size.width*4-2;
+	ulIndex=index-2*size.width*4-2*4;
 	if (ulIndex<0) {
 		return;
 	}
-	lrIndex=ulIndex+5*size.width*4+2;
+	lrIndex=ulIndex+5*size.width*4+2*4;
 	if (lrIndex>=delka) {
 		return;
 	}
