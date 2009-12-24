@@ -274,22 +274,10 @@
 
 -(NSData *)makeDataFromInt:(int)cislo
 {
-	printf("%d",cislo);
-	unsigned char pom[4];
-	unsigned char * pomPtr;
-	pomPtr = &pom[0];
-	int i;
-	//pom=malloc(8);
-	for (i=0;i<8;i++)
-	{
-		pom[i]=cislo%10;
-		cislo/=10;
-	}
-	NSData *myData=[NSData dataWithBytes:&pomPtr length:4];
-	NSLog(@"%@",myData);
+	NSString * string = [NSString stringWithFormat:@"%d",cislo];
+	NSLog(@"\n String=%@\n",string);
+	NSData *myData=[string dataUsingEncoding:NSUTF8StringEncoding];
 	return myData;
 }
-
-
 @end
 
