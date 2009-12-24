@@ -147,8 +147,14 @@ def objcGetCoor(char="g"):
   souradnice=raw_input()
   sep=","
   (x,sep,y)=souradnice.partition(",")
-  x=int(x)
-  y=int(y)
+  if x.isdigit():
+    x=int(x)
+  else:
+    x=0
+  if y.isdigit():
+    y=int(y)
+  else:
+    y=0
   return (x,y)
 
 def objCLoop():
@@ -173,7 +179,7 @@ def objcKal(w=800,h=600):
     kalibK[j] = (cx,cy)
     print "Proj (%d, %d) -> Camera (%d, %d)"%(x, y, cx, cy)
   init.labdraw(i, init.root_lab2)
-  vypocti_kkonst(kalibK,kalibP)
+  #vypocti_kkonst(kalibK,kalibP)
   
 def kobr(x,y, r=10, w=800, h=600):
   i = Image.new('RGB', (w,h))

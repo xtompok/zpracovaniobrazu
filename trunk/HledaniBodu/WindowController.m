@@ -83,6 +83,7 @@
 	[pyProg setStandardOutput:outPipe];
 	[pyProg setStandardInput:inPipe];
 	[pyProg setLaunchPath:pyPath];
+	//[pyProg setLaunchPath:@"/Users/jethro/Progrmy/NSTaskTest/build/Debug/repeater.py"];
 	[pyProg setArguments:pyArgs];
 	[pyProg launch];
 	
@@ -139,15 +140,15 @@
 		[pyIn writeData:[self makeDataFromInt:xout]];
 		[self writeSep];
 		[pyIn writeData:[self makeDataFromInt:yout]];
-		//[self writeLF];
+		[self writeLF];
 	}else if (mode='g') {
 		[pyIn writeData:[self makeDataFromInt:xout]];
 		[self writeSep];
 		[pyIn writeData:[self makeDataFromInt:yout]];
-		//[self writeLF];
+		[self writeLF];
 	}
+	printf("%c\n",mode);
 	mode='n';
-
 	
 	printf("%c\n",mode);
 }
@@ -234,6 +235,9 @@
 	aData = [fileHandle availableData];
 	unsigned char * znaky;
 	znaky =(unsigned char *) [aData bytes];
+	if (sizeof(znaky)==0) {
+		return;
+	}
 	printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
 	switch (znaky[0]) {
 		case 'g':
@@ -270,10 +274,19 @@
 
 -(NSData *)makeDataFromInt:(int)cislo
 {
-	int * pom;
-	pom=malloc(8);
-	pom[0]=cislo;
-	NSData *myData=[NSData dataWithBytes:&cislo length:8];
+	printf("%d",cislo);
+	unsigned char pom[4];
+	unsigned char * pomPtr;
+	pomPtr = &pom[0];
+	int i;
+	//pom=malloc(8);
+	for (i=0;i<8;i++)
+	{
+		pom[i]=cislo%10;
+		cislo/=10;
+	}
+	NSData *myData=[NSData dataWithBytes:&pomPtr length:4];
+	NSLog(@"%@",myData);
 	return myData;
 }
 
