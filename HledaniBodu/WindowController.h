@@ -18,6 +18,8 @@
 	NSImage * editImage;
 	NSBitmapImageRep * origRep;
 	NSSize size;
+	NSFileHandle *pyOut;
+	NSFileHandle *pyIn;
 	int delka;
 	unsigned char * origbuffer;
 	unsigned char rmin;
@@ -26,6 +28,9 @@
 	unsigned char gmax;
 	unsigned char bmin;
 	unsigned char bmax;
+	int xout;
+	int yout;
+	unsigned char mode;
 	
 	CSGCamera *camera;
 }
@@ -34,6 +39,11 @@
 -(int)getPixelIndexAtX:(int)x andY:(int)y ;
 -(void)getSumSquareAtIndex:(int)index toArray:(int *)pole;
 -(NSSize)getPixelCoordinatesAtIndex:(int)index;
+-(void)modeSetter:(NSNotification *)aNotification;
+-(void)writeLF;
+-(void)writeSep;
+-(NSData *)makeDataFromInt:(int)cislo;
+
 
 @property unsigned char rmin;
 @property unsigned char rmax;
@@ -41,6 +51,9 @@
 @property unsigned char gmax;
 @property unsigned char bmin;
 @property unsigned char bmax;
+@property int xout;
+@property int yout;
+@property unsigned char mode;
 
 
 @end

@@ -197,49 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>4B9A1D7010D9583200A69CF1</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>TestController.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>4B9A1D7110D9583200A69CF1</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>TestController.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>4B17E23810DFB93B000F3861</string>
-						<key>history</key>
-						<array>
-							<string>4B6E76BB10DEC8740044F1FB</string>
-							<string>4B6E780B10DF6EF70044F1FB</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {750, 461}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>361 224 750 502 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -365,7 +323,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4B17E23710DFB93B000F3861</string>
+										<string>4B17E3E210E0FF36000F3861</string>
 										<key>history</key>
 										<array>
 											<string>4B6E753910DA990D0044F1FB</string>
@@ -578,7 +536,6 @@
 		<string>4B17E20D10DFAB2D000F3861</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>4B75845610D94802008E6ACC</string>
-		<string>4B9A1D7010D9583200A69CF1</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/jethro/Progrmy/zpracovaniobrazu/PySight/SequenceGrabberTest/SequenceGrabberTest.xcodeproj</string>
 	</array>
@@ -797,7 +754,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
