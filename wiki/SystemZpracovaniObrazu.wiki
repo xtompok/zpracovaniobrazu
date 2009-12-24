@@ -37,10 +37,11 @@ Přímé načtení z kamery je jen v Mac OSu a využívá frameworku CocoaSequen
 PyObjC je vazba Pythonu na Objective C. Pomocí této vazby je z Pythonu zpřístupněn framework a jsou volány jeho funkce. Tato metoda vypadala velmi příjemně na použití, ale bohužel v ní špatně funguje dealokace objektů, takže dochází k neustálému alokování RAM, kterému se mi nepodařilo zabránit. Pokud by tato cesta fungovala, opět  předá hledacímu algoritmu v main.py pole s informacemi o jednotlivých bodech obrázku.
 
 === Cocoa ===
-Zatím nejperspektivnější metodou získávání obrázků z kamery je přímé využití frameworku nativně v Objective C. Protože je tento jazyk pro mne nový, je zde postup značně pomalejší, ale zatím vypadá velmi nadějně. Pomocí frameworku je načten obrázek, ten je převeden na pole a pomocí projíždění čtverečkem se hledá oblast o velikosti 5x5 pixelů, která má největší jas. Výsledně se bude hledat plocha s nějakými paramtery, které zjistím při testování. Dále se pracuje na předávání souřadnic nalezeného bodu pomocí NSTask transformační funkci v main.py.
+Zatím nejperspektivnější metodou získávání obrázků z kamery je přímé využití frameworku nativně v Objective C. Protože je tento jazyk pro mne nový, je zde postup značně pomalejší, ale zatím vypadá velmi nadějně. Pomocí frameworku je načten obrázek, ten je převeden na pole a pomocí projíždění čtverečkem se hledá oblast o velikosti 5x5 pixelů, která má největší jas. Výsledně se bude hledat plocha s nějakými paramtery, které zjistím při testování. Souřadnice nalezeného bodu jsou předávány pomocí NSTask transformační funkci v main.py.
 
 == Transformace ==
-Další částí systému je transformace. Při prvním vývoji vzniklo několik druhů transformace, avšak teoreticky správná a rychlá byla pouze jedna a to Karlova, který v současné podobě pracuje na jejím zlepšení. Další z transormací jsou buď nepřesné (Petrova), či pomalé (grafická). Všechny tyto transformace se nachází v souboru main.py 
+Další částí systému je transformace. Při prvním vývoji vzniklo několik druhů transformace, avšak teoreticky správná a rychlá byla pouze jedna a to Karlova, který v současné podobě pracuje na jejím zlepšení. Další z transormací jsou buď nepřesné (Petrova), či pomalé (grafická). Všechny tyto transformace se nachází v souboru main.py. Objecitve C větev implementuje to samé tím samým způsobem, akorát v Objective C.
 
 == Vykreslení výsledku ==
 K finálnímu vykreslení výsledku se opět používá PIL a Tk. vykreslovací funkce se opět nachází v souboru main.py 
+V Objective C větvi se bude využívat integrovaných knihoven MacOSu, podrobnosti nevím, nemám zatím nastudováno.
