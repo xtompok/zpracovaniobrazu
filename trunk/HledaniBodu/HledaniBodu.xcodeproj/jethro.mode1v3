@@ -216,11 +216,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4B17E36D10E0CF66000F3861</string>
+						<string>4B17E66B10E2E94F000F3861</string>
 						<key>history</key>
 						<array>
-							<string>4B17E2FC10E03E8A000F3861</string>
-							<string>4B17E33F10E04167000F3861</string>
+							<string>4B17E65B10E2E81D000F3861</string>
+							<string>4B17E65C10E2E81D000F3861</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -236,7 +236,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>83 249 750 502 0 0 1280 778 </string>
+				<string>243 212 750 502 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -271,6 +271,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -316,6 +318,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -339,7 +342,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>268 219 788 504 0 0 1280 778 </string>
+						<string>89 137 788 504 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -355,7 +358,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WindowController.m</string>
+								<string>main.py</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -363,15 +366,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WindowController.m</string>
+										<string>main.py</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4B17E36C10E0CF66000F3861</string>
+										<string>4B17E66A10E2E94F000F3861</string>
 										<key>history</key>
 										<array>
-											<string>4B17E16E10DF8756000F3861</string>
-											<string>4B17E2C510DFED41000F3861</string>
+											<string>4B17E3E910E0FF6B000F3861</string>
+											<string>4B17E5BA10E2D453000F3861</string>
+											<string>4B17E5BB10E2D453000F3861</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -385,7 +389,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {580, 277}}</string>
 								<key>RubberWindowFrame</key>
-								<string>268 219 788 504 0 0 1280 778 </string>
+								<string>89 137 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -393,8 +397,6 @@
 							<string>277pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -407,7 +409,7 @@
 								<key>Frame</key>
 								<string>{{0, 282}, {580, 181}}</string>
 								<key>RubberWindowFrame</key>
-								<string>268 219 788 504 0 0 1280 778 </string>
+								<string>89 137 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -571,18 +573,18 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4B17E36E10E0CF66000F3861</string>
+		<string>4B17E66C10E2E94F000F3861</string>
+		<string>4B17E34910E042C6000F3861</string>
 		<string>4B17E17910DF8756000F3861</string>
 		<string>4B17E17A10DF8756000F3861</string>
-		<string>/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu.xcodeproj</string>
-		<string>4B17E13A10DF6F43000F3861</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>4B17E34910E042C6000F3861</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>4B17E13A10DF6F43000F3861</string>
+		<string>/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu.xcodeproj</string>
 		<string>4B17E19310DF88E1000F3861</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
-	<string>268 219 788 504 0 0 1280 778 </string>
+	<string>89 137 788 504 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -930,7 +932,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>289 450 650 250 0 0 1280 778 </string>
+								<string>464 398 650 250 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -959,7 +961,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>289 450 650 250 0 0 1280 778 </string>
+			<string>464 398 650 250 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
@@ -1226,7 +1228,7 @@
 			<key>WindowToolGUID</key>
 			<string>4B17E34910E042C6000F3861</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -19,6 +19,9 @@
 @synthesize gmax;
 @synthesize bmin;
 @synthesize bmax;
+@synthesize mode;
+@synthesize xout;
+@synthesize yout;
 
 // Init and dealloc
 
@@ -51,6 +54,37 @@
 	[window setBackgroundColor:translucent];*/
 	[window setAspectRatio:[window frame].size];
 	
+	mode='n';
+	
+	
+	NSTask *pyProg;
+	pyProg = [[NSTask alloc]init];
+	
+	NSPipe *outPipe = [NSPipe pipe];
+	NSPipe *inPipe  = [NSPipe pipe];
+	pyOut = [outPipe fileHandleForReading];
+	pyIn  = [inPipe fileHandleForWriting];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+			selector:@selector(modeSetter:) 
+			name:NSFileHandleDataAvailableNotification
+			object:pyOut];
+	[pyOut waitForDataInBackgroundAndNotify];
+	
+	NSBundle *myBundle;
+	myBundle = [NSBundle mainBundle];
+	NSString *pyPath;
+	pyPath = [myBundle pathForResource:@"main" ofType:@"py"];
+	NSArray * pyArgs;
+	pyArgs = [NSArray arrayWithObject:@"c"];
+	NSLog(@"%@",pyPath);
+	
+	
+	[pyProg setStandardOutput:outPipe];
+	[pyProg setStandardInput:inPipe];
+	[pyProg setLaunchPath:pyPath];
+	[pyProg setArguments:pyArgs];
+	[pyProg launch];
 	
 	
 	// Show the window
@@ -61,6 +95,7 @@
 
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
+	if (mode=='n') return;
 	origRep = [[aFrame representations] lastObject];
 	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
 	
@@ -81,7 +116,6 @@
 			//&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			//printf("index: %d R: %d G: %d B: %d\n",i,aScore[0],aScore[1],aScore[2]);
 			if (aScore[1]>maxScore[1]) {
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
@@ -94,13 +128,28 @@
 	origbuffer[maxScoreIndex]=0;
 	origbuffer[maxScoreIndex+1]=0;
 	origbuffer[maxScoreIndex+2]=0;
+	NSSize souradnice;
+	souradnice=[self getPixelCoordinatesAtIndex:maxScoreIndex];
+	xout=(int)souradnice.width;
+	yout=(int)souradnice.height;
+	printf("x=%d, y=%d\n",xout,yout);
 	//printf("msindex=%d\n",maxScoreIndex);
-	int pole[3];
-	[self getSumSquareAtX:160 andY:120 toArray:(int *)&pole];
-	//printf("%d\n",pole[0]);
-	[self getSumSquareAtIndex:160000 toArray:(int *)&pole];
-	//printf("%d\n",pole[0]);
 	[cameraView setImage:aFrame];
+	if (mode='c') {
+		[pyIn writeData:[self makeDataFromInt:xout]];
+		[self writeSep];
+		[pyIn writeData:[self makeDataFromInt:yout]];
+		//[self writeLF];
+	}else if (mode='g') {
+		[pyIn writeData:[self makeDataFromInt:xout]];
+		[self writeSep];
+		[pyIn writeData:[self makeDataFromInt:yout]];
+		//[self writeLF];
+	}
+	mode='n';
+
+	
+	printf("%c\n",mode);
 }
 
 // NSWindow delegate
@@ -171,9 +220,61 @@
 -(NSSize)getPixelCoordinatesAtIndex:(int)index
 {
 	NSSize souradnice;
-	souradnice.width=index%(int)size.width;
-	souradnice.height=(int)(index/size.width);
+	souradnice.width=(int)(index%((int)size.width*4))/4;
+	souradnice.height=(int)(index/(size.width*4));
 	return souradnice;
+}
+
+-(void)modeSetter:(NSNotification *)aNotification
+{
+	printf("Prisla zadost\n");
+	NSFileHandle * fileHandle;
+	fileHandle =(NSFileHandle *) [aNotification object];
+	NSData * aData;
+	aData = [fileHandle availableData];
+	unsigned char * znaky;
+	znaky =(unsigned char *) [aData bytes];
+	printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
+	switch (znaky[0]) {
+		case 'g':
+			mode='g';
+			break;
+		case 'c':
+			mode='c';
+			break;
+		default:
+			NSLog(@"Prijat chybny znak");
+			break;
+	}
+	[fileHandle waitForDataInBackgroundAndNotify];
+
+
+
+}
+
+-(void)writeLF
+{
+	unsigned char lf;
+	lf='\n';
+	[pyIn writeData:[NSData dataWithBytes:&lf length:1] ];
+
+}
+
+-(void)writeSep
+{
+	unsigned char sep;
+	sep=',';
+	[pyIn writeData:[NSData dataWithBytes:&sep length:1] ];
+	
+}
+
+-(NSData *)makeDataFromInt:(int)cislo
+{
+	int * pom;
+	pom=malloc(8);
+	pom[0]=cislo;
+	NSData *myData=[NSData dataWithBytes:&cislo length:8];
+	return myData;
 }
 
 
