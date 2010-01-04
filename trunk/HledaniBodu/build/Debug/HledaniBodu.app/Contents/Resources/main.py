@@ -165,6 +165,9 @@ def objCLoop():
 def objcKal(w=800,h=600):
   a=5
   r=5
+  init.labdraw(kobr(-100, -100), init.proj_lab)
+  time.sleep(1)
+  objcGetCoor("c")
   s= [(a,a), (w-a, a), (w-a, h-a), (a, h-a)]
   i=Image.new("RGB",(800,600))
   d=ImageDraw.Draw(i)
@@ -184,7 +187,7 @@ def objcKal(w=800,h=600):
 def kobr(x,y, r=10, w=800, h=600):
   i = Image.new('RGB', (w,h))
   d = ImageDraw.Draw(i)
-  d.rectangle((x-r/2, y-r/2, x+r/2, y+r/2), fill=(255, 0, 0))
+  d.rectangle((x-r/2, y-r/2, x+r/2, y+r/2), fill=(255, 255, 255))
   return i
 
 def otevriOkna():
@@ -199,7 +202,7 @@ def camLoad():
 #init.labdraw(i, init.proj_lab)
 
 if (len(sys.argv)>1):
-  print sys.argv[1]
+  #print sys.argv[1]
   otevriOkna()
   objcKal()
   objCLoop()

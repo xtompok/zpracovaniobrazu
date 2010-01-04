@@ -11,11 +11,11 @@
 		breakpoints = (
 			4BBC1DA110E2F44B0002D759 /* *0x921f765d */,
 			4BBC1DA410E2F44C0002D759 /* *0x921f765f */,
-			4BBC1DBD10E364E40002D759 /* WindowController.m:277 */,
-			4BBC1DD910E369AC0002D759 /* WindowController.m:236 */,
-			4BBC1DDB10E369B20002D759 /* WindowController.m:238 */,
-			4BBC1E1010E36D980002D759 /* WindowController.m:237 */,
-			4BBC1E5C10E38CE50002D759 /* WindowController.m:277 */,
+			4BBC1DBD10E364E40002D759 /* WindowController.m:286 */,
+			4BBC1DD910E369AC0002D759 /* WindowController.m:245 */,
+			4BBC1DDB10E369B20002D759 /* WindowController.m:247 */,
+			4BBC1E1010E36D980002D759 /* WindowController.m:246 */,
+			4BBC1E5C10E38CE50002D759 /* WindowController.m:286 */,
 		);
 		codeSenseManager = 4B17E13D10DF6F43000F3861 /* Code sense */;
 		executables = (
@@ -454,6 +454,44 @@
 			4BBC1FA710E3AD460002D759 /* PBXTextBookmark */ = 4BBC1FA710E3AD460002D759 /* PBXTextBookmark */;
 			4BBC1FA810E3AD460002D759 /* PBXTextBookmark */ = 4BBC1FA810E3AD460002D759 /* PBXTextBookmark */;
 			4BBC1FA910E3AD460002D759 /* PBXTextBookmark */ = 4BBC1FA910E3AD460002D759 /* PBXTextBookmark */;
+			4BBC1FBC10E3BCF20002D759 /* PBXTextBookmark */ = 4BBC1FBC10E3BCF20002D759 /* PBXTextBookmark */;
+			4BBC1FBD10E3BCF20002D759 /* PBXTextBookmark */ = 4BBC1FBD10E3BCF20002D759 /* PBXTextBookmark */;
+			4BBC1FBE10E3BCF20002D759 /* PBXTextBookmark */ = 4BBC1FBE10E3BCF20002D759 /* PBXTextBookmark */;
+			4BBC1FC210E3BD2C0002D759 /* PBXTextBookmark */ = 4BBC1FC210E3BD2C0002D759 /* PBXTextBookmark */;
+			4BBC1FC310E3BD2C0002D759 /* PBXTextBookmark */ = 4BBC1FC310E3BD2C0002D759 /* PBXTextBookmark */;
+			4BBC1FC410E3BD2C0002D759 /* PBXTextBookmark */ = 4BBC1FC410E3BD2C0002D759 /* PBXTextBookmark */;
+			4BBC1FD610E3BE1F0002D759 /* PBXTextBookmark */ = 4BBC1FD610E3BE1F0002D759 /* PBXTextBookmark */;
+			4BBC1FD710E3BE1F0002D759 /* PBXTextBookmark */ = 4BBC1FD710E3BE1F0002D759 /* PBXTextBookmark */;
+			4BBC1FD810E3BE1F0002D759 /* PBXTextBookmark */ = 4BBC1FD810E3BE1F0002D759 /* PBXTextBookmark */;
+			4BBC1FDE10E3BEBA0002D759 /* PBXTextBookmark */ = 4BBC1FDE10E3BEBA0002D759 /* PBXTextBookmark */;
+			4BBC1FDF10E3BEBA0002D759 /* PBXTextBookmark */ = 4BBC1FDF10E3BEBA0002D759 /* PBXTextBookmark */;
+			4BBC1FE010E3BEBA0002D759 /* PBXTextBookmark */ = 4BBC1FE010E3BEBA0002D759 /* PBXTextBookmark */;
+			4BBC1FEA10F1E4190002D759 /* PBXTextBookmark */ = 4BBC1FEA10F1E4190002D759 /* PBXTextBookmark */;
+			4BBC1FEB10F1E4190002D759 /* PBXTextBookmark */ = 4BBC1FEB10F1E4190002D759 /* PBXTextBookmark */;
+			4BBC1FEC10F1E4190002D759 /* PBXTextBookmark */ = 4BBC1FEC10F1E4190002D759 /* PBXTextBookmark */;
+			4BBC1FF010F1E47A0002D759 /* PBXTextBookmark */ = 4BBC1FF010F1E47A0002D759 /* PBXTextBookmark */;
+			4BBC1FF110F1E47A0002D759 /* PBXTextBookmark */ = 4BBC1FF110F1E47A0002D759 /* PBXTextBookmark */;
+			4BBC1FF210F1E47A0002D759 /* PBXTextBookmark */ = 4BBC1FF210F1E47A0002D759 /* PBXTextBookmark */;
+			4BBC1FF610F1E4B00002D759 /* PBXTextBookmark */ = 4BBC1FF610F1E4B00002D759 /* PBXTextBookmark */;
+			4BBC1FF710F1E4B00002D759 /* PBXTextBookmark */ = 4BBC1FF710F1E4B00002D759 /* PBXTextBookmark */;
+			4BBC1FF810F1E4B00002D759 /* PBXTextBookmark */ = 4BBC1FF810F1E4B00002D759 /* PBXTextBookmark */;
+			4BBC1FFC10F1E9C70002D759 /* PBXTextBookmark */ = 4BBC1FFC10F1E9C70002D759 /* PBXTextBookmark */;
+			4BBC1FFD10F1E9C70002D759 /* PBXTextBookmark */ = 4BBC1FFD10F1E9C70002D759 /* PBXTextBookmark */;
+			4BBC1FFE10F1E9C70002D759 /* PBXTextBookmark */ = 4BBC1FFE10F1E9C70002D759 /* PBXTextBookmark */;
+			4BBC200210F1EB990002D759 /* PBXTextBookmark */ = 4BBC200210F1EB990002D759 /* PBXTextBookmark */;
+			4BBC200310F1EB990002D759 /* PBXTextBookmark */ = 4BBC200310F1EB990002D759 /* PBXTextBookmark */;
+			4BBC200410F1EB990002D759 /* PBXTextBookmark */ = 4BBC200410F1EB990002D759 /* PBXTextBookmark */;
+			4BBC200510F1EB990002D759 /* PBXTextBookmark */ = 4BBC200510F1EB990002D759 /* PBXTextBookmark */;
+			4BBC201110F1ED7F0002D759 /* PBXTextBookmark */ = 4BBC201110F1ED7F0002D759 /* PBXTextBookmark */;
+			4BBC201210F1ED7F0002D759 /* PBXTextBookmark */ = 4BBC201210F1ED7F0002D759 /* PBXTextBookmark */;
+			4BBC201310F1ED7F0002D759 /* PBXTextBookmark */ = 4BBC201310F1ED7F0002D759 /* PBXTextBookmark */;
+			4BBC201410F1ED7F0002D759 /* PBXTextBookmark */ = 4BBC201410F1ED7F0002D759 /* PBXTextBookmark */;
+			4BBC201510F1ED7F0002D759 /* PBXTextBookmark */ = 4BBC201510F1ED7F0002D759 /* PBXTextBookmark */;
+			4BBC201C10F1EF620002D759 /* PBXTextBookmark */ = 4BBC201C10F1EF620002D759 /* PBXTextBookmark */;
+			4BBC201D10F1EF620002D759 /* PBXTextBookmark */ = 4BBC201D10F1EF620002D759 /* PBXTextBookmark */;
+			4BBC201E10F1EF620002D759 /* PBXTextBookmark */ = 4BBC201E10F1EF620002D759 /* PBXTextBookmark */;
+			4BBC201F10F1EF620002D759 /* PBXTextBookmark */ = 4BBC201F10F1EF620002D759 /* PBXTextBookmark */;
+			4BBC202010F1EF620002D759 /* PBXTextBookmark */ = 4BBC202010F1EF620002D759 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4B17E13C10DF6F43000F3861 /* Source Control */;
 		userBuildSettings = {
@@ -466,7 +504,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -532,16 +570,16 @@
 	};
 	4B17E14E10DF7A6D000F3861 /* WindowController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 806}}";
-			sepNavSelRange = "{30, 0}";
-			sepNavVisRange = "{26, 321}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 845}}";
+			sepNavSelRange = "{420, 0}";
+			sepNavVisRange = "{173, 607}";
 		};
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {4240, 3887}}";
-			sepNavSelRange = "{6161, 0}";
-			sepNavVisRange = "{5722, 446}";
+			sepNavIntBoundsRect = "{{0, 0}, {4240, 4199}}";
+			sepNavSelRange = "{6059, 0}";
+			sepNavVisRange = "{5510, 540}";
 		};
 	};
 	4B17E16E10DF8756000F3861 /* PBXTextBookmark */ = {
@@ -559,7 +597,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 53";
 		rLen = 0;
-		rLoc = 2267;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 440;
 		vrLoc = 1070;
@@ -579,7 +617,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 335;
 		vrLoc = 2239;
@@ -589,7 +627,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3237;
+		rLoc = 3220;
 		rType = 0;
 		vrLen = 337;
 		vrLoc = 2237;
@@ -599,7 +637,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 55";
 		rLen = 0;
-		rLoc = 2267;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 1125;
@@ -609,7 +647,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 338;
 		vrLoc = 2239;
@@ -619,7 +657,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 1765;
@@ -629,7 +667,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 62";
 		rLen = 0;
-		rLoc = 2513;
+		rLoc = 2496;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 498;
@@ -639,7 +677,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 24";
 		rLen = 0;
-		rLoc = 442;
+		rLoc = 459;
 		rType = 0;
 		vrLen = 617;
 		vrLoc = 0;
@@ -649,7 +687,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 25";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 0;
@@ -659,7 +697,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 688;
 		vrLoc = 1759;
@@ -669,7 +707,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 25";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 0;
@@ -679,7 +717,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 1490;
@@ -689,7 +727,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 1759;
@@ -699,7 +737,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 3632;
+		rLoc = 3593;
 		rType = 0;
 		vrLen = 927;
 		vrLoc = 1655;
@@ -709,7 +747,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 1374;
@@ -729,7 +767,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 65";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 1326;
@@ -749,7 +787,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 25";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 0;
@@ -759,7 +797,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 24";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 0;
@@ -769,7 +807,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 65";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 1326;
@@ -789,7 +827,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 65";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 1326;
@@ -819,7 +857,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 28";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 0;
@@ -829,7 +867,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 64";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 217;
 		vrLoc = 1303;
@@ -839,7 +877,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 61";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 489;
 		vrLoc = 1031;
@@ -849,7 +887,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 24";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 460;
 		vrLoc = 0;
@@ -869,7 +907,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 316;
 		vrLoc = 1165;
@@ -889,7 +927,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 63";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 490;
 		vrLoc = 1017;
@@ -899,7 +937,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 316;
 		vrLoc = 1165;
@@ -919,7 +957,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 29";
 		rLen = 0;
-		rLoc = 977;
+		rLoc = 1055;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 0;
@@ -929,7 +967,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 28";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 0;
@@ -939,7 +977,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 318;
 		vrLoc = 1165;
@@ -949,7 +987,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 28";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 0;
@@ -959,7 +997,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 94";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4774;
 		rType = 0;
 		vrLen = 470;
 		vrLoc = 1403;
@@ -969,7 +1007,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 96";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4774;
 		rType = 0;
 		vrLen = 532;
 		vrLoc = 1402;
@@ -979,7 +1017,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 316;
 		vrLoc = 1165;
@@ -989,7 +1027,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 101";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 531;
 		vrLoc = 1483;
@@ -999,7 +1037,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 1165;
@@ -1009,7 +1047,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 68";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 927;
@@ -1019,7 +1057,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 379;
 		vrLoc = 1165;
@@ -1029,7 +1067,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 68";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 927;
@@ -1039,7 +1077,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 31";
 		rLen = 0;
-		rLoc = 613;
+		rLoc = 630;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 329;
@@ -1049,7 +1087,7 @@
 		comments = "Passing argument 1 of 'arrayWithObjects:' makes pointer from integer without a cast";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 201;
 		rType = 1;
 	};
 	4B17E1F610DFAABD000F3861 /* PBXTextBookmark */ = {
@@ -1057,7 +1095,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 269;
 		vrLoc = 1855;
@@ -1067,7 +1105,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
 		rLen = 0;
-		rLoc = 3264;
+		rLoc = 3247;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 1165;
@@ -1077,7 +1115,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 67";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 1609;
@@ -1087,7 +1125,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 541;
 		vrLoc = 1593;
@@ -1097,7 +1135,7 @@
 		comments = "Passing argument 1 of 'arrayWithObjects:' makes pointer from integer without a cast";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 201;
 		rType = 1;
 	};
 	4B17E1FF10DFAAEE000F3861 /* PBXTextBookmark */ = {
@@ -1105,7 +1143,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 188;
 		vrLoc = 1952;
@@ -1115,7 +1153,7 @@
 		comments = "Passing argument 1 of 'arrayWithObjects:' makes pointer from integer without a cast";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 189;
+		rLoc = 201;
 		rType = 1;
 	};
 	4B17E20F10DFAB2F000F3861 /* PBXTextBookmark */ = {
@@ -1123,7 +1161,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 1833;
@@ -1133,7 +1171,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 104";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 1593;
@@ -1143,7 +1181,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 1833;
@@ -1153,7 +1191,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 1593;
@@ -1163,7 +1201,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 541;
 		vrLoc = 1593;
@@ -1173,7 +1211,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 316;
 		vrLoc = 1833;
@@ -1183,7 +1221,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 1593;
@@ -1193,7 +1231,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 316;
 		vrLoc = 1833;
@@ -1203,7 +1241,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 1593;
@@ -1213,7 +1251,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 1593;
@@ -1223,7 +1261,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 295;
 		vrLoc = 1833;
@@ -1233,7 +1271,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 1593;
@@ -1243,7 +1281,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 355;
 		vrLoc = 1810;
@@ -1253,7 +1291,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 560;
 		vrLoc = 1612;
@@ -1263,7 +1301,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 386;
 		vrLoc = 1714;
@@ -1273,7 +1311,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 559;
 		vrLoc = 1612;
@@ -1283,7 +1321,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 369;
 		vrLoc = 1714;
@@ -1293,7 +1331,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 101";
 		rLen = 0;
-		rLoc = 4276;
+		rLoc = 4757;
 		rType = 0;
 		vrLen = 557;
 		vrLoc = 1612;
@@ -1303,7 +1341,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 388;
 		vrLoc = 1714;
@@ -1313,7 +1351,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 3838;
+		rLoc = 4319;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 1612;
@@ -1323,7 +1361,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 390;
 		vrLoc = 1714;
@@ -1343,7 +1381,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 89";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 585;
 		vrLoc = 1612;
@@ -1353,7 +1391,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 3896;
+		rLoc = 4377;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 1612;
@@ -1363,7 +1401,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 106";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 317;
 		vrLoc = 1563;
@@ -1373,7 +1411,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 68";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 1281;
@@ -1383,7 +1421,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 106";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 1405;
@@ -1393,7 +1431,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 1281;
@@ -1403,7 +1441,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 106";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 1405;
@@ -1413,7 +1451,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 526;
 		vrLoc = 1281;
@@ -1423,7 +1461,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 106";
 		rLen = 0;
-		rLoc = 4300;
+		rLoc = 4781;
 		rType = 0;
 		vrLen = 310;
 		vrLoc = 1407;
@@ -1433,7 +1471,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 63";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 565;
 		vrLoc = 1217;
@@ -1443,7 +1481,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 26";
 		rLen = 0;
-		rLoc = 639;
+		rLoc = 717;
 		rType = 0;
 		vrLen = 305;
 		vrLoc = 233;
@@ -1453,7 +1491,7 @@
 		comments = "Passing argument 3 of 'getSumSquareAtX:andY:toArray:' from incompatible pointer type";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 136;
+		rLoc = 135;
 		rType = 1;
 	};
 	4B17E2A610DFEA20000F3861 /* PBXTextBookmark */ = {
@@ -1461,7 +1499,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 67";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 206;
 		vrLoc = 1312;
@@ -1471,7 +1509,7 @@
 		comments = "'WindowController' may not respond to '-getSumSquareAtX:andY:toArray:'";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 136;
+		rLoc = 135;
 		rType = 1;
 	};
 	4B17E2AC10DFEA34000F3861 /* PBXTextBookmark */ = {
@@ -1479,7 +1517,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 67";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 302;
 		vrLoc = 1281;
@@ -1489,7 +1527,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 26";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 723;
 		rType = 0;
 		vrLen = 538;
 		vrLoc = 0;
@@ -1509,7 +1547,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 67";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 579;
 		vrLoc = 1023;
@@ -1519,7 +1557,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1281;
@@ -1529,7 +1567,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 39";
 		rLen = 0;
-		rLoc = 1229;
+		rLoc = 1307;
 		rType = 0;
 		vrLen = 690;
 		vrLoc = 125;
@@ -1539,7 +1577,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 103";
 		rLen = 0;
-		rLoc = 4301;
+		rLoc = 4782;
 		rType = 0;
 		vrLen = 520;
 		vrLoc = 1576;
@@ -1549,7 +1587,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 106";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 528;
 		vrLoc = 1576;
@@ -1559,7 +1597,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1281;
@@ -1569,7 +1607,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 1592;
@@ -1579,7 +1617,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 34";
 		rLen = 2;
-		rLoc = 1227;
+		rLoc = 1305;
 		rType = 0;
 		vrLen = 690;
 		vrLoc = 125;
@@ -1589,7 +1627,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 39";
 		rLen = 0;
-		rLoc = 1227;
+		rLoc = 1305;
 		rType = 0;
 		vrLen = 618;
 		vrLoc = 128;
@@ -1599,7 +1637,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 66";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1281;
@@ -1609,7 +1647,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 39";
 		rLen = 0;
-		rLoc = 1151;
+		rLoc = 1229;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 129;
@@ -1619,7 +1657,7 @@
 		comments = "Expected expression before '<' token";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 1;
-		rLoc = 136;
+		rLoc = 135;
 		rType = 1;
 	};
 	4B17E2C610DFED41000F3861 /* PBXTextBookmark */ = {
@@ -1627,7 +1665,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 61";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1281;
@@ -1637,7 +1675,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 34";
 		rLen = 0;
-		rLoc = 977;
+		rLoc = 1055;
 		rType = 0;
 		vrLen = 702;
 		vrLoc = 129;
@@ -1647,7 +1685,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 105";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 1361;
@@ -1657,7 +1695,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 61";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 519;
 		vrLoc = 0;
@@ -1667,7 +1705,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 63";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 313;
 		vrLoc = 1300;
@@ -1687,7 +1725,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 70";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 380;
 		vrLoc = 1236;
@@ -1697,7 +1735,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 21";
 		rLen = 0;
-		rLoc = 415;
+		rLoc = 432;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 129;
@@ -1707,7 +1745,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 3915;
+		rLoc = 4396;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 1582;
@@ -1717,7 +1755,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 99";
 		rLen = 0;
-		rLoc = 4085;
+		rLoc = 4566;
 		rType = 0;
 		vrLen = 535;
 		vrLoc = 1735;
@@ -1727,7 +1765,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 70";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 433;
 		vrLoc = 1236;
@@ -1737,7 +1775,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 35";
 		rLen = 58;
-		rLoc = 746;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 771;
 		vrLoc = 129;
@@ -1747,7 +1785,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 114";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 577;
 		vrLoc = 1693;
@@ -1757,7 +1795,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 75";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 655;
 		vrLoc = 1211;
@@ -1767,7 +1805,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 89";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 418;
 		vrLoc = 1236;
@@ -1777,7 +1815,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 90";
 		rLen = 0;
-		rLoc = 3233;
+		rLoc = 3216;
 		rType = 0;
 		vrLen = 709;
 		vrLoc = 1425;
@@ -1787,7 +1825,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 89";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 418;
 		vrLoc = 1236;
@@ -1797,7 +1835,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 36";
 		rLen = 0;
-		rLoc = 841;
+		rLoc = 919;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 172;
@@ -1807,7 +1845,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 163";
 		rLen = 0;
-		rLoc = 4990;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 660;
 		vrLoc = 2889;
@@ -1817,7 +1855,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 168";
 		rLen = 0;
-		rLoc = 5144;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 674;
 		vrLoc = 2899;
@@ -1827,7 +1865,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 89";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 418;
 		vrLoc = 1236;
@@ -1837,7 +1875,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 3015;
+		rLoc = 2998;
 		rType = 0;
 		vrLen = 757;
 		vrLoc = 1361;
@@ -1847,7 +1885,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 1236;
@@ -1857,7 +1895,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 77";
 		rLen = 1;
-		rLoc = 2591;
+		rLoc = 2574;
 		rType = 0;
 		vrLen = 745;
 		vrLoc = 1236;
@@ -1867,7 +1905,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 420;
 		vrLoc = 1236;
@@ -1877,7 +1915,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 95";
 		rLen = 0;
-		rLoc = 3218;
+		rLoc = 3201;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 1545;
@@ -1887,7 +1925,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -1897,7 +1935,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 2543;
+		rLoc = 2526;
 		rType = 0;
 		vrLen = 832;
 		vrLoc = 1451;
@@ -1907,7 +1945,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -1917,7 +1955,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 2543;
+		rLoc = 2526;
 		rType = 0;
 		vrLen = 682;
 		vrLoc = 2889;
@@ -1927,7 +1965,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 2543;
+		rLoc = 2526;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 2889;
@@ -1937,7 +1975,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -1947,7 +1985,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 166";
 		rLen = 0;
-		rLoc = 4948;
+		rLoc = 5563;
 		rType = 0;
 		vrLen = 753;
 		vrLoc = 3044;
@@ -1957,7 +1995,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -1967,7 +2005,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 166";
 		rLen = 0;
-		rLoc = 4901;
+		rLoc = 5516;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 3109;
@@ -1976,7 +2014,7 @@
 		isa = PBXTextBookmark;
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 1;
-		rLoc = 204;
+		rLoc = 218;
 		rType = 1;
 	};
 	4B17E33E10E04167000F3861 /* PBXTextBookmark */ = {
@@ -1984,7 +2022,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -1994,7 +2032,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 162";
 		rLen = 0;
-		rLoc = 4850;
+		rLoc = 5465;
 		rType = 0;
 		vrLen = 753;
 		vrLoc = 2982;
@@ -2004,7 +2042,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 162";
 		rLen = 0;
-		rLoc = 4850;
+		rLoc = 5465;
 		rType = 0;
 		vrLen = 712;
 		vrLoc = 2982;
@@ -2014,7 +2052,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 91";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2024,7 +2062,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 4457;
+		rLoc = 5072;
 		rType = 0;
 		vrLen = 761;
 		vrLoc = 3044;
@@ -2034,7 +2072,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2044,7 +2082,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 84";
 		rLen = 0;
-		rLoc = 2775;
+		rLoc = 2758;
 		rType = 0;
 		vrLen = 852;
 		vrLoc = 1491;
@@ -2054,7 +2092,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2064,7 +2102,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4774;
 		rType = 0;
 		vrLen = 680;
 		vrLoc = 2502;
@@ -2074,7 +2112,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2084,7 +2122,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 153";
 		rLen = 0;
-		rLoc = 4529;
+		rLoc = 5144;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 3034;
@@ -2094,7 +2132,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2104,7 +2142,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 84";
 		rLen = 0;
-		rLoc = 2775;
+		rLoc = 2758;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 1423;
@@ -2114,7 +2152,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 93";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2124,7 +2162,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 96";
 		rLen = 0;
-		rLoc = 3018;
+		rLoc = 3001;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 1361;
@@ -2134,7 +2172,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2144,7 +2182,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 98";
 		rLen = 0;
-		rLoc = 3100;
+		rLoc = 3083;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 1568;
@@ -2216,7 +2254,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2226,7 +2264,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 98";
 		rLen = 0;
-		rLoc = 3100;
+		rLoc = 3083;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 1568;
@@ -2256,7 +2294,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2266,7 +2304,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 177";
 		rLen = 0;
-		rLoc = 5121;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 718;
 		vrLoc = 3265;
@@ -2296,7 +2334,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 1236;
@@ -2306,7 +2344,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 176";
 		rLen = 0;
-		rLoc = 5045;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 725;
 		vrLoc = 3265;
@@ -2336,7 +2374,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 92";
 		rLen = 0;
-		rLoc = 2923;
+		rLoc = 2906;
 		rType = 0;
 		vrLen = 459;
 		vrLoc = 1236;
@@ -2346,7 +2384,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 99";
 		rLen = 0;
-		rLoc = 3235;
+		rLoc = 3218;
 		rType = 0;
 		vrLen = 770;
 		vrLoc = 1969;
@@ -2416,7 +2454,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 166";
 		rLen = 0;
-		rLoc = 5023;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 268;
 		vrLoc = 3226;
@@ -2426,7 +2464,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 171";
 		rLen = 0;
-		rLoc = 5023;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 407;
 		vrLoc = 3116;
@@ -2436,7 +2474,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 152";
 		rLen = 10;
-		rLoc = 4554;
+		rLoc = 5169;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 3016;
@@ -2446,7 +2484,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 177";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 3116;
@@ -2456,7 +2494,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 37";
 		rLen = 0;
-		rLoc = 975;
+		rLoc = 1053;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 172;
@@ -2466,7 +2504,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 37";
 		rLen = 0;
-		rLoc = 975;
+		rLoc = 1053;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 172;
@@ -2476,7 +2514,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 155";
 		rLen = 10;
-		rLoc = 4554;
+		rLoc = 5169;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 3064;
@@ -2486,7 +2524,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 187";
 		rLen = 0;
-		rLoc = 5541;
+		rLoc = 6139;
 		rType = 0;
 		vrLen = 643;
 		vrLoc = 2435;
@@ -2496,7 +2534,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 50";
 		rLen = 0;
-		rLoc = 1196;
+		rLoc = 1274;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 361;
@@ -2506,7 +2544,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 30";
 		rLen = 0;
-		rLoc = 591;
+		rLoc = 608;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 361;
@@ -2516,7 +2554,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 155";
 		rLen = 10;
-		rLoc = 4554;
+		rLoc = 5169;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 3070;
@@ -2526,7 +2564,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 30";
 		rLen = 0;
-		rLoc = 591;
+		rLoc = 608;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 361;
@@ -2543,9 +2581,9 @@
 	};
 	4B17E5B810E2D324000F3861 /* main.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 2899}}";
-			sepNavSelRange = "{4878, 0}";
-			sepNavVisRange = "{4104, 720}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 2860}}";
+			sepNavSelRange = "{4680, 0}";
+			sepNavVisRange = "{1108, 893}";
 		};
 	};
 	4B17E5BA10E2D453000F3861 /* PBXTextBookmark */ = {
@@ -2553,7 +2591,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 164";
 		rLen = 10;
-		rLoc = 4554;
+		rLoc = 5169;
 		rType = 0;
 		vrLen = 342;
 		vrLoc = 3151;
@@ -2583,7 +2621,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 71";
 		rLen = 0;
-		rLoc = 1853;
+		rLoc = 1836;
 		rType = 0;
 		vrLen = 849;
 		vrLoc = 1037;
@@ -2603,7 +2641,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 75";
 		rLen = 0;
-		rLoc = 2077;
+		rLoc = 2060;
 		rType = 0;
 		vrLen = 820;
 		vrLoc = 1217;
@@ -2623,7 +2661,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 81";
 		rLen = 0;
-		rLoc = 2077;
+		rLoc = 2060;
 		rType = 0;
 		vrLen = 711;
 		vrLoc = 1748;
@@ -2643,7 +2681,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 74";
 		rLen = 0;
-		rLoc = 1767;
+		rLoc = 1750;
 		rType = 0;
 		vrLen = 834;
 		vrLoc = 1304;
@@ -2663,7 +2701,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 73";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1703;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 1270;
@@ -2683,7 +2721,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 74";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1703;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 1215;
@@ -2703,7 +2741,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 74";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1703;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 1215;
@@ -2713,7 +2751,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 203";
 		rLen = 0;
-		rLoc = 5023;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 271;
 		vrLoc = 3304;
@@ -2733,7 +2771,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 74";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1703;
 		rType = 0;
 		vrLen = 803;
 		vrLoc = 1215;
@@ -2743,7 +2781,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 175";
 		rLen = 0;
-		rLoc = 3969;
+		rLoc = 4052;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 0;
@@ -2753,7 +2791,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 74";
 		rLen = 0;
-		rLoc = 1720;
+		rLoc = 1703;
 		rType = 0;
 		vrLen = 803;
 		vrLoc = 1215;
@@ -2763,7 +2801,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 175";
 		rLen = 0;
-		rLoc = 3969;
+		rLoc = 4052;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 0;
@@ -2773,7 +2811,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 77";
 		rLen = 0;
-		rLoc = 1851;
+		rLoc = 1834;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 1215;
@@ -2783,7 +2821,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 175";
 		rLen = 0;
-		rLoc = 3969;
+		rLoc = 4052;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 0;
@@ -2793,7 +2831,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 1780;
+		rLoc = 1763;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 1215;
@@ -2803,7 +2841,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 175";
 		rLen = 0;
-		rLoc = 3969;
+		rLoc = 4052;
 		rType = 0;
 		vrLen = 373;
 		vrLoc = 0;
@@ -2813,7 +2851,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 1829;
+		rLoc = 1812;
 		rType = 0;
 		vrLen = 814;
 		vrLoc = 1215;
@@ -2823,7 +2861,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -2833,7 +2871,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 76";
 		rLen = 0;
-		rLoc = 1829;
+		rLoc = 1812;
 		rType = 0;
 		vrLen = 841;
 		vrLoc = 463;
@@ -2843,7 +2881,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -2863,7 +2901,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 63";
 		rLen = 80;
-		rLoc = 1351;
+		rLoc = 1334;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 826;
@@ -2873,7 +2911,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 95";
 		rLen = 0;
-		rLoc = 2267;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 2003;
@@ -2883,7 +2921,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -2903,7 +2941,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -2913,7 +2951,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 72";
 		rLen = 0;
-		rLoc = 1595;
+		rLoc = 1578;
 		rType = 0;
 		vrLen = 803;
 		vrLoc = 1230;
@@ -2923,7 +2961,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 399;
 		vrLoc = 0;
@@ -2933,7 +2971,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 44";
 		rLen = 38;
-		rLoc = 937;
+		rLoc = 1015;
 		rType = 0;
 		vrLen = 815;
 		vrLoc = 361;
@@ -2943,7 +2981,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3416;
+		rLoc = 3399;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 2632;
@@ -2953,7 +2991,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 260";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 416;
 		vrLoc = 5081;
@@ -2963,7 +3001,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -2973,7 +3011,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 43";
 		rLen = 0;
-		rLoc = 916;
+		rLoc = 994;
 		rType = 0;
 		vrLen = 817;
 		vrLoc = 361;
@@ -2983,7 +3021,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 259";
 		rLen = 0;
-		rLoc = 5878;
+		rLoc = 6588;
 		rType = 0;
 		vrLen = 434;
 		vrLoc = 5197;
@@ -2993,7 +3031,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 266";
 		rLen = 0;
-		rLoc = 5924;
+		rLoc = 6634;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 2181;
@@ -3003,7 +3041,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -3013,7 +3051,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 237";
 		rLen = 0;
-		rLoc = 5521;
+		rLoc = 6119;
 		rType = 0;
 		vrLen = 685;
 		vrLoc = 4895;
@@ -3023,7 +3061,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -3033,7 +3071,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 3557;
+		rLoc = 3540;
 		rType = 0;
 		vrLen = 789;
 		vrLoc = 2839;
@@ -3043,7 +3081,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -3053,7 +3091,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 282";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 447;
 		vrLoc = 5584;
@@ -3063,7 +3101,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -3073,7 +3111,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 282";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 447;
 		vrLoc = 5584;
@@ -3083,7 +3121,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 365;
 		vrLoc = 0;
@@ -3093,7 +3131,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 278";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 450;
 		vrLoc = 5584;
@@ -3103,7 +3141,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 399;
 		vrLoc = 0;
@@ -3113,7 +3151,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 278";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 453;
 		vrLoc = 5582;
@@ -3123,7 +3161,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 399;
 		vrLoc = 0;
@@ -3133,7 +3171,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 211";
 		rLen = 0;
-		rLoc = 4877;
+		rLoc = 4965;
 		rType = 0;
 		vrLen = 288;
 		vrLoc = 3252;
@@ -3143,7 +3181,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 3557;
+		rLoc = 3540;
 		rType = 0;
 		vrLen = 669;
 		vrLoc = 3014;
@@ -3163,7 +3201,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 3557;
+		rLoc = 3540;
 		rType = 0;
 		vrLen = 687;
 		vrLoc = 4893;
@@ -3173,7 +3211,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 237";
 		rLen = 0;
-		rLoc = 5467;
+		rLoc = 6063;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 5090;
@@ -3203,7 +3241,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 3557;
+		rLoc = 3540;
 		rType = 0;
 		vrLen = 687;
 		vrLoc = 4893;
@@ -3237,7 +3275,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 236";
 		rLen = 0;
-		rLoc = 5401;
+		rLoc = 5997;
 		rType = 0;
 		vrLen = 422;
 		vrLoc = 5092;
@@ -3247,7 +3285,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 5039;
@@ -3267,7 +3305,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 147";
 		rLen = 0;
-		rLoc = 3557;
+		rLoc = 3540;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 4893;
@@ -3277,7 +3315,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3287,7 +3325,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3597;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 2953;
@@ -3339,7 +3377,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3349,7 +3387,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3597;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 739;
 		vrLoc = 2953;
@@ -3369,7 +3407,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3379,7 +3417,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3597;
+		rLoc = 3582;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 3245;
@@ -3394,7 +3432,7 @@
 		vrLen = 843;
 		vrLoc = 3515;
 	};
-	4BBC1DBD10E364E40002D759 /* WindowController.m:277 */ = {
+	4BBC1DBD10E364E40002D759 /* WindowController.m:286 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3404,11 +3442,11 @@
 		delayBeforeContinue = 0;
 		fileReference = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		functionName = "-makeDataFromInt:";
-		hitCount = 0;
+		hitCount = 13;
 		ignoreCount = 0;
-		lineNumber = 277;
+		lineNumber = 286;
 		location = HledaniBodu;
-		modificationTime = 283356484.438768;
+		modificationTime = 283356531.110202;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3417,7 +3455,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3427,7 +3465,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3437,7 +3475,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 450;
 		vrLoc = 5640;
@@ -3457,7 +3495,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3467,7 +3505,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3487,7 +3525,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3497,7 +3535,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3512,7 +3550,7 @@
 		vrLen = 843;
 		vrLoc = 3515;
 	};
-	4BBC1DD910E369AC0002D759 /* WindowController.m:236 */ = {
+	4BBC1DD910E369AC0002D759 /* WindowController.m:245 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3522,15 +3560,15 @@
 		delayBeforeContinue = 0;
 		fileReference = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		functionName = "-modeSetter:";
-		hitCount = 0;
+		hitCount = 12;
 		ignoreCount = 0;
-		lineNumber = 236;
+		lineNumber = 245;
 		location = HledaniBodu;
-		modificationTime = 283356484.492523;
+		modificationTime = 283356529.90678;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
-	4BBC1DDB10E369B20002D759 /* WindowController.m:238 */ = {
+	4BBC1DDB10E369B20002D759 /* WindowController.m:247 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3540,11 +3578,11 @@
 		delayBeforeContinue = 0;
 		fileReference = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		functionName = "-modeSetter:";
-		hitCount = 0;
+		hitCount = 12;
 		ignoreCount = 0;
-		lineNumber = 238;
+		lineNumber = 247;
 		location = HledaniBodu;
-		modificationTime = 283356484.54956;
+		modificationTime = 283356530.425432;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3553,7 +3591,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3563,7 +3601,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3583,7 +3621,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3593,7 +3631,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3603,7 +3641,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 844;
 		vrLoc = 3515;
@@ -3613,7 +3651,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 238";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5058;
@@ -3623,7 +3661,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 173";
 		rLen = 0;
-		rLoc = 3950;
+		rLoc = 4431;
 		rType = 0;
 		vrLen = 441;
 		vrLoc = 5655;
@@ -3633,7 +3671,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3643,7 +3681,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3653,7 +3691,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3663,7 +3701,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3673,7 +3711,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3683,7 +3721,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3693,7 +3731,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3703,7 +3741,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 450;
 		vrLoc = 5075;
@@ -3713,7 +3751,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3723,12 +3761,12 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
 	};
-	4BBC1E1010E36D980002D759 /* WindowController.m:237 */ = {
+	4BBC1E1010E36D980002D759 /* WindowController.m:246 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3740,7 +3778,7 @@
 		functionName = "-modeSetter:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 237;
+		lineNumber = 246;
 		location = HledaniBodu;
 		modificationTime = 283356484.626387;
 		originalNumberOfMultipleMatches = 1;
@@ -3751,7 +3789,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3761,7 +3799,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3771,7 +3809,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3781,7 +3819,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3791,7 +3829,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3801,7 +3839,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3811,7 +3849,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3821,7 +3859,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3831,7 +3869,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3841,7 +3879,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3851,7 +3889,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3861,7 +3899,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3871,7 +3909,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3881,7 +3919,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3891,7 +3929,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3901,7 +3939,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3911,7 +3949,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3921,7 +3959,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3931,7 +3969,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3941,7 +3979,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3951,7 +3989,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3961,7 +3999,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -3971,7 +4009,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1971;
+		rLoc = 1954;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1392;
@@ -3981,7 +4019,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4879;
+		rLoc = 4967;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 3515;
@@ -3991,7 +4029,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -4001,7 +4039,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 279";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 351;
 		vrLoc = 5827;
@@ -4011,7 +4049,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4021,7 +4059,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4031,7 +4069,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 714;
 		vrLoc = 1788;
@@ -4041,12 +4079,12 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
 	};
-	4BBC1E5C10E38CE50002D759 /* WindowController.m:277 */ = {
+	4BBC1E5C10E38CE50002D759 /* WindowController.m:286 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -4058,7 +4096,7 @@
 		functionName = "-makeDataFromInt:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 277;
+		lineNumber = 286;
 		location = HledaniBodu;
 		modificationTime = 283356484.703928;
 		originalNumberOfMultipleMatches = 1;
@@ -4069,7 +4107,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4079,7 +4117,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 226";
 		rLen = 0;
-		rLoc = 5144;
+		rLoc = 5568;
 		rType = 0;
 		vrLen = 351;
 		vrLoc = 5829;
@@ -4089,7 +4127,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 278";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 406;
 		vrLoc = 5833;
@@ -4099,7 +4137,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4109,7 +4147,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4119,7 +4157,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 288";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 426;
 		vrLoc = 5833;
@@ -4129,7 +4167,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4139,7 +4177,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4149,7 +4187,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 1656;
@@ -4159,7 +4197,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4169,7 +4207,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4179,7 +4217,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 758;
 		vrLoc = 1710;
@@ -4189,7 +4227,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4199,7 +4237,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4209,7 +4247,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 277";
 		rLen = 0;
-		rLoc = 5984;
+		rLoc = 6738;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 5829;
@@ -4219,7 +4257,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4229,7 +4267,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -4239,7 +4277,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 753;
 		vrLoc = 1635;
@@ -4249,7 +4287,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4259,7 +4297,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -4269,7 +4307,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 755;
 		vrLoc = 1691;
@@ -4279,7 +4317,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4289,7 +4327,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -4299,7 +4337,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 774;
 		vrLoc = 1710;
@@ -4309,7 +4347,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4319,7 +4357,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5075;
@@ -4329,7 +4367,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 5847;
@@ -4339,7 +4377,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4349,7 +4387,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4359,7 +4397,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 1434;
@@ -4369,7 +4407,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 3694;
@@ -4379,7 +4417,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4389,7 +4427,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 742;
 		vrLoc = 1526;
@@ -4399,7 +4437,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 219";
 		rLen = 0;
-		rLoc = 4918;
+		rLoc = 5006;
 		rType = 0;
 		vrLen = 810;
 		vrLoc = 3886;
@@ -4409,7 +4447,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 5077;
@@ -4419,7 +4457,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 86";
 		rLen = 0;
-		rLoc = 1963;
+		rLoc = 1946;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 5023;
@@ -4429,7 +4467,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 760;
 		vrLoc = 4104;
@@ -4439,7 +4477,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4448,8 +4486,8 @@
 		isa = PBXTextBookmark;
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 275";
-		rLen = 218;
-		rLoc = 5943;
+		rLen = 184;
+		rLoc = 6697;
 		rType = 0;
 		vrLen = 434;
 		vrLoc = 5938;
@@ -4459,7 +4497,7 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 4104;
@@ -4469,7 +4507,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 239";
 		rLen = 0;
-		rLoc = 5463;
+		rLoc = 6059;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 5077;
@@ -4479,7 +4517,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 281";
 		rLen = 0;
-		rLoc = 6161;
+		rLoc = 7037;
 		rType = 0;
 		vrLen = 446;
 		vrLoc = 5722;
@@ -4489,10 +4527,390 @@
 		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
 		name = "main.py: 217";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4966;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 4104;
+	};
+	4BBC1FBC10E3BCF20002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 5077;
+	};
+	4BBC1FBD10E3BCF20002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 169";
+		rLen = 0;
+		rLoc = 3680;
+		rType = 0;
+		vrLen = 868;
+		vrLoc = 3499;
+	};
+	4BBC1FBE10E3BCF20002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 971;
+		vrLoc = 685;
+	};
+	4BBC1FC210E3BD2C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 5077;
+	};
+	4BBC1FC310E3BD2C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 170";
+		rLen = 0;
+		rLoc = 3700;
+		rType = 0;
+		vrLen = 886;
+		vrLoc = 3499;
+	};
+	4BBC1FC410E3BD2C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 993;
+		vrLoc = 717;
+	};
+	4BBC1FD610E3BE1F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 5077;
+	};
+	4BBC1FD710E3BE1F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 190";
+		rLen = 0;
+		rLoc = 4375;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 3682;
+	};
+	4BBC1FD810E3BE1F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 851;
+		vrLoc = 1249;
+	};
+	4BBC1FDE10E3BEBA0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 5077;
+	};
+	4BBC1FDF10E3BEBA0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 743;
+		vrLoc = 4223;
+	};
+	4BBC1FE010E3BEBA0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 796;
+		vrLoc = 1351;
+	};
+	4BBC1FEA10F1E4190002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 452;
+		vrLoc = 5077;
+	};
+	4BBC1FEB10F1E4190002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 241";
+		rLen = 0;
+		rLoc = 6066;
+		rType = 0;
+		vrLen = 394;
+		vrLoc = 5550;
+	};
+	4BBC1FEC10F1E4190002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 1108;
+	};
+	4BBC1FF010F1E47A0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 239";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 452;
+		vrLoc = 5077;
+	};
+	4BBC1FF110F1E47A0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 277";
+		rLen = 0;
+		rLoc = 6798;
+		rType = 0;
+		vrLen = 413;
+		vrLoc = 5725;
+	};
+	4BBC1FF210F1E47A0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 1108;
+	};
+	4BBC1FF610F1E4B00002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 237";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 425;
+		vrLoc = 5103;
+	};
+	4BBC1FF710F1E4B00002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 136";
+		rLen = 0;
+		rLoc = 3144;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 2988;
+	};
+	4BBC1FF810F1E4B00002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 1108;
+	};
+	4BBC1FFC10F1E9C70002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 248";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 5506;
+	};
+	4BBC1FFD10F1E9C70002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 169";
+		rLen = 0;
+		rLoc = 3934;
+		rType = 0;
+		vrLen = 707;
+		vrLoc = 2100;
+	};
+	4BBC1FFE10F1E9C70002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 1108;
+	};
+	4BBC200210F1EB990002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 248";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 5506;
+	};
+	4BBC200310F1EB990002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 169";
+		rLen = 0;
+		rLoc = 3934;
+		rType = 0;
+		vrLen = 620;
+		vrLoc = 6264;
+	};
+	4BBC200410F1EB990002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 39";
+		rLen = 0;
+		rLoc = 715;
+		rType = 0;
+		vrLen = 802;
+		vrLoc = 487;
+	};
+	4BBC200510F1EB990002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 1108;
+	};
+	4BBC201110F1ED7F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 248";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 553;
+		vrLoc = 5506;
+	};
+	4BBC201210F1ED7F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 37";
+		rLen = 60;
+		rLoc = 655;
+		rType = 0;
+		vrLen = 772;
+		vrLoc = 487;
+	};
+	4BBC201310F1ED7F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 291";
+		rLen = 0;
+		rLoc = 6903;
+		rType = 0;
+		vrLen = 640;
+		vrLoc = 6264;
+	};
+	4BBC201410F1ED7F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 292";
+		rLen = 0;
+		rLoc = 6927;
+		rType = 0;
+		vrLen = 569;
+		vrLoc = 6471;
+	};
+	4BBC201510F1ED7F0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 914;
+		vrLoc = 1108;
+	};
+	4BBC201C10F1EF620002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 248";
+		rLen = 0;
+		rLoc = 6059;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 5510;
+	};
+	4BBC201D10F1EF620002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 59";
+		rLen = 0;
+		rLoc = 1231;
+		rType = 0;
+		vrLen = 1050;
+		vrLoc = 566;
+	};
+	4BBC201E10F1EF620002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 48";
+		rLen = 0;
+		rLoc = 1053;
+		rType = 0;
+		vrLen = 743;
+		vrLoc = 222;
+	};
+	4BBC201F10F1EF620002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 23";
+		rLen = 0;
+		rLoc = 420;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 173;
+	};
+	4BBC202010F1EF620002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 205";
+		rLen = 0;
+		rLoc = 4680;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 1108;
 	};
 	8D1107260486CEB800E47090 /* HledaniBodu */ = {
 		activeExec = 0;
