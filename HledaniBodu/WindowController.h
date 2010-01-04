@@ -20,6 +20,7 @@
 	NSSize size;
 	NSFileHandle *pyOut;
 	NSFileHandle *pyIn;
+	NSTask *pyProg;
 	int delka;
 	unsigned char * origbuffer;
 	unsigned char rmin;
@@ -34,6 +35,9 @@
 	
 	CSGCamera *camera;
 }
+
+-(IBAction)Calibrate:(id)sender;
+-(IBAction)Run:(id)sender;
 
 -(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)pole;
 -(int)getPixelIndexAtX:(int)x andY:(int)y ;

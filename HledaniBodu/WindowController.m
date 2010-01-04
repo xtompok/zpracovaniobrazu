@@ -57,7 +57,6 @@
 	mode='n';
 	
 	
-	NSTask *pyProg;
 	pyProg = [[NSTask alloc]init];
 	
 	NSPipe *outPipe = [NSPipe pipe];
@@ -147,26 +146,39 @@
 		[pyIn writeData:[self makeDataFromInt:yout]];
 		[self writeLF];
 	}
-	printf("%c\n",mode);
+	//printf("%c\n",mode);
 	mode='n';
-	
-	printf("%c\n",mode);
 }
 
 // NSWindow delegate
 
 - (void)windowWillClose:(NSNotification *)notification;
 {
+	[pyProg terminate];
 	[camera stop];
 }
 
+/* Coordinates <-> Index */
+// Return index of point with supplied coordinates
 -(int)getPixelIndexAtX:(int)x andY:(int)y
 {
 	int index;
 	index=y*size.width*4+x*4;
 	return index;
-
 }
+// Return coordinates as NSSize object of point with supplied index
+-(NSSize)getPixelCoordinatesAtIndex:(int)index
+{
+	NSSize souradnice;
+	souradnice.width=(int)(index%((int)size.width*4))/4;
+	souradnice.height=(int)(index/(size.width*4));
+	return souradnice;
+}
+
+
+/* Sum squares */
+//Return sum of 5x5 square around supplied point in array with 3 numbers - 
+// - one number for each color, point is defined by coordinates
 -(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)sum
 {
 	int luCorIndex;
@@ -190,6 +202,8 @@
 	}
 
 }
+//Return sum of 5x5 square around supplied point in array with 3 numbers - 
+// - one number for each color, point is defined by index
 -(void)getSumSquareAtIndex:(int)index toArray:(int *)sum
 {
 	int ulIndex;
@@ -218,27 +232,22 @@
 	//printf("ulindex=%d, lrindex=%d",ulIndex,lrIndex);
 }
 
--(NSSize)getPixelCoordinatesAtIndex:(int)index
-{
-	NSSize souradnice;
-	souradnice.width=(int)(index%((int)size.width*4))/4;
-	souradnice.height=(int)(index/(size.width*4));
-	return souradnice;
-}
-
+/* Communication with Python */
+// Sets the mode for getting pixel - c for calibration, g for normal processing
+// If is the other char, prints NSLog, don't raise exception
 -(void)modeSetter:(NSNotification *)aNotification
 {
-	printf("Prisla zadost\n");
+	//printf("Prisla zadost\n");
 	NSFileHandle * fileHandle;
-	fileHandle =(NSFileHandle *) [aNotification object];
 	NSData * aData;
-	aData = [fileHandle availableData];
 	unsigned char * znaky;
+	fileHandle =(NSFileHandle *) [aNotification object];
+	aData = [fileHandle availableData];
 	znaky =(unsigned char *) [aData bytes];
 	if (sizeof(znaky)==0) {
 		return;
 	}
-	printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
+	//printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
 	switch (znaky[0]) {
 		case 'g':
 			mode='g';
@@ -255,7 +264,7 @@
 
 
 }
-
+// Writes to NSPipe pyIn end of line, here '\n'
 -(void)writeLF
 {
 	unsigned char lf;
@@ -263,7 +272,7 @@
 	[pyIn writeData:[NSData dataWithBytes:&lf length:1] ];
 
 }
-
+// Write to NSPipe PyIn separator between x and y value, here ','
 -(void)writeSep
 {
 	unsigned char sep;
@@ -271,13 +280,25 @@
 	[pyIn writeData:[NSData dataWithBytes:&sep length:1] ];
 	
 }
-
+// Makes NSData object from supplied integer
 -(NSData *)makeDataFromInt:(int)cislo
 {
 	NSString * string = [NSString stringWithFormat:@"%d",cislo];
-	NSLog(@"\n String=%@\n",string);
 	NSData *myData=[string dataUsingEncoding:NSUTF8StringEncoding];
 	return myData;
 }
+
+/* GUI Interactivity */
+//Not implemeted yet
+-(IBAction)Calibrate:(id)sender
+{
+	NSLog(@"Calibrate!");
+}
+//
+-(IBAction)Run:(id)sender
+{
+	NSLog(@"Run!");
+}
+
 @end
 
