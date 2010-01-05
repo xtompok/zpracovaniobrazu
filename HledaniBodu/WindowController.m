@@ -280,6 +280,8 @@
 //Not implemeted yet
 -(IBAction)Calibrate:(id)sender
 {
+	[self writeChar:'c'];
+	[self writeChar:'\n'];
 	NSLog(@"Calibrate!");
 }
 //

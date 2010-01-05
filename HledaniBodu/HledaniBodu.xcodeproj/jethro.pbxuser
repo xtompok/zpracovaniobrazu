@@ -558,6 +558,18 @@
 			4BBC209D10F3339D0002D759 /* PBXTextBookmark */ = 4BBC209D10F3339D0002D759 /* PBXTextBookmark */;
 			4BBC209E10F3339D0002D759 /* PBXTextBookmark */ = 4BBC209E10F3339D0002D759 /* PBXTextBookmark */;
 			4BBC209F10F3339D0002D759 /* PBXTextBookmark */ = 4BBC209F10F3339D0002D759 /* PBXTextBookmark */;
+			4BBC20A110F3411D0002D759 /* PBXTextBookmark */ = 4BBC20A110F3411D0002D759 /* PBXTextBookmark */;
+			4BBC20A210F3411D0002D759 /* PBXTextBookmark */ = 4BBC20A210F3411D0002D759 /* PBXTextBookmark */;
+			4BBC20A310F3411D0002D759 /* PBXTextBookmark */ = 4BBC20A310F3411D0002D759 /* PBXTextBookmark */;
+			4BBC20A410F341340002D759 /* PBXTextBookmark */ = 4BBC20A410F341340002D759 /* PBXTextBookmark */;
+			4BBC20A510F341340002D759 /* PBXTextBookmark */ = 4BBC20A510F341340002D759 /* PBXTextBookmark */;
+			4BBC20A610F341340002D759 /* PBXTextBookmark */ = 4BBC20A610F341340002D759 /* PBXTextBookmark */;
+			4BBC20AD10F3432E0002D759 /* PBXTextBookmark */ = 4BBC20AD10F3432E0002D759 /* PBXTextBookmark */;
+			4BBC20AE10F3432E0002D759 /* PBXTextBookmark */ = 4BBC20AE10F3432E0002D759 /* PBXTextBookmark */;
+			4BBC20AF10F3432E0002D759 /* PBXTextBookmark */ = 4BBC20AF10F3432E0002D759 /* PBXTextBookmark */;
+			4BBC20B310F3436C0002D759 /* PBXTextBookmark */ = 4BBC20B310F3436C0002D759 /* PBXTextBookmark */;
+			4BBC20B410F3436C0002D759 /* PBXTextBookmark */ = 4BBC20B410F3436C0002D759 /* PBXTextBookmark */;
+			4BBC20B510F3436C0002D759 /* PBXTextBookmark */ = 4BBC20B510F3436C0002D759 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4B17E13C10DF6F43000F3861 /* Source Control */;
 		userBuildSettings = {
@@ -643,9 +655,9 @@
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 3900}}";
-			sepNavSelRange = "{6339, 0}";
-			sepNavVisRange = "{3882, 751}";
+			sepNavIntBoundsRect = "{{0, 0}, {4240, 3939}}";
+			sepNavSelRange = "{6905, 0}";
+			sepNavVisRange = "{6718, 474}";
 		};
 	};
 	4B17E16E10DF8756000F3861 /* PBXTextBookmark */ = {
@@ -2647,9 +2659,9 @@
 	};
 	4B17E5B810E2D324000F3861 /* main.py */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 2873}}";
-			sepNavSelRange = "{5093, 0}";
-			sepNavVisRange = "{2171, 788}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 2899}}";
+			sepNavSelRange = "{5153, 0}";
+			sepNavVisRange = "{1799, 828}";
 		};
 	};
 	4B17E5BA10E2D453000F3861 /* PBXTextBookmark */ = {
@@ -4583,7 +4595,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 281";
 		rLen = 0;
-		rLoc = 7138;
+		rLoc = 7185;
 		rType = 0;
 		vrLen = 446;
 		vrLoc = 5722;
@@ -4623,7 +4635,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 283";
 		rLen = 0;
-		rLoc = 7144;
+		rLoc = 7191;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 685;
@@ -4653,7 +4665,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 283";
 		rLen = 0;
-		rLoc = 7144;
+		rLoc = 7191;
 		rType = 0;
 		vrLen = 993;
 		vrLoc = 717;
@@ -4683,7 +4695,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 283";
 		rLen = 0;
-		rLoc = 7144;
+		rLoc = 7191;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 1249;
@@ -4713,7 +4725,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 283";
 		rLen = 0;
-		rLoc = 7144;
+		rLoc = 7191;
 		rType = 0;
 		vrLen = 796;
 		vrLoc = 1351;
@@ -5163,7 +5175,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 285";
 		rLen = 0;
-		rLoc = 6904;
+		rLoc = 6951;
 		rType = 0;
 		vrLen = 600;
 		vrLoc = 6302;
@@ -5173,7 +5185,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 292";
 		rLen = 0;
-		rLoc = 7080;
+		rLoc = 7127;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 6512;
@@ -5203,7 +5215,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 292";
 		rLen = 0;
-		rLoc = 7074;
+		rLoc = 7121;
 		rType = 0;
 		vrLen = 527;
 		vrLoc = 6512;
@@ -5233,7 +5245,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 293";
 		rLen = 0;
-		rLoc = 7135;
+		rLoc = 7182;
 		rType = 0;
 		vrLen = 513;
 		vrLoc = 6512;
@@ -5263,7 +5275,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 294";
 		rLen = 0;
-		rLoc = 7132;
+		rLoc = 7179;
 		rType = 0;
 		vrLen = 561;
 		vrLoc = 6512;
@@ -5293,7 +5305,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 294";
 		rLen = 0;
-		rLoc = 7132;
+		rLoc = 7179;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 6593;
@@ -5563,7 +5575,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 293";
 		rLen = 0;
-		rLoc = 7035;
+		rLoc = 7082;
 		rType = 0;
 		vrLen = 503;
 		vrLoc = 6640;
@@ -5593,7 +5605,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 293";
 		rLen = 0;
-		rLoc = 7035;
+		rLoc = 7082;
 		rType = 0;
 		vrLen = 464;
 		vrLoc = 6679;
@@ -5637,6 +5649,126 @@
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 2171;
+	};
+	4BBC20A110F3411D0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 249";
+		rLen = 0;
+		rLoc = 6103;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 5529;
+	};
+	4BBC20A210F3411D0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 261";
+		rLen = 0;
+		rLoc = 6339;
+		rType = 0;
+		vrLen = 642;
+		vrLoc = 6497;
+	};
+	4BBC20A310F3411D0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 227";
+		rLen = 0;
+		rLoc = 5136;
+		rType = 0;
+		vrLen = 896;
+		vrLoc = 1969;
+	};
+	4BBC20A410F341340002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 249";
+		rLen = 0;
+		rLoc = 6103;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 5529;
+	};
+	4BBC20A510F341340002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 1;
+		rLoc = 6877;
+		rType = 0;
+		vrLen = 547;
+		vrLoc = 6640;
+	};
+	4BBC20A610F341340002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 228";
+		rLen = 0;
+		rLoc = 5153;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 1799;
+	};
+	4BBC20AD10F3432E0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 249";
+		rLen = 0;
+		rLoc = 6103;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 5529;
+	};
+	4BBC20AE10F3432E0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 283";
+		rLen = 0;
+		rLoc = 6905;
+		rType = 0;
+		vrLen = 526;
+		vrLoc = 6642;
+	};
+	4BBC20AF10F3432E0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 228";
+		rLen = 0;
+		rLoc = 5153;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 1799;
+	};
+	4BBC20B310F3436C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 249";
+		rLen = 0;
+		rLoc = 6103;
+		rType = 0;
+		vrLen = 540;
+		vrLoc = 5529;
+	};
+	4BBC20B410F3436C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 284";
+		rLen = 0;
+		rLoc = 6905;
+		rType = 0;
+		vrLen = 474;
+		vrLoc = 6718;
+	};
+	4BBC20B510F3436C0002D759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E5B810E2D324000F3861 /* main.py */;
+		name = "main.py: 228";
+		rLen = 0;
+		rLoc = 5153;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 1799;
 	};
 	8D1107260486CEB800E47090 /* HledaniBodu */ = {
 		activeExec = 0;
