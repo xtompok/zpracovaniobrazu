@@ -54,6 +54,13 @@
 	[window setBackgroundColor:translucent];*/
 	[window setAspectRatio:[window frame].size];
 	
+	rmin=120;
+	rmax=255;
+	gmin=120;
+	gmax=255;
+	bmin=120;
+	bmax=255;
+	
 	mode='n';
 	running=YES;
 	
@@ -110,14 +117,21 @@
 	{
 		if (1
 			//&&(origbuffer[i]<rmax)
-			//&&(origbuffer[i]>rmin)
+			&&(origbuffer[i]>rmin)
 			//&&(origbuffer[i+1]<gmax)
-			//&&(origbuffer[i+1]>gmin)
+			&&(origbuffer[i+1]>gmin)
 			//&&(origbuffer[i+2]<bmax)
-			//&&(origbuffer[i+2]>bmin)
+			&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			if (aScore[1]>maxScore[1]) {
+			if (  (aScore[0]<4000)
+				&&(aScore[1]<4000)
+				&&(aScore[2]<4000)
+				   ) 
+			{
+				continue;
+			}
+			if (aScore[0]>maxScore[0]) {
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
 				maxScore[2]=aScore[2];
@@ -126,6 +140,11 @@
 			}
 		}
 	}
+	printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
+	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
+		   origbuffer[maxScoreIndex],
+		   origbuffer[maxScoreIndex+1],
+		   origbuffer[maxScoreIndex+2]);
 	origbuffer[maxScoreIndex]=0;
 	origbuffer[maxScoreIndex+1]=0;
 	origbuffer[maxScoreIndex+2]=0;
@@ -140,7 +159,6 @@
 		[pyIn writeData:[self makeDataFromInt:xout]];
 		[self writeChar:','];
 		[pyIn writeData:[self makeDataFromInt:yout]];
-		//[self writeLF];
 		[self writeChar:'\n'];
 	}else if (mode='g') {
 		[pyIn writeData:[self makeDataFromInt:xout]];
@@ -148,7 +166,7 @@
 		[pyIn writeData:[self makeDataFromInt:yout]];
 		[self writeChar:'\n'];
 	}
-	printf("%c\n",mode);
+	//printf("%c\n",mode);
 	mode='n';
 }
 
