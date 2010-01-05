@@ -150,6 +150,9 @@ def objcGetCoor(char="g"):
       print "w"
       sys.stdout.flush()
       souradnice=raw_input()
+    if souradnice[0]=='c':
+      print "k" 
+      objcKal()
   sep=","
   (x,sep,y)=souradnice.partition(",")
   if x.isdigit():
