@@ -204,7 +204,7 @@
 				<key>PBXProjectModuleGUID</key>
 				<string>4B17E19310DF88E1000F3861</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>WindowController.h</string>
+				<string>WindowController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
@@ -212,15 +212,15 @@
 						<key>PBXProjectModuleGUID</key>
 						<string>4B17E19410DF88E1000F3861</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>WindowController.h</string>
+						<string>WindowController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4BBC201F10F1EF620002D759</string>
+						<string>4BBC209E10F3339D0002D759</string>
 						<key>history</key>
 						<array>
-							<string>4BBC201D10F1EF620002D759</string>
-							<string>4BBC201E10F1EF620002D759</string>
+							<string>4BBC204710F32AF50002D759</string>
+							<string>4BBC204810F32AF50002D759</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -257,7 +257,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4BBC202010F1EF620002D759</string>
+						<string>4BBC209F10F3339D0002D759</string>
 						<key>history</key>
 						<array>
 							<string>4BBC1D8710E2F3B50002D759</string>
@@ -405,7 +405,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4BBC201C10F1EF620002D759</string>
+										<string>4BBC209D10F3339D0002D759</string>
 										<key>history</key>
 										<array>
 											<string>4BBC1D9010E2F4010002D759</string>
@@ -610,15 +610,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4BBC202110F1EF620002D759</string>
+		<string>4BBC20A010F3339D0002D759</string>
 		<string>4BBC1E9010E3919C0002D759</string>
 		<string>4BBC1D6F10E2F24D0002D759</string>
 		<string>4BBC1D7010E2F24D0002D759</string>
 		<string>4B17E13A10DF6F43000F3861</string>
-		<string>4BBC1D9410E2F4010002D759</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu.xcodeproj</string>
+		<string>4BBC1D9410E2F4010002D759</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>4B17E19310DF88E1000F3861</string>
 	</array>
 	<key>WindowString</key>
