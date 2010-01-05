@@ -37,15 +37,14 @@
 }
 
 -(IBAction)Calibrate:(id)sender;
--(IBAction)Run:(id)sender;
+-(IBAction)RunAndPause:(id)sender;
 
 -(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)pole;
 -(int)getPixelIndexAtX:(int)x andY:(int)y ;
 -(void)getSumSquareAtIndex:(int)index toArray:(int *)pole;
 -(NSSize)getPixelCoordinatesAtIndex:(int)index;
 -(void)modeSetter:(NSNotification *)aNotification;
--(void)writeLF;
--(void)writeSep;
+-(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
 
 

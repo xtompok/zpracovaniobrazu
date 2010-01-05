@@ -145,6 +145,11 @@ def objcGetCoor(char="g"):
   print char
   sys.stdout.flush()
   souradnice=raw_input()
+  if not (',' in souradnice):
+    if souradnice[0]=='p':
+      print "w"
+      sys.stdout.flush()
+      souradnice=raw_input()
   sep=","
   (x,sep,y)=souradnice.partition(",")
   if x.isdigit():

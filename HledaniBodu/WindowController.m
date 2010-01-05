@@ -137,14 +137,15 @@
 	[cameraView setImage:aFrame];
 	if (mode='c') {
 		[pyIn writeData:[self makeDataFromInt:xout]];
-		[self writeSep];
+		[self writeChar:','];
 		[pyIn writeData:[self makeDataFromInt:yout]];
-		[self writeLF];
+		//[self writeLF];
+		[self writeChar:'\n'];
 	}else if (mode='g') {
 		[pyIn writeData:[self makeDataFromInt:xout]];
-		[self writeSep];
+		[self writeChar:','];
 		[pyIn writeData:[self makeDataFromInt:yout]];
-		[self writeLF];
+		[self writeChar:'\n'];
 	}
 	//printf("%c\n",mode);
 	mode='n';
@@ -256,29 +257,11 @@
 			mode='c';
 			break;
 		default:
-			NSLog(@"Prijat chybny znak");
+			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
+			//mode='n';
 			break;
 	}
 	[fileHandle waitForDataInBackgroundAndNotify];
-
-
-
-}
-// Writes to NSPipe pyIn end of line, here '\n'
--(void)writeLF
-{
-	unsigned char lf;
-	lf='\n';
-	[pyIn writeData:[NSData dataWithBytes:&lf length:1] ];
-
-}
-// Write to NSPipe PyIn separator between x and y value, here ','
--(void)writeSep
-{
-	unsigned char sep;
-	sep=',';
-	[pyIn writeData:[NSData dataWithBytes:&sep length:1] ];
-	
 }
 // Makes NSData object from supplied integer
 -(NSData *)makeDataFromInt:(int)cislo
@@ -286,6 +269,11 @@
 	NSString * string = [NSString stringWithFormat:@"%d",cislo];
 	NSData *myData=[string dataUsingEncoding:NSUTF8StringEncoding];
 	return myData;
+}
+// Writes to NSPipe pyIn supplied char
+-(void)writeChar:(unsigned char)znak
+{
+	[pyIn writeData:[NSData dataWithBytes:&znak length:1]];
 }
 
 /* GUI Interactivity */
@@ -295,9 +283,19 @@
 	NSLog(@"Calibrate!");
 }
 //
--(IBAction)Run:(id)sender
+-(IBAction)RunAndPause:(id)sender
 {
-	NSLog(@"Run!");
+	if ([sender title]==@"Run") {
+		mode='g';
+		NSLog(@"Run!");
+		[sender setTitle:@"Pause"];
+	} else {
+		mode='n';
+		NSLog(@"Pause!");
+		[sender setTitle:@"Run"];
+		[self writeChar:'p'];
+		[self writeChar:'\n'];
+	}
 }
 
 @end
