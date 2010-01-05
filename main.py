@@ -146,10 +146,6 @@ def objcGetCoor(char="g"):
   sys.stdout.flush()
   souradnice=raw_input()
   if not (',' in souradnice):
-    if souradnice[0]=='p':
-      print "w"
-      sys.stdout.flush()
-      souradnice=raw_input()
     if souradnice[0]=='c':
       print "k" 
       objcKal()
@@ -176,17 +172,19 @@ def objcKal(w=800,h=600):
   init.labdraw(kobr(-100, -100), init.proj_lab)
   time.sleep(1)
   objcGetCoor("c")
+  objcGetCoor("c")
   s= [(a,a), (w-a, a), (w-a, h-a), (a, h-a)]
   i=Image.new("RGB",(800,600))
   d=ImageDraw.Draw(i)
   for j in range(4):
     x, y = s[j]
     init.labdraw(kobr(x, y), init.proj_lab)
-    time.sleep(1.5)
+    time.sleep(1.0)
     (cx,cy)=objcGetCoor("c")
     init.labdraw(kobr(-100, -100), init.proj_lab)
     time.sleep(1.0)
     d.rectangle((cx-r/2, cy-r/2, cx+r/2, cy+r/2), fill=(255, 0, 255))
+    d.text((50,10*j),cx.__str__()+","+cy.__str__())
     kalibK[j] = (cx,cy)
     print "Proj (%d, %d) -> Camera (%d, %d)"%(x, y, cx, cy)
   init.labdraw(i, init.root_lab2)
