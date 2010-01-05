@@ -55,7 +55,7 @@
 	[window setAspectRatio:[window frame].size];
 	
 	mode='n';
-	
+	running=YES;
 	
 	pyProg = [[NSTask alloc]init];
 	
@@ -95,6 +95,7 @@
 
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
+	if (!running) return;
 	if (mode=='n') return;
 	origRep = [[aFrame representations] lastObject];
 	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
@@ -147,7 +148,7 @@
 		[pyIn writeData:[self makeDataFromInt:yout]];
 		[self writeChar:'\n'];
 	}
-	//printf("%c\n",mode);
+	printf("%c\n",mode);
 	mode='n';
 }
 
@@ -258,7 +259,6 @@
 			break;
 		default:
 			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
-			//mode='n';
 			break;
 	}
 	[fileHandle waitForDataInBackgroundAndNotify];
@@ -277,26 +277,25 @@
 }
 
 /* GUI Interactivity */
-//Not implemeted yet
+// Calibrates after click
 -(IBAction)Calibrate:(id)sender
 {
 	[self writeChar:'c'];
 	[self writeChar:'\n'];
 	NSLog(@"Calibrate!");
 }
-//
+// Pause and resume running program
+// NOT OK!
 -(IBAction)RunAndPause:(id)sender
 {
 	if ([sender title]==@"Run") {
-		mode='g';
-		NSLog(@"Run!");
+		running=YES;
 		[sender setTitle:@"Pause"];
+		NSLog(@"Running!");
 	} else {
-		mode='n';
-		NSLog(@"Pause!");
+		running=NO;
 		[sender setTitle:@"Run"];
-		[self writeChar:'p'];
-		[self writeChar:'\n'];
+		NSLog(@"Paused!");
 	}
 }
 

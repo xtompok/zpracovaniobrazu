@@ -32,6 +32,7 @@
 	int xout;
 	int yout;
 	unsigned char mode;
+	BOOL running;
 	
 	CSGCamera *camera;
 }
