@@ -1,0 +1,15 @@
+#summary One-sentence summary of this page.
+#labels Phase-Implementation
+
+= Úvod =
+
+Na této stránce jsou uvedeny věci, které aktuálně nefungují a nebo jsou plánovány v dalších fázích projektu.
+
+== Pracuje se na: ==
+  * pozastavování běhu programu mimo kalibrace
+  * rozdělení main.py do více modulů než teď
+
+== Je v plánu ==
+  * kompletní přechod do Objective C
+  * vylepšení poměrové transformace
+  
