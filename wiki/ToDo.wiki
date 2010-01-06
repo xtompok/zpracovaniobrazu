@@ -2,10 +2,11 @@
 #labels Phase-Implementation
 
 == Pracuje se na: ==
-  * rozdělení main.py do více modulů než teď
   * podmíněné povolování tlačítek
+  * odstranění Pythonského kódu pro Linux
 
 == Je v plánu ==
   * kompletní přechod do Objective C
   * vylepšení poměrové transformace
+  * zobrazení kalibračních bodů a souřadnic v Objective C
   
