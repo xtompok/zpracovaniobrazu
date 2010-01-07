@@ -18,11 +18,8 @@ Mimo tuto řadu ještě spadá kalibrace, kde se určuje, jak je zkreslený obra
 
 = Popis jednotlivých částí =
 
-== Uložit  a načíst==
-Na Linuxu je využívaný skript, který pomocí mplayeru ukládá jednotlivé snímky do zadaného adresáře. Z adresáře je pak načítá Pythonovský skript kamera.py a pomocí PIL vrací načtené pole, s nímž je dále pracováno.
-
-== Přímo načíst z kamery ==
-Přímé načtení z kamery je jen v Mac OSu a využívá frameworku CocoaSequenceGrabber, s jejíž pomocí jsou zachytávány jednotlivé snímky Pomocí frameworku je načten obrázek, ten je převeden na pole a pomocí projíždění čtverečkem se hledá oblast o velikosti 5x5 pixelů, která má největší jas. Výsledně se bude hledat plocha s nějakými paramtery, které zjistím při testování. Souřadnice nalezeného bodu jsou předávány pomocí NSTask transformační funkci v main.py.
+== Načíst obrázek z kamery ==
+Přímé načtení z kamery v Mac OSu využívá frameworku CocoaSequenceGrabber, s jehož pomocí jsou zachytávány jednotlivé snímky. Pomocí frameworku je načten obrázek, ten je převeden na pole a pomocí projíždění čtverečkem se hledá oblast o velikosti 5x5 pixelů, která má největší jas, přičemž střed musí mít nějaký minimální jas a součet sumačního čtverce taky. Souřadnice nalezeného bodu jsou předávány pomocí NSTask transformační funkci v main.py.
 
 == Transformace ==
 Další částí systému je transformace. Při prvním vývoji vzniklo několik druhů transformace, avšak teoreticky správná a rychlá byla pouze jedna a to poměrová od Karla, který v současné podobě pracuje na jejím zlepšení. Další z transormací jsou buď nepřesné (Petrova), či pomalé (grafická). Všechny tyto transformace se nachází v souboru main.py. Objecitve C větev implementuje to samé tím samým způsobem, akorát v Objective C.
