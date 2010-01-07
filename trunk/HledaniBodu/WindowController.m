@@ -64,6 +64,10 @@
 	mode='n';
 	running=YES;
 	
+	kalibCamArrayindex=1;
+	kalibCamArray[0][0]=100;
+	kalibCamArray[0][1]=100;
+	
 	pyProg = [[NSTask alloc]init];
 	
 	NSPipe *outPipe = [NSPipe pipe];
@@ -124,9 +128,9 @@
 			&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			if (  (aScore[0]<4000)
-				&&(aScore[1]<4000)
-				&&(aScore[2]<4000)
+			if (  (aScore[0]<0)
+				&&(aScore[1]<0)
+				&&(aScore[2]<0)
 				   ) 
 			{
 				continue;
@@ -149,12 +153,11 @@
 	origbuffer[maxScoreIndex+1]=0;
 	origbuffer[maxScoreIndex+2]=0;
 	
-	[self drawSquareAtX:kalibCamArray[0][0] andY:kalibCamArray[0][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[4][0] andY:kalibCamArray[4][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[1][0] andY:kalibCamArray[1][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
-	[self drawSquareAtX:50 andY:50 withRadius:5];
-	//printf("1: %d,%d; ");
+	printf("1: %d,%d\n",kalibCamArray[0][0], kalibCamArray[0][1]);
 	
 	NSSize souradnice;
 	souradnice=[self getPixelCoordinatesAtIndex:maxScoreIndex];
@@ -295,6 +298,42 @@
 			{
 				kalibCamArray[kalibCamArrayindex][0]=xout;
 				kalibCamArray[kalibCamArrayindex][1]=yout;
+				switch (kalibCamArrayindex) {
+					case 1:
+						[ulLabel setStringValue:
+						 [NSString stringWithFormat:@"%.3d,%.3d",
+						  kalibCamArray[1][0],
+						  kalibCamArray[1][1]]];
+						break;
+					case 2:
+						[urLabel setStringValue:
+						 [NSString stringWithFormat:@"%.3d,%.3d",
+						  kalibCamArray[2][0],
+						  kalibCamArray[2][1]]];
+						break;
+					case 3:
+						[llLabel setStringValue:
+						 [NSString stringWithFormat:@"%.3d,%.3d",
+						  kalibCamArray[4][0],
+						  kalibCamArray[4][1]]];
+						break;
+					case 4:
+						[lrLabel setStringValue:
+						 [NSString stringWithFormat:@"%.3d,%.3d",
+						  kalibCamArray[3][0],
+						  kalibCamArray[3][1]]];				
+						break;
+
+					default:
+						break;
+				}
+				if (kalibCamArrayindex<4)
+				{
+					kalibCamArrayindex++;
+				} else {
+					kalibCamArrayindex=1;
+				}
+
 			}
 			break;
 	}

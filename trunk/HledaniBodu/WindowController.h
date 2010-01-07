@@ -15,6 +15,11 @@
 	IBOutlet NSImageView *cameraView;
 	//IBOutlet NSImageView *editView;
 	
+	IBOutlet NSTextField *ulLabel;
+	IBOutlet NSTextField *urLabel;
+	IBOutlet NSTextField *llLabel;
+	IBOutlet NSTextField *lrLabel;
+	
 	NSImage * editImage;
 	NSBitmapImageRep * origRep;
 	NSSize size;
@@ -29,7 +34,7 @@
 	unsigned char gmax;
 	unsigned char bmin;
 	unsigned char bmax;
-	int kalibCamArray[4][2];
+	int kalibCamArray[5][2];
 	int kalibCamArrayindex;
 	int xout;
 	int yout;

@@ -1,29 +1,41 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from PIL import Image, ImageTk, ImageDraw
 from math import sqrt
+import init
+import time
 
-kalibP = [(0,0)]*4
-kalibK = [(0,0)]*4
-kalibP[1]=(790, 590)
-kalibP[2]=(790,590)
+#kalibP = [(0,0)]*4
+#kalibK = [(0,0)]*4
+#kalibP[1]=(790, 590)
+#kalibP[2]=(790,590)
 
-kkonst= [[0,0]]*5
+kkonst= [(0,0)]*5
+
+popisek=None
+def setPopisek(id):
+  popisek=id
 
 def vypocti_kkonst(kalibK,kalibP):
-  kkonst[1][0]=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
-  kkonst[1][1]=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
+  init.root_stat.config(text="kP"+kalibP.__str__())
+  #kkonst=[[0,0]]*5
+  p0=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
+  p1=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
+  kkonst[1]=(p0,p1)
 
-  kkonst[2][0]=(-kalibK[0][0]+kalibK[3][0])/(kalibP[2][1]*1.0)
-  kkonst[2][1]=(-kalibK[0][1]+kalibK[3][1])/(kalibP[2][1]*1.0)
+  p0=(-kalibK[0][0]+kalibK[3][0])/(kalibP[2][1]*1.0)
+  p1=(-kalibK[0][1]+kalibK[3][1])/(kalibP[2][1]*1.0)
+  kkonst[2]=(p0,p1)
 
-  kkonst[3][0]=(kalibK[1][0]-kalibK[0][0])/(kalibP[1][0]*1.0)
-  kkonst[3][1]=(kalibK[1][1]-kalibK[0][1])/(kalibP[1][0]*1.0)
+  p0=(kalibK[1][0]-kalibK[0][0])/(kalibP[1][0]*1.0)
+  p1=(kalibK[1][1]-kalibK[0][1])/(kalibP[1][0]*1.0)
+  kkonst[3]=(p0,p1)
 
-  kkonst[4][0]=kalibK[0][0]
-  kkonst[4][1]=kalibK[0][1]
+  p0=kalibK[0][0]
+  p1=kalibK[0][1]
+  kkonst[4]=(p0,p1)
+  init.root_stat.config(text="ko"+kkonst.__str__())
 
-
-def graftrans(maxx, maxy):
+def graftrans(maxx, maxy, kalibK):
   i3a = Image.new('RGB', (320, 240))
   d = ImageDraw.Draw(i3a)
   d.point((maxx,maxy),fill=(0,255,0))
@@ -41,7 +53,7 @@ def graftrans(maxx, maxy):
         (xgraf, ygraf) = (x*2,y*2)
   return (xgraf+5, ygraf+5)
 
-def petrans(x,y):
+def petrans(x,y,kalibP,kalibK):
   x1=(x-kalibK[0][0]*1.0)/(kalibK[2][0]-kalibK[0][0])*kalibP[1][0]
   x2=(x-kalibK[3][0]*1.0)/(kalibK[1][0]-kalibK[3][0])*kalibP[1][0]
   
@@ -55,17 +67,21 @@ def petrans(x,y):
 
 def kvadrat(a,b,c):
   diskr=b*b-4*a*c
-  print diskr
+  #print diskr
   if diskr>=0 and a!=0:
     koren1=(-b+sqrt(diskr))/(2*a)
     koren2=(-b-sqrt(diskr))/(2*a)
+    if 800>koren1>0:
+     return koren1
+    elif 800>koren1>0:
+      return koren2
+    else:
+      print "O"
+      return 0
   else:
     print "Z"
-  if 600>koren1>0:
-    return koren1
-  elif 600>koren1>0:
-    return koren2
-  else: print "O"
+    return -100
+
 
 #kalibP = [(0,0)]*4 01
 #kalibK = [(0,0)]*4 23
@@ -80,6 +96,7 @@ def karltrans(x,y):
   c4x=kkonst[4][0]
   c4y=kkonst[4][1]
 
+  
   d1=c1x*c2y+c2x*c1y
   d2=c1y*c4x-x*c1y+c2y*c3x-c2x*c3y+c4x*c1x-c1x*y
   d3=x*c3y+c3x*c4x-c3y*c4x-y*c3x
@@ -91,3 +108,5 @@ def karltrans(x,y):
   #print xtrans, ytrans
   return (xtrans,ytrans)
 
+def getkkonst():
+  return kkonst
