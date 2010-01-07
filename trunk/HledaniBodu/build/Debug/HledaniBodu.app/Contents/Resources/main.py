@@ -1,24 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#from kamera import *
 import init
 from transformace import *
 import time
 
 from PIL import Image, ImageTk, ImageDraw
-import IPython
-import threading
-from math import sqrt, tan, atan, sin, cos
-import sys
-
-def ctverecek(p, x, y, r):
-  s = [0, 0, 0]
-  for i in range(x-r, x+r):
-    for j in range(y-r, y+r):
-      c = p[(i,j)]
-      for k in range(3):
-        s[k] += c[k]
-  return s
   
 def transAKresli((maxx,maxy)):
   xprimo = maxx*1024/320
@@ -85,7 +71,7 @@ def objcKal(w=800,h=600):
     kalibK[j] = (cx,cy)
     print "Proj (%d, %d) -> Camera (%d, %d)"%(x, y, cx, cy)
   init.labdraw(i, init.root_lab2)
-  #vypocti_kkonst(kalibK,kalibP)
+  vypocti_kkonst(kalibK,kalibP)
   
 def kobr(x,y, r=10, w=800, h=600):
   i = Image.new('RGB', (w,h))
@@ -98,7 +84,6 @@ def otevriOkna():
   init.proj_open()
 
 if (len(sys.argv)>1):
-  #print sys.argv[1]
   otevriOkna()
   objcKal()
   objCLoop()

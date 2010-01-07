@@ -9,8 +9,6 @@ kalibP[1]=(790, 590)
 kalibP[2]=(790,590)
 
 kkonst= [[0,0]]*5
-#for i in range(5):
-#  kkonst.append([0,0])
 
 def vypocti_kkonst(kalibK,kalibP):
   print kalibK
