@@ -16,15 +16,15 @@ kalibP[2]=(790,590)
 from PIL import Image, ImageTk, ImageDraw
   
 def transAKresli((maxx,maxy)):
-  xprimo = maxx*1024/320
-  yprimo = maxy*768/240
-  (xgraf,ygraf) = graftrans(maxx,maxy,kalibK)
+  #xprimo = maxx*1024/320
+  #yprimo = maxy*768/240
+  #(xgraf,ygraf) = graftrans(maxx,maxy,kalibK)
   #(xpetr, ypetr) = petrans(maxx,maxy, kalibP, kalibK)  
   (xkarel, ykarel) = karltrans(maxx,maxy)
   i3 = Image.new('RGB', (800, 600))
   d = ImageDraw.Draw(i3)
-  krizek(xgraf,  ygraf,  200, 200, 000,d)
-  krizek(xprimo, yprimo, 255, 000, 000,d)
+  #krizek(xgraf,  ygraf,  200, 200, 000,d)
+  #krizek(xprimo, yprimo, 255, 000, 000,d)
   #krizek(xpetr,  ypetr,  255, 000, 255,d)
   krizek(xkarel, ykarel, 255, 0, 255,d)
   init.labdraw(i3, init.proj_lab)
@@ -81,9 +81,7 @@ def objcKal(w=800,h=600):
   init.labdraw(i, init.root_lab2)
   statusLine="1: "+kalibK[0].__str__()+" 2:"+kalibK[1].__str__()+" 3:"+kalibK[2].__str__()+" 4:"+kalibK[3].__str__()
   init.root_stat.config(text=statusLine)
-  init.root_stat.config(text=kalibK)
   vypocti_kkonst(kalibK,kalibP)
-  # init.root_stat.config(text=getkkonst())
   
 def kobr(x,y, r=10, w=800, h=600):
   i = Image.new('RGB', (w,h))

@@ -2,22 +2,11 @@
 from PIL import Image, ImageTk, ImageDraw
 from math import sqrt
 import init
-import time
-
-#kalibP = [(0,0)]*4
-#kalibK = [(0,0)]*4
-#kalibP[1]=(790, 590)
-#kalibP[2]=(790,590)
 
 kkonst= [(0,0)]*5
 
-popisek=None
-def setPopisek(id):
-  popisek=id
-
 def vypocti_kkonst(kalibK,kalibP):
-  init.root_stat.config(text="kP"+kalibP.__str__())
-  #kkonst=[[0,0]]*5
+  init.root_stat.config(text="kK"+kalibK.__str__())
   p0=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
   p1=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
   kkonst[1]=(p0,p1)
@@ -33,7 +22,7 @@ def vypocti_kkonst(kalibK,kalibP):
   p0=kalibK[0][0]
   p1=kalibK[0][1]
   kkonst[4]=(p0,p1)
-  init.root_stat.config(text="ko"+kkonst.__str__())
+  #init.root_stat.config(text="ko"+kkonst.__str__())
 
 def graftrans(maxx, maxy, kalibK):
   i3a = Image.new('RGB', (320, 240))
@@ -108,5 +97,3 @@ def karltrans(x,y):
   #print xtrans, ytrans
   return (xtrans,ytrans)
 
-def getkkonst():
-  return kkonst
