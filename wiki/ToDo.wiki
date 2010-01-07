@@ -3,10 +3,11 @@
 
 == Pracuje se na: ==
   * podmíněné povolování tlačítek
-  * odstranění Pythonského kódu pro Linux
+  * nastavování citlivosti sumačního čtverce přes GUI
+  * povolování výstupu na stdout přes GUI
+  * převod poměrové transformace do Objective C
 
 == Je v plánu ==
   * kompletní přechod do Objective C
   * vylepšení poměrové transformace
-  * zobrazení kalibračních bodů a souřadnic v Objective C
   
