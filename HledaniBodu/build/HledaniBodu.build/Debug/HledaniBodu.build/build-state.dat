@@ -1,13 +1,12 @@
 THledaniBodu
 v7
 r0
-t284545608.340310
+t284553407.164428
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist HledaniBodu-Info.plist
 cCopyStringsFile /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCompileXIB /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib
 cCpResource build/Debug/HledaniBodu.app/Contents/Resources/main.py ../main.py
-cCpResource build/Debug/HledaniBodu.app/Contents/Resources/clearer.py ../clearer.py
 cCpResource build/Debug/HledaniBodu.app/Contents/Resources/init.py ../init.py
 cCpResource build/Debug/HledaniBodu.app/Contents/Resources/init.pyc ../init.pyc
 cCpResource build/Debug/HledaniBodu.app/Contents/Resources/transformace.py ../transformace.py
@@ -84,9 +83,9 @@ t2
 s0
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../main.py
-c000000004B459884000000000000099C
-t1262852228
-s2460
+c000000004B45B9370000000000000868
+t1262860599
+s2152
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../objctools.py
 c00000000000000000000000000000000
@@ -109,9 +108,9 @@ t2
 s0
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.py
-c000000004B446DB40000000000000975
-t1262775732
-s2421
+c000000004B45B91B0000000000000949
+t1262860571
+s2377
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.pyc
 c000000004B3265CB0000000000000EDE
@@ -165,7 +164,7 @@ t1261594775
 s3946
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-t1262852605
+t1262860607
 s136
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist
@@ -213,8 +212,8 @@ t1261485954
 s191
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/main.py
-t1262852573
-s2460
+t1262860607
+s2152
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/objctools.py
 t2
@@ -233,8 +232,8 @@ t2
 s0
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/transformace.py
-t1262852028
-s2421
+t1262860607
+s2377
 
 N/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/transformace.pyc
 t1262852032
@@ -301,7 +300,7 @@ s1002
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies284545608#284545608#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies284553407#284553407#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/WindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s284393971.034170
@@ -448,13 +447,13 @@ xkresleni.py
 lSLF07#2@16"Copy kresleni.py283178754#283178754#0(0"0(0#0#62"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/kresleni.py4300885448#367"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/kresleni.py /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources0#
 
 CCpResource build/Debug/HledaniBodu.app/Contents/Resources/main.py ../main.py
-s284545373.602652
-e284545373.644060
+s284553407.099683
+e284553407.126416
 r1
 xCpResource
 xbuild/Debug/HledaniBodu.app/Contents/Resources/main.py
 x../main.py
-lSLF07#2@15"Copy ../main.py284545373#284545373#0(0"0(0#0#61"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../main.py4300885448#366"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../main.py /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources0#
+lSLF07#2@15"Copy ../main.py284553407#284553407#0(0"0(0#0#61"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../main.py4300885448#366"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../main.py /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources0#
 
 CCpResource build/Debug/HledaniBodu.app/Contents/Resources/main.py /Developer/../Users/jethro/Progrmy/zpracovaniobrazu/main.py
 r0
@@ -509,13 +508,13 @@ opbxcp: runcmd.pyc: No such file or directory
 lSLF07#2@18"Copy ../runcmd.pyc284545600#284545600#0(45"pbxcp: runcmd.pyc: No such file or directory1(4@44"pbxcp: runcmd.pyc: No such file or directory284545600#18446744073709551615#0#0(6@0"284545600#0#0#0#0#0"0(0#0#64"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../runcmd.pyc4300885448#369"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../runcmd.pyc /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources1#
 
 CCpResource build/Debug/HledaniBodu.app/Contents/Resources/transformace.py ../transformace.py
-s284544828.037679
-e284544828.099078
+s284553407.100890
+e284553407.147700
 r1
 xCpResource
 xbuild/Debug/HledaniBodu.app/Contents/Resources/transformace.py
 x../transformace.py
-lSLF07#2@23"Copy ../transformace.py284544828#284544828#0(0"0(0#0#69"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.py4300885448#374"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.py /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources0#
+lSLF07#2@23"Copy ../transformace.py284553407#284553407#0(0"0(0#0#69"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.py4300885448#374"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/../transformace.py /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources0#
 
 CCpResource build/Debug/HledaniBodu.app/Contents/Resources/transformace.pyc ../transformace.pyc
 s283302387.330498
@@ -582,10 +581,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@33"Precompile HledaniBodu_Prefix.pch283084621#283084626#0(0"0(0#0#73"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu_Prefix.pch4300885448#1548"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -c /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu_Prefix.pch -o /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-fhzrfrbaemyuvwecgxquaftbcmcc/HledaniBodu_Prefix.pch.gch0#
 
 CTouch /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-s284545405.645419
-e284545405.649942
+s284553407.152491
+e284553407.164369
 r1
 xTouch
 x/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-lSLF07#2@84"Touch /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app284545405#284545405#0(0"0(0#0#0"4300885448#159"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /usr/bin/touch -c /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app0#
+lSLF07#2@84"Touch /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app284553407#284553407#0(0"0(0#0#0"4300885448#159"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    /usr/bin/touch -c /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app0#
 
