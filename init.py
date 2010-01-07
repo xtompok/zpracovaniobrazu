@@ -43,17 +43,12 @@ def root_open(w=320, h=240, x=360, y=24):
   if root:
     return
   root = tk.Tk()
-  #root.geometry("%dx%d+%d+%d" % (2*w+15, h+35, x, y))
   root.geometry("%dx%d+%d+%d" % (w+15, h+35, x, y))
   root.lift()
   root.title('M&M zpracovani obrazu')
-  #root_lab1 = tk.Label(root, width=w, height=h, bg='blue', text='Kamera')
-  #root_lab1.place(x=5, y=5, width=w, height=h)
   root_lab2 = tk.Label(root, width=w, height = h, bg='gray', text='Obraz')
   root_lab2.place(x=5, y=5, width=w, height=h)
-  #root_lab2.place(x=w+10, y=5, width=w, height=h)
   root_stat = tk.Label(root, width=w, height = h, bg='#AAA', text='Status')
-  #root_stat.place(x=5, y=h+10, width=2*w+5, height=20)
   root_stat.place(x=5, y=h+10, width=w+5, height=20)
   root.update()
 

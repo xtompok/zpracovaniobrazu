@@ -148,6 +148,14 @@
 	origbuffer[maxScoreIndex]=0;
 	origbuffer[maxScoreIndex+1]=0;
 	origbuffer[maxScoreIndex+2]=0;
+	
+	[self drawSquareAtX:kalibCamArray[0][0] andY:kalibCamArray[0][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[1][0] andY:kalibCamArray[1][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
+	[self drawSquareAtX:50 andY:50 withRadius:5];
+	//printf("1: %d,%d; ");
+	
 	NSSize souradnice;
 	souradnice=[self getPixelCoordinatesAtIndex:maxScoreIndex];
 	xout=(int)souradnice.width;
@@ -179,6 +187,8 @@
 }
 
 /* Coordinates <-> Index */
+/* --------------------- */
+
 // Return index of point with supplied coordinates
 -(int)getPixelIndexAtX:(int)x andY:(int)y
 {
@@ -197,6 +207,8 @@
 
 
 /* Sum squares */
+/* ----------- */
+
 //Return sum of 5x5 square around supplied point in array with 3 numbers - 
 // - one number for each color, point is defined by coordinates
 -(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)sum
@@ -253,6 +265,8 @@
 }
 
 /* Communication with Python */
+/* ------------------------- */
+
 // Sets the mode for getting pixel - c for calibration, g for normal processing
 // If is the other char, prints NSLog, don't raise exception
 -(void)modeSetter:(NSNotification *)aNotification
@@ -277,6 +291,11 @@
 			break;
 		default:
 			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
+			if (znaky[0]=='P') 
+			{
+				kalibCamArray[kalibCamArrayindex][0]=xout;
+				kalibCamArray[kalibCamArrayindex][1]=yout;
+			}
 			break;
 	}
 	[fileHandle waitForDataInBackgroundAndNotify];
@@ -293,8 +312,37 @@
 {
 	[pyIn writeData:[NSData dataWithBytes:&znak length:1]];
 }
+/* Drawing into image */
+/* ------------------ */
+
+// Draws square at coordinates with supplied radius
+-(void)drawSquareAtX:(int)x andY:(int)y withRadius:(int)r
+{
+	int luCorIndex;
+	int i,j;
+	if ([self getPixelIndexAtX:(x+r/2) andY:(y+r/2)]>delka) 
+	{
+		return;
+	} else if ([self getPixelIndexAtX:(x-r/2) andY:(y-r/2)]<0) {
+		return;
+	}
+	for (j=0;j<r;j++)
+	{
+		luCorIndex=[self getPixelIndexAtX:(x-r/2) andY:(y-r/2+j)];
+		for (i=luCorIndex;i<luCorIndex+r*4;i+=4)
+		{
+			origbuffer[i]=0;
+			origbuffer[i+1]=0;
+			origbuffer[i+2]=0;
+		}
+	}
+	
+
+}
 
 /* GUI Interactivity */
+/* ----------------- */
+
 // Calibrates after click
 -(IBAction)Calibrate:(id)sender
 {
