@@ -3,6 +3,7 @@
 import init
 from transformace import *
 import time
+import sys
 
 from PIL import Image, ImageTk, ImageDraw
   

@@ -1,7 +1,6 @@
  # -*- coding: utf-8 -*-
 from PIL import Image, ImageTk, ImageDraw
 from math import sqrt
-import sys
 
 kalibP = [(0,0)]*4
 kalibK = [(0,0)]*4
@@ -11,8 +10,6 @@ kalibP[2]=(790,590)
 kkonst= [[0,0]]*5
 
 def vypocti_kkonst(kalibK,kalibP):
-  print kalibK
-  print kalibP
   kkonst[1][0]=(kalibK[0][0]+kalibK[2][0]-kalibK[1][0]-kalibK[3][0])/(kalibP[1][0]*kalibP[2][1]*1.0)
   kkonst[1][1]=(kalibK[0][1]+kalibK[2][1]-kalibK[1][1]-kalibK[3][1])/(kalibP[1][0]*kalibP[2][1]*1.0)
 
