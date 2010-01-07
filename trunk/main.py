@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from kamera import *
+#from kamera import *
 import init
 from transformace import *
+import time
 
 from PIL import Image, ImageTk, ImageDraw
 import IPython
@@ -32,7 +33,6 @@ def transAKresli((maxx,maxy)):
   #krizek(xpetr,  ypetr,  255, 000, 255,d)
   #krizek(xkarel, ykarel, 000, 000, 255,d)
   init.labdraw(i3, init.proj_lab)
-  return i
 
 def krizek(x,y,r,g,b,d):
   d.line((x-15, y-15, x+15, y+15), fill=(r, g, b))
