@@ -29,6 +29,8 @@
 	unsigned char gmax;
 	unsigned char bmin;
 	unsigned char bmax;
+	int kalibCamArray[4][2];
+	int kalibCamArrayindex;
 	int xout;
 	int yout;
 	unsigned char mode;
@@ -47,6 +49,7 @@
 -(void)modeSetter:(NSNotification *)aNotification;
 -(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
+-(void)drawSquareAtX:(int)x andY:(int)Y withRadius:(int)r;
 
 
 @property unsigned char rmin;

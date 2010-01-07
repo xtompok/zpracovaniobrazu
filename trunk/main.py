@@ -68,10 +68,11 @@ def objcKal(w=800,h=600):
     init.labdraw(kobr(-100, -100), init.proj_lab)
     time.sleep(1.0)
     d.rectangle((cx-r/2, cy-r/2, cx+r/2, cy+r/2), fill=(255, 0, 255))
-    d.text((50,10*j),cx.__str__()+","+cy.__str__())
     kalibK[j] = (cx,cy)
     print "Proj (%d, %d) -> Camera (%d, %d)"%(x, y, cx, cy)
   init.labdraw(i, init.root_lab2)
+  statusLine="1: "+kalibK[0].__str__()+" 2:"+kalibK[1].__str__()+" 3:"+kalibK[2].__str__()+" 4:"+kalibK[3].__str__()
+  init.root_stat.config(text=statusLine)
   vypocti_kkonst(kalibK,kalibP)
   
 def kobr(x,y, r=10, w=800, h=600):
