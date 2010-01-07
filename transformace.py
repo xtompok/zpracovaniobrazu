@@ -1,6 +1,6 @@
  # -*- coding: utf-8 -*-
 from PIL import Image, ImageTk, ImageDraw
-from math import sqrt, tan, atan, sin, cos
+from math import sqrt
 import sys
 
 kalibP = [(0,0)]*4
@@ -8,11 +8,9 @@ kalibK = [(0,0)]*4
 kalibP[1]=(790, 590)
 kalibP[2]=(790,590)
 
-kkonst=[]
-for i in range(5):
-  kkonst.append([0,0])
-
-
+kkonst= [[0,0]]*5
+#for i in range(5):
+#  kkonst.append([0,0])
 
 def vypocti_kkonst(kalibK,kalibP):
   print kalibK
@@ -67,12 +65,12 @@ def kvadrat(a,b,c):
     koren1=(-b+sqrt(diskr))/(2*a)
     koren2=(-b-sqrt(diskr))/(2*a)
   else:
-    raise "Chybny diskriminant nebo deleni nulou"
+    print "Z"
   if 600>koren1>0:
     return koren1
   elif 600>koren1>0:
     return koren2
-  else: raise "Mate tam bug"
+  else: print "O"
 
 #kalibP = [(0,0)]*4 01
 #kalibK = [(0,0)]*4 23
@@ -91,10 +89,10 @@ def karltrans(x,y):
   d2=c1y*c4x-x*c1y+c2y*c3x-c2x*c3y+c4x*c1x-c1x*y
   d3=x*c3y+c3x*c4x-c3y*c4x-y*c3x
 
-  print d1, d2, d3
+  #print d1, d2, d3
 
   ytrans=kvadrat(d1,d2,d3)
   xtrans=(ytrans*c2x+c4x-x)/(-ytrans*c1x-c3x)
-  print xtrans, ytrans
+  #print xtrans, ytrans
   return (xtrans,ytrans)
 

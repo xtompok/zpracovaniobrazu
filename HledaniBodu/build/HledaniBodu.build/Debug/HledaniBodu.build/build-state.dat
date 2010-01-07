@@ -1,7 +1,7 @@
 THledaniBodu
 v7
 r0
-t284395171.433080
+t284461473.959548
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist HledaniBodu-Info.plist
 cCopyStringsFile /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -307,7 +307,7 @@ s1002
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies284395171#284395171#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies284461473#284461473#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/WindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s284393971.034170
