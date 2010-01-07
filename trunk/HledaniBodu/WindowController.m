@@ -157,7 +157,6 @@
 	[self drawSquareAtX:kalibCamArray[1][0] andY:kalibCamArray[1][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
-	printf("1: %d,%d\n",kalibCamArray[0][0], kalibCamArray[0][1]);
 	
 	NSSize souradnice;
 	souradnice=[self getPixelCoordinatesAtIndex:maxScoreIndex];
@@ -311,13 +310,13 @@
 						  kalibCamArray[2][0],
 						  kalibCamArray[2][1]]];
 						break;
-					case 3:
+					case 4:
 						[llLabel setStringValue:
 						 [NSString stringWithFormat:@"%.3d,%.3d",
 						  kalibCamArray[4][0],
 						  kalibCamArray[4][1]]];
 						break;
-					case 4:
+					case 3:
 						[lrLabel setStringValue:
 						 [NSString stringWithFormat:@"%.3d,%.3d",
 						  kalibCamArray[3][0],
