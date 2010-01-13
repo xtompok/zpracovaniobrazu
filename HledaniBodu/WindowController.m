@@ -156,7 +156,6 @@
 		maxScore[2]=0;
 		maxScoreIndex=i;
 	}
-	printf("RS:%d GS:%d BS:%d\n",[rMinSlider intValue],[gMinSlider intValue],[bMinSlider intValue]);
 	printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
 	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
 		   origbuffer[maxScoreIndex],
