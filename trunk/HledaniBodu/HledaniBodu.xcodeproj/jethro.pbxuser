@@ -11,7 +11,7 @@
 		breakpoints = (
 			4BBC1DA110E2F44B0002D759 /* *0x921f765d */,
 			4BBC1DA410E2F44C0002D759 /* *0x921f765f */,
-			4B93CD1310F65B2100A99C5A /* WindowController.m:333 */,
+			4B93CD1310F65B2100A99C5A /* WindowController.m:332 */,
 			4B93CD2010F65D5D00A99C5A /* WindowController.m:110 */,
 		);
 		codeSenseManager = 4B17E13D10DF6F43000F3861 /* Code sense */;
@@ -145,6 +145,9 @@
 			4B89E74810FE0BB900C77536 /* PBXTextBookmark */ = 4B89E74810FE0BB900C77536 /* PBXTextBookmark */;
 			4B89E74910FE0BB900C77536 /* PBXTextBookmark */ = 4B89E74910FE0BB900C77536 /* PBXTextBookmark */;
 			4B89E74A10FE0BB900C77536 /* PBXTextBookmark */ = 4B89E74A10FE0BB900C77536 /* PBXTextBookmark */;
+			4B89E75510FE0F2400C77536 /* PlistBookmark */ = 4B89E75510FE0F2400C77536 /* PlistBookmark */;
+			4B89E75610FE0F2400C77536 /* PBXTextBookmark */ = 4B89E75610FE0F2400C77536 /* PBXTextBookmark */;
+			4B89E75710FE0F2400C77536 /* PBXTextBookmark */ = 4B89E75710FE0F2400C77536 /* PBXTextBookmark */;
 			4B93CD7B10F7580600A99C5A = 4B93CD7B10F7580600A99C5A /* PBXTextBookmark */;
 			4B93CD7C10F7580600A99C5A = 4B93CD7C10F7580600A99C5A /* PBXTextBookmark */;
 			4B93CD7D10F7580600A99C5A = 4B93CD7D10F7580600A99C5A /* PBXTextBookmark */;
@@ -243,9 +246,9 @@
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {782, 5408}}";
-			sepNavSelRange = "{3323, 0}";
-			sepNavVisRange = "{2884, 827}";
+			sepNavIntBoundsRect = "{{0, 0}, {782, 5187}}";
+			sepNavSelRange = "{3534, 0}";
+			sepNavVisRange = "{3049, 708}";
 		};
 	};
 	4B17E5B810E2D324000F3861 /* main.py */ = {
@@ -296,7 +299,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 203";
 		rLen = 0;
-		rLoc = 5285;
+		rLoc = 5187;
 		rType = 0;
 		vrLen = 937;
 		vrLoc = 6551;
@@ -401,7 +404,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 207";
 		rLen = 0;
-		rLoc = 5410;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 4487;
@@ -411,7 +414,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 207";
 		rLen = 0;
-		rLoc = 5410;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 4543;
@@ -499,7 +502,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 207";
 		rLen = 0;
-		rLoc = 5410;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 4543;
@@ -539,7 +542,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 207";
 		rLen = 0;
-		rLoc = 5410;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 746;
 		vrLoc = 4543;
@@ -579,7 +582,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 163";
 		rLen = 0;
-		rLoc = 4335;
+		rLoc = 4237;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 3053;
@@ -629,7 +632,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 296";
 		rLen = 0;
-		rLoc = 7778;
+		rLoc = 7680;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 8040;
@@ -639,7 +642,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 296";
 		rLen = 0;
-		rLoc = 7778;
+		rLoc = 7680;
 		rType = 0;
 		vrLen = 1223;
 		vrLoc = 3183;
@@ -759,7 +762,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3630;
+		rLoc = 3534;
 		rType = 0;
 		vrLen = 912;
 		vrLoc = 2798;
@@ -1022,7 +1025,38 @@
 		vrLen = 574;
 		vrLoc = 0;
 	};
-	4B93CD1310F65B2100A99C5A /* WindowController.m:333 */ = {
+	4B89E75510FE0F2400C77536 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	4B89E75610FE0F2400C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 159";
+		rLen = 0;
+		rLoc = 3534;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 3049;
+	};
+	4B89E75710FE0F2400C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B93CD5110F7146600A99C5A /* ConfigController.h */;
+		name = "ConfigController.h: 19";
+		rLen = 0;
+		rLoc = 384;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 0;
+	};
+	4B93CD1310F65B2100A99C5A /* WindowController.m:332 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1034,7 +1068,7 @@
 		functionName = "-modeSetter:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 333;
+		lineNumber = 332;
 		location = HledaniBodu;
 		modificationTime = 285082513.044776;
 		originalNumberOfMultipleMatches = 1;
