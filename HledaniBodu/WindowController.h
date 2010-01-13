@@ -19,6 +19,14 @@
 	IBOutlet NSTextField *urLabel;
 	IBOutlet NSTextField *llLabel;
 	IBOutlet NSTextField *lrLabel;
+	IBOutlet NSTextField *maxSumSquareLabel;
+	
+	//Config outlets
+	IBOutlet NSSlider *rMinSlider;
+	IBOutlet NSSlider *gMinSlider;
+	IBOutlet NSSlider *bMinSlider;
+	IBOutlet NSButton *minTogetherButton;
+	IBOutlet NSButton *printToStdButton;
 	
 	NSImage * editImage;
 	NSBitmapImageRep * origRep;
@@ -36,8 +44,9 @@
 	unsigned char bmax;
 	int kalibCamArray[5][2];
 	int kalibCamArrayindex;
-	int xout;
-	int yout;
+	NSPoint outPoint;
+	//int xout;
+	//int yout;
 	unsigned char mode;
 	BOOL running;
 	
@@ -50,7 +59,7 @@
 -(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)pole;
 -(int)getPixelIndexAtX:(int)x andY:(int)y ;
 -(void)getSumSquareAtIndex:(int)index toArray:(int *)pole;
--(NSSize)getPixelCoordinatesAtIndex:(int)index;
+-(NSPoint)getPixelCoordinatesAtIndex:(int)index;
 -(void)modeSetter:(NSNotification *)aNotification;
 -(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
@@ -63,8 +72,7 @@
 @property unsigned char gmax;
 @property unsigned char bmin;
 @property unsigned char bmax;
-@property int xout;
-@property int yout;
+@property NSPoint outPoint;
 @property unsigned char mode;
 
 

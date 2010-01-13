@@ -15,6 +15,8 @@
 		4B17E61A10E2D9F0000F3861 /* init.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E60F10E2D9F0000F3861 /* init.pyc */; };
 		4B17E62110E2D9F0000F3861 /* transformace.py in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E61610E2D9F0000F3861 /* transformace.py */; };
 		4B17E62210E2D9F0000F3861 /* transformace.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E61710E2D9F0000F3861 /* transformace.pyc */; };
+		4B89E6B110FDCC1600C77536 /* ZOTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89E6B010FDCC1600C77536 /* ZOTransform.m */; };
+		4B93CD5310F7146600A99C5A /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B93CD5210F7146600A99C5A /* ConfigController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -37,6 +39,10 @@
 		4B17E60F10E2D9F0000F3861 /* init.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = init.pyc; path = ../init.pyc; sourceTree = SOURCE_ROOT; };
 		4B17E61610E2D9F0000F3861 /* transformace.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = transformace.py; path = ../transformace.py; sourceTree = SOURCE_ROOT; };
 		4B17E61710E2D9F0000F3861 /* transformace.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = transformace.pyc; path = ../transformace.pyc; sourceTree = SOURCE_ROOT; };
+		4B89E6AF10FDCC1600C77536 /* ZOTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOTransform.h; sourceTree = "<group>"; };
+		4B89E6B010FDCC1600C77536 /* ZOTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOTransform.m; sourceTree = "<group>"; };
+		4B93CD5110F7146600A99C5A /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
+		4B93CD5210F7146600A99C5A /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HledaniBodu-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* HledaniBodu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HledaniBodu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,6 +63,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B89E6AF10FDCC1600C77536 /* ZOTransform.h */,
+				4B89E6B010FDCC1600C77536 /* ZOTransform.m */,
+				4B93CD5110F7146600A99C5A /* ConfigController.h */,
+				4B93CD5210F7146600A99C5A /* ConfigController.m */,
 				4B17E14E10DF7A6D000F3861 /* WindowController.h */,
 				4B17E14F10DF7A6D000F3861 /* WindowController.m */,
 			);
@@ -197,6 +207,8 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				4B17E15010DF7A6D000F3861 /* WindowController.m in Sources */,
+				4B93CD5310F7146600A99C5A /* ConfigController.m in Sources */,
+				4B89E6B110FDCC1600C77536 /* ZOTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
