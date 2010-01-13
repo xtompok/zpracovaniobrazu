@@ -9,6 +9,7 @@
 #import "WindowController.h"
 
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
+#import "ConfigController.h"
 
 
 @implementation WindowController
@@ -20,8 +21,7 @@
 @synthesize bmin;
 @synthesize bmax;
 @synthesize mode;
-@synthesize xout;
-@synthesize yout;
+@synthesize outPoint;
 
 // Init and dealloc
 
@@ -128,13 +128,8 @@
 			&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			if (  (aScore[0]<0)
-				&&(aScore[1]<0)
-				&&(aScore[2]<0)
-				   ) 
-			{
-				continue;
-			}
+			//printf("RS:%d GS:%d BS:%d\n",[rMinSlider intValue],[gMinSlider intValue],[bMinSlider intValue]);
+
 			if (aScore[0]>maxScore[0]) {
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
@@ -144,6 +139,24 @@
 			}
 		}
 	}
+	
+	[maxSumSquareLabel setStringValue:
+	 [NSString stringWithFormat:@"%d,%d,%d",
+		maxScore[0],
+		maxScore[1],
+		maxScore[2]]];
+	
+	if ( (maxScore[0]<[rMinSlider intValue])
+		&&(maxScore[1]<[gMinSlider intValue])
+		&&(maxScore[2]<[bMinSlider intValue])
+		) 
+	{
+		maxScore[0]=0;
+		maxScore[1]=0;
+		maxScore[2]=0;
+		maxScoreIndex=i;
+	}
+	printf("RS:%d GS:%d BS:%d\n",[rMinSlider intValue],[gMinSlider intValue],[bMinSlider intValue]);
 	printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
 	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
 		   origbuffer[maxScoreIndex],
@@ -158,22 +171,19 @@
 	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
 	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
 	
-	NSSize souradnice;
-	souradnice=[self getPixelCoordinatesAtIndex:maxScoreIndex];
-	xout=(int)souradnice.width;
-	yout=(int)souradnice.height;
-	printf("x=%d, y=%d\n",xout,yout);
+	outPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
+	printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
 	[cameraView setImage:aFrame];
 	if (mode='c') {
-		[pyIn writeData:[self makeDataFromInt:xout]];
+		[pyIn writeData:[self makeDataFromInt:(int)outPoint.x]];
 		[self writeChar:','];
-		[pyIn writeData:[self makeDataFromInt:yout]];
+		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
 		[self writeChar:'\n'];
 	}else if (mode='g') {
-		[pyIn writeData:[self makeDataFromInt:xout]];
+		[pyIn writeData:[self makeDataFromInt:(int)outPoint.x]];
 		[self writeChar:','];
-		[pyIn writeData:[self makeDataFromInt:yout]];
+		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
 		[self writeChar:'\n'];
 	}
 	//printf("%c\n",mode);
@@ -199,11 +209,11 @@
 	return index;
 }
 // Return coordinates as NSSize object of point with supplied index
--(NSSize)getPixelCoordinatesAtIndex:(int)index
+-(NSPoint)getPixelCoordinatesAtIndex:(int)index
 {
-	NSSize souradnice;
-	souradnice.width=(int)(index%((int)size.width*4))/4;
-	souradnice.height=(int)(index/(size.width*4));
+	NSPoint souradnice;
+	souradnice.x=(int)(index%((int)size.width*4))/4;
+	souradnice.y=(int)(index/(size.width*4));
 	return souradnice;
 }
 
@@ -295,8 +305,8 @@
 			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
 			if (znaky[0]=='P') 
 			{
-				kalibCamArray[kalibCamArrayindex][0]=xout;
-				kalibCamArray[kalibCamArrayindex][1]=yout;
+				kalibCamArray[kalibCamArrayindex][0]=(int)outPoint.x;
+				kalibCamArray[kalibCamArrayindex][1]=(int)outPoint.y;
 				switch (kalibCamArrayindex) {
 					case 1:
 						[ulLabel setStringValue:
