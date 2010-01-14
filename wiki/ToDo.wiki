@@ -3,9 +3,9 @@
 
 == Pracuje se na: ==
   * podmíněné povolování tlačítek
-  * nastavování citlivosti sumačního čtverce přes GUI
   * povolování výstupu na stdout přes GUI
   * převod poměrové transformace do Objective C
+  * vytvoření malé Pythonovské aplikace pro zobrazování transformovaného výsledku
 
 == Je v plánu ==
   * kompletní přechod do Objective C
