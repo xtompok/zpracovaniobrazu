@@ -27,6 +27,9 @@
 	IBOutlet NSSlider *bMinSlider;
 	IBOutlet NSButton *minTogetherButton;
 	IBOutlet NSButton *printToStdButton;
+	IBOutlet NSTextField *rMinLabel;
+	IBOutlet NSTextField *gMinLabel;
+	IBOutlet NSTextField *bMinLabel;
 	
 	NSImage * editImage;
 	NSBitmapImageRep * origRep;

@@ -184,6 +184,14 @@
 			4B89E799110064EE00C77536 /* PBXTextBookmark */ = 4B89E799110064EE00C77536 /* PBXTextBookmark */;
 			4B89E79A110064EE00C77536 /* PBXTextBookmark */ = 4B89E79A110064EE00C77536 /* PBXTextBookmark */;
 			4B89E79B110064EE00C77536 /* PBXTextBookmark */ = 4B89E79B110064EE00C77536 /* PBXTextBookmark */;
+			4B89E7A41100808D00C77536 /* PBXTextBookmark */ = 4B89E7A41100808D00C77536 /* PBXTextBookmark */;
+			4B89E7A51100808D00C77536 /* PBXTextBookmark */ = 4B89E7A51100808D00C77536 /* PBXTextBookmark */;
+			4B89E7A61100808D00C77536 /* PBXTextBookmark */ = 4B89E7A61100808D00C77536 /* PBXTextBookmark */;
+			4B89E7A71100808D00C77536 /* PBXTextBookmark */ = 4B89E7A71100808D00C77536 /* PBXTextBookmark */;
+			4B89E7A81100808D00C77536 /* PBXTextBookmark */ = 4B89E7A81100808D00C77536 /* PBXTextBookmark */;
+			4B89E7A91100814C00C77536 /* PBXTextBookmark */ = 4B89E7A91100814C00C77536 /* PBXTextBookmark */;
+			4B89E7AA1100814C00C77536 /* PBXTextBookmark */ = 4B89E7AA1100814C00C77536 /* PBXTextBookmark */;
+			4B89E7AB1100814C00C77536 /* PBXTextBookmark */ = 4B89E7AB1100814C00C77536 /* PBXTextBookmark */;
 			4B93CD7B10F7580600A99C5A = 4B93CD7B10F7580600A99C5A /* PBXTextBookmark */;
 			4B93CD7C10F7580600A99C5A = 4B93CD7C10F7580600A99C5A /* PBXTextBookmark */;
 			4B93CD7D10F7580600A99C5A = 4B93CD7D10F7580600A99C5A /* PBXTextBookmark */;
@@ -274,17 +282,17 @@
 	};
 	4B17E14E10DF7A6D000F3861 /* WindowController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 1066}}";
-			sepNavSelRange = "{1648, 0}";
-			sepNavVisRange = "{129, 740}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 1144}}";
+			sepNavSelRange = "{751, 0}";
+			sepNavVisRange = "{129, 771}";
 			sepNavWindowFrame = "{{282, 164}, {750, 558}}";
 		};
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 6032}}";
-			sepNavSelRange = "{10405, 0}";
-			sepNavVisRange = "{9785, 630}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 6201}}";
+			sepNavSelRange = "{10076, 0}";
+			sepNavVisRange = "{9795, 667}";
 		};
 	};
 	4B17E5B810E2D324000F3861 /* main.py */ = {
@@ -325,7 +333,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 46";
 		rLen = 0;
-		rLoc = 1022;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 781;
 		vrLoc = 617;
@@ -430,7 +438,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 61";
 		rLen = 0;
-		rLoc = 1354;
+		rLoc = 1456;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 706;
@@ -658,7 +666,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 65";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1750;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 981;
@@ -1221,7 +1229,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 69";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1750;
 		rType = 0;
 		vrLen = 740;
 		vrLoc = 129;
@@ -1241,7 +1249,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 417";
 		rLen = 0;
-		rLoc = 9998;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 663;
 		vrLoc = 9687;
@@ -1272,7 +1280,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 431";
 		rLen = 0;
-		rLoc = 10395;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 9763;
@@ -1302,8 +1310,8 @@
 		comments = "Passing argument 1 of 'setValue:' makes pointer from integer without a cast";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 420;
+		rLen = 0;
+		rLoc = 460;
 		rType = 1;
 	};
 	4B89E783110052E500C77536 /* PBXTextBookmark */ = {
@@ -1311,7 +1319,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 420";
 		rLen = 0;
-		rLoc = 10028;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 321;
 		vrLoc = 9863;
@@ -1332,8 +1340,8 @@
 		comments = "Passing argument 1 of 'setValue:' makes pointer from integer without a cast";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 420;
+		rLen = 0;
+		rLoc = 460;
 		rType = 1;
 	};
 	4B89E786110052E700C77536 /* PBXTextBookmark */ = {
@@ -1341,7 +1349,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 420";
 		rLen = 0;
-		rLoc = 10028;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 389;
 		vrLoc = 9977;
@@ -1351,7 +1359,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 431";
 		rLen = 0;
-		rLoc = 10395;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 613;
 		vrLoc = 9763;
@@ -1371,7 +1379,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 421";
 		rLen = 0;
-		rLoc = 10028;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 366;
 		vrLoc = 9925;
@@ -1401,7 +1409,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 421";
 		rLen = 0;
-		rLoc = 10028;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 478;
 		vrLoc = 9925;
@@ -1411,7 +1419,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 432";
 		rLen = 0;
-		rLoc = 10373;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 580;
 		vrLoc = 9837;
@@ -1431,7 +1439,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 421";
 		rLen = 0;
-		rLoc = 10028;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 9925;
@@ -1441,12 +1449,92 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 433";
 		rLen = 0;
-		rLoc = 10405;
+		rLoc = 11161;
 		rType = 0;
 		vrLen = 630;
 		vrLoc = 9785;
 	};
 	4B89E79B110064EE00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B93CD5110F7146600A99C5A /* ConfigController.h */;
+		name = "ConfigController.h: 19";
+		rLen = 0;
+		rLoc = 384;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 0;
+	};
+	4B89E7A41100808D00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 422";
+		rLen = 0;
+		rLoc = 11161;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 9925;
+	};
+	4B89E7A51100808D00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 32";
+		rLen = 0;
+		rLoc = 751;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 129;
+	};
+	4B89E7A61100808D00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 421";
+		rLen = 0;
+		rLoc = 11161;
+		rType = 0;
+		vrLen = 645;
+		vrLoc = 9785;
+	};
+	4B89E7A71100808D00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 421";
+		rLen = 0;
+		rLoc = 11161;
+		rType = 0;
+		vrLen = 675;
+		vrLoc = 9763;
+	};
+	4B89E7A81100808D00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B93CD5110F7146600A99C5A /* ConfigController.h */;
+		name = "ConfigController.h: 19";
+		rLen = 0;
+		rLoc = 384;
+		rType = 0;
+		vrLen = 574;
+		vrLoc = 0;
+	};
+	4B89E7A91100814C00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 461";
+		rLen = 0;
+		rLoc = 11161;
+		rType = 0;
+		vrLen = 314;
+		vrLoc = 9858;
+	};
+	4B89E7AA1100814C00C77536 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 422";
+		rLen = 0;
+		rLoc = 10076;
+		rType = 0;
+		vrLen = 667;
+		vrLoc = 9795;
+	};
+	4B89E7AB1100814C00C77536 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 4B93CD5110F7146600A99C5A /* ConfigController.h */;
 		name = "ConfigController.h: 19";
@@ -1580,7 +1668,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 71";
 		rLen = 0;
-		rLoc = 1895;
+		rLoc = 1997;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 780;
@@ -1610,7 +1698,7 @@
 		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
 		name = "WindowController.h: 71";
 		rLen = 0;
-		rLoc = 1895;
+		rLoc = 1997;
 		rType = 0;
 		vrLen = 800;
 		vrLoc = 780;
