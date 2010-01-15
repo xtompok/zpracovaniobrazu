@@ -65,6 +65,9 @@
 -(NSData *)makeDataFromInt:(int)cislo;
 -(void)drawSquareAtX:(int)x andY:(int)Y withRadius:(int)r;
 
+//Configuration action
+-(IBAction)sumSquareSliderMoved:(id)sender;
+
 
 @property unsigned char rmin;
 @property unsigned char rmax;

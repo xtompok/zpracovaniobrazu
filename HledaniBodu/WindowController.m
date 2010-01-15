@@ -411,5 +411,27 @@
 	}
 }
 
+//Configuration
+-(IBAction)sumSquareSliderMoved:(id)sender
+{
+	NSLog(@"%@",sender);
+	if ([minTogetherButton state]==NSOffState) return;
+	if (sender==rMinSlider) 
+	{
+		[gMinSlider setIntValue:[rMinSlider intValue]];
+		[bMinSlider setIntValue:[rMinSlider intValue]];
+	} 
+	else if (sender==gMinSlider)
+	{
+		[rMinSlider setIntValue:[gMinSlider intValue]];
+		[bMinSlider setIntValue:[gMinSlider intValue]];
+	} 
+	else if (sender==bMinSlider) 
+	{
+		[rMinSlider setIntValue:[bMinSlider intValue]];
+		[gMinSlider setIntValue:[bMinSlider intValue]];
+	}
+}
+
 @end
 

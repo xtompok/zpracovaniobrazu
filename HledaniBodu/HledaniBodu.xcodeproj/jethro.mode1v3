@@ -216,11 +216,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4B89E76D11004EF700C77536</string>
+						<string>4B89E79A110064EE00C77536</string>
 						<key>history</key>
 						<array>
-							<string>4B89E75D11004BC100C77536</string>
-							<string>4B89E75E11004BC100C77536</string>
+							<string>4B89E773110051FE00C77536</string>
+							<string>4B89E774110051FE00C77536</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -236,7 +236,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>282 220 750 502 0 0 1280 778 </string>
+				<string>239 187 750 502 0 0 1280 778 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -257,7 +257,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>4B89E76E11004EF700C77536</string>
+						<string>4B89E79B110064EE00C77536</string>
 						<key>history</key>
 						<array>
 							<string>4B89E6B910FDF70600C77536</string>
@@ -400,7 +400,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HledaniBodu-Info.plist</string>
+								<string>WindowController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -408,21 +408,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HledaniBodu-Info.plist</string>
+										<string>WindowController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4B89E76C11004EF700C77536</string>
+										<string>4B89E799110064EE00C77536</string>
 										<key>history</key>
 										<array>
 											<string>4BBC1D9010E2F4010002D759</string>
 											<string>4B93CD7B10F7580600A99C5A</string>
 											<string>4B93CD7C10F7580600A99C5A</string>
 											<string>4B93CD7D10F7580600A99C5A</string>
-											<string>4B89E6CD10FDF75400C77536</string>
 											<string>4B89E6DC10FDF79000C77536</string>
 											<string>4B89E73510FE091D00C77536</string>
-											<string>4B89E73610FE091D00C77536</string>
+											<string>4B89E784110052E700C77536</string>
+											<string>4B89E785110052E700C77536</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -620,7 +620,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4B89E76F11004EF700C77536</string>
 		<string>4B89E6F010FDF91300C77536</string>
 		<string>4B89E6F110FDF91300C77536</string>
 		<string>4B17E13A10DF6F43000F3861</string>
@@ -652,7 +651,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZOTransform.m</string>
+								<string>WindowController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -979,7 +978,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 209}}</string>
 								<key>RubberWindowFrame</key>
-								<string>198 527 650 250 0 0 1280 778 </string>
+								<string>251 433 650 250 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1008,7 +1007,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>198 527 650 250 0 0 1280 778 </string>
+			<string>251 433 650 250 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
