@@ -11,6 +11,7 @@
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
 #import "ConfigController.h"
 
+#define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
 @implementation WindowController
 
@@ -93,7 +94,6 @@
 	[pyProg setStandardOutput:outPipe];
 	[pyProg setStandardInput:inPipe];
 	[pyProg setLaunchPath:pyPath];
-	//[pyProg setLaunchPath:@"/Users/jethro/Progrmy/NSTaskTest/build/Debug/repeater.py"];
 	[pyProg setArguments:pyArgs];
 	[pyProg launch];
 	
@@ -128,8 +128,7 @@
 			&&(origbuffer[i+2]>bmin)
 			) {
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			//printf("RS:%d GS:%d BS:%d\n",[rMinSlider intValue],[gMinSlider intValue],[bMinSlider intValue]);
-
+			
 			if (aScore[0]>maxScore[0]) {
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
@@ -156,8 +155,8 @@
 		maxScore[2]=0;
 		maxScoreIndex=i;
 	}
-	printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
-	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
+	STDOUTPRINT printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
+	STDOUTPRINT printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
 		   origbuffer[maxScoreIndex],
 		   origbuffer[maxScoreIndex+1],
 		   origbuffer[maxScoreIndex+2]);
@@ -171,7 +170,7 @@
 	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
 	
 	outPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
-	printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
+	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
 	[cameraView setImage:aFrame];
 	if (mode='c') {
