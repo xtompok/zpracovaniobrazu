@@ -415,21 +415,49 @@
 -(IBAction)sumSquareSliderMoved:(id)sender
 {
 	NSLog(@"%@",sender);
-	if ([minTogetherButton state]==NSOffState) return;
-	if (sender==rMinSlider) 
+	if ([minTogetherButton state]==NSOffState) 
 	{
-		[gMinSlider setIntValue:[rMinSlider intValue]];
-		[bMinSlider setIntValue:[rMinSlider intValue]];
-	} 
-	else if (sender==gMinSlider)
-	{
-		[rMinSlider setIntValue:[gMinSlider intValue]];
-		[bMinSlider setIntValue:[gMinSlider intValue]];
-	} 
-	else if (sender==bMinSlider) 
-	{
-		[rMinSlider setIntValue:[bMinSlider intValue]];
-		[gMinSlider setIntValue:[bMinSlider intValue]];
+		if (sender==rMinSlider) 
+		{	
+			[rMinLabel setIntValue:[rMinSlider intValue]];
+		} 
+		else if (sender==gMinSlider)
+		{
+			[gMinLabel setIntValue:[gMinSlider intValue]];
+		} 
+		else if (sender==bMinSlider) 
+		{
+			[bMinLabel setIntValue:[bMinSlider intValue]];
+		}
+		
+	} else {
+		if (sender==rMinSlider) 
+		{
+			[gMinSlider setIntValue:[rMinSlider intValue]];
+			[bMinSlider setIntValue:[rMinSlider intValue]];
+			
+			[rMinLabel setIntValue:[rMinSlider intValue]];
+			[gMinLabel setIntValue:[rMinSlider intValue]];
+			[bMinLabel setIntValue:[rMinSlider intValue]];
+		} 
+		else if (sender==gMinSlider)
+		{
+			[rMinSlider setIntValue:[gMinSlider intValue]];
+			[bMinSlider setIntValue:[gMinSlider intValue]];
+			
+			[rMinLabel setIntValue:[gMinSlider intValue]];
+			[gMinLabel setIntValue:[gMinSlider intValue]];
+			[bMinLabel setIntValue:[gMinSlider intValue]];
+		} 
+		else if (sender==bMinSlider) 
+		{
+			[rMinSlider setIntValue:[bMinSlider intValue]];
+			[gMinSlider setIntValue:[bMinSlider intValue]];
+			
+			[rMinLabel setIntValue:[bMinSlider intValue]];
+			[gMinLabel setIntValue:[bMinSlider intValue]];
+			[bMinLabel setIntValue:[bMinSlider intValue]];
+		}
 	}
 }
 
