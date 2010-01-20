@@ -41,6 +41,7 @@
 		4B17E61710E2D9F0000F3861 /* transformace.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = transformace.pyc; path = ../transformace.pyc; sourceTree = SOURCE_ROOT; };
 		4B89E6AF10FDCC1600C77536 /* ZOTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOTransform.h; sourceTree = "<group>"; };
 		4B89E6B010FDCC1600C77536 /* ZOTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOTransform.m; sourceTree = "<group>"; };
+		4B89E7B1110084FD00C77536 /* Czech */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Czech; path = Czech.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4B93CD5110F7146600A99C5A /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
 		4B93CD5210F7146600A99C5A /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HledaniBodu-Info.plist"; sourceTree = "<group>"; };
@@ -174,6 +175,13 @@
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HledaniBodu" */;
 			compatibilityVersion = "Xcode 3.1";
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Czech,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* HledaniBodu */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,6 +235,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1DDD58150DA1D0A300B32029 /* English */,
+				4B89E7B1110084FD00C77536 /* Czech */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
