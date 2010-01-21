@@ -34,9 +34,12 @@
 	NSImage * editImage;
 	NSBitmapImageRep * origRep;
 	NSSize size;
+	
 	NSFileHandle *pyOut;
 	NSFileHandle *pyIn;
 	NSTask *pyProg;
+	
+	NSArray *calArray;
 	int delka;
 	unsigned char * origbuffer;
 	unsigned char rmin;
@@ -53,6 +56,8 @@
 	unsigned char mode;
 	BOOL running;
 	
+	ZOTransform *transformObject;
+	
 	CSGCamera *camera;
 }
 
@@ -67,6 +72,7 @@
 -(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
 -(void)drawSquareAtX:(int)x andY:(int)Y withRadius:(int)r;
+
 
 //Configuration action
 -(IBAction)sumSquareSliderMoved:(id)sender;
