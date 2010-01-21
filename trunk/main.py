@@ -9,9 +9,8 @@ kalibP = [(0,0)]*4
 kalibK = [(0,0)]*4
 kalibP[0]=(5, 5)
 kalibP[1]=(790, 5)
-kalibP[3]=(5, 590)
 kalibP[2]=(790,590)
-
+kalibP[3]=(5, 590)
 
 from PIL import Image, ImageTk, ImageDraw
   

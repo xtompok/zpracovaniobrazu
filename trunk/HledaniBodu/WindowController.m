@@ -6,6 +6,8 @@
 //  Copyright 2009 Jaroška. All rights reserved.
 //
 
+#import "ZOTransform.h"
+
 #import "WindowController.h"
 
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
@@ -184,6 +186,8 @@
 		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
 		[self writeChar:'\n'];
 	}
+	
+	//[transformObject transformPoint:outPoint];
 	//printf("%c\n",mode);
 	mode='n';
 }
@@ -395,6 +399,10 @@
 	[self writeChar:'c'];
 	[self writeChar:'\n'];
 	NSLog(@"Calibrate!");
+	
+	//transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
+	
+	
 }
 // Pause and resume running program
 // NOT OK!
