@@ -334,7 +334,7 @@
 				mode='g';
 			} else {
 				[transformObject release];
-				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
+				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:NSMakeSize(800, 600)];
 				kalibCamArrayindex=1;
 			}
 			break;
