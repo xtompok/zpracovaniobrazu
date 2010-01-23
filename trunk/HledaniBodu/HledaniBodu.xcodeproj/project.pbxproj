@@ -10,11 +10,6 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		4B17E15010DF7A6D000F3861 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */; };
 		4B17E16510DF8743000F3861 /* CocoaSequenceGrabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B17E16410DF8743000F3861 /* CocoaSequenceGrabber.framework */; };
-		4B17E5B910E2D324000F3861 /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E5B810E2D324000F3861 /* main.py */; };
-		4B17E61910E2D9F0000F3861 /* init.py in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E60E10E2D9F0000F3861 /* init.py */; };
-		4B17E61A10E2D9F0000F3861 /* init.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E60F10E2D9F0000F3861 /* init.pyc */; };
-		4B17E62110E2D9F0000F3861 /* transformace.py in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E61610E2D9F0000F3861 /* transformace.py */; };
-		4B17E62210E2D9F0000F3861 /* transformace.pyc in Resources */ = {isa = PBXBuildFile; fileRef = 4B17E61710E2D9F0000F3861 /* transformace.pyc */; };
 		4B89E6B110FDCC1600C77536 /* ZOTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89E6B010FDCC1600C77536 /* ZOTransform.m */; };
 		4B93CD5310F7146600A99C5A /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B93CD5210F7146600A99C5A /* ConfigController.m */; };
 		4BCF5C08110B2F730081C1E1 /* Zobrazovac.py in Resources */ = {isa = PBXBuildFile; fileRef = 4BCF5C07110B2F730081C1E1 /* Zobrazovac.py */; };
@@ -35,11 +30,6 @@
 		4B17E14E10DF7A6D000F3861 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		4B17E16410DF8743000F3861 /* CocoaSequenceGrabber.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaSequenceGrabber.framework; path = /Library/Frameworks/CocoaSequenceGrabber.framework; sourceTree = "<absolute>"; };
-		4B17E5B810E2D324000F3861 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = main.py; path = ../main.py; sourceTree = SOURCE_ROOT; };
-		4B17E60E10E2D9F0000F3861 /* init.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = init.py; path = ../init.py; sourceTree = SOURCE_ROOT; };
-		4B17E60F10E2D9F0000F3861 /* init.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = init.pyc; path = ../init.pyc; sourceTree = SOURCE_ROOT; };
-		4B17E61610E2D9F0000F3861 /* transformace.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = transformace.py; path = ../transformace.py; sourceTree = SOURCE_ROOT; };
-		4B17E61710E2D9F0000F3861 /* transformace.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = transformace.pyc; path = ../transformace.pyc; sourceTree = SOURCE_ROOT; };
 		4B89E6AF10FDCC1600C77536 /* ZOTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOTransform.h; sourceTree = "<group>"; };
 		4B89E6B010FDCC1600C77536 /* ZOTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOTransform.m; sourceTree = "<group>"; };
 		4B89E7B1110084FD00C77536 /* Czech */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Czech; path = Czech.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -128,11 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				4BCF5C07110B2F730081C1E1 /* Zobrazovac.py */,
-				4B17E60E10E2D9F0000F3861 /* init.py */,
-				4B17E60F10E2D9F0000F3861 /* init.pyc */,
-				4B17E61610E2D9F0000F3861 /* transformace.py */,
-				4B17E61710E2D9F0000F3861 /* transformace.pyc */,
-				4B17E5B810E2D324000F3861 /* main.py */,
 				8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -201,11 +186,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				4B17E5B910E2D324000F3861 /* main.py in Resources */,
-				4B17E61910E2D9F0000F3861 /* init.py in Resources */,
-				4B17E61A10E2D9F0000F3861 /* init.pyc in Resources */,
-				4B17E62110E2D9F0000F3861 /* transformace.py in Resources */,
-				4B17E62210E2D9F0000F3861 /* transformace.pyc in Resources */,
 				4BCF5C08110B2F730081C1E1 /* Zobrazovac.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
