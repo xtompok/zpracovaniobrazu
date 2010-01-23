@@ -87,7 +87,7 @@
 	NSBundle *myBundle;
 	myBundle = [NSBundle mainBundle];
 	NSString *pyPath;
-	pyPath = [myBundle pathForResource:@"main" ofType:@"py"];
+	pyPath = [myBundle pathForResource:@"Zobrazovac" ofType:@"py"];
 	NSArray * pyArgs;
 	pyArgs = [NSArray arrayWithObject:@"c"];
 	NSLog(@"%@",pyPath);
@@ -99,9 +99,10 @@
 	[pyProg setArguments:pyArgs];
 	[pyProg launch];
 	
-	
 	// Show the window
 	[self showWindow:nil];
+	
+	[self Calibrate:self];
 }
 
 // CSGCamera delegate
@@ -175,19 +176,14 @@
 	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
 	[cameraView setImage:aFrame];
-	if (mode='c') {
-		[pyIn writeData:[self makeDataFromInt:(int)outPoint.x]];
-		[self writeChar:','];
-		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
-		[self writeChar:'\n'];
-	}else if (mode='g') {
+	if (mode='g') {
 		[pyIn writeData:[self makeDataFromInt:(int)outPoint.x]];
 		[self writeChar:','];
 		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
 		[self writeChar:'\n'];
 	}
 	
-	//[transformObject transformPoint:outPoint];
+	outPoint=[transformObject transformPoint:outPoint];
 	//printf("%c\n",mode);
 	mode='n';
 }
@@ -300,52 +296,49 @@
 		case 'g':
 			mode='g';
 			break;
-		case 'c':
-			mode='c';
-			break;
-		default:
-			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
-			if (znaky[0]=='P') 
-			{
-				kalibCamArray[kalibCamArrayindex][0]=(int)outPoint.x;
-				kalibCamArray[kalibCamArrayindex][1]=(int)outPoint.y;
-				switch (kalibCamArrayindex) {
-					case 1:
-						[ulLabel setStringValue:
-						 [NSString stringWithFormat:@"%.3d,%.3d",
-						  kalibCamArray[1][0],
-						  kalibCamArray[1][1]]];
-						break;
-					case 2:
-						[urLabel setStringValue:
-						 [NSString stringWithFormat:@"%.3d,%.3d",
-						  kalibCamArray[2][0],
-						  kalibCamArray[2][1]]];
-						break;
-					case 4:
-						[llLabel setStringValue:
-						 [NSString stringWithFormat:@"%.3d,%.3d",
-						  kalibCamArray[4][0],
-						  kalibCamArray[4][1]]];
-						break;
-					case 3:
-						[lrLabel setStringValue:
-						 [NSString stringWithFormat:@"%.3d,%.3d",
-						  kalibCamArray[3][0],
-						  kalibCamArray[3][1]]];				
-						break;
-
-					default:
-						break;
-				}
-				if (kalibCamArrayindex<4)
-				{
-					kalibCamArrayindex++;
-				} else {
-					kalibCamArrayindex=1;
-				}
-
+		case 'w':
+			kalibCamArray[kalibCamArrayindex][0]=(int)outPoint.x;
+			kalibCamArray[kalibCamArrayindex][1]=(int)outPoint.y;
+			switch (kalibCamArrayindex) {
+				case 1:
+					[ulLabel setStringValue:
+					 [NSString stringWithFormat:@"%.3d,%.3d",
+					  kalibCamArray[1][0],
+					  kalibCamArray[1][1]]];
+					break;
+				case 2:
+					[urLabel setStringValue:
+					 [NSString stringWithFormat:@"%.3d,%.3d",
+					  kalibCamArray[2][0],
+					  kalibCamArray[2][1]]];
+					break;
+				case 4:
+					[llLabel setStringValue:
+					 [NSString stringWithFormat:@"%.3d,%.3d",
+					  kalibCamArray[4][0],
+					  kalibCamArray[4][1]]];
+					break;
+				case 3:
+					[lrLabel setStringValue:
+					 [NSString stringWithFormat:@"%.3d,%.3d",
+					  kalibCamArray[3][0],
+					  kalibCamArray[3][1]]];				
+					break;
+					
+				default:
+					break;
 			}
+			if (kalibCamArrayindex<4)
+			{
+				kalibCamArrayindex++;
+			} else {
+				[transformObject release];
+				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)kalibCamArray[1][0] andSize:size];
+				kalibCamArrayindex=1;
+			}
+		default:
+			NSLog(@"Prijat chybny znak %c s kodem %d, retezec %@",znaky[0],znaky[0],znaky);
+			
 			break;
 	}
 	[fileHandle waitForDataInBackgroundAndNotify];
