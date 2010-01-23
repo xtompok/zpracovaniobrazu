@@ -176,14 +176,17 @@
 	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
 	[cameraView setImage:aFrame];
+	
+	NSPoint transPoint;
+	transPoint=[transformObject transformPoint:outPoint];
 	if (mode='g') {
-		[pyIn writeData:[self makeDataFromInt:(int)outPoint.x]];
+		[pyIn writeData:[self makeDataFromInt:(int)transPoint.x]];
 		[self writeChar:','];
-		[pyIn writeData:[self makeDataFromInt:(int)outPoint.y]];
+		[pyIn writeData:[self makeDataFromInt:(int)transPoint.y]];
 		[self writeChar:'\n'];
 	}
 	
-	outPoint=[transformObject transformPoint:outPoint];
+	//outPoint=[transformObject transformPoint:outPoint];
 	//printf("%c\n",mode);
 	mode='n';
 }
@@ -291,7 +294,7 @@
 	if (sizeof(znaky)==0) {
 		return;
 	}
-	//printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
+	STDOUTPRINT printf("Prisel znak %c s kodem %d\n",znaky[0],znaky[0]);
 	switch (znaky[0]) {
 		case 'g':
 			mode='g';
@@ -324,20 +327,19 @@
 					  kalibCamArray[3][0],
 					  kalibCamArray[3][1]]];				
 					break;
-					
-				default:
-					break;
 			}
 			if (kalibCamArrayindex<4)
 			{
 				kalibCamArrayindex++;
+				mode='g';
 			} else {
 				[transformObject release];
-				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)kalibCamArray[1][0] andSize:size];
+				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
 				kalibCamArrayindex=1;
 			}
+			break;
 		default:
-			NSLog(@"Prijat chybny znak %c s kodem %d, retezec %@",znaky[0],znaky[0],znaky);
+			NSLog(@"Prijat chybny znak %c s kodem %d",znaky[0],znaky[0]);
 			
 			break;
 	}
