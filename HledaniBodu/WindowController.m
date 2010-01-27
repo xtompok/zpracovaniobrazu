@@ -7,6 +7,7 @@
 //
 
 #import "ZOTransform.h"
+#import "ZO2PointTransform.h"
 
 #import "WindowController.h"
 
