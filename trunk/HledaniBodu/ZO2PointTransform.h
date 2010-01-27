@@ -11,8 +11,14 @@
 
 @interface ZO2PointTransform : NSObject {
 	NSSize size;
-	NSPoint PTK[2];
+	NSPoint PTB[2];
+	double PTD[2];
+	NSPoint CP[4];
+	double g,h,m,n;
 
 }
+
+-(id)initWithCalibrationArray:(int *)calArray andSize:(NSSize)aSize;
+-(NSPoint)transformPoint:(NSPoint)point;
 
 @end
