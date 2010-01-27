@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.0 beta4b2 concept-map (schema_kompletni.vue) 2010-01-25 -->
+<!-- Tufts VUE 3.0 beta4b2 concept-map (schema_kompletni.vue) 2010-01-26 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Users/jethro/Downloads/VUE.app/Contents/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon Jan 25 11:55:12 CET 2010 by jethro on platform Mac OS X 10.6.2 in JVM 1.6.0_17-b04-248-10M3025 -->
+<!-- Do Not Remove: Saved date Tue Jan 26 13:44:50 CET 2010 by jethro on platform Mac OS X 10.6.2 in JVM 1.6.0_17-b04-248-10M3025 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built December 15 2009 at 1306 by vue on Linux 2.4.21-57.EL i386 JVM 1.5.0_06-b05(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="schema_kompletni.vue" created="1264409047198" x="0.0" y="0.0"
     width="984.6666" height="500.20004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1264416913005" size="59876"
+    <resource referenceCreated="1264509890415" size="59876"
         spec="/Users/jethro/Programy/zpracovaniobrazu/doc/schema_kompletni.vue"
         type="1" xsi:type="URLResource">
         <title>schema_kompletni.vue</title>
@@ -264,7 +264,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="44" label="po dokon&#x10d;en&#xed;" layerID="1"
-        created="1264410446877" x="138.75002" y="103.90625" width="67.0"
+        created="1264410446877" x="139.25002" y="103.90625" width="66.0"
         height="72.796875" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
@@ -287,9 +287,9 @@
     </child>
     <child ID="45" layerID="1" created="1264410454696" x="172.09752"
         y="211.7002" width="1.4892578" height="30.59961"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+        strokeWidth="2.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -308,9 +308,9 @@
         <ID2 xsi:type="node">26</ID2>
     </child>
     <child ID="46" layerID="1" created="1264410458692" x="137.9656"
-        y="291.3" width="22.476196" height="40.599976" strokeWidth="1.0"
+        y="291.3" width="22.476196" height="40.599976" strokeWidth="2.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -332,7 +332,7 @@
         created="1264410476197" x="159.70126" y="352.90002"
         width="110.7975" height="44.600006" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -353,7 +353,7 @@
     <child ID="49" layerID="1" created="1264410496991" x="316.1101"
         y="363.2" width="58.246002" height="34.299988" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -372,10 +372,10 @@
         <ID2 xsi:type="node">33</ID2>
     </child>
     <child ID="51" label="je posledn&#xed;" layerID="1"
-        created="1264410508168" x="107.8" y="352.8999" width="53.0"
-        height="110.700195" strokeWidth="1.0" autoSized="false"
+        created="1264410508168" x="108.3" y="352.8999" width="52.0"
+        height="110.700195" strokeWidth="2.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -395,9 +395,9 @@
     </child>
     <child ID="53" layerID="1" created="1264410545507" x="152.51312"
         y="484.59998" width="87.41086" height="57.200073"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+        strokeWidth="2.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -417,9 +417,9 @@
     </child>
     <child ID="54" label="NSTask" layerID="1" created="1264410553641"
         x="330.7013" y="477.4001" width="248.66766" height="65.66373"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
+        strokeWidth="2.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -438,9 +438,9 @@
         <ID2 xsi:type="node">38</ID2>
     </child>
     <child ID="55" layerID="1" created="1264410560955" x="635.25305"
-        y="362.8" width="125.19379" height="93.60004" strokeWidth="1.0"
+        y="362.8" width="125.19379" height="93.60004" strokeWidth="2.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -461,9 +461,9 @@
     <child ID="58"
         label="pos&#xed;l&#xe1; &quot;g&quot; po zobrazen&#xed;"
         layerID="1" created="1264410583173" x="632.20447" y="219.40002"
-        width="131.19818" height="122.39996" strokeWidth="1.0"
+        width="131.19818" height="122.39996" strokeWidth="2.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -483,9 +483,9 @@
     </child>
     <child ID="59" label="dovoluje zpracov&#xe1;vat obr&#xe1;zek"
         layerID="1" created="1264410601174" x="246.29999" y="191.56308"
-        width="294.59998" height="13.0" strokeWidth="1.0"
+        width="294.59998" height="13.0" strokeWidth="2.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#33A8F5</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -505,7 +505,7 @@
     </child>
     <child ID="60" label="poskytuje minim&#xe1;ln&#xed; hodnoty pro"
         layerID="1" created="1264410653858" x="267.3121" y="166.0"
-        width="336.63443" height="299.94977" strokeWidth="1.0"
+        width="336.13443" height="299.94977" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -609,7 +609,7 @@
         y="329.18918" width="25.635925" height="4.916443"
         strokeWidth="1.0" autoSized="false" controlCount="0"
         arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -630,7 +630,7 @@
     <child ID="75" layerID="1" created="1264410970232" x="172.50229"
         y="330.6" width="16.879517" height="4.182556" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
+        <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <metadata-list category-list-size="1" other-list-size="0"
@@ -852,8 +852,8 @@
     </child>
     <child ID="88"
         label="pos&#xed;l&#xe1; &quot;w&quot; po zobrazen&#xed;"
-        layerID="1" created="1264411120355" x="556.3835" y="219.39844"
-        width="116.0" height="102.203125" strokeWidth="1.0"
+        layerID="1" created="1264411120355" x="556.8835" y="219.39844"
+        width="115.0" height="102.203125" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
@@ -1072,8 +1072,8 @@
     </child>
     <child ID="97"
         label="po zobrazen&#xed; 4 kalibra&#x10d;n&#xed;ch bod&#x16f;"
-        layerID="1" created="1264411419878" x="668.8092" y="218.49554"
-        width="163.0" height="36.604477" strokeWidth="1.0"
+        layerID="1" created="1264411419878" x="669.3092" y="218.49554"
+        width="162.0" height="36.604477" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#EA2218</strokeColor>
         <textColor>#404040</textColor>
@@ -1129,7 +1129,7 @@
     <PathwayList currentPathway="0" revealerIndex="-1">
         <pathway ID="0" label="Untitled Pathway" created="1264409047195"
             x="0.0" y="0.0" width="1.4E-45" height="1.4E-45"
-            strokeWidth="0.0" autoSized="false" currentIndex="-1" open="true">
+            strokeWidth="0.0" autoSized="false" currentIndex="0" open="true">
             <strokeColor>#B3993333</strokeColor>
             <textColor>#000000</textColor>
             <font>SansSerif-plain-14</font>
