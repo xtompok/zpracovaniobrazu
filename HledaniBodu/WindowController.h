@@ -30,14 +30,15 @@
 	IBOutlet NSTextField *rMinLabel;
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
+	IBOutlet ZOImageView *imageView;
 	
-	NSImage * editImage;
-	NSBitmapImageRep * origRep;
 	NSSize size;
 	
 	NSFileHandle *pyOut;
 	NSFileHandle *pyIn;
 	NSTask *pyProg;
+	
+	NSImage *lastImage;
 	
 	NSArray *calArray;
 	int delka;
@@ -48,7 +49,7 @@
 	unsigned char gmax;
 	unsigned char bmin;
 	unsigned char bmax;
-	int kalibCamArray[5][2];
+	int kalibCamArray[6][2];
 	int kalibCamArrayindex;
 	NSPoint outPoint;
 	//int xout;
@@ -57,6 +58,8 @@
 	BOOL running;
 	
 	ZOTransform *transformObject;
+	ZO2PointTransform *transform2Object;
+	
 	
 	CSGCamera *camera;
 }
@@ -72,20 +75,12 @@
 -(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
 -(void)drawSquareAtX:(int)x andY:(int)Y withRadius:(int)r;
+-(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
 
 
 //Configuration action
 -(IBAction)sumSquareSliderMoved:(id)sender;
 
-
-@property unsigned char rmin;
-@property unsigned char rmax;
-@property unsigned char gmin;
-@property unsigned char gmax;
-@property unsigned char bmin;
-@property unsigned char bmax;
-@property NSPoint outPoint;
-@property unsigned char mode;
 
 
 @end
