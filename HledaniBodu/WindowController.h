@@ -11,9 +11,9 @@
 @class CSGCamera;
 
 @interface WindowController : NSWindowController
-{
-	IBOutlet NSImageView *cameraView;
-	//IBOutlet NSImageView *editView;
+{	
+	IBOutlet ZOImageView *imageView;
+	IBOutlet NSImageView *imageView2;
 	
 	IBOutlet NSTextField *ulLabel;
 	IBOutlet NSTextField *urLabel;
@@ -30,7 +30,6 @@
 	IBOutlet NSTextField *rMinLabel;
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
-	IBOutlet ZOImageView *imageView;
 	
 	NSSize size;
 	
@@ -52,8 +51,6 @@
 	int kalibCamArray[6][2];
 	int kalibCamArrayindex;
 	NSPoint outPoint;
-	//int xout;
-	//int yout;
 	unsigned char mode;
 	BOOL running;
 	
