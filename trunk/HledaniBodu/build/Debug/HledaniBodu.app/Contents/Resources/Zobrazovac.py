@@ -6,26 +6,26 @@ import time
 
 from PIL import Image, ImageTk, ImageDraw
 
-def kobr(x,y, r=10, w=800, h=600):
+def kobr(x,y, r=20, w=800, h=600):
   i = Image.new('RGB', (w,h))
   d = ImageDraw.Draw(i)
   d.rectangle((x-r/2, y-r/2, x+r/2, y+r/2), fill=(255, 255, 255))
   return i
 
 def krizek(x,y,r,g,b,d):
-  d.line((x-15, y-15, x+15, y+15), fill=(r, g, b))
-  d.line((x+15, y-15, x-15, y+15), fill=(r, g, b))
+  d.line((x-150, y-150, x+150, y+150), fill=(r, g, b))
+  d.line((x+150, y-150, x-150, y+150), fill=(r, g, b))
     
 def objcKal(w=800,h=600):
   a=5
   r=5
   init.labdraw(kobr(-100, -100), init.proj_lab)
   time.sleep(1)
-  s= [(a,a), (w-a, a), (w-a, h-a), (a, h-a)]
-  for j in range(4):
+  s= [(a,a), (w-a, a), (w-a, h-a), (a, h-a),(0,0)]
+  for j in range(5):
     x, y = s[j]
     init.labdraw(kobr(x, y), init.proj_lab)
-    time.sleep(1.0)
+    time.sleep(2.0)
     print "w"
     sys.stdout.flush()
     raw_input()

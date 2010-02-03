@@ -8,6 +8,7 @@
 
 #import "ZOTransform.h"
 #import "ZO2PointTransform.h"
+#import "ZOImageView.h"
 
 #import "WindowController.h"
 
@@ -17,15 +18,6 @@
 #define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
 @implementation WindowController
-
-@synthesize rmin;
-@synthesize rmax;
-@synthesize gmin;
-@synthesize gmax;
-@synthesize bmin;
-@synthesize bmax;
-@synthesize mode;
-@synthesize outPoint;
 
 // Init and dealloc
 
@@ -38,8 +30,7 @@
 
 - (void)awakeFromNib;
 {
-	size.height=240;
-	size.width=320;
+	size=NSMakeSize(320, 240);
 	
 	delka=size.width*size.height*4;
 	
@@ -68,7 +59,7 @@
 	mode='n';
 	running=YES;
 	
-	kalibCamArrayindex=1;
+	kalibCamArrayindex=0;
 	kalibCamArray[0][0]=100;
 	kalibCamArray[0][1]=100;
 	
@@ -103,16 +94,62 @@
 	// Show the window
 	[self showWindow:nil];
 	
-	[self Calibrate:self];
+	//[self Calibrate:self];
 }
 
 // CSGCamera delegate
 
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
+	lastImage=aFrame;
+	
 	if (!running) return;
 	if (mode=='n') return;
-	origRep = [[aFrame representations] lastObject];
+	
+	outPoint=[self getLightestPointFromImage:lastImage];
+	
+	//[imageView setAnImage:lastImage];
+	[imageView setPoint:outPoint];
+	[imageView setNeedsDisplay:YES];
+		
+/*	[self drawSquareAtX:kalibCamArray[4][0] andY:kalibCamArray[4][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[1][0] andY:kalibCamArray[1][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
+	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
+*/	
+	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
+	//printf("msindex=%d\n",maxScoreIndex);
+	[cameraView setImage:lastImage];
+	
+	NSPoint transPoint;
+	transPoint=[transformObject transformPoint:outPoint];
+	transPoint=[transform2Object transformPoint:outPoint];
+	if (mode='g') {
+		[pyIn writeData:[self makeDataFromInt:(int)transPoint.x]];
+		[self writeChar:','];
+		[pyIn writeData:[self makeDataFromInt:(int)transPoint.y]];
+		[self writeChar:'\n'];
+	}
+	
+	//outPoint=[transformObject transformPoint:outPoint];
+	//printf("%c\n",mode);
+	STDOUTPRINT printf("xt=%d, yt=%d",(int)transPoint.x,(int)transPoint.y);
+	mode='n';
+}
+
+// NSWindow delegate
+
+- (void)windowWillClose:(NSNotification *)notification;
+{
+	[pyProg terminate];
+	[camera stop];
+}
+
+-(NSPoint)getLightestPointFromImage:(NSImage *)anImage
+{
+	NSBitmapImageRep * origRep;
+	
+	origRep = [[anImage representations] lastObject];
 	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
 	
 	int i;
@@ -145,9 +182,9 @@
 	
 	[maxSumSquareLabel setStringValue:
 	 [NSString stringWithFormat:@"%d,%d,%d",
-		maxScore[0],
-		maxScore[1],
-		maxScore[2]]];
+	  maxScore[0],
+	  maxScore[1],
+	  maxScore[2]]];
 	
 	if ( (maxScore[0]<[rMinSlider intValue])
 		&&(maxScore[1]<[gMinSlider intValue])
@@ -161,44 +198,21 @@
 	}
 	STDOUTPRINT printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
 	STDOUTPRINT printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
-		   origbuffer[maxScoreIndex],
-		   origbuffer[maxScoreIndex+1],
-		   origbuffer[maxScoreIndex+2]);
+					   origbuffer[maxScoreIndex],
+					   origbuffer[maxScoreIndex+1],
+					   origbuffer[maxScoreIndex+2]);
 	origbuffer[maxScoreIndex]=0;
 	origbuffer[maxScoreIndex+1]=0;
 	origbuffer[maxScoreIndex+2]=0;
-	
-	[self drawSquareAtX:kalibCamArray[4][0] andY:kalibCamArray[4][1] withRadius:5];
-	[self drawSquareAtX:kalibCamArray[1][0] andY:kalibCamArray[1][1] withRadius:5];
-	[self drawSquareAtX:kalibCamArray[2][0] andY:kalibCamArray[2][1] withRadius:5];
-	[self drawSquareAtX:kalibCamArray[3][0] andY:kalibCamArray[3][1] withRadius:5];
-	
-	outPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
-	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
-	//printf("msindex=%d\n",maxScoreIndex);
-	[cameraView setImage:aFrame];
-	
-	NSPoint transPoint;
-	transPoint=[transformObject transformPoint:outPoint];
-	if (mode='g') {
-		[pyIn writeData:[self makeDataFromInt:(int)transPoint.x]];
-		[self writeChar:','];
-		[pyIn writeData:[self makeDataFromInt:(int)transPoint.y]];
-		[self writeChar:'\n'];
-	}
-	
-	//outPoint=[transformObject transformPoint:outPoint];
-	//printf("%c\n",mode);
-	mode='n';
+	NSPoint aPoint;
+	aPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
+	aPoint.x=aPoint.x/size.width;
+	aPoint.y=aPoint.y/size.height;
+	return aPoint;
+
 }
 
-// NSWindow delegate
 
-- (void)windowWillClose:(NSNotification *)notification;
-{
-	[pyProg terminate];
-	[camera stop];
-}
 
 /* Coordinates <-> Index */
 /* --------------------- */
@@ -309,34 +323,42 @@
 					 [NSString stringWithFormat:@"%.3d,%.3d",
 					  kalibCamArray[1][0],
 					  kalibCamArray[1][1]]];
+					printf("1\n");
 					break;
 				case 2:
 					[urLabel setStringValue:
 					 [NSString stringWithFormat:@"%.3d,%.3d",
 					  kalibCamArray[2][0],
 					  kalibCamArray[2][1]]];
+					printf("2\n");
 					break;
 				case 4:
 					[llLabel setStringValue:
 					 [NSString stringWithFormat:@"%.3d,%.3d",
 					  kalibCamArray[4][0],
 					  kalibCamArray[4][1]]];
+					printf("4\n");
 					break;
 				case 3:
 					[lrLabel setStringValue:
 					 [NSString stringWithFormat:@"%.3d,%.3d",
 					  kalibCamArray[3][0],
-					  kalibCamArray[3][1]]];				
+					  kalibCamArray[3][1]]];
+					printf("3\n");
 					break;
 			}
 			if (kalibCamArrayindex<4)
 			{
 				kalibCamArrayindex++;
 				mode='g';
+				printf("++\n");
 			} else {
 				[transformObject release];
 				transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:NSMakeSize(800, 600)];
-				kalibCamArrayindex=1;
+				[transform2Object release];
+				transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:NSMakeSize(800, 600)];
+				
+				kalibCamArrayindex=0;
 			}
 			break;
 		default:
@@ -378,8 +400,8 @@
 		for (i=luCorIndex;i<luCorIndex+r*4;i+=4)
 		{
 			origbuffer[i]=0;
-			origbuffer[i+1]=0;
-			origbuffer[i+2]=0;
+			origbuffer[i+1]=255;
+			origbuffer[i+2]=255;
 		}
 	}
 	
@@ -395,13 +417,12 @@
 	[self writeChar:'c'];
 	[self writeChar:'\n'];
 	NSLog(@"Calibrate!");
-	
+	//transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
 	//transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
 	
 	
 }
 // Pause and resume running program
-// NOT OK!
 -(IBAction)RunAndPause:(id)sender
 {
 	if ([sender title]==@"Run") {
