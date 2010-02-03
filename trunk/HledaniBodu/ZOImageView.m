@@ -30,7 +30,8 @@
 -(void)setAnImage:(NSImage *)anImage
 {
 	[image release];
-	image=anImage;
+	image=(NSImage *)anImage;
+	[image retain];
 }
 
 -(void)setPoint:(NSPoint)aPoint
@@ -55,15 +56,25 @@
 - (void)drawRect:(NSRect)rect
 {
 	NSLog(@"Starting drawing!");
-	// setup basics
+	// Background
 	[[NSColor grayColor] set];
 	NSRectFill ( [self bounds] );
 	
-	//[image compositeToPoint:NSMakePoint(0,0)
-	//			  operation:NSCompositeSourceOver];
+	// Image from camera
+	[image compositeToPoint:NSMakePoint(0,[self bounds].size.height)
+				  operation:NSCompositeSourceOver];
 	
+	// Lightest point
 	[[NSColor redColor ] set];
 	[[self crossAtPoint:point] stroke ];
+	
+	// Calibration points
+	[[NSColor blueColor] set];
+	int i;
+	for(i=0;i<4;i++)
+	{
+		NSRectFill(NSMakeRect([[calPoints objectAtIndex:i] pointValue].x, [[calPoints objectAtIndex:i] pointValue].y, 5, 5));
+	}
 }
 
 - (BOOL)isFlipped

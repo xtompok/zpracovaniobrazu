@@ -108,7 +108,8 @@
 	
 	outPoint=[self getLightestPointFromImage:lastImage];
 	
-	//[imageView setAnImage:lastImage];
+	[imageView setAnImage:lastImage];
+	
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 		
@@ -119,7 +120,6 @@
 */	
 	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
-	[cameraView setImage:lastImage];
 	
 	NSPoint transPoint;
 	transPoint=[transformObject transformPoint:outPoint];
@@ -130,6 +130,8 @@
 		[pyIn writeData:[self makeDataFromInt:(int)transPoint.y]];
 		[self writeChar:'\n'];
 	}
+	
+	//[imageView2 setImage:lastImage];
 	
 	//outPoint=[transformObject transformPoint:outPoint];
 	//printf("%c\n",mode);
