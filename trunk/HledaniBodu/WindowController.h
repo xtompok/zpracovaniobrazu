@@ -15,6 +15,10 @@
 	IBOutlet ZOImageView *imageView;
 	IBOutlet NSImageView *imageView2;
 	
+	//Projector screen
+	IBOutlet NSPanel *projPanel;
+	IBOutlet ZOProjectorView *projView;
+	
 	IBOutlet NSTextField *ulLabel;
 	IBOutlet NSTextField *urLabel;
 	IBOutlet NSTextField *llLabel;
@@ -31,11 +35,20 @@
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
 	
+	NSArray *calLabelsArray;
+	NSMutableArray *calPointsArray;
+	
+	NSPoint ulCalPoint;
+	NSPoint urCalPoint;
+	NSPoint llCalPoint;
+	NSPoint lrCalPoint;
+	
 	NSSize size;
 	
-	NSFileHandle *pyOut;
-	NSFileHandle *pyIn;
-	NSTask *pyProg;
+	NSWindow * projWindow;
+	
+	NSTimer *calTimer;
+	NSTimer *calBlankTimer;
 	
 	NSImage *lastImage;
 	
@@ -68,11 +81,11 @@
 -(int)getPixelIndexAtX:(int)x andY:(int)y ;
 -(void)getSumSquareAtIndex:(int)index toArray:(int *)pole;
 -(NSPoint)getPixelCoordinatesAtIndex:(int)index;
--(void)modeSetter:(NSNotification *)aNotification;
--(void)writeChar:(unsigned char)znak;
 -(NSData *)makeDataFromInt:(int)cislo;
--(void)drawSquareAtX:(int)x andY:(int)Y withRadius:(int)r;
 -(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
+
+-(void)handleCalTimer:(NSTimer *)aTimer;
+-(void)handleBlankTimer:(NSTimer *)aTimer;
 
 
 //Configuration action

@@ -1,7 +1,7 @@
 THledaniBodu
 v7
 r0
-t286913415.252415
+t287047303.040034
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist HledaniBodu-Info.plist
 cCopyStringsFile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -14,6 +14,7 @@ cCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/Co
 cCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOTransform.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOTransform.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZO2PointTransform.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZO2PointTransform.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOProjectorView.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu normal i386
 cTouch /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
 
@@ -96,23 +97,24 @@ s153
 i<Cocoa/Cocoa.h>
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib
-c000000004B69B9190000000000038CD8
-t1265219865
-s232664
+c000000004B69F53E0000000000039D26
+t1265235262
+s236838
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.h
-c000000004B69B0960000000000000746
-t1265217686
-s1862
+c000000004B6A7C7200000000000007FE
+t1265269874
+s2046
 i<Cocoa/Cocoa.h>
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m
-c000000004B69B8990000000000002F8B
-t1265219737
-s12171
+c000000004B6BC6C50000000000002B51
+t1265354437
+s11089
 i"ZOTransform.h"
 i"ZO2PointTransform.h"
 i"ZOImageView.h"
+i"ZOProjectorView.h"
 i"WindowController.h"
 i<CocoaSequenceGrabber/CocoaSequenceGrabber.h>
 i"ConfigController.h"
@@ -136,10 +138,22 @@ s420
 i<Cocoa/Cocoa.h>
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m
-c000000004B69BC0400000000000006A1
-t1265220612
-s1697
+c000000004B69EED10000000000000683
+t1265233617
+s1667
 i"ZOImageView.h"
+
+N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.h
+c000000004B69EAE300000000000001A3
+t1265232611
+s419
+i<Cocoa/Cocoa.h>
+
+N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m
+c000000004B6A75600000000000000844
+t1265268064
+s2116
+i"ZOProjectorView.h"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOTransform.h
 c000000004B5AF21D00000000000001F2
@@ -154,7 +168,7 @@ s3563
 i"ZOTransform.h"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-t1265220615
+t1265354503
 s136
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist
@@ -162,8 +176,8 @@ t1261388759
 s898
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu
-t1265220615
-s36316
+t1265354503
+s41424
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/PkgInfo
 t1261388759
@@ -182,8 +196,8 @@ t2
 s0
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/MainMenu.nib
-t1265219998
-s45604
+t1265235267
+s46450
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/Zobrazovac.py
 t1265122067
@@ -198,21 +212,25 @@ t1264509529
 s14028
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/HledaniBodu.LinkFileList
-c000000004B697929000000000000032D
-t1265203497
-s813
+c000000004B69E5AE00000000000003B7
+t1265231278
+s951
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o
-t1265219764
-s44372
+t1265354502
+s43104
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZO2PointTransform.o
 t1265116226
 s10340
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o
-t1265220615
-s20060
+t1265233704
+s19844
+
+N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOProjectorView.o
+t1265268143
+s21088
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOTransform.o
 t1264509529
@@ -536,7 +554,7 @@ s1002
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies286913414#286913414#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies287047302#287047302#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ConfigController.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ConfigController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s286202328.733197
@@ -565,8 +583,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@77"Compile /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/ConfigController.m284669498#284669499#0(0"0(0#0#69"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/ConfigController.m4300885448#1680"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-fhzrfrbaemyuvwecgxquaftbcmcc/HledaniBodu_Prefix.pch -c /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/ConfigController.m -o /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ConfigController.o0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s286912562.929363
-e286912564.551391
+s287047302.129322
+e287047302.982291
 r1
 xCompileC
 xbuild/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o
@@ -575,7 +593,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m286912562#286912564#0(0"0(0#0#70"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m4300885448#1691"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o0#
+lSLF07#2@78"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m287047302#287047302#0(0"0(0#0#70"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m4300885448#1691"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/WindowController.o /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/WindowController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s285951403.936455
@@ -604,8 +622,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@79"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZO2PointTransform.m286808976#286809026#0(0"0(0#0#71"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZO2PointTransform.m4300885448#1693"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZO2PointTransform.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZO2PointTransform.o0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s286913414.420359
-e286913415.089062
+s286926503.879647
+e286926504.510919
 r1
 xCompileC
 xbuild/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o
@@ -614,7 +632,20 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m286913414#286913415#0(0"0(0#0#65"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m4300885448#1681"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o0#
+lSLF07#2@73"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m286926503#286926504#0(0"0(0#0#65"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m4300885448#1681"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOImageView.o0#
+
+CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOProjectorView.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s286960942.777935
+e286960943.112412
+r1
+xCompileC
+xbuild/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOProjectorView.o
+x/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m286960942#286960943#0(0"0(0#0#69"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m4300885448#1689"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -include /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-envoujcbxkwxtdfermdgjxcxuxsw/HledaniBodu_Prefix.pch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOProjectorView.m -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOProjectorView.o0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ZOTransform.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOTransform.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s286202329.071074
@@ -740,15 +771,15 @@ o/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib:
 lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib286907666#286907666#0(242"/* com.apple.ibtool.errors *//Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib: error: File does not exist at path 'file://localhost/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib'1(4@124"File does not exist at path 'file://localhost/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib'286907666#18446744073709551615#0#0(6@78"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib286907666#0#0#0#0#0"0(0#0#78"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib4300885448#370"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/English.lproj/MainMenu.nib /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/English.lproj/MainMenu.xib1#
 
 CCompileXIB /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib
-s286912797.225072
-e286912798.219355
+s286928066.663678
+e286928067.812690
 r1
 xCompileXIB
 x/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib
 o/* com.apple.ibtool.document.notices */
-o/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:617: note: This view is clipping its content.
 o/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:667: note: This view is clipping its content.
-lSLF07#2@23"CompileXIB MainMenu.xib286912797#286912798#0(262"/* com.apple.ibtool.document.notices *//Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:617: note: This view is clipping its content./Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:667: note: This view is clipping its content.2(13@34"This view is clipping its content.286912798#18446744073709551615#0#0(6@64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib286912665#617#0#617#0#0"0(13@34"This view is clipping its content.286912798#18446744073709551615#0#0(6@64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib286912665#667#0#667#0#0"0(0#0#64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib4300885448#342"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/MainMenu.nib /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib0#
+o/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:617: note: This view is clipping its content.
+lSLF07#2@23"CompileXIB MainMenu.xib286928066#286928067#0(262"/* com.apple.ibtool.document.notices *//Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:667: note: This view is clipping its content./Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib:617: note: This view is clipping its content.2(13@34"This view is clipping its content.286928067#18446744073709551615#0#0(6@64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib286928062#667#0#667#0#0"0(13@34"This view is clipping its content.286928067#18446744073709551615#0#0(6@64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib286928062#617#0#617#0#0"0(0#0#64"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib4300885448#342"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/MainMenu.nib /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/MainMenu.xib0#
 
 CCompileXIB /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/Czech.lproj/MainMenu.xib
 s285769522.086619
@@ -958,14 +989,14 @@ o/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowCont
 lSLF07#2@76"Compile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286202328#286202328#0(1288"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.gmax: error: WindowController.gmax -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.mode: error: WindowController.mode -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.outPoint: error: WindowController.outPoint -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.rmin: error: WindowController.rmin -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.bmin: error: WindowController.bmin -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.bmax: error: WindowController.bmax -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.rmax: error: WindowController.rmax -- attribute must have a defined type /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel:WindowController.gmin: error: WindowController.gmin -- attribute must have a defined type 8(4@60"WindowController.gmax -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.mode -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@64"WindowController.outPoint -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.rmin -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.bmin -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.bmax -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.rmax -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(4@60"WindowController.gmin -- attribute must have a defined type 286202328#18446744073709551615#0#0(6@68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel286105385#0#0#0#0#0"0(0#0#68"/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel4300885448#293"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/main.xcdatamodel /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/main.mom1#
 
 CLd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu normal i386
-s286913415.089182
-e286913415.248282
+s287047302.982411
+e287047303.036032
 r1
 xLd
 x/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu
 xnormal
 xi386
-lSLF07#2@111"Link /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu286913415#286913415#0(0"0(0#0#0"4300885448#655"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -filelist /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/HledaniBodu.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework CocoaSequenceGrabber -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu0#
+lSLF07#2@111"Link /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu287047302#287047303#0(0"0(0#0#0"4300885448#655"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -F/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug -filelist /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/HledaniBodu.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework CocoaSequenceGrabber -o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu0#
 
 CLd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/MacOS/HledaniBodu normal i386
 s285951409.259499
@@ -1039,12 +1070,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@33"Precompile HledaniBodu_Prefix.pch283084621#283084626#0(0"0(0#0#73"/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu_Prefix.pch4300885448#1548"    cd /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-generated-files.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-own-target-headers.hmap -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-all-target-headers.hmap -iquote /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/HledaniBodu-project-headers.hmap -F/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/include -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources/i386 -I/Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/HledaniBodu.build/Debug/HledaniBodu.build/DerivedSources -c /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/HledaniBodu_Prefix.pch -o /var/folders/Cf/CfWVN8qEGEqtPrGiDV98lU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/HledaniBodu_Prefix-fhzrfrbaemyuvwecgxquaftbcmcc/HledaniBodu_Prefix.pch.gch0#
 
 CTouch /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-s286913415.248402
-e286913415.252360
+s287047303.036140
+e287047303.039987
 r1
 xTouch
 x/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
-lSLF07#2@85"Touch /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app286913415#286913415#0(0"0(0#0#0"4300885448#161"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /usr/bin/touch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app0#
+lSLF07#2@85"Touch /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app287047303#287047303#0(0"0(0#0#0"4300885448#161"    cd /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu    /usr/bin/touch -c /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app0#
 
 CTouch /Users/jethro/Progrmy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app
 s285951409.730103

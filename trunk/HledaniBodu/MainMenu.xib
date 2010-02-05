@@ -12,9 +12,10 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="657"/>
+			<integer value="742"/>
 			<integer value="491"/>
 			<integer value="577"/>
-			<integer value="372"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1020,7 +1021,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 418}, {527, 332}}</string>
+				<string key="NSWindowRect">{{65, 414}, {527, 332}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">HledaniBodu</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1485,7 +1486,7 @@
 											<reference key="NSSuperview" ref="278060294"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSButtonCell" key="NSCell" id="272095746">
-												<int key="NSCellFlags">-2080244224</int>
+												<int key="NSCellFlags">67239424</int>
 												<int key="NSCellFlags2">0</int>
 												<string key="NSContents">Print on stdout</string>
 												<reference key="NSSupport" ref="907297469"/>
@@ -1568,7 +1569,7 @@
 					<string key="NSFrameSize">{527, 332}</string>
 					<reference key="NSSuperview"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
 			</object>
 			<object class="NSCustomObject" id="1027017895">
@@ -1910,6 +1911,33 @@
 				<string key="NSFrameSize">{187, 328}</string>
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
+			</object>
+			<object class="NSWindowTemplate" id="355493472">
+				<int key="NSWindowStyleMask">31</int>
+				<int key="NSWindowBacking">2</int>
+				<string key="NSWindowRect">{{340, 2}, {800, 600}}</string>
+				<int key="NSWTFlags">-1535639552</int>
+				<string key="NSWindowTitle">Window</string>
+				<string key="NSWindowClass">NSPanel</string>
+				<nil key="NSViewClass"/>
+				<object class="NSView" key="NSWindowView" id="350436777">
+					<reference key="NSNextResponder"/>
+					<int key="NSvFlags">256</int>
+					<object class="NSMutableArray" key="NSSubviews">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSCustomView" id="1057138234">
+							<reference key="NSNextResponder" ref="350436777"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrameSize">{800, 600}</string>
+							<reference key="NSSuperview" ref="350436777"/>
+							<string key="NSClassName">ZOProjectorView</string>
+						</object>
+					</object>
+					<string key="NSFrameSize">{800, 600}</string>
+					<reference key="NSSuperview"/>
+				</object>
+				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
+				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -2635,6 +2663,22 @@
 					</object>
 					<int key="connectionID">737</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">projView</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="1057138234"/>
+					</object>
+					<int key="connectionID">746</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">projPanel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="355493472"/>
+					</object>
+					<int key="connectionID">747</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -3031,8 +3075,8 @@
 							<reference ref="305761104"/>
 							<reference ref="987605875"/>
 							<reference ref="934071722"/>
-							<reference ref="252971878"/>
 							<reference ref="162241492"/>
+							<reference ref="252971878"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -4055,6 +4099,29 @@
 						<reference key="object" ref="162241492"/>
 						<reference key="parent" ref="439893737"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">742</int>
+						<reference key="object" ref="355493472"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="350436777"/>
+						</object>
+						<reference key="parent" ref="0"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">743</int>
+						<reference key="object" ref="350436777"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="1057138234"/>
+						</object>
+						<reference key="parent" ref="355493472"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">745</int>
+						<reference key="object" ref="1057138234"/>
+						<reference key="parent" ref="350436777"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -4307,6 +4374,12 @@
 					<string>736.IBPluginDependency</string>
 					<string>74.IBPluginDependency</string>
 					<string>74.ImportedFromIB2</string>
+					<string>742.IBEditorWindowLastContentRect</string>
+					<string>742.IBPluginDependency</string>
+					<string>742.IBWindowTemplateEditedContentRect</string>
+					<string>742.NSWindowTemplate.visibleAtLaunch</string>
+					<string>743.IBPluginDependency</string>
+					<string>745.IBPluginDependency</string>
 					<string>75.IBPluginDependency</string>
 					<string>75.ImportedFromIB2</string>
 					<string>77.IBPluginDependency</string>
@@ -4406,9 +4479,9 @@
 					<string>{{475, 832}, {234, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{107, 413}, {527, 332}}</string>
+					<string>{{65, 414}, {527, 332}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{107, 413}, {527, 332}}</string>
+					<string>{{65, 414}, {527, 332}}</string>
 					<integer value="1"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<string>{3.40282e+38, 3.40282e+38}</string>
@@ -4576,6 +4649,12 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
+					<string>{{340, 2}, {800, 600}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>{{340, 2}, {800, 600}}</string>
+					<boolean value="YES"/>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -4614,7 +4693,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">741</int>
+			<int key="maxID">747</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4679,6 +4758,8 @@
 							<string>maxSumSquareLabel</string>
 							<string>minTogetherButton</string>
 							<string>printToStdButton</string>
+							<string>projPanel</string>
+							<string>projView</string>
 							<string>rMinLabel</string>
 							<string>rMinSlider</string>
 							<string>ulLabel</string>
@@ -4697,6 +4778,8 @@
 							<string>NSTextField</string>
 							<string>NSButton</string>
 							<string>NSButton</string>
+							<string>NSPanel</string>
+							<string>ZOProjectorView</string>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
 							<string>NSTextField</string>
@@ -4714,6 +4797,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">ZOImageView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">ZOProjectorView</string>
+					<string key="superclassName">NSView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">ZOProjectorView.h</string>
 					</object>
 				</object>
 			</object>
@@ -5181,6 +5272,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">Foundation.framework/Headers/NSURLDownload.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NSPanel</string>
+					<string key="superclassName">NSWindow</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">AppKit.framework/Headers/NSPanel.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

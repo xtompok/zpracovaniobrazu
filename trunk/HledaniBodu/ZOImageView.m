@@ -55,7 +55,6 @@
 
 - (void)drawRect:(NSRect)rect
 {
-	NSLog(@"Starting drawing!");
 	// Background
 	[[NSColor grayColor] set];
 	NSRectFill ( [self bounds] );
