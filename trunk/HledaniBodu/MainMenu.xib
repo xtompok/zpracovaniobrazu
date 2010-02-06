@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="657"/>
+			<integer value="372"/>
 			<integer value="742"/>
 			<integer value="491"/>
 			<integer value="577"/>
@@ -1912,7 +1912,7 @@
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 			</object>
-			<object class="NSWindowTemplate" id="355493472">
+			<object class="NSWindowTemplate" id="579471585">
 				<int key="NSWindowStyleMask">31</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{340, 2}, {800, 600}}</string>
@@ -1920,16 +1920,16 @@
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
-				<object class="NSView" key="NSWindowView" id="350436777">
+				<object class="NSView" key="NSWindowView" id="981986721">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSCustomView" id="1057138234">
-							<reference key="NSNextResponder" ref="350436777"/>
+						<object class="NSCustomView" id="68610311">
+							<reference key="NSNextResponder" ref="981986721"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrameSize">{800, 600}</string>
-							<reference key="NSSuperview" ref="350436777"/>
+							<reference key="NSSuperview" ref="981986721"/>
 							<string key="NSClassName">ZOProjectorView</string>
 						</object>
 					</object>
@@ -2667,7 +2667,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">projView</string>
 						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="1057138234"/>
+						<reference key="destination" ref="68610311"/>
 					</object>
 					<int key="connectionID">746</int>
 				</object>
@@ -2675,9 +2675,17 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">projPanel</string>
 						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="355493472"/>
+						<reference key="destination" ref="579471585"/>
 					</object>
 					<int key="connectionID">747</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">calibrateButton</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="934880799"/>
+					</object>
+					<int key="connectionID">748</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3065,7 +3073,6 @@
 						<reference key="object" ref="439893737"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="934880799"/>
 							<reference ref="873360259"/>
 							<reference ref="597381711"/>
 							<reference ref="433086376"/>
@@ -3077,6 +3084,7 @@
 							<reference ref="934071722"/>
 							<reference ref="162241492"/>
 							<reference ref="252971878"/>
+							<reference ref="934880799"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -4101,26 +4109,26 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">742</int>
-						<reference key="object" ref="355493472"/>
+						<reference key="object" ref="579471585"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="350436777"/>
+							<reference ref="981986721"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">743</int>
-						<reference key="object" ref="350436777"/>
+						<reference key="object" ref="981986721"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1057138234"/>
+							<reference ref="68610311"/>
 						</object>
-						<reference key="parent" ref="355493472"/>
+						<reference key="parent" ref="579471585"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">745</int>
-						<reference key="object" ref="1057138234"/>
-						<reference key="parent" ref="350436777"/>
+						<reference key="object" ref="68610311"/>
+						<reference key="parent" ref="981986721"/>
 					</object>
 				</object>
 			</object>
@@ -4693,7 +4701,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">747</int>
+			<int key="maxID">748</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4749,6 +4757,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bMinLabel</string>
 							<string>bMinSlider</string>
+							<string>calibrateButton</string>
 							<string>gMinLabel</string>
 							<string>gMinSlider</string>
 							<string>imageView</string>
@@ -4769,6 +4778,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
+							<string>NSButton</string>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
 							<string>ZOImageView</string>
