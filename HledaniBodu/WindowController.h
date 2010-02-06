@@ -24,6 +24,7 @@
 	IBOutlet NSTextField *llLabel;
 	IBOutlet NSTextField *lrLabel;
 	IBOutlet NSTextField *maxSumSquareLabel;
+	IBOutlet NSButton *calibrateButton;
 	
 	//Config outlets
 	IBOutlet NSSlider *rMinSlider;

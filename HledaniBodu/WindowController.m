@@ -321,6 +321,9 @@
 	if (kalibCamArrayindex!=0) return;
 	kalibCamArrayindex++;
 	
+	[calibrateButton setEnabled:NO];
+	
+	
 	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
 												target: self
 											  selector: @selector(handleCalTimer:)
@@ -368,6 +371,7 @@
 	{
 		kalibCamArrayindex=0;
 		[imageView setCalPoints:calPointsArray];
+		[calibrateButton setEnabled:YES];
 	}
 	else 
 	{
