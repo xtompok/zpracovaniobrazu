@@ -36,12 +36,12 @@
 	IBOutlet NSTextField *bMinLabel;
 	
 	NSArray *calLabelsArray;
-	NSMutableArray *calPointsArray;
+	NSArray *calPointsArray;
 	
-	NSPoint ulCalPoint;
-	NSPoint urCalPoint;
-	NSPoint llCalPoint;
-	NSPoint lrCalPoint;
+	ZOPoint *ulCalPoint;
+	ZOPoint *urCalPoint;
+	ZOPoint *llCalPoint;
+	ZOPoint *lrCalPoint;
 	
 	NSSize size;
 	

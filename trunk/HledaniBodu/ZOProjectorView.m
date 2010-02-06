@@ -85,7 +85,6 @@
 -(void)setCalPoint:(int)index
 {
 	calPoint=index;
-	NSLog(@"Changing index to %d",index);
 	[self setNeedsDisplay:YES];
 }
 

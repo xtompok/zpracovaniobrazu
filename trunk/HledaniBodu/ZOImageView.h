@@ -13,6 +13,11 @@
 	NSImage *image;
 	NSArray *calPoints;
 	NSPoint point;
+	ZOPoint * cp1;
+	ZOPoint * cp2;
+	ZOPoint * cp3;
+	ZOPoint * cp4;
+	
 
 }
 
