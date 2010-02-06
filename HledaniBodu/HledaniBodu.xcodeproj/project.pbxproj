@@ -12,9 +12,9 @@
 		4B89E6B110FDCC1600C77536 /* ZOTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B89E6B010FDCC1600C77536 /* ZOTransform.m */; };
 		4B8EDC2B1119DD4F0076280A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58150DA1D0A300B32029 /* MainMenu.xib */; };
 		4B8EDDC8111A16840076280A /* ZOProjectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8EDDC7111A16840076280A /* ZOProjectorView.m */; };
+		4B8EDFCA111C21670076280A /* ZOPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8EDFC9111C21670076280A /* ZOPoint.m */; };
 		4B93CD5310F7146600A99C5A /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B93CD5210F7146600A99C5A /* ConfigController.m */; };
 		4BCC4CCA11105208001CB5F7 /* ZO2PointTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC4CC911105208001CB5F7 /* ZO2PointTransform.m */; };
-		4BCF5C08110B2F730081C1E1 /* Zobrazovac.py in Resources */ = {isa = PBXBuildFile; fileRef = 4BCF5C07110B2F730081C1E1 /* Zobrazovac.py */; };
 		4BD529C211197AD80090EBE6 /* ZOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD529C111197AD80090EBE6 /* ZOImageView.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -37,11 +37,12 @@
 		4B89E6B010FDCC1600C77536 /* ZOTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOTransform.m; sourceTree = "<group>"; };
 		4B8EDDC6111A16840076280A /* ZOProjectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProjectorView.h; sourceTree = "<group>"; };
 		4B8EDDC7111A16840076280A /* ZOProjectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProjectorView.m; sourceTree = "<group>"; };
+		4B8EDFC8111C21670076280A /* ZOPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOPoint.h; sourceTree = "<group>"; };
+		4B8EDFC9111C21670076280A /* ZOPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOPoint.m; sourceTree = "<group>"; };
 		4B93CD5110F7146600A99C5A /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
 		4B93CD5210F7146600A99C5A /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
 		4BCC4CC811105208001CB5F7 /* ZO2PointTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZO2PointTransform.h; sourceTree = "<group>"; };
 		4BCC4CC911105208001CB5F7 /* ZO2PointTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZO2PointTransform.m; sourceTree = "<group>"; };
-		4BCF5C07110B2F730081C1E1 /* Zobrazovac.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Zobrazovac.py; path = ../Zobrazovac.py; sourceTree = SOURCE_ROOT; };
 		4BD529C011197AD80090EBE6 /* ZOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOImageView.h; sourceTree = "<group>"; };
 		4BD529C111197AD80090EBE6 /* ZOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOImageView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HledaniBodu-Info.plist"; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4BCF5C07110B2F730081C1E1 /* Zobrazovac.py */,
 				8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58150DA1D0A300B32029 /* MainMenu.xib */,
@@ -135,6 +135,8 @@
 				4B8EDDC7111A16840076280A /* ZOProjectorView.m */,
 				4BD529C011197AD80090EBE6 /* ZOImageView.h */,
 				4BD529C111197AD80090EBE6 /* ZOImageView.m */,
+				4B8EDFC8111C21670076280A /* ZOPoint.h */,
+				4B8EDFC9111C21670076280A /* ZOPoint.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -200,7 +202,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4B8EDC2B1119DD4F0076280A /* MainMenu.xib in Resources */,
-				4BCF5C08110B2F730081C1E1 /* Zobrazovac.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +219,7 @@
 				4BCC4CCA11105208001CB5F7 /* ZO2PointTransform.m in Sources */,
 				4BD529C211197AD80090EBE6 /* ZOImageView.m in Sources */,
 				4B8EDDC8111A16840076280A /* ZOProjectorView.m in Sources */,
+				4B8EDFCA111C21670076280A /* ZOPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,17 +6,20 @@
 //  Copyright 2009 Jaroška. All rights reserved.
 //
 
+#define STDOUTPRINT if([printToStdButton state]==NSOnState)
+
 #import "ZOTransform.h"
 #import "ZO2PointTransform.h"
+#import "ZOPoint.h"
 #import "ZOImageView.h"
 #import "ZOProjectorView.h"
+
 
 #import "WindowController.h"
 
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
 #import "ConfigController.h"
 
-#define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
 @implementation WindowController
 
@@ -50,6 +53,11 @@
 	[window setBackgroundColor:translucent];*/
 	[window setAspectRatio:[window frame].size];
 	
+	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	
 	
 	calLabelsArray = [[NSArray alloc] initWithObjects:
 					  (NSTextField *) ulLabel,
@@ -57,11 +65,11 @@
 					  (NSTextField *) lrLabel,
 					  (NSTextField *) llLabel,nil];
 	
-	calPointsArray = [[NSMutableArray alloc] initWithObjects:
-					  (NSValue *)[NSValue valueWithPoint:ulCalPoint],
-					  (NSValue *)[NSValue valueWithPoint:urCalPoint],
-					  (NSValue *)[NSValue valueWithPoint:lrCalPoint],
-					  (NSValue *)[NSValue valueWithPoint:llCalPoint],
+	calPointsArray = [[NSArray alloc] initWithObjects:
+					  (ZOPoint *) ulCalPoint,
+					  (ZOPoint *) urCalPoint,
+					  (ZOPoint *) lrCalPoint,
+					  (ZOPoint *) llCalPoint,
 					  nil];
 	
 	int windowLevel;
@@ -327,7 +335,7 @@
 
 - (void) handleCalTimer: (NSTimer *) aTimer
 {
-	printf("Timer has expired\n");
+	STDOUTPRINT printf("Timer has expired\n");
 
 	[projView setCalPoint:kalibCamArrayindex];
 	[projView setNeedsDisplay:YES];
@@ -344,28 +352,12 @@
 {
 	outPoint=[self getLightestPointFromImage:lastImage];
 	
-	NSPoint aPoint;
-	
-	aPoint.x=outPoint.x*size.width;
-	aPoint.y=outPoint.y*size.height;
-	
-	printf("OutPoint x: %f and y: %f \n",aPoint.x,aPoint.y);
-
-	NSLog(@"%@",[calPointsArray objectAtIndex:(0)]);
-	
-	//[[calPointsArray objectAtIndex:(kalibCamArrayindex -1)]pointValue]=NSMakePoint(1, 1);
-
-	
-	NSLog(@"%@",[calPointsArray objectAtIndex:(kalibCamArrayindex -1)]);
-	
-	kalibCamArray[kalibCamArrayindex][0]=(int)aPoint.x;
-	kalibCamArray[kalibCamArrayindex][1]=(int)aPoint.y;
+	[[calPointsArray objectAtIndex:(kalibCamArrayindex -1)] setPoint:outPoint];
 	
 	[[calLabelsArray objectAtIndex:(kalibCamArrayindex-1)] setStringValue:
-	 [NSString stringWithFormat:@"%.3d,%.3d",//1,1
-	  kalibCamArray[kalibCamArrayindex][0],
-	  kalibCamArray[kalibCamArrayindex][1]
-	  ]];
+	 [NSString stringWithFormat:@"%.3d,%.3d",
+	  (int)(outPoint.x*size.width),
+	  (int)(outPoint.y*size.height)]];
 	
 	kalibCamArrayindex++;
 	
@@ -375,18 +367,15 @@
 	if (kalibCamArrayindex>4) 
 	{
 		kalibCamArrayindex=0;
-		//[imageView setCalPoints:<#(NSArray *)anArray#>]
+		[imageView setCalPoints:calPointsArray];
 	}
 	else 
 	{
-		
-
-	
-	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
-												target: self
-											  selector: @selector(handleCalTimer:)
-											  userInfo: nil
-											   repeats: NO];
+		calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
+													target: self
+												  selector: @selector(handleCalTimer:)
+												  userInfo: nil
+												   repeats: NO];
 	}
 
 }

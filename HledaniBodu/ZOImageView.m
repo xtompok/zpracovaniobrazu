@@ -5,6 +5,7 @@
 //  Created by Tomáš Pokorný on 3.2.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
+#import "ZOPoint.h"
 
 #import "ZOImageView.h"
 
@@ -14,17 +15,39 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code here.
+		cp1 = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
+		cp2 = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
+		cp3 = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
+		cp4 = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
+		
+		calPoints = [[NSArray alloc] initWithObjects:
+					 (ZOPoint *)cp1,
+					 (ZOPoint *)cp2,
+					 (ZOPoint *)cp3,
+					 (ZOPoint *)cp4,
+					 nil];
     }
     return self;
 }
 
 -(void)setCalPoints:(NSArray *)anArray
 {
-	if ([anArray count]==4) {
-		[calPoints release];
-		calPoints = [NSArray arrayWithArray:anArray ];
-	}
+	int i;
+	double x,y;
+	if ([anArray count]==4)
+	{
+
+		for (i=0;i<4;i++)
+		{
+			x=[[anArray objectAtIndex:i] xValue]*[self bounds].size.width;
+			y=[[anArray objectAtIndex:i] yValue]*[self bounds].size.height;
+			[[calPoints objectAtIndex:i] setX:x];
+			[[calPoints objectAtIndex:i] setY:y];
+			
+		} 	
+	} else printf("Wrong array\n");
+
+	
 }
 
 -(void)setAnImage:(NSImage *)anImage
@@ -70,9 +93,11 @@
 	// Calibration points
 	[[NSColor blueColor] set];
 	int i;
+	NSPoint aPoint;
 	for(i=0;i<4;i++)
 	{
-		NSRectFill(NSMakeRect([[calPoints objectAtIndex:i] pointValue].x, [[calPoints objectAtIndex:i] pointValue].y, 5, 5));
+		aPoint = [[calPoints objectAtIndex:i] pointValue];
+		NSRectFill(NSMakeRect(aPoint.x, aPoint.y, 5, 5));
 	}
 }
 
