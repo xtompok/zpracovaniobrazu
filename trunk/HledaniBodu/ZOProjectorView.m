@@ -49,10 +49,10 @@
 								  calPointSize,  calPointSize));
 			break;
 		default:
-			[[NSColor redColor ] set];
+			[[NSColor whiteColor ] set];
 			[[self crossAtPoint:point1] stroke ];
 			
-			[[NSColor blueColor ] set];
+			[[NSColor yellowColor ] set];
 			[[self crossAtPoint:point2] stroke ];
 			break;
 	}
@@ -73,7 +73,7 @@
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint
 {
 	int r;
-	r=5;
+	r=10;
 	NSBezierPath *aPath;
 	aPath=[NSBezierPath bezierPath];
 	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y-r)];

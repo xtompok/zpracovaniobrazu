@@ -1,10 +1,12 @@
+input sarith;
+
 pair A,B,C,D;
 pair P;
 numeric j;
 numeric delkax, delkay;
 numeric it;
 
-u=1mm;
+u=1;
 A=(38u,34u);
 B=(277u,65u);
 D=(19u,177u);
@@ -18,6 +20,17 @@ beginfig(1);
 
 draw A--B--C--D--cycle;
 draw fullcircle scaled 10u shifted P withcolor blue;
+dotlabel.llft(btex $A$ etex,A);
+dotlabel.lrt(btex $B$ etex,B);
+dotlabel.urt(btex $C$ etex,C);
+dotlabel.ulft(btex $D$ etex,D);
+
+pair shiftvector;
+shiftvector:=(300u, 300u);
+pair velikost;
+velikost:=(320u, 240u);
+draw ( (0,0)--((xpart velikost),0)--velikost--(0,(ypart velikost))--cycle ) shifted shiftvector;
+
 
 numeric k,l,m,n,g,h,i,j;
 path ab,bc,cd,ad;
@@ -68,27 +81,6 @@ draw Wp--P dashed evenly;
 draw Qp--P dashed evenly;
 
 numeric e,f,o,p;
-numeric levy,horni;
-
-if ((xpart A)<(xpart D)):
-    if ((xpart A)>(xpart Qp)): levy:=1;
-    else: levy:=0;
-    fi;
-else:
-    if ((xpart D)>(xpart Qp)): levy:=1;
-    else: levy:=0;
-    fi;
-fi;
-
-if ((xpart A)<(xpart B)):
-    if ((xpart A)>(xpart Wp)): horni:=1;
-    else: horni:=0;
-    fi;
-else:
-    if ((xpart D)>(xpart Wp)): horni:=1;
-    else: horni:=0;
-    fi;
-fi;
 
 draw (0,0)--(100u,100u);
 
@@ -104,17 +96,31 @@ draw (0,o)--(.5u,.5u*p+o);
 pair alfa,beta;
 
 alfa:=((h-f)/(e-g),0);
-alfa:=(xpart alfa,(xpart alfa)*e+g);
+alfa:=(xpart alfa,(xpart alfa)*e+f);
 
 beta:=((n-p)/(o-m),0);
 beta:=(xpart beta,(xpart beta)*o+p);
 
 draw fullcircle scaled 10u shifted alfa withcolor red;
-draw fullcircle scaled 10u shifted beta withcolor red;
+draw fullcircle scaled 10u shifted beta withcolor green;
 
+numeric apart, bpart;
+numeric apartc, apartp, bpartc, bpartp;
 
+apart.p = sqrt(Scvnum(
+((xpart alfa)-(xpart D))Smul((xpart alfa)-(xpart D)) Sadd ((ypart alfa)-(ypart D))Smul((ypart alfa)-(ypart D))
+));
+apartc = sqrt(
+((xpart C)-(xpart D))Smul((xpart C)-(xpart D)) Sadd ((ypart C)-(ypart D))Smul((ypart C)-(ypart D))
+);
 
+bpart = sqrt(
+((xpart beta)-(xpart D))*((xpart beta)-(xpart D)) + ((ypart beta)-(ypart D))*((ypart beta)-(ypart D))
+) / sqrt(
+((xpart A)-(xpart D))*((xpart A)-(xpart D)) + ((ypart A)-(ypart D))*((ypart A)-(ypart D))
+);
 
+draw fullcircle scaled 10u shifted ((xpart velikost)*apart,(ypart velikost)*bpart) shifted shiftvector;
 
   
 

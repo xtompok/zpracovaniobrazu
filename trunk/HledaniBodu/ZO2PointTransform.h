@@ -13,15 +13,15 @@
 
 
 @interface ZO2PointTransform : NSObject {
-	NSSize size;
+
 	NSPoint PTB[2];	//Pomocné transformační body - Helping transformation points
 	double PTD[2]; //Pomocné transformační délky - Helping transformation lengths
 	NSPoint CP[4]; //Kalibrační body - Calibration points
-	double g,h,m,n; //Koeficienty přímek - Line coeficients
+	double g,h,k,l; //Koeficienty přímek - Line coeficients
 
 }
 
--(id)initWithCalibrationArray:(int *)calArray andSize:(NSSize)aSize;
+-(id)initWithCalibrationArray:(NSArray *)calArray;
 -(NSPoint)transformPoint:(NSPoint)point;
 
 @end

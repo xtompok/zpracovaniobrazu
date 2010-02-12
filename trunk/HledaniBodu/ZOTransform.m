@@ -5,47 +5,49 @@
 //  Created by Tomáš Pokorný on 13.1.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
-
+#import "ZOPoint.h"
 #import "ZOTransform.h"
 
 
 @implementation ZOTransform
 
--(id)initWithCalibrationArray:(int *)modCalArray andSize:(NSSize)aSize
+-(id)initWithCalibrationArray:(NSArray *)modCalArray
 {
 	if (![super init])
 		return nil;
 	int posun;
-	int calArray[4][2];
+	double calArray[4][2];
 	
-	size=aSize;
 	posun=5;
-	calArray[0][0]=modCalArray[0];
-	calArray[0][1]=modCalArray[1];
 	
-	calArray[1][0]=modCalArray[2];
-	calArray[1][1]=modCalArray[3];
+	calArray[0][0]=[[modCalArray objectAtIndex:0] xValue];
+	calArray[0][1]=[[modCalArray objectAtIndex:0] yValue];
 	
-	calArray[2][0]=modCalArray[4];
-	calArray[2][1]=modCalArray[5];
+	calArray[1][0]=[[modCalArray objectAtIndex:1] xValue];
+	calArray[1][1]=[[modCalArray objectAtIndex:1] yValue];
 	
-	calArray[3][0]=modCalArray[6];
-	calArray[3][1]=modCalArray[7];
+	calArray[2][0]=[[modCalArray objectAtIndex:2] xValue];
+	calArray[2][1]=[[modCalArray objectAtIndex:2] yValue];
+	
+	calArray[3][0]=[[modCalArray objectAtIndex:3] xValue];
+	calArray[3][1]=[[modCalArray objectAtIndex:3] yValue];
+
 	
 	PTK[0][0]=
-		(double)(calArray[0][0]+calArray[2][0]-calArray[1][0]-calArray[3][0])/((size.width-posun)*(size.height-posun));
+		(double)(calArray[0][0]+calArray[2][0]-calArray[1][0]-calArray[3][0]);
+		/*/((size.width-posun)*(size.height-posun));*/
 	PTK[0][1]=
-		(double)(calArray[0][1]+calArray[2][1]-calArray[1][1]-calArray[3][1])/((size.width-posun)*(size.height-posun));
+		(double)(calArray[0][1]+calArray[2][1]-calArray[1][1]-calArray[3][1]);
 	
 	PTK[1][0]=
-		(double)(-calArray[0][0]+calArray[3][0])/(size.height-posun);
+		(double)(-calArray[0][0]+calArray[3][0]);
 	PTK[1][1]=
-		(double)(-calArray[0][1]+calArray[3][1])/(size.height-posun);
+		(double)(-calArray[0][1]+calArray[3][1]);
 	
 	PTK[2][0]=
-		(double)(calArray[1][0]-calArray[0][0])/(size.width-posun);
+		(double)(calArray[1][0]-calArray[0][0]);
 	PTK[2][1]=
-		(double)(calArray[1][1]-calArray[0][1])/(size.width-posun);
+		(double)(calArray[1][1]-calArray[0][1]);
 	
 	PTK[3][0]=(double)calArray[0][0];
 	PTK[3][1]=(double)calArray[0][1];
@@ -56,7 +58,7 @@
 -(double)getRightRootOfPolynomWithA:(double)a B:(double)b andC:(double)c
 {
 	double diskriminant, root1, root2;
-	diskriminant=b*b-4*a+c;
+	diskriminant=b*b-4*a*c;
 	if (diskriminant<0) {
 		NSLog(@"Bad discriminant");
 		return (double)-100;
@@ -66,11 +68,11 @@
 	}
 	root1=(-b+sqrt(diskriminant)/(2*a));
 	root2=(-b-sqrt(diskriminant)/(2*a));
-	if ((size.width>=root1)&&(root1>=0)) 
+	if ((5>=root1)&&(root1>=0)) 
 	{
 		return root1;
 	} 
-	else if ((size.width>=root2)&&(root2>=0)) 
+	else if ((5>=root2)&&(root2>=0)) 
 	{
 		return root2;
 	} else {
@@ -89,8 +91,9 @@
 	d1=PTK[0][0]*PTK[1][1]+PTK[1][0]*PTK[0][1];
 	d2=PTK[0][1]*PTK[3][0]-point.x*PTK[0][1]+PTK[1][1]*PTK[2][0]-PTK[1][0]*PTK[2][1]+PTK[3][0]*PTK[0][0]-PTK[0][0]*point.y;
 	d3=point.x*PTK[2][1]+PTK[2][0]*PTK[3][0]-PTK[2][1]*PTK[3][0]-point.y*PTK[2][0];
-	point.y=[self getRightRootOfPolynomWithA:d1 B:d2 andC:d3];
+	point.y=([self getRightRootOfPolynomWithA:d1 B:d2 andC:d3]-2.1)*2;
 	point.x=(point.y*PTK[1][0]+PTK[3][0]-point.x)/(-point.y*PTK[0][0]-PTK[2][0]);
+	NSLog(@"NSPoint{%.3f,%.3f}",point.x,point.y);
 	return point;
 }
 @end

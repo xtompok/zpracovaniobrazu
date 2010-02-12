@@ -114,7 +114,20 @@
 	// Show the window
 	[self showWindow:nil];
 	
-	//[self Calibrate:self];
+	
+	
+	NSArray * firstCalArray;
+	ZOPoint *p1=[[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	ZOPoint *p2=[[ZOPoint alloc] initWithPoint:NSMakePoint(319, 0)];
+	ZOPoint *p3=[[ZOPoint alloc] initWithPoint:NSMakePoint(320, 240)];
+	ZOPoint *p4=[[ZOPoint alloc] initWithPoint:NSMakePoint(0, 239)];
+	firstCalArray=[[NSArray alloc] initWithObjects:
+				   (ZOPoint *) p1,
+				   (ZOPoint *) p2,
+				   (ZOPoint *) p3,
+				   (ZOPoint *) p4,
+				   nil];
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:firstCalArray];
 }
 
 // CSGCamera delegate
@@ -133,20 +146,21 @@
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 	
+	NSPoint transPoint;
+	
 	[projView setPoint1:outPoint];
+	transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
+	[projView setPoint2:transPoint];
 	[projView setNeedsDisplay:YES];
+	
 			
-	STDOUTPRINT printf("x=%d, y=%d\n",(int)outPoint.x,(int)outPoint.y);
+	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
 	//printf("msindex=%d\n",maxScoreIndex);
 	
-	NSPoint transPoint;
-	transPoint=[transformObject transformPoint:outPoint];
-	transPoint=[transform2Object transformPoint:outPoint];
-	
-	
-	//outPoint=[transformObject transformPoint:outPoint];
+	//transPoint=[transformObject transformPoint:outPoint];
+
 	//printf("%c\n",mode);
-	STDOUTPRINT printf("xt=%d, yt=%d",(int)transPoint.x,(int)transPoint.y);
+	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
 	//mode='n';
 }
 
@@ -371,6 +385,8 @@
 	{
 		kalibCamArrayindex=0;
 		[imageView setCalPoints:calPointsArray];
+		transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calPointsArray];
+		transformObject = [[ZOTransform alloc] initWithCalibrationArray:calPointsArray];
 		[calibrateButton setEnabled:YES];
 	}
 	else 
