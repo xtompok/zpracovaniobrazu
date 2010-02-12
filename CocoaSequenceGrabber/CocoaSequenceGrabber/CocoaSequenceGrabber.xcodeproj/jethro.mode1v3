@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>4B8EE1EE112099040076280A</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>CSGCamera.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>4B8EE1EF112099040076280A</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>CSGCamera.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>4B8EE2251124409A0076280A</string>
+						<key>history</key>
+						<array>
+							<string>4B8EE1E7112096FA0076280A</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1104, 481}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>152 167 1104 522 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -266,6 +307,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>0867D691FE84028FC02AAC07</string>
+								<string>08FB77AEFE84172EC02AAC07</string>
+								<string>32C88DFF0371C24200C91783</string>
 								<string>034768DFFF38A50411DB9C8B</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -273,7 +316,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
+									<integer>8</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -325,14 +369,16 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4BF6694C10CEC8F60096E258</string>
+										<string>4B8EE2241124409A0076280A</string>
 										<key>history</key>
 										<array>
-											<string>4BF668ED10CEC69D0096E258</string>
-											<string>4BF668EE10CEC69D0096E258</string>
 											<string>4BF6691F10CEC7EB0096E258</string>
 											<string>4BF6692110CEC7EB0096E258</string>
-											<string>4BF6692210CEC7EB0096E258</string>
+											<string>4B8EE1E8112099040076280A</string>
+											<string>4B8EE1E9112099040076280A</string>
+											<string>4B8EE2211124409A0076280A</string>
+											<string>4B8EE2221124409A0076280A</string>
+											<string>4B8EE2231124409A0076280A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -344,14 +390,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {580, 277}}</string>
+								<string>{{0, 0}, {580, 269}}</string>
 								<key>RubberWindowFrame</key>
 								<string>268 219 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>277pt</string>
+							<string>269pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -364,14 +410,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 282}, {580, 181}}</string>
+								<string>{{0, 274}, {580, 189}}</string>
 								<key>RubberWindowFrame</key>
 								<string>268 219 788 504 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>181pt</string>
+							<string>189pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -390,9 +436,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4BF668F410CEC69D0096E258</string>
+				<string>4B8EE1EC112099040076280A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4BF668F510CEC69D0096E258</string>
+				<string>4B8EE1ED112099040076280A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -530,8 +576,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/jethro/Downloads/PySight/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber.xcodeproj</string>
 		<string>4BF668F710CEC69D0096E258</string>
+		<string>4B8EE1EE112099040076280A</string>
+		<string>/Users/jethro/Programy/zpracovaniobrazu/CocoaSequenceGrabber/CocoaSequenceGrabber/CocoaSequenceGrabber.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>268 219 788 504 0 0 1280 778 </string>
@@ -555,7 +602,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CSGCamera.h</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -572,8 +619,6 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -613,7 +658,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>4BF668F710CEC69D0096E258</string>
-				<string>4BF668F810CEC69D0096E258</string>
+				<string>4B8EE1F1112099040076280A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -626,7 +671,7 @@
 			<key>WindowToolGUID</key>
 			<string>4BF668F710CEC69D0096E258</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

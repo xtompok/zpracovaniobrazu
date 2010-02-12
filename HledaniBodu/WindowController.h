@@ -30,11 +30,23 @@
 	IBOutlet NSSlider *rMinSlider;
 	IBOutlet NSSlider *gMinSlider;
 	IBOutlet NSSlider *bMinSlider;
+	
+	/*IBOutlet NSSlider *rMinValueSlider;
+	IBOutlet NSSlider *gMinValueSlider;
+	IBOutlet NSSlider *bMinValueSlider;*/
+	
 	IBOutlet NSButton *minTogetherButton;
+	//IBOutlet NSButton *minTogetherValueButton;
+	
 	IBOutlet NSButton *printToStdButton;
+	
 	IBOutlet NSTextField *rMinLabel;
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
+	
+	/*IBOutlet NSTextField *rMinValueLabel;
+	IBOutlet NSTextField *gMinValueLabel;
+	IBOutlet NSTextField *bMinValueLabel;*/
 	
 	NSArray *calLabelsArray;
 	NSArray *calPointsArray;
