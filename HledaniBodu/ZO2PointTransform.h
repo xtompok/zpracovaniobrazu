@@ -15,7 +15,7 @@
 @interface ZO2PointTransform : NSObject {
 
 	NSPoint PTB[2];	//Pomocné transformační body - Helping transformation points
-	double PTD[2]; //Pomocné transformační délky - Helping transformation lengths
+	double PTD[4]; //Pomocné transformační délky - Helping transformation lengths
 	NSPoint CP[4]; //Kalibrační body - Calibration points
 	double g,h,k,l; //Koeficienty přímek - Line coeficients
 
