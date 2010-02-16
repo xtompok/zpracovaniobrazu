@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+typedef struct {
+	int r;
+	int g;
+	int b;
+} BARVA;
+
 @class CSGCamera;
 
 @interface WindowController : NSWindowController
@@ -51,6 +57,8 @@
 	NSArray *calLabelsArray;
 	NSArray *calPointsArray;
 	
+	int kalibCamArrayindex;
+	
 	ZOPoint *ulCalPoint;
 	ZOPoint *urCalPoint;
 	ZOPoint *llCalPoint;
@@ -65,17 +73,12 @@
 	
 	NSImage *lastImage;
 	
-	NSArray *calArray;
 	int delka;
 	unsigned char * origbuffer;
-	unsigned char rmin;
-	unsigned char rmax;
-	unsigned char gmin;
-	unsigned char gmax;
-	unsigned char bmin;
-	unsigned char bmax;
-	int kalibCamArray[6][2];
-	int kalibCamArrayindex;
+	
+	BARVA minColorValue;
+	BARVA maxColorValue;
+
 	NSPoint outPoint;
 	unsigned char mode;
 	BOOL running;

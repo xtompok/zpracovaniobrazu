@@ -34,7 +34,7 @@
 
 - (void)awakeFromNib;
 {
-	size=NSMakeSize(320, 240);
+	size=NSMakeSize(640, 480);
 	
 	delka=size.width*size.height*4;
 	
@@ -76,7 +76,7 @@
 	NSRect screeenRect;
 	NSScreen *aScreen;
 	
-	NSLog(@"screens: %i",[[NSScreen screens]count]);
+	STDOUTPRINT NSLog(@"screens: %i",[[NSScreen screens]count]);
 	
 	if ([[NSScreen screens]count]>1)
 	{
@@ -97,24 +97,17 @@
 		[projWindow setContentView:[projPanel contentView]];
 	}	
 	
-	rmin=120;
-	rmax=255;
-	gmin=120;
-	gmax=255;
-	bmin=120;
-	bmax=255;
+	minColorValue.r=245;
+	maxColorValue.r=255;
+	minColorValue.g=200;
+	maxColorValue.g=255;
+	minColorValue.b=200;
+	maxColorValue.b=255;
 	
-	mode='n';
 	running=YES;
-	
-	kalibCamArrayindex=0;
-	kalibCamArray[0][0]=100;
-	kalibCamArray[0][1]=100;
 	
 	// Show the window
 	[self showWindow:nil];
-	
-	
 	
 	NSArray * firstCalArray;
 	ZOPoint *p1=[[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
@@ -137,7 +130,6 @@
 	lastImage=aFrame;
 	
 	if (!running) return;
-	//if (mode=='n') return;
 	
 	outPoint=[self getLightestPointFromImage:lastImage];
 	
@@ -149,19 +141,17 @@
 	NSPoint transPoint;
 	
 	[projView setPoint1:outPoint];
-	transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
+	//transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
+	transPoint=[transform2Object transformPoint:outPoint];
 	[projView setPoint2:transPoint];
 	[projView setNeedsDisplay:YES];
 	
 			
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
-	//printf("msindex=%d\n",maxScoreIndex);
 	
 	//transPoint=[transformObject transformPoint:outPoint];
 
-	//printf("%c\n",mode);
 	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
-	//mode='n';
 }
 
 // NSWindow delegate
@@ -188,16 +178,20 @@
 	for(i=0;i<delka;i+=4)
 	{
 		if (1
-			//&&(origbuffer[i]<rmax)
-			&&(origbuffer[i]>rmin)
-			//&&(origbuffer[i+1]<gmax)
-			&&(origbuffer[i+1]>gmin)
-			//&&(origbuffer[i+2]<bmax)
-			&&(origbuffer[i+2]>bmin)
-			) {
+			/*//&&(origbuffer[i]<maxColorValue.r)
+			&&(origbuffer[i]>minColorValue.r)
+			//&&(origbuffer[i+1]<maxColorValue.g)
+			&&(origbuffer[i+1]>minColorValue.g)
+			//&&(origbuffer[i+2]<maxColorValue.b)
+			&&(origbuffer[i+2]>minColorValue.b)*/
+			//&&(origbuffer[i]<maxColorValue.r)
+			 &&(origbuffer[i]>220)
+			) 
+		{
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
 			
-			if (aScore[0]>maxScore[0]) {
+			if (aScore[0]>maxScore[0]) 
+			{
 				maxScore[0]=aScore[0];
 				maxScore[1]=aScore[1];
 				maxScore[2]=aScore[2];
@@ -208,10 +202,10 @@
 	}
 	
 	[maxSumSquareLabel setStringValue:
-	 [NSString stringWithFormat:@"%d,%d,%d",
-	  maxScore[0],
-	  maxScore[1],
-	  maxScore[2]]];
+						[NSString stringWithFormat:@"%d,%d,%d",
+						 maxScore[0],
+						 maxScore[1],
+						 maxScore[2]]];
 	
 	if ( (maxScore[0]<[rMinSlider intValue])
 		&&(maxScore[1]<[gMinSlider intValue])
@@ -223,7 +217,6 @@
 		maxScore[2]=0;
 		maxScoreIndex=i;
 	}
-	STDOUTPRINT printf("Sum: R: %.4d, G: %.4d, B:%.4d\n",maxScore[0],maxScore[1],maxScore[2]);
 	STDOUTPRINT printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
 					   origbuffer[maxScoreIndex],
 					   origbuffer[maxScoreIndex+1],
@@ -332,21 +325,16 @@
 // Calibrates after click
 -(IBAction)Calibrate:(id)sender
 {	
-	if (kalibCamArrayindex!=0) return;
-	kalibCamArrayindex++;
+	//if (kalibCamArrayindex!=0) return;
 	
 	[calibrateButton setEnabled:NO];
-	
 	
 	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
 												target: self
 											  selector: @selector(handleCalTimer:)
 											  userInfo: nil
 											   repeats: NO];
-	NSLog(@"Calibrate!");
-	//transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
-	//transformObject = [[ZOTransform alloc] initWithCalibrationArray:(int *)&kalibCamArray[1][0] andSize:size];
-	
+	NSLog(@"Calibrate!");	
 }
 
 
@@ -354,7 +342,7 @@
 {
 	STDOUTPRINT printf("Timer has expired\n");
 
-	[projView setCalPoint:kalibCamArrayindex];
+	[projView setCalPoint:(kalibCamArrayindex+1)];
 	[projView setNeedsDisplay:YES];
 	
 	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
@@ -369,19 +357,21 @@
 {
 	outPoint=[self getLightestPointFromImage:lastImage];
 	
-	[[calPointsArray objectAtIndex:(kalibCamArrayindex -1)] setPoint:outPoint];
+	[[calPointsArray objectAtIndex:kalibCamArrayindex] setPoint:outPoint];
 	
-	[[calLabelsArray objectAtIndex:(kalibCamArrayindex-1)] setStringValue:
+	[[calLabelsArray objectAtIndex:kalibCamArrayindex] setStringValue:
 	 [NSString stringWithFormat:@"%.3d,%.3d",
 	  (int)(outPoint.x*size.width),
 	  (int)(outPoint.y*size.height)]];
 	
 	kalibCamArrayindex++;
 	
+	[imageView setCalPoints:calPointsArray];
+	
 	[projView setCalPoint:0];
 	[projView setNeedsDisplay:YES];
 	
-	if (kalibCamArrayindex>4) 
+	if (kalibCamArrayindex>3) 
 	{
 		kalibCamArrayindex=0;
 		[imageView setCalPoints:calPointsArray];

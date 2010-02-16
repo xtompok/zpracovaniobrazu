@@ -49,9 +49,13 @@
 	PTB[1].x=(h-j)/(i-g);
 	PTB[1].y=PTB[1].x*g+h;
 	
+	//01
+	//32
 	
 	PTD[0]=sqrt((CP[0].x-CP[3].x)*(CP[0].x-CP[3].x)+(CP[0].y-CP[3].y)*(CP[0].y-CP[3].y));
 	PTD[1]=sqrt((CP[0].x-CP[1].x)*(CP[0].x-CP[1].x)+(CP[0].y-CP[1].y)*(CP[0].y-CP[1].y));
+	PTD[2]=sqrt((CP[2].x-CP[1].x)*(CP[2].x-CP[1].x)+(CP[2].y-CP[1].y)*(CP[2].y-CP[1].y));
+	PTD[3]=sqrt((CP[3].x-CP[2].x)*(CP[3].x-CP[2].x)+(CP[3].y-CP[2].y)*(CP[3].y-CP[2].y));
 	
 	return self;
 }
@@ -80,10 +84,12 @@
 	
 	NSPoint transPoint;
 	
-	
-	transPoint.x=xpomer;
+	transPoint.x=xpomer*(1-0.25*ypomer);
 	transPoint.y=ypomer;
 	return transPoint;
+	
+	//01
+	//32
 }
 
 
