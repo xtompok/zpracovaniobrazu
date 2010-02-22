@@ -34,7 +34,7 @@
 
 - (void)awakeFromNib;
 {
-	size=NSMakeSize(640, 480);
+	size=NSMakeSize(320, 240);
 	
 	delka=size.width*size.height*4;
 	
@@ -185,7 +185,7 @@
 			//&&(origbuffer[i+2]<maxColorValue.b)
 			&&(origbuffer[i+2]>minColorValue.b)*/
 			//&&(origbuffer[i]<maxColorValue.r)
-			 &&(origbuffer[i]>220)
+			 &&(origbuffer[i]>120)
 			) 
 		{
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
