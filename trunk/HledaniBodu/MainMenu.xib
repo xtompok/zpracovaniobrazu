@@ -2159,7 +2159,7 @@
 			<object class="NSWindowTemplate" id="317674197">
 				<int key="NSWindowStyleMask">31</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{340, 8}, {1024, 768}}</string>
+				<string key="NSWindowRect">{{340, 46}, {1024, 730}}</string>
 				<int key="NSWTFlags">-1535639552</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -2173,12 +2173,12 @@
 						<object class="NSCustomView" id="333840989">
 							<reference key="NSNextResponder" ref="508654857"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrameSize">{1024, 768}</string>
+							<string key="NSFrame">{{0, -38}, {1024, 768}}</string>
 							<reference key="NSSuperview" ref="508654857"/>
 							<string key="NSClassName">ZOProjectorView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{1024, 768}</string>
+					<string key="NSFrameSize">{1024, 730}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
@@ -5138,9 +5138,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{103, 0}, {1024, 762}}</string>
+					<string>{{103, 32}, {1024, 730}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{103, 0}, {1024, 762}}</string>
+					<string>{{103, 32}, {1024, 730}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
