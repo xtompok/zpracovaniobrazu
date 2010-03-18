@@ -16,7 +16,7 @@
 {
 	if (![super init])
 		return nil;
-	//int posun;
+ 	//int posun;
 	double m,n,i,j;
 	
 	CP[0].x=[[calArray objectAtIndex:0] xValue];
@@ -46,8 +46,11 @@
 	i=(double)(CP[2].y-CP[1].y)/(CP[2].x-CP[1].x);
 	j=(double)CP[1].y-g*CP[1].x;
 	
-	PTB[1].x=(h-j)/(i-g);
+	PTB[1].x=(j-h)/(i-g);
 	PTB[1].y=PTB[1].x*g+h;
+	
+	//PTB[1].x*=-1;
+	//PTB[1].y*=-1;
 	
 	//01
 	//32
@@ -67,25 +70,34 @@
 	double xpomer,ypomer;
 	double e,f,o,p;
 	
-	e=(double)(PTB[0].y-point.y)/(PTB[0].x-point.x);
-	f=point.y-e*point.x;
+	e=(double)(PTB[0].y-point.y)/(PTB[0].x-point.x); //OK
+	f=point.y-e*point.x; //OK
 	
+	/**/
 	o=(double)(PTB[1].y-point.y)/(PTB[1].x-point.x);
 	p=point.y-o*point.x;
+	/**/
 	
-	alfa.x=(h-f)/(e-g);
-	alfa.y=e*alfa.x+f;
+	alfa.x=(h-f)/(e-g); //OK
+	alfa.y=e*alfa.x+f; //OK
 	
+	/**/
 	beta.x=(l-p)/(o-k);
 	beta.y=o*beta.x+p;
+	//Chyba je již dříve
+	NSLog(@"beta=(%f, %f)",beta.x,beta.y);
+	/**/
 	
-	ypomer=sqrt((CP[0].x-alfa.x)*(CP[0].x-alfa.x)+(CP[0].y-alfa.y)*(CP[0].y-alfa.y))/PTD[0];
+	ypomer=sqrt((CP[0].x-alfa.x)*(CP[0].x-alfa.x)+(CP[0].y-alfa.y)*(CP[0].y-alfa.y))/PTD[0]; //OK
+	
+	/**/
 	xpomer=sqrt((CP[0].x-beta.x)*(CP[0].x-beta.x)+(CP[0].y-beta.y)*(CP[0].y-beta.y))/PTD[1];
+	/**/
 	
 	NSPoint transPoint;
 	
-	transPoint.x=xpomer*(1-0.25*ypomer);
-	transPoint.y=ypomer;
+	transPoint.x=xpomer;//*(1-0.25*ypomer);
+	transPoint.y=ypomer; //OK
 	return transPoint;
 	
 	//01
