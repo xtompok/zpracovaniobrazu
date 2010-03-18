@@ -110,10 +110,10 @@
 	[self showWindow:nil];
 	
 	NSArray * firstCalArray;
-	ZOPoint *p1=[[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	ZOPoint *p2=[[ZOPoint alloc] initWithPoint:NSMakePoint(319, 0)];
-	ZOPoint *p3=[[ZOPoint alloc] initWithPoint:NSMakePoint(320, 240)];
-	ZOPoint *p4=[[ZOPoint alloc] initWithPoint:NSMakePoint(0, 239)];
+	ZOPoint *p1=[[ZOPoint alloc] initWithPoint:NSMakePoint(0.1, 0.1)];
+	ZOPoint *p2=[[ZOPoint alloc] initWithPoint:NSMakePoint(0.9, 0)];
+	ZOPoint *p3=[[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
+	ZOPoint *p4=[[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0.9)];
 	firstCalArray=[[NSArray alloc] initWithObjects:
 				   (ZOPoint *) p1,
 				   (ZOPoint *) p2,
@@ -178,14 +178,14 @@
 	for(i=0;i<delka;i+=4)
 	{
 		if (1
-			/*//&&(origbuffer[i]<maxColorValue.r)
-			&&(origbuffer[i]>minColorValue.r)
-			//&&(origbuffer[i+1]<maxColorValue.g)
-			&&(origbuffer[i+1]>minColorValue.g)
-			//&&(origbuffer[i+2]<maxColorValue.b)
-			&&(origbuffer[i+2]>minColorValue.b)*/
 			//&&(origbuffer[i]<maxColorValue.r)
-			 &&(origbuffer[i]>120)
+			&&(origbuffer[i]>120)
+			//&&(origbuffer[i+1]<200)
+			//&&(origbuffer[i+1]>)
+			//&&(origbuffer[i+2]<200)
+			//&&(origbuffer[i+2]>)
+			//&&(origbuffer[i]<maxColorValue.r)
+			 //&&(origbuffer[i]>120)
 			) 
 		{
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
@@ -329,7 +329,7 @@
 	
 	[calibrateButton setEnabled:NO];
 	
-	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
+	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
 												target: self
 											  selector: @selector(handleCalTimer:)
 											  userInfo: nil
@@ -345,7 +345,7 @@
 	[projView setCalPoint:(kalibCamArrayindex+1)];
 	[projView setNeedsDisplay:YES];
 	
-	calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
+	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
 												target: self
 											  selector: @selector(handleBlankTimer:)
 											  userInfo: nil
@@ -356,6 +356,10 @@
 -(void)handleBlankTimer:(NSTimer *)aTimer
 {
 	outPoint=[self getLightestPointFromImage:lastImage];
+	
+	//Correction that calibration points aren't in corners
+	outPoint.x+=5/size.width;
+	outPoint.y-=5/size.height;
 	
 	[[calPointsArray objectAtIndex:kalibCamArrayindex] setPoint:outPoint];
 	
