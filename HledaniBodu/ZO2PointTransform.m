@@ -84,8 +84,6 @@
 	/**/
 	beta.x=(l-p)/(o-k);
 	beta.y=o*beta.x+p;
-	//Chyba je již dříve
-	NSLog(@"beta=(%f, %f)",beta.x,beta.y);
 	/**/
 	
 	ypomer=sqrt((CP[0].x-alfa.x)*(CP[0].x-alfa.x)+(CP[0].y-alfa.y)*(CP[0].y-alfa.y))/PTD[0]; //OK

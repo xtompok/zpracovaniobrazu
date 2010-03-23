@@ -83,25 +83,19 @@ typedef struct {
 	unsigned char mode;
 	BOOL running;
 	
+	BOOL calInProgress;
+	
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
 	
+	ZOProcessImage *procImage;
+	ZOCalibrate *calObject;
 	
 	CSGCamera *camera;
 }
 
 -(IBAction)Calibrate:(id)sender;
 -(IBAction)RunAndPause:(id)sender;
-
--(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)pole;
--(int)getPixelIndexAtX:(int)x andY:(int)y ;
--(void)getSumSquareAtIndex:(int)index toArray:(int *)pole;
--(NSPoint)getPixelCoordinatesAtIndex:(int)index;
--(NSData *)makeDataFromInt:(int)cislo;
--(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
-
--(void)handleCalTimer:(NSTimer *)aTimer;
--(void)handleBlankTimer:(NSTimer *)aTimer;
 
 
 //Configuration action
