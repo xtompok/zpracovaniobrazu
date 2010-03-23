@@ -11,9 +11,9 @@
 		breakpoints = (
 			4BBC1DA110E2F44B0002D759 /* *0x921f765d */,
 			4BBC1DA410E2F44C0002D759 /* *0x921f765f */,
-			4BD52A031119B9E10090EBE6 /* WindowController.m:137 */,
-			4B8EDEA4111A2EB10076280A /* WindowController.m:135 */,
-			4B8EDEB9111A2F580076280A /* WindowController.m:183 */,
+			4BD52A031119B9E10090EBE6 /* WindowController.m:128 */,
+			4B8EDEA4111A2EB10076280A /* WindowController.m:121 */,
+			4B8EDEB9111A2F580076280A /* WindowController.m:189 */,
 			4B8EE26D11244A050076280A /* ZOTransform.m:35 */,
 			4B8EE27511244A7E0076280A /* ZOTransform.m:94 */,
 			4B8EE28E11244BF20076280A /* ZOTransform.m:93 */,
@@ -25,7 +25,7 @@
 			4BE58899115907540026796A /* ZOProcessImage.m:63 */,
 			4BE588A5115907770026796A /* ZOProcessImage.m:66 */,
 			4BE588A7115907B70026796A /* ZOProcessImage.m:22 */,
-			4BE589991159158E0026796A /* ZOCalibrate.m:85 */,
+			4BE589991159158E0026796A /* ZOCalibrate.m:89 */,
 		);
 		codeSenseManager = 4B17E13D10DF6F43000F3861 /* Code sense */;
 		executables = (
@@ -82,6 +82,14 @@
 			PBXWorkspaceStateSaveDate = 291055322;
 		};
 		perUserProjectItems = {
+			4B1E638511593B5600425139 /* PBXTextBookmark */ = 4B1E638511593B5600425139 /* PBXTextBookmark */;
+			4B1E638811593B5600425139 /* PBXTextBookmark */ = 4B1E638811593B5600425139 /* PBXTextBookmark */;
+			4B1E638911593B5600425139 /* PBXTextBookmark */ = 4B1E638911593B5600425139 /* PBXTextBookmark */;
+			4B1E638A11593B5600425139 /* PBXTextBookmark */ = 4B1E638A11593B5600425139 /* PBXTextBookmark */;
+			4B1E638B11593B5600425139 /* PBXTextBookmark */ = 4B1E638B11593B5600425139 /* PBXTextBookmark */;
+			4B1E638C11593B5600425139 /* PBXTextBookmark */ = 4B1E638C11593B5600425139 /* PBXTextBookmark */;
+			4B1E638D11593B5600425139 /* PBXTextBookmark */ = 4B1E638D11593B5600425139 /* PBXTextBookmark */;
+			4B1E638E11593B5600425139 /* PBXTextBookmark */ = 4B1E638E11593B5600425139 /* PBXTextBookmark */;
 			4B55333D1149130D006E042D = 4B55333D1149130D006E042D /* PBXBookmark */;
 			4B55334111491387006E042D = 4B55334111491387006E042D /* PBXTextBookmark */;
 			4B55344D114EC417006E042D = 4B55344D114EC417006E042D /* PBXTextBookmark */;
@@ -626,12 +634,92 @@
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{5714, 175}\";\n            s = 0;\n        },\n                {\n            r = \"{5952, 1238}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 7199}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {677, 3029}}";
-			sepNavSelRange = "{5419, 0}";
-			sepNavVisRange = "{4994, 794}";
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{1756, 609}\";\n            s = 0;\n        },\n                {\n            r = \"{4872, 175}\";\n            s = 0;\n        },\n                {\n            r = \"{5110, 1238}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6357}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {775, 2353}}";
+			sepNavSelRange = "{2142, 0}";
+			sepNavVisRange = "{1754, 774}";
 			sepNavWindowFrame = "{{224, 163}, {750, 558}}";
 		};
+	};
+	4B1E638511593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE5881A1158FC6F0026796A /* ZOCalibrate.h */;
+		name = "ZOCalibrate.h: 34";
+		rLen = 0;
+		rLoc = 618;
+		rType = 0;
+		vrLen = 184;
+		vrLoc = 355;
+	};
+	4B1E638811593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 110";
+		rLen = 0;
+		rLoc = 2456;
+		rType = 0;
+		vrLen = 1382;
+		vrLoc = 1754;
+	};
+	4B1E638911593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE5881A1158FC6F0026796A /* ZOCalibrate.h */;
+		name = "ZOCalibrate.h: 36";
+		rLen = 0;
+		rLoc = 693;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 0;
+	};
+	4B1E638A11593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
+		name = "ZOCalibrate.m: 71";
+		rLen = 0;
+		rLoc = 1688;
+		rType = 0;
+		vrLen = 1104;
+		vrLoc = 1213;
+	};
+	4B1E638B11593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
+		name = "ZOCalibrate.m: 40";
+		rLen = 0;
+		rLoc = 920;
+		rType = 0;
+		vrLen = 1153;
+		vrLoc = 40;
+	};
+	4B1E638C11593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE587F41158F18E0026796A /* ZOProcessImage.m */;
+		name = "ZOProcessImage.m: 62";
+		rLen = 5;
+		rLoc = 1213;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 1885;
+	};
+	4B1E638D11593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B8EDDC7111A16840076280A /* ZOProjectorView.m */;
+		name = "ZOProjectorView.m: 97";
+		rLen = 0;
+		rLoc = 2605;
+		rType = 0;
+		vrLen = 1222;
+		vrLoc = 1384;
+	};
+	4B1E638E11593B5600425139 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BCC4CC911105208001CB5F7 /* ZO2PointTransform.m */;
+		name = "ZO2PointTransform.m: 17";
+		rLen = 33;
+		rLoc = 279;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
 	};
 	4B55333D1149130D006E042D /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -651,8 +739,8 @@
 		isa = PBXTextBookmark;
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 122";
-		rLen = 13;
-		rLoc = 2997;
+		rLen = 1;
+		rLoc = 2352;
 		rType = 0;
 		vrLen = 560;
 		vrLoc = 2852;
@@ -682,7 +770,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 116";
 		rLen = 0;
-		rLoc = 2852;
+		rLoc = 2352;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 413;
@@ -763,13 +851,13 @@
 	};
 	4B8EDDC7111A16840076280A /* ZOProjectorView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1045, 2561}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1045, 2548}}";
 			sepNavSelRange = "{2605, 0}";
-			sepNavVisRange = "{1384, 1224}";
+			sepNavVisRange = "{1384, 1222}";
 			sepNavWindowFrame = "{{106, 153}, {1104, 578}}";
 		};
 	};
-	4B8EDEA4111A2EB10076280A /* WindowController.m:135 */ = {
+	4B8EDEA4111A2EB10076280A /* WindowController.m:121 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -781,13 +869,13 @@
 		functionName = "-camera:didReceiveFrame:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 135;
+		lineNumber = 121;
 		location = HledaniBodu;
 		modificationTime = 291051677.970071;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	4B8EDEB9111A2F580076280A /* WindowController.m:183 */ = {
+	4B8EDEB9111A2F580076280A /* WindowController.m:189 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -799,7 +887,7 @@
 		functionName = "-Calibrate:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 183;
+		lineNumber = 189;
 		location = HledaniBodu;
 		modificationTime = 291051677.970187;
 		originalNumberOfMultipleMatches = 1;
@@ -1152,9 +1240,9 @@
 	};
 	4BCC4CC911105208001CB5F7 /* ZO2PointTransform.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1045, 1404}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1045, 1378}}";
 			sepNavSelRange = "{279, 33}";
-			sepNavVisRange = "{0, 800}";
+			sepNavVisRange = "{0, 722}";
 			sepNavWindowFrame = "{{60, 195}, {1104, 578}}";
 		};
 	};
@@ -1173,7 +1261,7 @@
 			sepNavWindowFrame = "{{50, 164}, {1104, 578}}";
 		};
 	};
-	4BD52A031119B9E10090EBE6 /* WindowController.m:137 */ = {
+	4BD52A031119B9E10090EBE6 /* WindowController.m:128 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1185,7 +1273,7 @@
 		functionName = "-camera:didReceiveFrame:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 137;
+		lineNumber = 128;
 		location = HledaniBodu;
 		modificationTime = 291051677.9697739;
 		originalNumberOfMultipleMatches = 1;
@@ -1206,7 +1294,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 116";
 		rLen = 0;
-		rLoc = 2852;
+		rLoc = 2352;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 413;
@@ -1256,7 +1344,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 116";
 		rLen = 0;
-		rLoc = 2852;
+		rLoc = 2352;
 		rType = 0;
 		vrLen = 804;
 		vrLoc = 413;
@@ -1266,7 +1354,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 183";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4603;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 4364;
@@ -1306,7 +1394,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 332";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4770;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1346,7 +1434,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 332";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4770;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1376,7 +1464,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 362";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1416,7 +1504,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 362";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1456,7 +1544,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 361";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1516,7 +1604,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 362";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1556,7 +1644,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 362";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1596,7 +1684,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 361";
 		rLen = 0;
-		rLoc = 5223;
+		rLoc = 4821;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -1636,7 +1724,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 557;
@@ -1676,7 +1764,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 143";
 		rLen = 0;
-		rLoc = 3822;
+		rLoc = 3337;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 3554;
@@ -1716,7 +1804,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 444;
@@ -1786,7 +1874,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 821;
 		vrLoc = 444;
@@ -1856,7 +1944,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 478;
@@ -1896,7 +1984,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 897;
 		vrLoc = 498;
@@ -1936,7 +2024,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 516;
@@ -1996,7 +2084,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 990;
 		vrLoc = 537;
@@ -2036,7 +2124,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1024;
 		vrLoc = 557;
@@ -2076,7 +2164,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 560;
@@ -2126,7 +2214,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1132;
 		vrLoc = 582;
@@ -2166,7 +2254,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 612;
@@ -2206,7 +2294,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1152;
 		vrLoc = 647;
@@ -2246,7 +2334,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 37";
 		rLen = 0;
-		rLoc = 659;
+		rLoc = 754;
 		rType = 0;
 		vrLen = 1192;
 		vrLoc = 669;
@@ -2266,7 +2354,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 146";
 		rLen = 0;
-		rLoc = 4022;
+		rLoc = 3537;
 		rType = 0;
 		vrLen = 752;
 		vrLoc = 3612;
@@ -2302,7 +2390,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {559, 1898}}";
 			sepNavSelRange = "{1213, 5}";
-			sepNavVisRange = "{1887, 989}";
+			sepNavVisRange = "{1885, 986}";
 		};
 	};
 	4BE587F81158F2160026796A /* PBXTextBookmark */ = {
@@ -2340,7 +2428,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 244";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 5538;
@@ -2367,7 +2455,7 @@
 		comments = "Incomplete implementation of class 'WindowController'";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 1;
-		rLoc = 269;
+		rLoc = 257;
 		rType = 1;
 	};
 	4BE588061158F2610026796A /* PBXTextBookmark */ = {
@@ -2375,7 +2463,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 455";
 		rLen = 0;
-		rLoc = 6775;
+		rLoc = 6373;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -2395,7 +2483,7 @@
 		comments = "'WindowController' may not respond to '-getPixelIndexAtX:andY:'";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 172;
+		rLoc = 178;
 		rType = 1;
 	};
 	4BE588111158F2ED0026796A /* PBXTextBookmark */ = {
@@ -2403,7 +2491,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 250";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 6232;
@@ -2423,7 +2511,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 275";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 1267;
 		vrLoc = 5932;
@@ -2433,7 +2521,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 248";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 260;
 		vrLoc = 6939;
@@ -2470,16 +2558,16 @@
 	};
 	4BE5881A1158FC6F0026796A /* ZOCalibrate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {557, 507}}";
+			sepNavIntBoundsRect = "{{0, 0}, {557, 520}}";
 			sepNavSelRange = "{618, 0}";
-			sepNavVisRange = "{355, 187}";
+			sepNavVisRange = "{355, 184}";
 		};
 	};
 	4BE5881B1158FC6F0026796A /* ZOCalibrate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {768, 1378}}";
-			sepNavSelRange = "{1627, 0}";
-			sepNavVisRange = "{1215, 1102}";
+			sepNavIntBoundsRect = "{{0, 0}, {586, 1443}}";
+			sepNavSelRange = "{920, 0}";
+			sepNavVisRange = "{40, 1153}";
 		};
 	};
 	4BE5881D1158FD3F0026796A /* PBXTextBookmark */ = {
@@ -2487,7 +2575,7 @@
 		comments = "'WindowController' may not respond to '-getPixelIndexAtX:andY:'";
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		rLen = 0;
-		rLoc = 172;
+		rLoc = 178;
 		rType = 1;
 	};
 	4BE5881E1158FD3F0026796A /* PBXTextBookmark */ = {
@@ -2495,7 +2583,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 250";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 6232;
@@ -2505,7 +2593,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 250";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 6232;
@@ -2533,7 +2621,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 250";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 6232;
@@ -2621,7 +2709,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 125";
 		rLen = 0;
-		rLoc = 3135;
+		rLoc = 2530;
 		rType = 0;
 		vrLen = 1313;
 		vrLoc = 2262;
@@ -2631,7 +2719,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1332;
 		vrLoc = 3022;
@@ -2681,7 +2769,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 44";
 		rLen = 0;
-		rLoc = 1570;
+		rLoc = 1631;
 		rType = 0;
 		vrLen = 1244;
 		vrLoc = 160;
@@ -2691,7 +2779,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -2741,7 +2829,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1223;
 		vrLoc = 3152;
@@ -2751,7 +2839,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -2801,7 +2889,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1165;
 		vrLoc = 3267;
@@ -2811,7 +2899,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -2861,7 +2949,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 3313;
@@ -2871,7 +2959,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -2921,7 +3009,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1145;
 		vrLoc = 3336;
@@ -2931,7 +3019,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -3009,7 +3097,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1110;
 		vrLoc = 3372;
@@ -3019,7 +3107,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -3125,7 +3213,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1049;
 		vrLoc = 3521;
@@ -3135,7 +3223,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -3195,7 +3283,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1161;
 		vrLoc = 3522;
@@ -3205,7 +3293,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -3265,7 +3353,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 139";
 		rLen = 0;
-		rLoc = 3618;
+		rLoc = 3238;
 		rType = 0;
 		vrLen = 1140;
 		vrLoc = 3545;
@@ -3275,7 +3363,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 55";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 486;
@@ -3333,7 +3421,7 @@
 		fRef = 4BE5881A1158FC6F0026796A /* ZOCalibrate.h */;
 		name = "ZOCalibrate.h: 26";
 		rLen = 0;
-		rLoc = 708;
+		rLoc = 710;
 		rType = 0;
 		vrLen = 453;
 		vrLoc = 0;
@@ -3353,7 +3441,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 323";
 		rLen = 0;
-		rLoc = 5222;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 7199;
@@ -3393,7 +3481,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 237";
 		rLen = 0;
-		rLoc = 4386;
+		rLoc = 4603;
 		rType = 0;
 		vrLen = 2463;
 		vrLoc = 4163;
@@ -3453,7 +3541,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 170";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 3722;
@@ -3543,7 +3631,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 170";
 		rLen = 0;
-		rLoc = 4387;
+		rLoc = 4604;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 3722;
@@ -3603,7 +3691,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 196";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 4655;
@@ -3663,7 +3751,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 78";
 		rLen = 0;
-		rLoc = 2052;
+		rLoc = 2113;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 913;
@@ -3683,7 +3771,7 @@
 		fRef = 4BE5881A1158FC6F0026796A /* ZOCalibrate.h */;
 		name = "ZOCalibrate.h: 30";
 		rLen = 0;
-		rLoc = 678;
+		rLoc = 676;
 		rType = 0;
 		vrLen = 581;
 		vrLoc = 0;
@@ -3693,7 +3781,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 186";
 		rLen = 25;
-		rLoc = 4553;
+		rLoc = 4770;
 		rType = 0;
 		vrLen = 1129;
 		vrLoc = 4610;
@@ -3752,8 +3840,8 @@
 		isa = PBXTextBookmark;
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 69";
-		rLen = 188;
-		rLoc = 1349;
+		rLen = 0;
+		rLoc = 1313;
 		rType = 0;
 		vrLen = 1269;
 		vrLoc = 2820;
@@ -3763,7 +3851,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 127";
 		rLen = 0;
-		rLoc = 3236;
+		rLoc = 2552;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 3359;
@@ -3773,7 +3861,7 @@
 		fRef = 4BE5881A1158FC6F0026796A /* ZOCalibrate.h */;
 		name = "ZOCalibrate.h: 30";
 		rLen = 0;
-		rLoc = 678;
+		rLoc = 676;
 		rType = 0;
 		vrLen = 581;
 		vrLoc = 0;
@@ -3833,7 +3921,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 192";
 		rLen = 0;
-		rLoc = 4577;
+		rLoc = 4794;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 4688;
@@ -3893,7 +3981,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 192";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4770;
 		rType = 0;
 		vrLen = 1099;
 		vrLoc = 4690;
@@ -3963,7 +4051,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 192";
 		rLen = 0;
-		rLoc = 4553;
+		rLoc = 4770;
 		rType = 0;
 		vrLen = 1415;
 		vrLoc = 2459;
@@ -4013,7 +4101,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 201";
 		rLen = 0;
-		rLoc = 4923;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1383;
 		vrLoc = 4848;
@@ -4073,7 +4161,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1380;
 		vrLoc = 4886;
@@ -4133,7 +4221,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 2066;
+		rLoc = 2127;
 		rType = 0;
 		vrLen = 1043;
 		vrLoc = 1274;
@@ -4153,7 +4241,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1412;
 		vrLoc = 4922;
@@ -4193,7 +4281,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4213,7 +4301,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 4981;
@@ -4253,7 +4341,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4273,7 +4361,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1392;
 		vrLoc = 5056;
@@ -4313,7 +4401,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1468;
 		vrLoc = 5006;
@@ -4323,7 +4411,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4358,7 +4446,7 @@
 		vrLen = 722;
 		vrLoc = 0;
 	};
-	4BE589991159158E0026796A /* ZOCalibrate.m:85 */ = {
+	4BE589991159158E0026796A /* ZOCalibrate.m:89 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -4370,7 +4458,7 @@
 		functionName = "-handleBlankTimer:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 85;
+		lineNumber = 89;
 		location = HledaniBodu;
 		modificationTime = 291051679.234922;
 		originalNumberOfMultipleMatches = 1;
@@ -4391,7 +4479,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4401,7 +4489,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4411,7 +4499,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 5083;
@@ -4471,7 +4559,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 1435;
@@ -4481,7 +4569,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 198";
 		rLen = 0;
-		rLoc = 4730;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1416;
 		vrLoc = 5083;
@@ -4531,7 +4619,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1968;
+		rLoc = 2029;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 134;
@@ -4541,7 +4629,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 48";
 		rLen = 0;
-		rLoc = 1109;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 1259;
 		vrLoc = 160;
@@ -4551,7 +4639,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3725;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 3777;
@@ -4611,7 +4699,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 149";
 		rLen = 0;
-		rLoc = 3725;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1075;
 		vrLoc = 3775;
@@ -4621,7 +4709,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 204";
 		rLen = 0;
-		rLoc = 5222;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2445;
 		vrLoc = 4754;
@@ -4631,7 +4719,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 48";
 		rLen = 0;
-		rLoc = 1109;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 1498;
@@ -4681,7 +4769,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 151";
 		rLen = 0;
-		rLoc = 3724;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1237;
 		vrLoc = 3462;
@@ -4691,7 +4779,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 48";
 		rLen = 0;
-		rLoc = 1109;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 1498;
@@ -4741,7 +4829,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 151";
 		rLen = 0;
-		rLoc = 3724;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1076;
 		vrLoc = 3920;
@@ -4751,7 +4839,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 48";
 		rLen = 0;
-		rLoc = 1109;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 819;
 		vrLoc = 1498;
@@ -4801,7 +4889,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 72";
 		rLen = 0;
-		rLoc = 1627;
+		rLoc = 1688;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -4811,7 +4899,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 151";
 		rLen = 0;
-		rLoc = 3724;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 3978;
@@ -4861,7 +4949,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 72";
 		rLen = 0;
-		rLoc = 1627;
+		rLoc = 1688;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -4871,7 +4959,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 151";
 		rLen = 0;
-		rLoc = 3724;
+		rLoc = 3240;
 		rType = 0;
 		vrLen = 1235;
 		vrLoc = 4144;
@@ -4931,7 +5019,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 202";
 		rLen = 0;
-		rLoc = 5222;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2440;
 		vrLoc = 4554;
@@ -4941,7 +5029,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 205";
 		rLen = 0;
-		rLoc = 5195;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 886;
 		vrLoc = 4805;
@@ -4951,7 +5039,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5001,7 +5089,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 206";
 		rLen = 0;
-		rLoc = 5217;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 1045;
 		vrLoc = 4881;
@@ -5011,7 +5099,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5061,7 +5149,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 203";
 		rLen = 0;
-		rLoc = 5096;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2229;
 		vrLoc = 4970;
@@ -5071,7 +5159,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5121,7 +5209,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 208";
 		rLen = 0;
-		rLoc = 5217;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2229;
 		vrLoc = 4970;
@@ -5131,7 +5219,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5181,7 +5269,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 205";
 		rLen = 0;
-		rLoc = 5004;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2229;
 		vrLoc = 4970;
@@ -5191,7 +5279,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5241,7 +5329,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 204";
 		rLen = 0;
-		rLoc = 5001;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2203;
 		vrLoc = 4996;
@@ -5251,7 +5339,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 80";
 		rLen = 0;
-		rLoc = 1815;
+		rLoc = 1876;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1304;
@@ -5301,7 +5389,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1937;
+		rLoc = 1998;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 1419;
@@ -5311,7 +5399,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 204";
 		rLen = 0;
-		rLoc = 5001;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2117;
 		vrLoc = 5082;
@@ -5361,7 +5449,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 206";
 		rLen = 0;
-		rLoc = 5056;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2117;
 		vrLoc = 5082;
@@ -5371,7 +5459,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 91";
 		rLen = 0;
-		rLoc = 1937;
+		rLoc = 1998;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 1419;
@@ -5451,7 +5539,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 209";
 		rLen = 0;
-		rLoc = 5217;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2177;
 		vrLoc = 5022;
@@ -5501,7 +5589,7 @@
 		fRef = 4BE5881B1158FC6F0026796A /* ZOCalibrate.m */;
 		name = "ZOCalibrate.m: 71";
 		rLen = 0;
-		rLoc = 1627;
+		rLoc = 1688;
 		rType = 0;
 		vrLen = 1102;
 		vrLoc = 1215;
@@ -5511,7 +5599,7 @@
 		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
 		name = "WindowController.m: 203";
 		rLen = 0;
-		rLoc = 5001;
+		rLoc = 4820;
 		rType = 0;
 		vrLen = 2205;
 		vrLoc = 4994;

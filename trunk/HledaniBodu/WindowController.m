@@ -35,6 +35,10 @@
 
 - (void)awakeFromNib;
 {
+	/* Initialization of camera */
+	/* ------------------------ */
+	
+	// Set resolution of camera
 	size=NSMakeSize(320, 240);
 	
 	delka=size.width*size.height*4;
@@ -44,41 +48,28 @@
 	[camera setDelegate:self];
 	[camera startWithSize:size];
 	
+	/* Initialization windows and views */
+	/* -------------------------------- */
 	
-	// Make sure we don't distort the video as the user resizes the window
+	// Set window
 	NSWindow *window = [self window];
-	/*[[window standardWindowButton:NSWindowMiniaturizeButton] setHidden:YES];
-	[[window standardWindowButton:NSWindowZoomButton] setHidden:YES];
-	[[window standardWindowButton:NSWindowCloseButton] setHidden:YES];
-	NSColor*	translucent = [NSColor colorWithDeviceRed:0.0 green:0.0 blue:0.0 alpha:0.6] ;
-	[window setBackgroundColor:translucent];*/
 	[window setAspectRatio:[window frame].size];
-	
-	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	
-	
+		
+	// Init labels of calibration points
 	calLabelsArray = [[NSArray alloc] initWithObjects:
 					  (NSTextField *) ulLabel,
 					  (NSTextField *) urLabel,
 					  (NSTextField *) lrLabel,
 					  (NSTextField *) llLabel,nil];
 	
-	calPointsArray = [[NSArray alloc] initWithObjects:
-					  (ZOPoint *) ulCalPoint,
-					  (ZOPoint *) urCalPoint,
-					  (ZOPoint *) lrCalPoint,
-					  (ZOPoint *) llCalPoint,
-					  nil];
-	
+	// Initialization of projector view
 	int windowLevel;
 	NSRect screeenRect;
 	NSScreen *aScreen;
 	
 	STDOUTPRINT NSLog(@"screens: %i",[[NSScreen screens]count]);
 	
+	// Go fullscreen
 	if ([[NSScreen screens]count]>1)
 	{
 		aScreen = [[NSScreen screens] objectAtIndex:1];
@@ -98,57 +89,46 @@
 		[projWindow setContentView:[projPanel contentView]];
 	}	
 	
-	minColorValue.r=245;
-	maxColorValue.r=255;
-	minColorValue.g=200;
-	maxColorValue.g=255;
-	minColorValue.b=200;
-	maxColorValue.b=255;
+	/*Initialization own classes*/
+	/*--------------------------*/
 	
-	running=YES;
-	
-	// Show the window
-	[self showWindow:nil];
-	
-	NSArray * firstCalArray;
-	ZOPoint *p1=[[ZOPoint alloc] initWithPoint:NSMakePoint(0.1, 0.1)];
-	ZOPoint *p2=[[ZOPoint alloc] initWithPoint:NSMakePoint(0.9, 0)];
-	ZOPoint *p3=[[ZOPoint alloc] initWithPoint:NSMakePoint(1, 1)];
-	ZOPoint *p4=[[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0.9)];
-	firstCalArray=[[NSArray alloc] initWithObjects:
-				   (ZOPoint *) p1,
-				   (ZOPoint *) p2,
-				   (ZOPoint *) p3,
-				   (ZOPoint *) p4,
-				   nil];
-	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:firstCalArray];
-	
-	procImage = [[ZOProcessImage alloc] initWithSize:size];
+	// Init calibration object
 	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
 	
+	// Init transformation object
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject someCalibrationArray]];
+	
+	// Init image processing object
+	procImage = [[ZOProcessImage alloc] initWithSize:size];
+	
+	// Init notification of completed calibration
 	[[NSNotificationCenter defaultCenter]  addObserver:self
 											  selector:@selector(calibrationCompleted:)
 												  name:@"Calibration OK"
 												object:nil];
+	// Set running or paused
+	running=YES;
+	
+	// Show the window
+	[self showWindow:nil];
 }
 
 
-// CSGCamera delegate
-
+/* Camera delegate */
+// Called when new image received from camera, does all about the image.
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
 	lastImage=aFrame;
 	
 	if (!running) return;
 	
-	//outPoint=[self getLightestPointFromImage:lastImage];
+	[imageView setAnImage:lastImage];
+	if (calInProgress) {
+		[calObject setLastImage:lastImage];
+	}
+	
 	outPoint=[procImage getLightestPointFromImage:lastImage];
 	
-	
-	[imageView setAnImage:lastImage];
-	//if (calInProgress) {
-			[calObject setLastImage:lastImage];
-	//}
 	
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
@@ -169,12 +149,32 @@
 	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
 }
 
-// NSWindow delegate
-
+// Cleanup before end
 - (void)windowWillClose:(NSNotification *)notification;
 {
 	[projWindow orderOut:self];
 	[camera stop];
+}
+
+// Notification receiver from ZOCalibrate, called when calibration is finished
+-(void)calibrationCompleted:(NSNotification *)aNotification
+{
+	int i;
+	NSArray * calArray;
+	
+	calArray = [aNotification object];
+	[imageView setCalPoints:calArray];
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
+	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
+	[calibrateButton setEnabled:YES];
+	calInProgress=NO;
+	for (i=0;i<4;i++)
+	{
+		[[calLabelsArray objectAtIndex:i] setStringValue:
+		 [NSString stringWithFormat:@"%.3d,%.3d",
+		  (int)([[calArray objectAtIndex:i] xValue]*size.width),
+		  (int)([[calArray objectAtIndex:i] yValue]*size.height)]];
+	}
 }
 
 /* GUI Interactivity */
@@ -188,24 +188,6 @@
 	[calObject calibrate];
 	
 	NSLog(@"Calibrate!");	
-}
--(void)calibrationCompleted:(NSNotification *)aNotification
-{
-	int i;
-	NSArray * calArray;
-	calArray = [aNotification object];
-	[imageView setCalPoints:calArray];
-	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
-	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
-	[calibrateButton setEnabled:YES];
-	calInProgress=NO;
-	for (i=0;i<4;i++)
-	{
-		[[calLabelsArray objectAtIndex:i] setStringValue:
-		[NSString stringWithFormat:@"%.3d,%.3d",
-		  (int)([[calArray objectAtIndex:i] xValue]*size.width),
-		  (int)([[calArray objectAtIndex:i] yValue]*size.height)]];
-	}
 }
 
 
