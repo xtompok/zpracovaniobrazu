@@ -7,12 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ZOPoint.h"
 
 
 @interface ZOProjectorView : NSView {
 	NSPoint point1,point2;
 	int calPoint;
 	int calPointSize;
+	NSMutableArray	* myMutaryOfBrushStrokes;
+	NSMutableArray	* myMutaryOfPoints;
+	bool drawing;
 
 }
 
@@ -20,5 +24,6 @@
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)setCalPoint:(int)index;
+- (float)randVar;
 
 @end

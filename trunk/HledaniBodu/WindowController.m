@@ -13,7 +13,8 @@
 #import "ZOPoint.h"
 #import "ZOImageView.h"
 #import "ZOProjectorView.h"
-
+#import "ZOCalibrate.h"
+#import "ZOProcessImage.h"
 
 #import "WindowController.h"
 
@@ -121,7 +122,16 @@
 				   (ZOPoint *) p4,
 				   nil];
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:firstCalArray];
+	
+	procImage = [[ZOProcessImage alloc] initWithSize:size];
+	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
+	
+	[[NSNotificationCenter defaultCenter]  addObserver:self
+											  selector:@selector(calibrationCompleted:)
+												  name:@"Calibration OK"
+												object:nil];
 }
+
 
 // CSGCamera delegate
 
@@ -131,19 +141,24 @@
 	
 	if (!running) return;
 	
-	outPoint=[self getLightestPointFromImage:lastImage];
+	//outPoint=[self getLightestPointFromImage:lastImage];
+	outPoint=[procImage getLightestPointFromImage:lastImage];
+	
 	
 	[imageView setAnImage:lastImage];
+	//if (calInProgress) {
+			[calObject setLastImage:lastImage];
+	//}
 	
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 	
 	NSPoint transPoint;
 	
-	[projView setPoint1:outPoint];
+	//[projView setPoint1:outPoint];
 	//transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
 	transPoint=[transform2Object transformPoint:outPoint];
-	[projView setPoint2:transPoint];
+	[projView setPoint1:transPoint];
 	[projView setNeedsDisplay:YES];
 	
 			
@@ -162,236 +177,35 @@
 	[camera stop];
 }
 
--(NSPoint)getLightestPointFromImage:(NSImage *)anImage
-{
-	NSBitmapImageRep * origRep;
-	
-	origRep = [[anImage representations] lastObject];
-	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
-	
-	int i;
-	int maxScore[3];
-	maxScore[0]=maxScore[1]=maxScore[2]=0;
-	int maxScoreIndex;
-	maxScoreIndex=0;
-	int aScore[3];
-	for(i=0;i<delka;i+=4)
-	{
-		if (1
-			//&&(origbuffer[i]<maxColorValue.r)
-			&&(origbuffer[i]>120)
-			//&&(origbuffer[i+1]<200)
-			//&&(origbuffer[i+1]>)
-			//&&(origbuffer[i+2]<200)
-			//&&(origbuffer[i+2]>)
-			//&&(origbuffer[i]<maxColorValue.r)
-			 //&&(origbuffer[i]>120)
-			) 
-		{
-			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
-			
-			if (aScore[0]>maxScore[0]) 
-			{
-				maxScore[0]=aScore[0];
-				maxScore[1]=aScore[1];
-				maxScore[2]=aScore[2];
-				maxScoreIndex=i;
-				
-			}
-		}
-	}
-	
-	[maxSumSquareLabel setStringValue:
-						[NSString stringWithFormat:@"%d,%d,%d",
-						 maxScore[0],
-						 maxScore[1],
-						 maxScore[2]]];
-	
-	if ( (maxScore[0]<[rMinSlider intValue])
-		&&(maxScore[1]<[gMinSlider intValue])
-		&&(maxScore[2]<[bMinSlider intValue])
-		) 
-	{
-		maxScore[0]=0;
-		maxScore[1]=0;
-		maxScore[2]=0;
-		maxScoreIndex=i;
-	}
-	STDOUTPRINT printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
-					   origbuffer[maxScoreIndex],
-					   origbuffer[maxScoreIndex+1],
-					   origbuffer[maxScoreIndex+2]);
-
-	NSPoint aPoint;
-	aPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
-	aPoint.x=aPoint.x/size.width;
-	aPoint.y=aPoint.y/size.height;
-	return aPoint;
-
-}
-
-
-
-/* Coordinates <-> Index */
-/* --------------------- */
-
-// Return index of point with supplied coordinates
--(int)getPixelIndexAtX:(int)x andY:(int)y
-{
-	int index;
-	index=y*size.width*4+x*4;
-	return index;
-}
-// Return coordinates as NSSize object of point with supplied index
--(NSPoint)getPixelCoordinatesAtIndex:(int)index
-{
-	NSPoint souradnice;
-	souradnice.x=(int)(index%((int)size.width*4))/4;
-	souradnice.y=(int)(index/(size.width*4));
-	return souradnice;
-}
-
-
-/* Sum squares */
-/* ----------- */
-
-//Return sum of 5x5 square around supplied point in array with 3 numbers - 
-// - one number for each color, point is defined by coordinates
--(void)getSumSquareAtX:(int)x andY:(int)y toArray:(int *)sum
-{
-	int luCorIndex;
-	int i,j;
-	sum[0]=sum[1]=sum[2]=0;
-	if ([self getPixelIndexAtX:(x+2) andY:(y+2)]>delka) 
-	{
-		return;
-	} else if ([self getPixelIndexAtX:(x-2) andY:(y-2)]<0) {
-		return;
-	}
-	for (j=0;j<5;j++)
-	{
-		luCorIndex=[self getPixelIndexAtX:(x-2) andY:(y-2+j)];
-		for (i=luCorIndex;i<luCorIndex+5;i++)
-		{
-			sum[0]+=origbuffer[i];
-			sum[1]+=origbuffer[i+1];
-			sum[2]+=origbuffer[i+2];
-		}
-	}
-
-}
-//Return sum of 5x5 square around supplied point in array with 3 numbers - 
-// - one number for each color, point is defined by index
--(void)getSumSquareAtIndex:(int)index toArray:(int *)sum
-{
-	int ulIndex;
-	int lrIndex;
-	int i,j;
-	sum[0]=sum[1]=sum[2]=0;  
-	ulIndex=index-2*size.width*4-2*4;
-	if (ulIndex<0) {
-		return;
-	}
-	lrIndex=ulIndex+5*size.width*4+2*4;
-	if (lrIndex>=delka) {
-		return;
-	}
-																																																																																																																																																							
-	for (j=0;j<5;j++)
-	{
-		for (i=ulIndex;i<(ulIndex+5*4);i+=4)
-		{
-			sum[0]+=origbuffer[i];
-			sum[1]+=origbuffer[i+1];
-			sum[2]+=origbuffer[i+2];
-		}
-		ulIndex+=size.width*4;
-	}
-	//printf("ulindex=%d, lrindex=%d",ulIndex,lrIndex);
-}
-
-// Makes NSData object from supplied integer
--(NSData *)makeDataFromInt:(int)cislo
-{
-	NSString * string = [NSString stringWithFormat:@"%d",cislo];
-	NSData *myData=[string dataUsingEncoding:NSUTF8StringEncoding];
-	return myData;
-}
-
-
 /* GUI Interactivity */
 /* ----------------- */
 
 // Calibrates after click
 -(IBAction)Calibrate:(id)sender
 {	
-	//if (kalibCamArrayindex!=0) return;
-	
+	calInProgress=YES;
 	[calibrateButton setEnabled:NO];
+	[calObject calibrate];
 	
-	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
-												target: self
-											  selector: @selector(handleCalTimer:)
-											  userInfo: nil
-											   repeats: NO];
 	NSLog(@"Calibrate!");	
 }
-
-
-- (void) handleCalTimer: (NSTimer *) aTimer
+-(void)calibrationCompleted:(NSNotification *)aNotification
 {
-	STDOUTPRINT printf("Timer has expired\n");
-
-	[projView setCalPoint:(kalibCamArrayindex+1)];
-	[projView setNeedsDisplay:YES];
-	
-	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
-												target: self
-											  selector: @selector(handleBlankTimer:)
-											  userInfo: nil
-											   repeats: NO];
-                                                                 
-} // handleTimer
-
--(void)handleBlankTimer:(NSTimer *)aTimer
-{
-	outPoint=[self getLightestPointFromImage:lastImage];
-	
-	//Correction that calibration points aren't in corners
-	outPoint.x+=5/size.width;
-	outPoint.y-=5/size.height;
-	
-	[[calPointsArray objectAtIndex:kalibCamArrayindex] setPoint:outPoint];
-	
-	[[calLabelsArray objectAtIndex:kalibCamArrayindex] setStringValue:
-	 [NSString stringWithFormat:@"%.3d,%.3d",
-	  (int)(outPoint.x*size.width),
-	  (int)(outPoint.y*size.height)]];
-	
-	kalibCamArrayindex++;
-	
-	[imageView setCalPoints:calPointsArray];
-	
-	[projView setCalPoint:0];
-	[projView setNeedsDisplay:YES];
-	
-	if (kalibCamArrayindex>3) 
+	int i;
+	NSArray * calArray;
+	calArray = [aNotification object];
+	[imageView setCalPoints:calArray];
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
+	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
+	[calibrateButton setEnabled:YES];
+	calInProgress=NO;
+	for (i=0;i<4;i++)
 	{
-		kalibCamArrayindex=0;
-		[imageView setCalPoints:calPointsArray];
-		transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calPointsArray];
-		transformObject = [[ZOTransform alloc] initWithCalibrationArray:calPointsArray];
-		[calibrateButton setEnabled:YES];
+		[[calLabelsArray objectAtIndex:i] setStringValue:
+		[NSString stringWithFormat:@"%.3d,%.3d",
+		  (int)([[calArray objectAtIndex:i] xValue]*size.width),
+		  (int)([[calArray objectAtIndex:i] yValue]*size.height)]];
 	}
-	else 
-	{
-		calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
-													target: self
-												  selector: @selector(handleCalTimer:)
-												  userInfo: nil
-												   repeats: NO];
-	}
-
 }
 
 

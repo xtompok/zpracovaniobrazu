@@ -12,10 +12,10 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="745"/>
-			<integer value="372"/>
 			<integer value="491"/>
 			<integer value="577"/>
+			<integer value="372"/>
+			<integer value="745"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2159,7 +2159,7 @@
 			<object class="NSWindowTemplate" id="317674197">
 				<int key="NSWindowStyleMask">31</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{340, 46}, {1024, 730}}</string>
+				<string key="NSWindowRect">{{340, 46}, {800, 600}}</string>
 				<int key="NSWTFlags">-1535639552</int>
 				<string key="NSWindowTitle">Window</string>
 				<string key="NSWindowClass">NSPanel</string>
@@ -2173,12 +2173,12 @@
 						<object class="NSCustomView" id="333840989">
 							<reference key="NSNextResponder" ref="508654857"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{0, -38}, {1024, 768}}</string>
+							<string key="NSFrameSize">{800, 600}</string>
 							<reference key="NSSuperview" ref="508654857"/>
 							<string key="NSClassName">ZOProjectorView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{1024, 730}</string>
+					<string key="NSFrameSize">{800, 600}</string>
 					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
@@ -4970,9 +4970,9 @@
 					<string>{{475, 832}, {234, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{65, 142}, {365, 604}}</string>
+					<string>{{395, 142}, {365, 604}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{65, 142}, {365, 604}}</string>
+					<string>{{395, 142}, {365, 604}}</string>
 					<integer value="1"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<string>{3.40282e+38, 3.40282e+38}</string>
@@ -5138,9 +5138,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{103, 32}, {1024, 730}}</string>
+					<string>{{256, 162}, {800, 600}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{103, 32}, {1024, 730}}</string>
+					<string>{{256, 162}, {800, 600}}</string>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
