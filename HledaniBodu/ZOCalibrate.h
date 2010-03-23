@@ -33,7 +33,7 @@
 -(id)initWithProjectorView:(ZOProjectorView *) aView andSize:(NSSize)aSize;
 -(void)calibrate;
 -(void)setLastImage:(NSImage *)anImage;
-//-(NSArray *)calibrationArray;
+-(NSArray *)someCalibrationArray;
 
 
 @end

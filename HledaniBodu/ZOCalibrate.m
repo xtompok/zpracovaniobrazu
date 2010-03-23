@@ -35,6 +35,10 @@
 	
 	return self;
 }
+-(NSArray *)someCalibrationArray
+{
+	return calPointsArray;
+}
 
 -(void)calibrate
 {
