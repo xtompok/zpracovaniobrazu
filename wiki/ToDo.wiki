@@ -2,12 +2,10 @@
 #labels Phase-Implementation
 
 == Pracuje se na: ==
-  * podmíněné povolování tlačítek
-  * povolování výstupu na stdout přes GUI
-  * převod poměrové transformace do Objective C
-  * vytvoření malé Pythonovské aplikace pro zobrazování transformovaného výsledku
+  * čištění a komentování kódu
+  * jednoduché kreslení
 
 == Je v plánu ==
-  * kompletní přechod do Objective C
-  * vylepšení poměrové transformace
+  * Nastavování parametrů zpracování přes GUI
+  * Lepší a úspornější kreslení
   
