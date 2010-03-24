@@ -12,10 +12,10 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="491"/>
-			<integer value="577"/>
-			<integer value="372"/>
 			<integer value="745"/>
+			<integer value="577"/>
+			<integer value="491"/>
+			<integer value="372"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2806,51 +2806,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">rMinSlider</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="639477630"/>
-					</object>
-					<int key="connectionID">689</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">gMinSlider</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="856150684"/>
-					</object>
-					<int key="connectionID">690</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">bMinSlider</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="616216126"/>
-					</object>
-					<int key="connectionID">691</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">minTogetherButton</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="145833497"/>
-					</object>
-					<int key="connectionID">692</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">printToStdButton</string>
 						<reference key="source" ref="1027017895"/>
 						<reference key="destination" ref="177430184"/>
 					</object>
 					<int key="connectionID">693</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">maxSumSquareLabel</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="934071722"/>
-					</object>
-					<int key="connectionID">698</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -2875,30 +2835,6 @@
 						<reference key="destination" ref="616216126"/>
 					</object>
 					<int key="connectionID">732</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">rMinLabel</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="815113815"/>
-					</object>
-					<int key="connectionID">733</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">gMinLabel</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="664758212"/>
-					</object>
-					<int key="connectionID">734</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">bMinLabel</string>
-						<reference key="source" ref="1027017895"/>
-						<reference key="destination" ref="967942497"/>
-					</object>
-					<int key="connectionID">735</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -2933,28 +2869,148 @@
 					<int key="connectionID">748</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">sumSquareSliderMoved:</string>
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">rMinLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="310327100"/>
+					</object>
+					<int key="connectionID">799</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gMinLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="577214204"/>
+					</object>
+					<int key="connectionID">800</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bMinLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="485459100"/>
+					</object>
+					<int key="connectionID">801</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">rMinSlider</string>
 						<reference key="source" ref="1027017895"/>
 						<reference key="destination" ref="1016619587"/>
 					</object>
-					<int key="connectionID">777</int>
+					<int key="connectionID">802</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">sumSquareSliderMoved:</string>
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gMinSlider</string>
 						<reference key="source" ref="1027017895"/>
 						<reference key="destination" ref="1036883514"/>
 					</object>
-					<int key="connectionID">778</int>
+					<int key="connectionID">803</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">sumSquareSliderMoved:</string>
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bMinSlider</string>
 						<reference key="source" ref="1027017895"/>
 						<reference key="destination" ref="992288998"/>
 					</object>
-					<int key="connectionID">779</int>
+					<int key="connectionID">804</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">minTogetherButton</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="225573251"/>
+					</object>
+					<int key="connectionID">805</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">minSliderMoved:</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="1016619587"/>
+					</object>
+					<int key="connectionID">806</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">minSliderMoved:</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="1036883514"/>
+					</object>
+					<int key="connectionID">807</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">minSliderMoved:</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="992288998"/>
+					</object>
+					<int key="connectionID">808</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">maxSumSquareLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="934071722"/>
+					</object>
+					<int key="connectionID">809</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gMinSumLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="664758212"/>
+					</object>
+					<int key="connectionID">810</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gMinSumSlider</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="856150684"/>
+					</object>
+					<int key="connectionID">811</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bMinSumSlider</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="616216126"/>
+					</object>
+					<int key="connectionID">812</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bMinSumLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="967942497"/>
+					</object>
+					<int key="connectionID">813</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">rMinSumLabel</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="815113815"/>
+					</object>
+					<int key="connectionID">814</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">rMinSumSlider</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="639477630"/>
+					</object>
+					<int key="connectionID">815</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">minTogetherSumButton</string>
+						<reference key="source" ref="1027017895"/>
+						<reference key="destination" ref="145833497"/>
+					</object>
+					<int key="connectionID">816</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4390,7 +4446,6 @@
 						<reference key="object" ref="179407449"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1016619587"/>
 							<reference ref="1036883514"/>
 							<reference ref="992288998"/>
 							<reference ref="225573251"/>
@@ -4403,6 +4458,7 @@
 							<reference ref="485459100"/>
 							<reference ref="310327100"/>
 							<reference ref="284101500"/>
+							<reference ref="1016619587"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
@@ -4970,9 +5026,9 @@
 					<string>{{475, 832}, {234, 43}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{395, 142}, {365, 604}}</string>
+					<string>{{376, 130}, {365, 604}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{395, 142}, {365, 604}}</string>
+					<string>{{376, 130}, {365, 604}}</string>
 					<integer value="1"/>
 					<string>{{33, 99}, {480, 360}}</string>
 					<string>{3.40282e+38, 3.40282e+38}</string>
@@ -5209,7 +5265,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">779</int>
+			<int key="maxID">816</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5250,10 +5306,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>Calibrate:</string>
 							<string>RunAndPause:</string>
+							<string>minSliderMoved:</string>
 							<string>sumSquareSliderMoved:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -5265,20 +5323,27 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bMinLabel</string>
 							<string>bMinSlider</string>
+							<string>bMinSumLabel</string>
+							<string>bMinSumSlider</string>
 							<string>calibrateButton</string>
 							<string>gMinLabel</string>
 							<string>gMinSlider</string>
+							<string>gMinSumLabel</string>
+							<string>gMinSumSlider</string>
 							<string>imageView</string>
 							<string>imageView2</string>
 							<string>llLabel</string>
 							<string>lrLabel</string>
 							<string>maxSumSquareLabel</string>
 							<string>minTogetherButton</string>
+							<string>minTogetherSumButton</string>
 							<string>printToStdButton</string>
 							<string>projPanel</string>
 							<string>projView</string>
 							<string>rMinLabel</string>
 							<string>rMinSlider</string>
+							<string>rMinSumLabel</string>
+							<string>rMinSumSlider</string>
 							<string>ulLabel</string>
 							<string>urLabel</string>
 						</object>
@@ -5286,7 +5351,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
+							<string>NSTextField</string>
+							<string>NSSlider</string>
 							<string>NSButton</string>
+							<string>NSTextField</string>
+							<string>NSSlider</string>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
 							<string>ZOImageView</string>
@@ -5296,8 +5365,11 @@
 							<string>NSTextField</string>
 							<string>NSButton</string>
 							<string>NSButton</string>
+							<string>NSButton</string>
 							<string>NSPanel</string>
 							<string>ZOProjectorView</string>
+							<string>NSTextField</string>
+							<string>NSSlider</string>
 							<string>NSTextField</string>
 							<string>NSSlider</string>
 							<string>NSTextField</string>

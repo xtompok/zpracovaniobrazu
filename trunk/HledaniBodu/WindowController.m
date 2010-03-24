@@ -92,14 +92,14 @@
 	/*Initialization own classes*/
 	/*--------------------------*/
 	
+	// Init image processing object
+	procImage = [[ZOProcessImage alloc] initWithSize:size];
+	
 	// Init calibration object
 	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
 	
 	// Init transformation object
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject someCalibrationArray]];
-	
-	// Init image processing object
-	procImage = [[ZOProcessImage alloc] initWithSize:size];
 	
 	// Init notification of completed calibration
 	[[NSNotificationCenter defaultCenter]  addObserver:self
@@ -129,6 +129,11 @@
 	
 	outPoint=[procImage getLightestPointFromImage:lastImage];
 	
+	[maxSumSquareLabel setStringValue:
+	 [NSString stringWithFormat:@"%d,%d,%d",
+	 [procImage maxScoreR],
+	 [procImage maxScoreG],
+	 [procImage maxScoreB]]];
 	
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
@@ -206,7 +211,7 @@
 }
 
 //Configuration
--(IBAction)sumSquareSliderMoved:(id)sender
+-(IBAction)minSliderMoved:(id)sender
 {
 	NSLog(@"%@",sender);
 	if ([minTogetherButton state]==NSOffState) 
@@ -214,14 +219,17 @@
 		if (sender==rMinSlider) 
 		{	
 			[rMinLabel setIntValue:[rMinSlider intValue]];
+			[procImage setMinRValue:[rMinSlider intValue]];
 		} 
 		else if (sender==gMinSlider)
 		{
 			[gMinLabel setIntValue:[gMinSlider intValue]];
+			[procImage setMinGValue:[gMinSlider intValue]];
 		} 
 		else if (sender==bMinSlider) 
 		{
 			[bMinLabel setIntValue:[bMinSlider intValue]];
+			[procImage setMinBValue:[bMinSlider intValue]];
 		}
 		
 	} else {
@@ -252,6 +260,64 @@
 			[gMinLabel setIntValue:[bMinSlider intValue]];
 			[bMinLabel setIntValue:[bMinSlider intValue]];
 		}
+		[procImage setMinRValue:[rMinSlider intValue]];
+		[procImage setMinGValue:[gMinSlider intValue]];
+		[procImage setMinBValue:[bMinSlider intValue]];
+	}
+}
+
+-(IBAction)sumSquareSliderMoved:(id)sender
+{
+	NSLog(@"%@",sender);
+	if ([minTogetherSumButton state]==NSOffState) 
+	{
+		if (sender==rMinSumSlider) 
+		{	
+			[rMinSumLabel setIntValue:[rMinSumSlider intValue]];
+			[procImage setMinRSumValue:[rMinSumSlider intValue]];
+		} 
+		else if (sender==gMinSumSlider)
+		{
+			[gMinSumLabel setIntValue:[gMinSumSlider intValue]];
+			[procImage setMinGSumValue:[gMinSumSlider intValue]];
+		} 
+		else if (sender==bMinSumSlider) 
+		{
+			[bMinSumLabel setIntValue:[bMinSumSlider intValue]];
+			[procImage setMinBSumValue:[bMinSumSlider intValue]];
+		}
+		
+	} else {
+		if (sender==rMinSumSlider) 
+		{
+			[gMinSumSlider setIntValue:[rMinSumSlider intValue]];
+			[bMinSumSlider setIntValue:[rMinSumSlider intValue]];
+			
+			[rMinSumLabel setIntValue:[rMinSumSlider intValue]];
+			[gMinSumLabel setIntValue:[rMinSumSlider intValue]];
+			[bMinSumLabel setIntValue:[rMinSumSlider intValue]];
+		} 
+		else if (sender==gMinSumSlider)
+		{
+			[rMinSumSlider setIntValue:[gMinSumSlider intValue]];
+			[bMinSumSlider setIntValue:[gMinSumSlider intValue]];
+			
+			[rMinSumLabel setIntValue:[gMinSumSlider intValue]];
+			[gMinSumLabel setIntValue:[gMinSumSlider intValue]];
+			[bMinSumLabel setIntValue:[gMinSumSlider intValue]];
+		} 
+		else if (sender==bMinSumSlider) 
+		{
+			[rMinSumSlider setIntValue:[bMinSumSlider intValue]];
+			[gMinSumSlider setIntValue:[bMinSumSlider intValue]];
+			
+			[rMinSumLabel setIntValue:[bMinSumSlider intValue]];
+			[gMinSumLabel setIntValue:[bMinSumSlider intValue]];
+			[bMinSumLabel setIntValue:[bMinSumSlider intValue]];
+		}
+		[procImage setMinRSumValue:[rMinSumSlider intValue]];
+		[procImage setMinGSumValue:[gMinSumSlider intValue]];
+		[procImage setMinBSumValue:[bMinSumSlider intValue]];
 	}
 }
 

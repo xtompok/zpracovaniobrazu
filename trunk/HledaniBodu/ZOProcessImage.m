@@ -11,6 +11,22 @@
 
 @implementation ZOProcessImage
 
+@synthesize minRValue;
+@synthesize minGValue;
+@synthesize minBValue;
+
+@synthesize maxRValue;
+@synthesize maxGValue;
+@synthesize maxBValue;
+
+@synthesize minRSumValue;
+@synthesize minGSumValue;
+@synthesize minBSumValue;
+
+@synthesize maxScoreR;
+@synthesize maxScoreG;
+@synthesize maxScoreB;
+
 -(id)initWithSize:(NSSize)aSize
 {
 	if (![super init])
@@ -19,6 +35,12 @@
 	delka=size.width*size.height*4;
 	
 	origbuffer=(unsigned char *)malloc(delka*sizeof(unsigned char));
+	
+	minRValue=120;
+	
+	maxRValue=255;
+	maxGValue=255;
+	maxBValue=255;
 
 	return self;
 
@@ -32,31 +54,28 @@
 	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
 	
 	int i;
-	int maxScore[3];
-	maxScore[0]=maxScore[1]=maxScore[2]=0;
+	maxScoreR=maxScoreG=maxScoreB=0;
 	int maxScoreIndex;
 	maxScoreIndex=0;
 	int aScore[3];
 	for(i=0;i<delka;i+=4)
 	{
 		if (1
-			//&&(origbuffer[i]<maxColorValue.r)
-			&&(origbuffer[i]>120)
-			//&&(origbuffer[i+1]<200)
-			//&&(origbuffer[i+1]>)
-			//&&(origbuffer[i+2]<200)
-			//&&(origbuffer[i+2]>)
-			//&&(origbuffer[i]<maxColorValue.r)
-			//&&(origbuffer[i]>120)
+			&&(origbuffer[i]<maxRValue)
+			&&(origbuffer[i]>minRValue)
+			&&(origbuffer[i+1]<maxGValue)
+			&&(origbuffer[i+1]>minGValue)
+			&&(origbuffer[i+2]<maxBValue)
+			&&(origbuffer[i+2]>minBValue)
 			) 
 		{
 			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
 			
-			if (aScore[0]>maxScore[0]) 
+			if (aScore[0]>maxScoreR) 
 			{
-				maxScore[0]=aScore[0];
-				maxScore[1]=aScore[1];
-				maxScore[2]=aScore[2];
+				maxScoreR=aScore[0];
+				maxScoreG=aScore[1];
+				maxScoreB=aScore[2];
 				maxScoreIndex=i;
 				
 			}
@@ -64,21 +83,16 @@
 		}
 	}
 	
-	/*[maxSumSquareLabel setStringValue:
-	 [NSString stringWithFormat:@"%d,%d,%d",
-	  maxScore[0],
-	  maxScore[1],
-	  maxScore[2]]];*/
 	
-	if ( (maxScore[0]<minRSumValue)
-		&&(maxScore[1]<minGSumValue)
-		&&(maxScore[2]<minBSumValue)
+	if ((maxScoreR<minRSumValue)
+		||(maxScoreG<minGSumValue)
+		||(maxScoreB<minBSumValue)
 		) 
 	{
-		maxScore[0]=0;
-		maxScore[1]=0;
-		maxScore[2]=0;
-		maxScoreIndex=i;
+		maxScoreR=0;
+		maxScoreG=0;
+		maxScoreB=0;
+		maxScoreIndex=0;
 	}
 	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
 					   origbuffer[maxScoreIndex],
