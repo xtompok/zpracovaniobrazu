@@ -11,6 +11,7 @@
 
 @implementation ZOProjectorView
 
+// Initializes and sets size of calibration points
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -18,15 +19,14 @@
     }
 	
     return self;
-	
-	
-	
 }
 
+// Draws to projector
 - (void)drawRect:(NSRect)dirtyRect {
     [[NSColor blackColor] set];
 	NSRectFill ( [self bounds] );
 	
+	// Draw calibration points if not 0
 	switch (calPoint) {
 		case 1:
 			[[NSColor whiteColor] set];
@@ -52,6 +52,7 @@
 								  [self bounds].size.height-calPointSize,
 								  calPointSize,  calPointSize));
 			break;
+		// If 0, draw set points
 		default:
 			[[NSColor whiteColor ] set];
 			[[self crossAtPoint:point1] stroke ];
@@ -62,18 +63,21 @@
 	}
 }
 
+// Sets first point to draw
 -(void)setPoint1:(NSPoint)aPoint
 {
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
 }
 
+// Sets second point to draw
 -(void)setPoint2:(NSPoint)aPoint
 {
 	point2.x = aPoint.x*[self bounds].size.width;
 	point2.y = aPoint.y*[self bounds].size.height;
 }
 
+// Draws cross at set coordinates
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint
 {
 	int r;
@@ -86,12 +90,15 @@
 	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
 	return aPath;
 }
+
+// Sets calibration point or 0
 -(void)setCalPoint:(int)index
 {
 	calPoint=index;
 	[self setNeedsDisplay:YES];
 }
 
+// x axis is flipped
 - (BOOL)isFlipped
 {
 	return YES;
