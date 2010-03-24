@@ -12,6 +12,7 @@
 
 @implementation ZOImageView
 
+// Initialize calPoints array
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -30,6 +31,7 @@
     return self;
 }
 
+// Sets coalibration points
 -(void)setCalPoints:(NSArray *)anArray
 {
 	int i;
@@ -50,6 +52,7 @@
 	
 }
 
+// Sets image for view
 -(void)setAnImage:(NSImage *)anImage
 {
 	[image release];
@@ -57,12 +60,14 @@
 	[image retain];
 }
 
+// Sets a point where draw a cross
 -(void)setPoint:(NSPoint)aPoint
 {
 	point.x = aPoint.x*[self bounds].size.width;
 	point.y = aPoint.y*[self bounds].size.height;
 }
 
+// Returns path with cross
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint
 {
 	int r;
@@ -76,6 +81,7 @@
 	return aPath;
 }
 
+// Draws into view
 - (void)drawRect:(NSRect)rect
 {
 	// Background
@@ -101,6 +107,7 @@
 	}
 }
 
+// Coordinates are flipped
 - (BOOL)isFlipped
 {
 	return YES;

@@ -11,6 +11,7 @@
 
 @implementation ZOCalibrate
 
+//Initialize calPointsArray, sets projector view and camera size
 -(id)initWithProjectorView:(ZOProjectorView *) aView andSize:(NSSize)aSize
 {
 	if (![super init])
@@ -35,11 +36,14 @@
 	
 	return self;
 }
+
+// Returns actual calPointsArray, for initialization transformations.
 -(NSArray *)someCalibrationArray
 {
 	return calPointsArray;
 }
 
+//Begins calibration
 -(void)calibrate
 {
 	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
@@ -49,11 +53,14 @@
 											   repeats: NO];
 	
 }
+
+// Gets image from WindowController
 -(void)setLastImage:(NSImage *)anImage
 {
 	lastImage=anImage;
 }
 
+// Handles end of blank, set new calibration point
 - (void) handleCalTimer: (NSTimer *) aTimer
 {
 	printf("Timer has expired\n");
@@ -67,8 +74,10 @@
 											  userInfo: nil
 											   repeats: NO];
 	
-} // handleTimer
+}
 
+// Hnadles end of viewing calibration point, 
+// gets its coordinates and saves it into calPointsArray
 -(void)handleBlankTimer:(NSTimer *)aTimer
 {
 	NSPoint outPoint;
@@ -82,18 +91,21 @@
 	
 	calPointsArrayIndex++;
 	
+	// Set blank
 	[projView setCalPoint:0];
 	[projView setNeedsDisplay:YES];
 	
+	// If calibration is complete, sends notification to WindowController
 	if (calPointsArrayIndex>3) 
 	{
 		calPointsArrayIndex=0;
 		
-		[[NSNotificationCenter defaultCenter] postNotificationName:@"Calibration OK" object:calPointsArray];
+		[[NSNotificationCenter defaultCenter] 
+			postNotificationName: @"Calibration OK" 
+						  object: calPointsArray];
 
-		
-		//return calPointsArray;
 	}
+	// Else sets blank timer
 	else 
 	{
 		calTimer = [NSTimer scheduledTimerWithTimeInterval: 3
