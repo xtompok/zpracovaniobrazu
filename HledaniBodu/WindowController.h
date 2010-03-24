@@ -37,12 +37,12 @@ typedef struct {
 	IBOutlet NSSlider *gMinSlider;
 	IBOutlet NSSlider *bMinSlider;
 	
-	/*IBOutlet NSSlider *rMinValueSlider;
-	IBOutlet NSSlider *gMinValueSlider;
-	IBOutlet NSSlider *bMinValueSlider;*/
+	IBOutlet NSSlider *rMinSumSlider;
+	IBOutlet NSSlider *gMinSumSlider;
+	IBOutlet NSSlider *bMinSumSlider;
 	
 	IBOutlet NSButton *minTogetherButton;
-	//IBOutlet NSButton *minTogetherValueButton;
+	IBOutlet NSButton *minTogetherSumButton;
 	
 	IBOutlet NSButton *printToStdButton;
 	
@@ -50,26 +50,15 @@ typedef struct {
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
 	
-	/*IBOutlet NSTextField *rMinValueLabel;
-	IBOutlet NSTextField *gMinValueLabel;
-	IBOutlet NSTextField *bMinValueLabel;*/
+	IBOutlet NSTextField *rMinSumLabel;
+	IBOutlet NSTextField *gMinSumLabel;
+	IBOutlet NSTextField *bMinSumLabel;
 	
 	NSArray *calLabelsArray;
-	NSArray *calPointsArray;
-	
-	int kalibCamArrayindex;
-	
-	ZOPoint *ulCalPoint;
-	ZOPoint *urCalPoint;
-	ZOPoint *llCalPoint;
-	ZOPoint *lrCalPoint;
 	
 	NSSize size;
 	
 	NSWindow * projWindow;
-	
-	NSTimer *calTimer;
-	NSTimer *calBlankTimer;
 	
 	NSImage *lastImage;
 	
@@ -100,7 +89,7 @@ typedef struct {
 
 //Configuration action
 -(IBAction)sumSquareSliderMoved:(id)sender;
-
+-(IBAction)minSliderMoved:(id)sender;
 
 
 @end
