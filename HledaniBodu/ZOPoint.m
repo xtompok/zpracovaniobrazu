@@ -42,4 +42,9 @@
 	
 }
 
+-(NSString *)description
+{
+	NSString *result; result = [[NSString alloc] initWithFormat:@"x = %f, y= %f",x,y];
+	return result;
+}
 @end

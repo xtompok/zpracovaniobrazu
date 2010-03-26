@@ -32,6 +32,7 @@
 -(void)calibrate;
 -(void)setLastImage:(NSImage *)anImage;
 -(NSArray *)someCalibrationArray;
+-(NSString *)description;
 
 
 @end

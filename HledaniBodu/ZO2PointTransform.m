@@ -71,6 +71,14 @@
 	double xpomer,ypomer;
 	double e,f,o,p;
 	
+	if ((point.x==0)&&(point.y==0)) {
+		NSPoint transPoint;
+		
+		transPoint.x=0;
+		transPoint.y=0;
+		return transPoint;
+	}
+	
 	// Computes parametres of equations of lines going through point and helping calibration point
 	e=(double)(PTB[0].y-point.y)/(PTB[0].x-point.x);
 	f=point.y-e*point.x;
