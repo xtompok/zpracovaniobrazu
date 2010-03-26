@@ -18,6 +18,7 @@
 -(id)initWithPoint:(NSPoint)aPoint;
 -(NSPoint)pointValue;
 -(void)setPoint:(NSPoint)aPoint;
+-(NSString *)description;
 
 @property float x;
 @property float y;

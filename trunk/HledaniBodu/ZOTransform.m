@@ -88,6 +88,14 @@
 {
 	double d1,d2,d3;
 	
+	if ((point.x==0)&&(point.y==0)) {
+		NSPoint transPoint;
+		
+		transPoint.x=0;
+		transPoint.y=0;
+		return transPoint;
+	}
+	
 	d1=PTK[0][0]*PTK[1][1]+PTK[1][0]*PTK[0][1];
 	d2=PTK[0][1]*PTK[3][0]-point.x*PTK[0][1]+PTK[1][1]*PTK[2][0]-PTK[1][0]*PTK[2][1]+PTK[3][0]*PTK[0][0]-PTK[0][0]*point.y;
 	d3=point.x*PTK[2][1]+PTK[2][0]*PTK[3][0]-PTK[2][1]*PTK[3][0]-point.y*PTK[2][0];

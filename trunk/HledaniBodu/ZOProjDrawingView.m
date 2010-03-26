@@ -97,6 +97,7 @@
 
 -(void)setPoint1:(NSPoint)aPoint
 {
+	NSLog(@"X: %f, Y:%f",aPoint.x,aPoint.y);
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
 	if ((point1.x==0)&&(point1.y==0)) 
@@ -104,7 +105,8 @@
 		drawing=NO;
 	} else 
 	{
-		if (!drawing) {
+		if (!drawing) 
+		{
 			myMutaryOfPoints	= [[NSMutableArray alloc]init];
 			[myMutaryOfBrushStrokes addObject:myMutaryOfPoints];
 		}
@@ -112,8 +114,6 @@
 	}
 	if (drawing)
 	{
-		//NSPoint tvarMousePointInWindow	= [pTheEvent locationInWindow];
-		//NSPoint tvarMousePointInView	= [self convertPoint:tvarMousePointInWindow fromView:nil];
 		ZOPoint * tvarMyPointObj		= [[ZOPoint alloc]initWithPoint:point1];
 		
 		[myMutaryOfPoints addObject:tvarMyPointObj];
@@ -150,44 +150,5 @@
 {
 	return YES;
 }
-
-
--(void)mouseDown:(NSEvent *)pTheEvent {
-	
-	myMutaryOfPoints	= [[NSMutableArray alloc]init];
-	[myMutaryOfBrushStrokes addObject:myMutaryOfPoints];
-	
-	NSPoint tvarMousePointInWindow	= [pTheEvent locationInWindow];
-	NSPoint tvarMousePointInView	= [self convertPoint:tvarMousePointInWindow fromView:nil];
-	NSLog(@"point:%f,%f",tvarMousePointInView.x,tvarMousePointInView.y);
-	ZOPoint * tvarMyPointObj		= [[ZOPoint alloc]initWithPoint:tvarMousePointInView];
-	
-	[myMutaryOfPoints addObject:tvarMyPointObj];		
-	
-} // end mouseDown
-
--(void)mouseDragged:(NSEvent *)pTheEvent {
-	
-	NSPoint tvarMousePointInWindow	= [pTheEvent locationInWindow];
-	NSPoint tvarMousePointInView	= [self convertPoint:tvarMousePointInWindow fromView:nil];
-	ZOPoint * tvarMyPointObj		= [[ZOPoint alloc]initWithPoint:tvarMousePointInView];
-	
-	[myMutaryOfPoints addObject:tvarMyPointObj];	
-	
-	[self setNeedsDisplay:YES]; 
-	
-} // end mouseDragged
-
--(void)mouseUp:(NSEvent *)pTheEvent {
-	
-	NSPoint tvarMousePointInWindow	= [pTheEvent locationInWindow];
-	NSPoint tvarMousePointInView	= [self convertPoint:tvarMousePointInWindow fromView:nil];
-	ZOPoint * tvarMyPointObj		= [[ZOPoint alloc]initWithPoint:tvarMousePointInView];
-	
-	[myMutaryOfPoints addObject:tvarMyPointObj];	
-	
-	[self setNeedsDisplay:YES];
-	
-} // end mouseUp
 
 @end
