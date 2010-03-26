@@ -8,29 +8,27 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZOPoint.h"
-#import "ZOProjectorView.h"
 #import "ZOProcessImage.h"
 
 @interface ZOCalibrate : NSObject {
 	
-	ZOProjectorView * projView;
 	ZOProcessImage * procImage;
+	
+	NSSize size;
+	NSImage * lastImage;
 	
 	ZOPoint * ulCalPoint;
 	ZOPoint * urCalPoint;
 	ZOPoint * llCalPoint;
 	ZOPoint * lrCalPoint;
 	
-	NSSize size;
-	NSImage * lastImage;
-	
 	NSTimer * calTimer;
-	int calPointsArrayIndex;
 	NSArray * calPointsArray;
+	int calPointsArrayIndex;
 
 }
 
--(id)initWithProjectorView:(ZOProjectorView *) aView andSize:(NSSize)aSize;
+-(id)initWithSize:(NSSize)aSize;
 -(void)calibrate;
 -(void)setLastImage:(NSImage *)anImage;
 -(NSArray *)someCalibrationArray;

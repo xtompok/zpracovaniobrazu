@@ -12,19 +12,16 @@
 @implementation ZOCalibrate
 
 //Initialize calPointsArray, sets projector view and camera size
--(id)initWithProjectorView:(ZOProjectorView *) aView andSize:(NSSize)aSize
+-(id)initWithSize:(NSSize)aSize
 {
 	if (![super init])
 		return nil;
 	
-	projView=aView;
-	procImage = [[ZOProcessImage alloc]initWithSize:aSize];
-	size=aSize;
+	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.01, 0.01)];
+	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 1)];
+	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.9, 0.9)];
+	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 0)];
 	
-	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
-	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
-	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
-	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 0)];
 	
 	
 	calPointsArray = [[NSArray alloc] initWithObjects:
@@ -33,6 +30,19 @@
 					  (ZOPoint *) lrCalPoint,
 					  (ZOPoint *) llCalPoint,
 					  nil];
+	
+	[urCalPoint retain];
+	[ulCalPoint retain];
+	[llCalPoint retain];
+	[lrCalPoint retain];
+	[calPointsArray retain];
+	
+	size.width=aSize.width;
+	size.height=aSize.height;
+	
+	procImage = [[ZOProcessImage alloc]initWithSize:aSize];
+	
+	calPointsArrayIndex=0;
 	
 	return self;
 }
@@ -63,10 +73,10 @@
 // Handles end of blank, set new calibration point
 - (void) handleCalTimer: (NSTimer *) aTimer
 {
-	printf("Timer has expired\n");
 	
-	[projView setCalPoint:(calPointsArrayIndex+1)];
-	[projView setNeedsDisplay:YES];
+	[[NSNotificationCenter defaultCenter] 
+	 postNotificationName: @"Set calibration point" 
+	 object: [NSValue value:&calPointsArrayIndex withObjCType:@encode(int *)]];
 	
 	calTimer = [NSTimer scheduledTimerWithTimeInterval: 2
 												target: self
@@ -76,7 +86,7 @@
 	
 }
 
-// Hnadles end of viewing calibration point, 
+// Handles end of viewing calibration point, 
 // gets its coordinates and saves it into calPointsArray
 -(void)handleBlankTimer:(NSTimer *)aTimer
 {
@@ -86,20 +96,23 @@
 	//Correction that calibration points aren't in corners
 	outPoint.x+=0/size.width;
 	outPoint.y-=2/size.height;
-	
+
 	[[calPointsArray objectAtIndex:calPointsArrayIndex] setPoint:outPoint];
 	
 	calPointsArrayIndex++;
 	
 	// Set blank
-	[projView setCalPoint:0];
-	[projView setNeedsDisplay:YES];
+	int i;
+	i=-1;
+	[[NSNotificationCenter defaultCenter] 
+	 postNotificationName: @"Set calibration point" 
+	 object: [NSValue value:&i withObjCType:@encode(int *)]];
+	
 	
 	// If calibration is complete, sends notification to WindowController
 	if (calPointsArrayIndex>3) 
 	{
 		calPointsArrayIndex=0;
-		
 		[[NSNotificationCenter defaultCenter] 
 			postNotificationName: @"Calibration OK" 
 						  object: calPointsArray];

@@ -13,6 +13,7 @@
 #import "ZOPoint.h"
 #import "ZOImageView.h"
 #import "ZOProjectorView.h"
+#import "ZOProjDrawingView.h"
 #import "ZOCalibrate.h"
 #import "ZOProcessImage.h"
 
@@ -40,8 +41,6 @@
 	
 	// Set resolution of camera
 	size=NSMakeSize(320, 240);
-	
-	delka=size.width*size.height*4;
 	
 	// Start recording
 	camera = [[CSGCamera alloc] init];
@@ -85,8 +84,13 @@
 		[projWindow makeKeyAndOrderFront:nil];
 		
 		// Load our content view
-		[projPanel setFrame:screeenRect display: YES];
-		[projWindow setContentView:[projPanel contentView]];
+//		[projPanel setFrame:screeenRect display: YES];
+//		[projWindow setContentView:[projPanel contentView]];
+		
+		[drawPanel setFrame:screeenRect display: YES];
+		[projWindow setContentView:[drawPanel contentView]];
+
+	
 	}	
 	
 	/*Initialization own classes*/
@@ -96,7 +100,9 @@
 	procImage = [[ZOProcessImage alloc] initWithSize:size];
 	
 	// Init calibration object
-	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
+//	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
+	calObject = [[ZOCalibrate alloc] initWithSize:size];
+
 	
 	// Init transformation object
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject someCalibrationArray]];
@@ -106,6 +112,12 @@
 											  selector:@selector(calibrationCompleted:)
 												  name:@"Calibration OK"
 												object:nil];
+	
+	[[NSNotificationCenter defaultCenter]  addObserver:self
+											  selector:@selector(setCalPoint:)
+												  name:@"Set calibration point"
+												object:nil];
+	
 	// Set running or paused
 	running=YES;
 	
@@ -143,8 +155,11 @@
 	//[projView setPoint1:outPoint];
 	//transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
 	transPoint=[transform2Object transformPoint:outPoint];
-	[projView setPoint1:transPoint];
-	[projView setNeedsDisplay:YES];
+	
+	//[projView setPoint1:transPoint];
+	//[projView setNeedsDisplay:YES];
+	[drawView setPoint1:transPoint];
+	[drawView setNeedsDisplay:YES];
 	
 			
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
@@ -177,9 +192,20 @@
 	{
 		[[calLabelsArray objectAtIndex:i] setStringValue:
 		 [NSString stringWithFormat:@"%.3d,%.3d",
-		  (int)([[calArray objectAtIndex:i] xValue]*size.width),
-		  (int)([[calArray objectAtIndex:i] yValue]*size.height)]];
+		  (int)([[calArray objectAtIndex:i] x]*size.width),
+		  (int)([[calArray objectAtIndex:i] y]*size.height)]];
 	}
+}
+
+-(void)setCalPoint:(NSNotification *)aNotification
+{
+	int i;
+	[[aNotification object] getValue:&i];
+	i++;
+	NSLog(@"Set cal point: %d",i);
+	[drawView setCalPoint:i];
+	[drawView setNeedsDisplay:YES];
+	
 }
 
 /* GUI Interactivity */

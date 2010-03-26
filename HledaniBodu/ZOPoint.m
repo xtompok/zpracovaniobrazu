@@ -11,6 +11,9 @@
 
 @implementation ZOPoint
 
+@synthesize x;
+@synthesize y;
+
 // Initialize with NSPoint
 -(id)initWithPoint:(NSPoint)aPoint
 {
@@ -19,49 +22,24 @@
 		return self;
 	}
 	
-	point.x=aPoint.x;
-	point.y=aPoint.y;
+	x=aPoint.x;
+	y=aPoint.y;
 	
 	return self;
-}
-
-// Returns x coordinate of ZOPoint
--(double)xValue
-{
-	return point.x;
-}
-
-// Returns y coordinate of ZOPoint
--(double)yValue;
-{
-	return point.y;
-}
-
-// Returns NSPoint of ZOPoint
--(NSPoint)pointValue;
-{
-	return point;
-
 }
 
 // Sets NSPoint
 -(void)setPoint:(NSPoint)aPoint;
 {
-	point.x=aPoint.x;
-	point.y=aPoint.y;
+	x=aPoint.x;
+	y=aPoint.y;
 }
 
-// Sets x coordinate of ZOPoint
--(void)setX:(double)theX;
+// Returns NSPoint of ZOPoint
+-(NSPoint)pointValue;
 {
-	point.x=theX;
+	return NSMakePoint(x, y);
+	
 }
-
-// Sets y coordinate of ZOPoint
--(void)setY:(double)theY;
-{
-	point.y=theY;
-}
-
 
 @end

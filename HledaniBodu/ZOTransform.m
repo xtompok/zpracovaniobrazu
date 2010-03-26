@@ -20,17 +20,17 @@
 	
 	posun=5;
 	
-	calArray[0][0]=[[modCalArray objectAtIndex:0] xValue];
-	calArray[0][1]=[[modCalArray objectAtIndex:0] yValue];
+	calArray[0][0]=[[modCalArray objectAtIndex:0] x];
+	calArray[0][1]=[[modCalArray objectAtIndex:0] y];
 	
-	calArray[1][0]=[[modCalArray objectAtIndex:1] xValue];
-	calArray[1][1]=[[modCalArray objectAtIndex:1] yValue];
+	calArray[1][0]=[[modCalArray objectAtIndex:1] x];
+	calArray[1][1]=[[modCalArray objectAtIndex:1] y];
 	
-	calArray[2][0]=[[modCalArray objectAtIndex:2] xValue];
-	calArray[2][1]=[[modCalArray objectAtIndex:2] yValue];
+	calArray[2][0]=[[modCalArray objectAtIndex:2] x];
+	calArray[2][1]=[[modCalArray objectAtIndex:2] y];
 	
-	calArray[3][0]=[[modCalArray objectAtIndex:3] xValue];
-	calArray[3][1]=[[modCalArray objectAtIndex:3] yValue];
+	calArray[3][0]=[[modCalArray objectAtIndex:3] x];
+	calArray[3][1]=[[modCalArray objectAtIndex:3] y];
 
 	
 	PTK[0][0]=

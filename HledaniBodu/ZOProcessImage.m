@@ -31,10 +31,11 @@
 {
 	if (![super init])
 		return nil;
-	size=aSize;
+	size.width=aSize.width;
+	size.height=aSize.height;
 	delka=size.width*size.height*4;
-	
-	origbuffer=(unsigned char *)malloc(delka*sizeof(unsigned char));
+	printf("Delka=%d\n",delka);
+	origbuffer=(unsigned char *)malloc(delka*sizeof(char));
 	
 	minRValue=120;
 	

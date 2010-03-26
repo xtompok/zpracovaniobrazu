@@ -20,17 +20,17 @@
 	double m,n,i,j;
 	
 	// Sets array with calibration points
-	CP[0].x=[[calArray objectAtIndex:0] xValue];
-	CP[0].y=[[calArray objectAtIndex:0] yValue];
+	CP[0].x=[[calArray objectAtIndex:0] x];
+	CP[0].y=[[calArray objectAtIndex:0] y];
 	
-	CP[1].x=[[calArray objectAtIndex:1] xValue];
-	CP[1].y=[[calArray objectAtIndex:1] yValue];
+	CP[1].x=[[calArray objectAtIndex:1] x];
+	CP[1].y=[[calArray objectAtIndex:1] y];
 	
-	CP[2].x=[[calArray objectAtIndex:2] xValue];
-	CP[2].y=[[calArray objectAtIndex:2] yValue];
+	CP[2].x=[[calArray objectAtIndex:2] x];
+	CP[2].y=[[calArray objectAtIndex:2] y];
 	
-	CP[3].x=[[calArray objectAtIndex:3] xValue];
-	CP[3].y=[[calArray objectAtIndex:3] yValue];
+	CP[3].x=[[calArray objectAtIndex:3] x];
+	CP[3].y=[[calArray objectAtIndex:3] y];
 	
 	// Computes parametres for equations of lines
 	k=(double)(CP[0].y-CP[1].y)/(CP[0].x-CP[1].x);

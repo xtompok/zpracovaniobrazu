@@ -10,18 +10,17 @@
 
 
 @interface ZOPoint : NSObject {
-	NSPoint point;
-
+	//NSPoint point;
+	float x;
+	float y;
 }
 
 -(id)initWithPoint:(NSPoint)aPoint;
--(double)xValue;
--(double)yValue;
 -(NSPoint)pointValue;
 -(void)setPoint:(NSPoint)aPoint;
--(void)setX:(double)theX;
--(void)setY:(double)theY;
 
+@property float x;
+@property float y;
 
 
 @end

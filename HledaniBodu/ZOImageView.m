@@ -41,8 +41,8 @@
 
 		for (i=0;i<4;i++)
 		{
-			x=[[anArray objectAtIndex:i] xValue]*[self bounds].size.width;
-			y=[[anArray objectAtIndex:i] yValue]*[self bounds].size.height;
+			x=[[anArray objectAtIndex:i] x]*[self bounds].size.width;
+			y=[[anArray objectAtIndex:i] y]*[self bounds].size.height;
 			[[calPoints objectAtIndex:i] setX:x];
 			[[calPoints objectAtIndex:i] setY:y];
 			

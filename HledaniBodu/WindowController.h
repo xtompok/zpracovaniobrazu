@@ -8,29 +8,25 @@
 
 #import <Cocoa/Cocoa.h>
 
-typedef struct {
-	int r;
-	int g;
-	int b;
-} BARVA;
-
 @class CSGCamera;
 
 @interface WindowController : NSWindowController
 {	
+	/* Outlets */
+	/* ------- */
+	
+	// Main window
 	IBOutlet ZOImageView *imageView;
-	IBOutlet NSImageView *imageView2;
 	
-	//Projector screen
-	IBOutlet NSPanel *projPanel;
-	IBOutlet ZOProjectorView *projView;
-	
+	// Calibration points labels
 	IBOutlet NSTextField *ulLabel;
 	IBOutlet NSTextField *urLabel;
 	IBOutlet NSTextField *llLabel;
 	IBOutlet NSTextField *lrLabel;
+	
 	IBOutlet NSTextField *maxSumSquareLabel;
 	IBOutlet NSButton *calibrateButton;
+	IBOutlet NSButton *printToStdButton;
 	
 	//Config outlets
 	IBOutlet NSSlider *rMinSlider;
@@ -41,11 +37,6 @@ typedef struct {
 	IBOutlet NSSlider *gMinSumSlider;
 	IBOutlet NSSlider *bMinSumSlider;
 	
-	IBOutlet NSButton *minTogetherButton;
-	IBOutlet NSButton *minTogetherSumButton;
-	
-	IBOutlet NSButton *printToStdButton;
-	
 	IBOutlet NSTextField *rMinLabel;
 	IBOutlet NSTextField *gMinLabel;
 	IBOutlet NSTextField *bMinLabel;
@@ -54,33 +45,46 @@ typedef struct {
 	IBOutlet NSTextField *gMinSumLabel;
 	IBOutlet NSTextField *bMinSumLabel;
 	
-	NSArray *calLabelsArray;
+	IBOutlet NSButton *minTogetherButton;
+	IBOutlet NSButton *minTogetherSumButton;
 	
-	NSSize size;
-	
+		
+	//Projector screen
+	IBOutlet NSPanel *projPanel;
+	IBOutlet ZOProjectorView *projView;
+	IBOutlet NSPanel *drawPanel;
+	IBOutlet ZOProjDrawingView *drawView;
 	NSWindow * projWindow;
 	
+	/* Images and points */
+	/* ----------------- */
+	
+	CSGCamera *camera;
 	NSImage *lastImage;
-	
-	int delka;
-	unsigned char * origbuffer;
-	
-	BARVA minColorValue;
-	BARVA maxColorValue;
-
 	NSPoint outPoint;
+	
+	/* Calibration stuff */
+	/* ----------------- */
+	
+	NSArray *calLabelsArray;
+	NSSize size;
+	
+	/* Modes */
+	/* ----- */
+	
 	unsigned char mode;
 	BOOL running;
-	
 	BOOL calInProgress;
+	
+	/* ZO classes */
+	/* ---------- */
 	
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
 	
-	ZOProcessImage *procImage;
 	ZOCalibrate *calObject;
 	
-	CSGCamera *camera;
+	ZOProcessImage *procImage;
 }
 
 -(IBAction)Calibrate:(id)sender;
