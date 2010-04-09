@@ -33,6 +33,9 @@
 -(void)setLastImage:(NSImage *)anImage;
 -(NSArray *)someCalibrationArray;
 -(NSString *)description;
+-(void)setMinValues:(int *)minValues;
+-(void)setMaxValues:(int *)maxValues;
+-(void)setMinSumValues:(int *)minSumValues;
 
 
 @end

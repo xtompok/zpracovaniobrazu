@@ -40,7 +40,7 @@
 	minRValue=120;
 	
 	maxRValue=255;
-	maxGValue=255;
+	maxGValue=200;
 	maxBValue=255;
 
 	return self;
@@ -125,7 +125,7 @@
 }
 
 /* Sum square */
-/* ----------- */
+/* ---------- */
 
 //Return sum of 5x5 square around supplied point in array with 3 numbers - 
 // - one number for each color, point is defined by index

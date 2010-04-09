@@ -28,25 +28,25 @@
 	
 	switch (calPoint) {
 		case 1:
-			[[NSColor whiteColor] set];
+			[[NSColor redColor] set];
 			NSRectFill(NSMakeRect(0,
 								  0,
 								  calPointSize,  calPointSize));
 			break;
 		case 2:
-			[[NSColor whiteColor] set];
+			[[NSColor redColor] set];
 			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
 								  0,
 								  calPointSize,  calPointSize));
 			break;
 		case 3:
-			[[NSColor whiteColor] set];
+			[[NSColor redColor] set];
 			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
 								  [self bounds].size.height-calPointSize,
 								  calPointSize,  calPointSize));
 			break;
 		case 4:
-			[[NSColor whiteColor] set];
+			[[NSColor redColor] set];
 			NSRectFill(NSMakeRect(0,
 								  [self bounds].size.height-calPointSize,
 								  calPointSize,  calPointSize));
@@ -97,7 +97,7 @@
 
 -(void)setPoint1:(NSPoint)aPoint
 {
-	NSLog(@"X: %f, Y:%f",aPoint.x,aPoint.y);
+	//NSLog(@"X: %f, Y:%f",aPoint.x,aPoint.y);
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
 	if ((point1.x==0)&&(point1.y==0)) 
@@ -118,7 +118,7 @@
 		
 		[myMutaryOfPoints addObject:tvarMyPointObj];
 	}
-	printf("%d drawing",drawing);
+	//printf("%d drawing",drawing);
 	
 }
 
@@ -144,6 +144,12 @@
 {
 	calPoint=index;
 	[self setNeedsDisplay:YES];
+}
+-(void)resetDrawing
+{
+	NSLog(@"Reseting Drawing");
+	[myMutaryOfBrushStrokes release];
+	myMutaryOfBrushStrokes	= [[NSMutableArray alloc]init];
 }
 
 - (BOOL)isFlipped
