@@ -236,9 +236,18 @@
 	}
 }
 
+// Resets drawing
+-(IBAction)resetDrawing:(id)sender
+{
+	[drawView resetDrawing];
+}
+
 //Configuration
 -(IBAction)minSliderMoved:(id)sender
 {
+	int minValues[3];
+	
+	
 	NSLog(@"%@",sender);
 	if ([minTogetherButton state]==NSOffState) 
 	{
@@ -290,10 +299,79 @@
 		[procImage setMinGValue:[gMinSlider intValue]];
 		[procImage setMinBValue:[bMinSlider intValue]];
 	}
+	minValues[0]= [rMinSlider intValue];
+	minValues[1]= [gMinSlider intValue];
+	minValues[2]= [bMinSlider intValue];
+	
+	[calObject setMinValues:minValues];
+}
+
+-(IBAction)maxSliderMoved:(id)sender
+{
+	int minValues[3];
+	
+	
+	NSLog(@"%@",sender);
+	if ([maxTogetherButton state]==NSOffState) 
+	{
+		if (sender==rMaxSlider) 
+		{	
+			[rMaxLabel setIntValue:[rMaxSlider intValue]];
+			[procImage setMaxRValue:[rMaxSlider intValue]];
+		} 
+		else if (sender==gMaxSlider)
+		{
+			[gMaxLabel setIntValue:[gMaxSlider intValue]];
+			[procImage setMaxGValue:[gMaxSlider intValue]];
+		} 
+		else if (sender==bMaxSlider) 
+		{
+			[bMaxLabel setIntValue:[bMaxSlider intValue]];
+			[procImage setMaxBValue:[bMaxSlider intValue]];
+		}
+		
+	} else {
+		if (sender==rMaxSlider) 
+		{
+			[gMaxSlider setIntValue:[rMaxSlider intValue]];
+			[bMaxSlider setIntValue:[rMaxSlider intValue]];
+			
+			[rMaxLabel setIntValue:[rMaxSlider intValue]];
+			[gMaxLabel setIntValue:[rMaxSlider intValue]];
+			[bMaxLabel setIntValue:[rMaxSlider intValue]];
+		} 
+		else if (sender==gMaxSlider)
+		{
+			[rMaxSlider setIntValue:[gMaxSlider intValue]];
+			[bMaxSlider setIntValue:[gMaxSlider intValue]];
+			
+			[rMaxLabel setIntValue:[gMaxSlider intValue]];
+			[gMaxLabel setIntValue:[gMaxSlider intValue]];
+			[bMaxLabel setIntValue:[gMaxSlider intValue]];
+		} 
+		else if (sender==bMaxSlider) 
+		{
+			[rMaxSlider setIntValue:[bMaxSlider intValue]];
+			[gMaxSlider setIntValue:[bMaxSlider intValue]];
+			
+			[rMaxLabel setIntValue:[bMaxSlider intValue]];
+			[gMaxLabel setIntValue:[bMaxSlider intValue]];
+			[bMaxLabel setIntValue:[bMaxSlider intValue]];
+		}
+		[procImage setMaxRValue:[rMaxSlider intValue]];
+		[procImage setMaxGValue:[gMaxSlider intValue]];
+		[procImage setMaxBValue:[bMaxSlider intValue]];
+	}
+	minValues[0]= [rMaxSlider intValue];
+	minValues[1]= [gMaxSlider intValue];
+	minValues[2]= [bMaxSlider intValue];
+	
+	[calObject setMaxValues:minValues];
 }
 
 -(IBAction)sumSquareSliderMoved:(id)sender
 {
+	int minSumValues[3];
 	NSLog(@"%@",sender);
 	if ([minTogetherSumButton state]==NSOffState) 
 	{
@@ -345,6 +423,11 @@
 		[procImage setMinGSumValue:[gMinSumSlider intValue]];
 		[procImage setMinBSumValue:[bMinSumSlider intValue]];
 	}
+	minSumValues[0]=[rMinSlider intValue];
+	minSumValues[1]=[gMinSlider intValue];
+	minSumValues[2]=[bMinSlider intValue];
+	
+	[calObject setMinSumValues:minSumValues];
 }
 
 @end

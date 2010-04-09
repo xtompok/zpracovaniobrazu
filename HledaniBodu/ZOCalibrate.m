@@ -40,9 +40,9 @@
 	size.width=aSize.width;
 	size.height=aSize.height;
 	
-	procImage = [[ZOProcessImage alloc]initWithSize:aSize];
-	
 	calPointsArrayIndex=0;
+	
+	procImage = [[ZOProcessImage alloc]initWithSize:aSize];
 	
 	return self;
 }
@@ -129,6 +129,28 @@
 	}
 	
 }
+
+-(void)setMinValues:(int *)minValues
+{
+	[procImage setMinRValue:minValues[0]];
+	[procImage setMinGValue:minValues[1]];
+	[procImage setMinBValue:minValues[2]];
+}
+-(void)setMaxValues:(int *)maxValues
+{
+	[procImage setMaxRValue:maxValues[0]];
+	[procImage setMaxGValue:maxValues[1]];
+	[procImage setMaxBValue:maxValues[2]];
+
+}
+-(void)setMinSumValues:(int *)minSumValues
+{
+	[procImage setMinRSumValue:minSumValues[0]];
+	[procImage setMinGSumValue:minSumValues[1]];
+	[procImage setMinBSumValue:minSumValues[2]];
+	
+}
+
 
 -(NSString *)description
 {

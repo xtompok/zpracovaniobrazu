@@ -24,6 +24,7 @@
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)setCalPoint:(int)index;
+-(void)resetDrawing;
 
 @end
 
