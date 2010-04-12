@@ -1,0 +1,41 @@
+Hello,
+
+we are Tomáš Pokorný and Vojtěch Přikryl. We are form 3.A and we are going to show you our project about image processing and using webcam and dataprojector as interactive board. We chose the project because we like informatics and image processing is an interesting part of it.
+
+Equipment
+
+Let's go to the project. First, what we need for our project. There are three main things. The computer with webcam, the dataprojector and the laser pointer to point on image shown on projector. Computer is connected to dataprojector and it's webcam is looking at the image shown by dataprojector. On computer is our program called HledaniBodu, which provides routines to get, process and show image on projector
+
+Capturing and processing image
+
+Second, we'll focus on getting image and processing it. Images are captured by framework CocoaSequenceGrabber. The program finds the lightest square of 5x5 pixels in image. It goes pixel by pixel and if the lightness of the pixel is greater than set value, it looks around and computes sum of lightness of each colour. If it is lesser than set value, program discards it. The result is square of 5x5 points with maximum value of this sum.
+
+This method has shown as reliable, the point is in choosing the right value to discard pixels. If it is too low, the program runs slower and if it is too high, it could discard the point of laser pointer.
+
+Calibration
+
+The calibration is the first thing linked with transformation. The point is to find the corners of projecting area in picture from camera. The programme lights in sequence corners of projecting area, waits a while to adapt the camera and then finds the ligtest point of picture. This way we get four points which we use in transformation.
+
+Transformation
+
+The transformation is the key part of the project. Why is it needed? The projector projects a rectangle on screen. If the axis of screen is parallel with axis of camera to the projecting screen, we have no problem, because the screen rectangle in camera image is still rectangle, so we don't need any special transformations, only expand the part of captured image, where is a screen rectangle and we are done. The problem is, if don't have parallel axes. Then the screen rectangle isn't rectangle in the captured image, it's a cut of square pyramid, so we need a transformation, which transforms the captured coordinates of point from laser pointer to real coordinates on screen.
+
+Ratio transformation
+
+This was the best transformation before the two point transformation. It is based on fact, that in the distorted image stays kept ratios of lengths between found point and sides of quadrilateral. If we generalize it on two dimensions, we get equations, which can be used to transform lighted point to the screen
+
+Two point transformation
+
+This is transformation, which is now used. It works on principle, that opposite sides of quadrilateral of screen in captured image intersect. We find these intersection points and then we find lines, going through this point and the captured point of laser pointer. We compute intersection points of these lines and the sides of screen quadrilateral. The ratio between the length of the one point and the found intersection point and length of the side preserves in the distorted image, so we found the ratio and we can compute real coordinates of the lighted point on the screen.
+
+Graphic transformation
+
+This was the best transformation, when the project was written in Python. It used a method from Python Image Library called transform(x,y,image.QUAD,dd) which was exact, but it was really slow and it was Python dependent, so it has gone out when the project was rewritten to Objective C.
+
+Other transformations
+
+There were some other transformations like trapezoidal transformation, which was inaccurate but fast and easy to program and the angle transformation, which principle has been determined as wrong.
+
+Viewing
+
+After transformation follows the easiest part of project  - view it. We will not go to implementation details, it just works. The only thing, which we must take care of is to draw objects on screen with color, which will not be determined as point form laser pointer.
