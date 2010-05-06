@@ -11,11 +11,17 @@
 
 @implementation ZOProjDrawingView
 
+-(void)awakeFromNib {
+	calPointSize=20;
+	pointArray	= [[NSMutableArray alloc]init];
+	NSLog(@"Awaken View!");
+}
+
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         calPointSize=20;
-		myMutaryOfBrushStrokes	= [[NSMutableArray alloc]init];
+		pointArray	= [[NSMutableArray alloc]init];
     }
 	
     return self;
@@ -60,65 +66,49 @@
 			break;
 	}
 	
-	if ([myMutaryOfBrushStrokes count] == 0) {
-		return;
-	} // end if
 	
-	 
-	 // This is Quartz	
-	 NSGraphicsContext	*	tvarNSGraphicsContext	= [NSGraphicsContext currentContext];
-	 CGContextRef			tvarCGContextRef		= (CGContextRef) [tvarNSGraphicsContext graphicsPort];
-	 
-	 NSUInteger tvarIntNumberOfStrokes	= [myMutaryOfBrushStrokes count];
-	 
-	 NSUInteger i;
-	 for (i = 0; i < tvarIntNumberOfStrokes; i++) {
-	 
-	 CGContextSetRGBStrokeColor(tvarCGContextRef,0,255,0,128);
-	 CGContextSetLineWidth(tvarCGContextRef, (3.0) );
-	 
-	 myMutaryOfPoints	= [myMutaryOfBrushStrokes objectAtIndex:i];
-	 
-	 NSUInteger tvarIntNumberOfPoints	= [myMutaryOfPoints count];				// always >= 2
-	 ZOPoint * tvarLastPointObj			= [myMutaryOfPoints objectAtIndex:0];
-	 CGContextBeginPath(tvarCGContextRef);
-	 CGContextMoveToPoint(tvarCGContextRef,[tvarLastPointObj x],[tvarLastPointObj y]);
-	 
-	 NSUInteger j;
-	 for (j = 1; j < tvarIntNumberOfPoints; j++) {  // note the index starts at 1
-	 ZOPoint * tvarCurPointObj			= [myMutaryOfPoints objectAtIndex:j];
-	 CGContextAddLineToPoint(tvarCGContextRef,[tvarCurPointObj x],[tvarCurPointObj y]);	
-	 } // end for
-	 
-	 CGContextDrawPath(tvarCGContextRef,kCGPathStroke);
-	 
-	 } // end for
+	NSUInteger i;
+	NSPoint aPoint;
+	NSBezierPath * aPath;
+	aPath = [NSBezierPath bezierPath];
+	[aPath moveToPoint:NSMakePoint(0, 0)];
+	
+	if ([pointArray count]==0) return;
+	
+	for (i=0; i< [pointArray count]; i++)
+	{
+		aPoint.x=[[pointArray objectAtIndex:i] x];
+		aPoint.y=[[pointArray objectAtIndex:i] y];
+		if ((aPoint.x==0)&&(aPoint.y==0))
+		{
+			drawing = NO;
+		} 
+		else 
+		{
+			if (drawing == NO)
+			{
+				[aPath moveToPoint:aPoint];
+				drawing = YES;
+			}
+			else {
+				[aPath lineToPoint:aPoint];
+			}
+
+		}
+	}
+	[[NSColor greenColor] set];
+	[aPath stroke];
+
 }
 
 -(void)setPoint1:(NSPoint)aPoint
 {
-	//NSLog(@"X: %f, Y:%f",aPoint.x,aPoint.y);
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
-	if ((point1.x==0)&&(point1.y==0)) 
-	{
-		drawing=NO;
-	} else 
-	{
-		if (!drawing) 
-		{
-			myMutaryOfPoints	= [[NSMutableArray alloc]init];
-			[myMutaryOfBrushStrokes addObject:myMutaryOfPoints];
-		}
-		drawing=YES;
-	}
-	if (drawing)
-	{
-		ZOPoint * tvarMyPointObj		= [[ZOPoint alloc]initWithPoint:point1];
-		
-		[myMutaryOfPoints addObject:tvarMyPointObj];
-	}
-	//printf("%d drawing",drawing);
+	
+	[pointArray addObject:[[ZOPoint alloc]initWithPoint:point1]];
+	
+	[self setNeedsDisplay:YES];
 	
 }
 
@@ -148,8 +138,7 @@
 -(void)resetDrawing
 {
 	NSLog(@"Reseting Drawing");
-	[myMutaryOfBrushStrokes release];
-	myMutaryOfBrushStrokes	= [[NSMutableArray alloc]init];
+	[pointArray removeAllObjects];
 }
 
 - (BOOL)isFlipped

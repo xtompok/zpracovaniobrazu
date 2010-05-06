@@ -11,20 +11,24 @@
 
 
 @interface ZOProjDrawingView : NSView {
-	NSPoint point1,point2;
+	NSMutableArray * pointArray;
+	NSPoint point1;
+	NSPoint point2;
 	int calPoint;
 	int calPointSize;
-	NSMutableArray	* myMutaryOfBrushStrokes;
-	NSMutableArray	* myMutaryOfPoints;
 	bool drawing;
+	int magic;
+	bool nakresleno;
 	
 }
 
+//-(id)init;
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint;
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)setCalPoint:(int)index;
 -(void)resetDrawing;
+-(void)awakeFromNib;
 
 @end
 
