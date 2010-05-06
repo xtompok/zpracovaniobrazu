@@ -90,9 +90,9 @@
 				4B89E6B010FDCC1600C77536 /* ZOTransform.m */,
 				4B93CD5110F7146600A99C5A /* ConfigController.h */,
 				4B93CD5210F7146600A99C5A /* ConfigController.m */,
-				4B17E14E10DF7A6D000F3861 /* WindowController.h */,
 				4BE5881A1158FC6F0026796A /* ZOCalibrate.h */,
 				4BE5881B1158FC6F0026796A /* ZOCalibrate.m */,
+				4B17E14E10DF7A6D000F3861 /* WindowController.h */,
 				4B17E14F10DF7A6D000F3861 /* WindowController.m */,
 			);
 			name = Classes;
