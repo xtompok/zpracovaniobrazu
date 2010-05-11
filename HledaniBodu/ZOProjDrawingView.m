@@ -130,11 +130,13 @@
 	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
 	return aPath;
 }
+
 -(void)setCalPoint:(int)index
 {
 	calPoint=index;
 	[self setNeedsDisplay:YES];
 }
+
 -(void)resetDrawing
 {
 	NSLog(@"Reseting Drawing");
