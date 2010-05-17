@@ -27,6 +27,10 @@
 @synthesize maxScoreG;
 @synthesize maxScoreB;
 
+@synthesize maxR;
+@synthesize maxG;
+@synthesize maxB;
+
 -(id)initWithSize:(NSSize)aSize
 {
 	if (![super init])
@@ -34,15 +38,18 @@
 	size.width=aSize.width;
 	size.height=aSize.height;
 	delka=size.width*size.height*4;
+	 
 	printf("Delka=%d\n",delka);
-	origbuffer=(unsigned char *)malloc(delka*sizeof(char));
+	origbuffer=(unsigned char *)calloc(delka,sizeof(unsigned char));
+	if (origbuffer==0) {
+		NSLog(@"Not allocated!");
+	}
 	
 	minRValue=120;
 	
 	maxRValue=255;
 	maxGValue=200;
 	maxBValue=255;
-
 	return self;
 
 }
@@ -52,8 +59,7 @@
 	NSBitmapImageRep * origRep;
 	
 	origRep = [[anImage representations] lastObject];
-	[origRep getBitmapDataPlanes:(unsigned char **)&origbuffer];
-	
+	origbuffer = [origRep bitmapData];
 	int i;
 	maxScoreR=maxScoreG=maxScoreB=0;
 	int maxScoreIndex;
@@ -70,7 +76,7 @@
 			&&(origbuffer[i+2]>minBValue)
 			) 
 		{
-			[self getSumSquareAtIndex:i toArray:(int *)&aScore];
+			[self sumSquareAtIndex:i toArray:(int *)&aScore];
 			
 			if (aScore[0]>maxScoreR) 
 			{
@@ -95,13 +101,15 @@
 		maxScoreB=0;
 		maxScoreIndex=0;
 	}
-	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",
-					   origbuffer[maxScoreIndex],
-					   origbuffer[maxScoreIndex+1],
-					   origbuffer[maxScoreIndex+2]);
+	maxR=origbuffer[maxScoreIndex];
+	maxG=origbuffer[maxScoreIndex+1];
+	maxB=origbuffer[maxScoreIndex+2];
+
+	
+	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
 	
 	NSPoint aPoint;
-	aPoint=[self getPixelCoordinatesAtIndex:maxScoreIndex];
+	aPoint=[self pixelCoordinatesAtIndex:maxScoreIndex];
 	aPoint.x=aPoint.x/size.width;
 	aPoint.y=aPoint.y/size.height;
 	
@@ -116,7 +124,7 @@
 /* --------------------- */
 // Return coordinates as NSSize object of point with supplied index
 
--(NSPoint)getPixelCoordinatesAtIndex:(int)index
+-(NSPoint)pixelCoordinatesAtIndex:(int)index
 {
 	NSPoint souradnice;
 	souradnice.x=(int)(index%((int)size.width*4))/4;
@@ -129,7 +137,7 @@
 
 //Return sum of 5x5 square around supplied point in array with 3 numbers - 
 // - one number for each color, point is defined by index
--(void)getSumSquareAtIndex:(int)index toArray:(int *)sum
+-(void)sumSquareAtIndex:(int)index toArray:(int *)sum
 {
 	int ulIndex;
 	int lrIndex;
@@ -155,6 +163,14 @@
 		ulIndex+=size.width*4;
 	}
 	//printf("ulindex=%d, lrindex=%d",ulIndex,lrIndex);
+}
+
+-(void)setBaseImage:(NSImage *)anImage
+{
+	[baseImage release];
+	baseImage = anImage;
+	[baseImage retain];
+
 }
 
 @end

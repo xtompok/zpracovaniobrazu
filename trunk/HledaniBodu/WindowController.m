@@ -14,8 +14,10 @@
 #import "ZOImageView.h"
 #import "ZOProjectorView.h"
 #import "ZOProjDrawingView.h"
+#import "ZOCalibrationData.h"
 #import "ZOCalibrate.h"
 #import "ZOProcessImage.h"
+
 
 #import "WindowController.h"
 
@@ -100,12 +102,11 @@
 	procImage = [[ZOProcessImage alloc] initWithSize:size];
 	
 	// Init calibration object
-//	calObject = [[ZOCalibrate alloc] initWithProjectorView:projView andSize:size];
 	calObject = [[ZOCalibrate alloc] initWithSize:size];
 
 	
 	// Init transformation object
-	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject someCalibrationArray]];
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject calibrationArray]];
 	
 	// Init notification of completed calibration
 	[[NSNotificationCenter defaultCenter]  addObserver:self
@@ -181,9 +182,19 @@
 {
 	int i;
 	NSArray * calArray;
+	ZOCalibrationData * calData;
 	
-	calArray = [aNotification object];
-	[imageView setCalPoints:calArray];
+	calData = [aNotification object];
+	calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
+	
+	[rMinSlider setIntValue:[calData maxR]];
+	[rMinLabel setIntValue:[calData maxG]];
+	[gMinSlider setIntValue:[calData maxG]];
+	[gMinLabel setIntValue:[calData maxG]];
+	[bMinSlider setIntValue:[calData maxB]];
+	[bMinLabel setIntValue:[calData maxB]];
+	
+	[imageView setCalPoints:[calData calPointsArray]];
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
 	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
 	[calibrateButton setEnabled:YES];
@@ -428,6 +439,11 @@
 	minSumValues[2]=[bMinSlider intValue];
 	
 	[calObject setMinSumValues:minSumValues];
+}
+
+-(void)setMinSlidersToRed:(int)aRed Green:(int)aGreen andBlue:(int)aBlue
+{
+
 }
 
 @end
