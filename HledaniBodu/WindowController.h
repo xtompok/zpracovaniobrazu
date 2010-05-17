@@ -9,6 +9,20 @@
 #import <Cocoa/Cocoa.h>
 
 @class CSGCamera;
+@class ZOProcessImage;
+
+@class ZOCalibrate;
+@class ZOCalibrationData;
+
+@class ZOProjectorView;
+@class ZOProjDrawingView;
+
+@class ZOImageView;
+
+@class ZOPoint;
+
+@class ZOTransform;
+@class ZO2PointTransform;
 
 @interface WindowController : NSWindowController
 {	
@@ -90,10 +104,11 @@
 	
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
-	
+		
+	ZOProcessImage *procImage;
+
 	ZOCalibrate *calObject;
 	
-	ZOProcessImage *procImage;
 }
 
 -(IBAction)Calibrate:(id)sender;
@@ -106,6 +121,6 @@
 -(IBAction)sumSquareSliderMoved:(id)sender;
 -(IBAction)minSliderMoved:(id)sender;
 -(IBAction)maxSliderMoved:(id)sender;
-
+-(void)setMinSlidersToRed:(int)aRed Green:(int)aGreen andBlue:(int)aBlue;
 
 @end

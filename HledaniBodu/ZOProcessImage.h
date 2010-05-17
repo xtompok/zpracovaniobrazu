@@ -13,6 +13,7 @@
 	
 	NSSize size;
 	int delka;
+	NSImage * baseImage;
 	
 	int minRSumValue;
 	int minGSumValue;
@@ -30,10 +31,22 @@
 	int maxScoreG;
 	int maxScoreB;
 	
+	int maxR;
+	int maxG;
+	int maxB;
+	
 	unsigned char * origbuffer;
+	//unsigned char ** origBuffer;
 	
 
 }
+-(id)initWithSize:(NSSize)aSize;
+-(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
+-(void)sumSquareAtIndex:(int)index toArray:(int *)sum;
+-(NSPoint)pixelCoordinatesAtIndex:(int)index;
+-(void)setBaseImage:(NSImage *)anImage;
+
+
 @property int minRSumValue;
 @property int minGSumValue;
 @property int minBSumValue;
@@ -50,11 +63,8 @@
 @property(readonly) int maxScoreG;
 @property(readonly) int maxScoreB;
 
-
-
--(id)initWithSize:(NSSize)aSize;
--(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
--(void)getSumSquareAtIndex:(int)index toArray:(int *)sum;
--(NSPoint)getPixelCoordinatesAtIndex:(int)index;
+@property(readonly) int maxR;
+@property(readonly) int maxG;
+@property(readonly) int maxB;
 
 @end

@@ -9,10 +9,12 @@
 #import <Cocoa/Cocoa.h>
 #import "ZOPoint.h"
 #import "ZOProcessImage.h"
+#import "ZOCalibrationData.h"
 
 @interface ZOCalibrate : NSObject {
 	
 	ZOProcessImage * procImage;
+	ZOCalibrationData * calData;
 	
 	NSSize size;
 	NSImage * lastImage;
@@ -23,16 +25,23 @@
 	ZOPoint * lrCalPoint;
 	
 	NSTimer * calTimer;
-	NSArray * calPointsArray;
 	int calPointsArrayIndex;
-
+	
+	NSArray * calPointsArray;
+	int maxRed;
+	int maxGreen;
+	int maxBlue;
 }
 
 -(id)initWithSize:(NSSize)aSize;
+-(NSString *)description;
+
 -(void)calibrate;
 -(void)setLastImage:(NSImage *)anImage;
--(NSArray *)someCalibrationArray;
--(NSString *)description;
+-(NSArray *)calibrationArray;
+
+-(ZOCalibrationData *)calibrationData;
+
 -(void)setMinValues:(int *)minValues;
 -(void)setMaxValues:(int *)maxValues;
 -(void)setMinSumValues:(int *)minSumValues;

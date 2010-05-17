@@ -48,9 +48,14 @@
 }
 
 // Returns actual calPointsArray, for initialization transformations.
--(NSArray *)someCalibrationArray
+-(NSArray *)calibrationArray
 {
 	return calPointsArray;
+}
+
+-(ZOCalibrationData *)calibrationData;
+{
+	return calData;
 }
 
 //Begins calibration
@@ -73,6 +78,9 @@
 // Handles end of blank, set new calibration point
 - (void) handleCalTimer: (NSTimer *) aTimer
 {
+	maxRed += [procImage maxR];
+	maxGreen += [procImage maxG];
+	maxBlue += [procImage maxB];
 	
 	[[NSNotificationCenter defaultCenter] 
 	 postNotificationName: @"Set calibration point" 
@@ -112,10 +120,19 @@
 	// If calibration is complete, sends notification to WindowController
 	if (calPointsArrayIndex>3) 
 	{
+		maxRed /=4;
+		maxGreen /=4;
+		maxBlue /=4;
+		
 		calPointsArrayIndex=0;
+		
+		calData = [[ZOCalibrationData alloc] initWithCalArray:calPointsArray 
+													   maxRed:maxRed 
+														Green:maxGreen 
+													  andBlue:maxBlue];
 		[[NSNotificationCenter defaultCenter] 
 			postNotificationName: @"Calibration OK" 
-						  object: calPointsArray];
+						  object: calData];
 
 	}
 	// Else sets blank timer
