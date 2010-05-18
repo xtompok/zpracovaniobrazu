@@ -8,21 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "ZOTransform.h"
+#import "ZO2PointTransform.h"
+#import "ZOPoint.h"
+#import "ZOImageView.h"
+#import "ZOProjectorView.h"
+#import "ZOProjDrawingView.h"
+#import "ZOCalibrationData.h"
+#import "ZOProcessImage.h"
+#import "ZOCalibrateView.h"
+#import "ZOCalibrateController.h"
+#import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
+
+
 @class CSGCamera;
-@class ZOProcessImage;
 
-@class ZOCalibrate;
-@class ZOCalibrationData;
-
-@class ZOProjectorView;
-@class ZOProjDrawingView;
-
-@class ZOImageView;
-
-@class ZOPoint;
-
-@class ZOTransform;
-@class ZO2PointTransform;
 
 @interface WindowController : NSWindowController
 {	
@@ -77,6 +77,8 @@
 	IBOutlet ZOProjectorView *projView;
 	IBOutlet NSPanel *drawPanel;
 	IBOutlet ZOProjDrawingView *drawView;
+	
+	IBOutlet ZOCalibrateController * calController;
 	NSWindow * projWindow;
 	
 	/* Images and points */
@@ -84,7 +86,6 @@
 	
 	CSGCamera *camera;
 	NSImage *lastImage;
-	NSPoint outPoint;
 	
 	/* Calibration stuff */
 	/* ----------------- */
@@ -95,7 +96,6 @@
 	/* Modes */
 	/* ----- */
 	
-	unsigned char mode;
 	BOOL running;
 	BOOL calInProgress;
 	
@@ -105,10 +105,7 @@
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
 		
-	ZOProcessImage *procImage;
-
-	ZOCalibrate *calObject;
-	
+	ZOProcessImage *procImage;	
 }
 
 -(IBAction)Calibrate:(id)sender;

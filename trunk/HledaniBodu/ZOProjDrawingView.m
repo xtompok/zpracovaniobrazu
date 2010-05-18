@@ -11,18 +11,14 @@
 
 @implementation ZOProjDrawingView
 
--(void)awakeFromNib {
-	calPointSize=20;
-	pointArray	= [[NSMutableArray alloc]init];
-	NSLog(@"Awaken View!");
-}
-
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         calPointSize=20;
 		pointArray	= [[NSMutableArray alloc]init];
     }
+	
+	NSLog(@"Projector drawing View initialized");
 	
     return self;
 	
@@ -32,39 +28,12 @@
     [[NSColor blackColor] set];
 	NSRectFill ( [self bounds] );
 	
-	switch (calPoint) {
-		case 1:
-			[[NSColor redColor] set];
-			NSRectFill(NSMakeRect(0,
-								  0,
-								  calPointSize,  calPointSize));
-			break;
-		case 2:
-			[[NSColor redColor] set];
-			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
-								  0,
-								  calPointSize,  calPointSize));
-			break;
-		case 3:
-			[[NSColor redColor] set];
-			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
-								  [self bounds].size.height-calPointSize,
-								  calPointSize,  calPointSize));
-			break;
-		case 4:
-			[[NSColor redColor] set];
-			NSRectFill(NSMakeRect(0,
-								  [self bounds].size.height-calPointSize,
-								  calPointSize,  calPointSize));
-			break;
-		default:
-			[[NSColor whiteColor ] set];
-			[[self crossAtPoint:point1] stroke ];
-			
-			[[NSColor yellowColor ] set];
-			[[self crossAtPoint:point2] stroke ];
-			break;
-	}
+	[[NSColor whiteColor ] set];
+	[[self crossAtPoint:point1] stroke ];
+	
+	[[NSColor yellowColor ] set];
+	[[self crossAtPoint:point2] stroke ];
+	
 	
 	
 	NSUInteger i;
@@ -129,12 +98,6 @@
 	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y+r)];
 	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
 	return aPath;
-}
-
--(void)setCalPoint:(int)index
-{
-	calPoint=index;
-	[self setNeedsDisplay:YES];
 }
 
 -(void)resetDrawing

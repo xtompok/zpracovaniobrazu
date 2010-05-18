@@ -1,23 +1,23 @@
 //
-//  ZOCalibrate.h
+//  ZOCalibrateController.h
 //  HledaniBodu
 //
-//  Created by Tomáš Pokorný on 23.3.10.
+//  Created by Tomáš Pokorný on 18.5.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ZOCalibrateView.h"
 #import "ZOPoint.h"
-#import "ZOProcessImage.h"
 #import "ZOCalibrationData.h"
 
-@interface ZOCalibrate : NSObject {
+
+@interface ZOCalibrateController : NSWindowController {
 	
-	ZOProcessImage * procImage;
 	ZOCalibrationData * calData;
 	
+	NSPoint point;
 	NSSize size;
-	NSImage * lastImage;
 	
 	ZOPoint * ulCalPoint;
 	ZOPoint * urCalPoint;
@@ -25,26 +25,28 @@
 	ZOPoint * lrCalPoint;
 	
 	NSTimer * calTimer;
+	float calTime;
 	int calPointsArrayIndex;
 	
 	NSArray * calPointsArray;
 	int maxRed;
 	int maxGreen;
 	int maxBlue;
+	
+	NSWindow *calWindow;
+	
+	IBOutlet NSPanel *calPanel;
+	IBOutlet ZOCalibrateView *calView;
 }
 
--(id)initWithSize:(NSSize)aSize;
+-(void)setSize:(NSSize)aSize;
+-(void)calibrate;
+
 -(NSString *)description;
 
--(void)calibrate;
--(void)setLastImage:(NSImage *)anImage;
 -(NSArray *)calibrationArray;
-
 -(ZOCalibrationData *)calibrationData;
 
--(void)setMinValues:(int *)minValues;
--(void)setMaxValues:(int *)maxValues;
--(void)setMinSumValues:(int *)minSumValues;
-
+@property NSPoint point;
 
 @end

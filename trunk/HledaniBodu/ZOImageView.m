@@ -28,6 +28,9 @@
 					 (ZOPoint *)cp4,
 					 nil];
     }
+	
+	NSLog(@"Image View initialized");
+	
     return self;
 }
 

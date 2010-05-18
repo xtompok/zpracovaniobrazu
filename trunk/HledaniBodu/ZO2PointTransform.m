@@ -61,6 +61,8 @@
 	PTD[2]=sqrt((CP[2].x-CP[1].x)*(CP[2].x-CP[1].x)+(CP[2].y-CP[1].y)*(CP[2].y-CP[1].y));
 	PTD[3]=sqrt((CP[3].x-CP[2].x)*(CP[3].x-CP[2].x)+(CP[3].y-CP[2].y)*(CP[3].y-CP[2].y));
 	
+	NSLog(@"2 point transformation initialized");
+	
 	return self;
 }
 
