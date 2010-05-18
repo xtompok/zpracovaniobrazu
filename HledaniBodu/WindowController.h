@@ -118,9 +118,8 @@
 
 
 //Configuration action
+-(void)initSliders;
 -(IBAction)sumSquareSliderMoved:(id)sender;
 -(IBAction)minSliderMoved:(id)sender;
 -(IBAction)maxSliderMoved:(id)sender;
--(void)setMinSlidersToRed:(int)aRed Green:(int)aGreen andBlue:(int)aBlue;
-
 @end

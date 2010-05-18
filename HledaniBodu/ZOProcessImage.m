@@ -40,16 +40,7 @@
 	delka=size.width*size.height*4;
 	 
 	printf("Delka=%d\n",delka);
-	origbuffer=(unsigned char *)calloc(delka,sizeof(unsigned char));
-	if (origbuffer==0) {
-		NSLog(@"Not allocated!");
-	}
 	
-	minRValue=120;
-	
-	maxRValue=255;
-	maxGValue=200;
-	maxBValue=255;
 	return self;
 
 }
@@ -67,27 +58,47 @@
 	int aScore[3];
 	for(i=0;i<delka;i+=4)
 	{
+		//origbuffer[i] = origbuffer[i+1] = origbuffer[i+2] = (origbuffer[i]>  150? 255: 0);
+
 		if (1
 			&&(origbuffer[i]<maxRValue)
-			&&(origbuffer[i]>minRValue)
 			&&(origbuffer[i+1]<maxGValue)
-			&&(origbuffer[i+1]>minGValue)
 			&&(origbuffer[i+2]<maxBValue)
-			&&(origbuffer[i+2]>minBValue)
 			) 
 		{
-			[self sumSquareAtIndex:i toArray:(int *)&aScore];
-			
-			if (aScore[0]>maxScoreR) 
+			if (1
+				&&(origbuffer[i]>minRValue)
+				&&(origbuffer[i+2]>minBValue)
+				&&(origbuffer[i+1]>minGValue)
+				) 
 			{
-				maxScoreR=aScore[0];
-				maxScoreG=aScore[1];
-				maxScoreB=aScore[2];
-				maxScoreIndex=i;
+				[self sumSquareAtIndex:i toArray:(int *)&aScore];
 				
+				if (aScore[0]>maxScoreR) 
+				{
+					maxScoreR=aScore[0];
+					maxScoreG=aScore[1];
+					maxScoreB=aScore[2];
+					maxScoreIndex=i;
+					
+				}
 			}
-			
+			else 
+			{
+				origbuffer[i]=255;
+				origbuffer[i+1]=43;
+				origbuffer[i+2]=150;
+			}
+
+				
 		}
+		else 
+		{
+			origbuffer[i]=253;
+			origbuffer[i+1]=240;
+			origbuffer[i+2]=0;
+		}
+
 	}
 	
 	

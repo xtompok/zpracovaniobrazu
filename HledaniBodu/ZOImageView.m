@@ -92,6 +92,7 @@
 	[image compositeToPoint:NSMakePoint(0,[self bounds].size.height)
 				  operation:NSCompositeSourceOver];
 	
+	
 	// Lightest point
 	[[NSColor redColor ] set];
 	[[self crossAtPoint:point] stroke ];

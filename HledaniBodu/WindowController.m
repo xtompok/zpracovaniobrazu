@@ -6,6 +6,15 @@
 //  Copyright 2009 Jaroška. All rights reserved.
 //
 
+/*
+ TO DO:
+ ------
+ - ukládání prvotního nastavení sliderů na disk
+ - vykuchat perspektivní transformaci
+ - licence PIL
+ */
+
+
 #define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
 #import "ZOTransform.h"
@@ -100,6 +109,7 @@
 	
 	// Init image processing object
 	procImage = [[ZOProcessImage alloc] initWithSize:size];
+	[self initSliders];
 	
 	// Init calibration object
 	calObject = [[ZOCalibrate alloc] initWithSize:size];
@@ -254,6 +264,43 @@
 }
 
 //Configuration
+-(void)initSliders
+{
+	int minR, minG,minB,maxR,maxG,maxB;
+	minR = 100;
+	minG = 100;
+	minB = 100;
+	maxR = 255;
+	maxG = 255;
+	maxB = 255;
+	
+	// Setting min values
+	[rMinSlider setIntValue:minR];
+	[rMinLabel  setIntValue:minR];
+	[procImage setMinRValue:minR];
+	
+	[gMinSlider setIntValue:minG];
+	[gMinLabel  setIntValue:minG];
+	[procImage setMinGValue:minG];
+	
+	[bMinSlider setIntValue:minB];
+	[bMinLabel  setIntValue:minB];
+	[procImage setMinBValue:minB];
+	
+	// Setting max values	
+	[rMaxSlider setIntValue:maxR];
+	[rMaxLabel  setIntValue:maxR];
+	[procImage setMaxRValue:maxR];
+	
+	[gMaxSlider setIntValue:maxG];
+	[gMaxLabel  setIntValue:maxG];
+	[procImage setMaxGValue:maxG];
+	
+	[bMaxSlider setIntValue:maxB];
+	[bMaxLabel  setIntValue:maxB];
+	[procImage setMaxBValue:maxB];
+}
+
 -(IBAction)minSliderMoved:(id)sender
 {
 	int minValues[3];
@@ -439,11 +486,6 @@
 	minSumValues[2]=[bMinSlider intValue];
 	
 	[calObject setMinSumValues:minSumValues];
-}
-
--(void)setMinSlidersToRed:(int)aRed Green:(int)aGreen andBlue:(int)aBlue
-{
-
 }
 
 @end

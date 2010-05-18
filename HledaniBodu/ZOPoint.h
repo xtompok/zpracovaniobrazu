@@ -10,7 +10,6 @@
 
 
 @interface ZOPoint : NSObject {
-	//NSPoint point;
 	float x;
 	float y;
 }
