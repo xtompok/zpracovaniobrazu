@@ -21,6 +21,5 @@
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint;
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
--(void)setCalPoint:(int)index;
 
 @end

@@ -17,22 +17,7 @@
 
 #define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
-#import "ZOTransform.h"
-#import "ZO2PointTransform.h"
-#import "ZOPoint.h"
-#import "ZOImageView.h"
-#import "ZOProjectorView.h"
-#import "ZOProjDrawingView.h"
-#import "ZOCalibrationData.h"
-#import "ZOCalibrate.h"
-#import "ZOProcessImage.h"
-
-
 #import "WindowController.h"
-
-#import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
-#import "ConfigController.h"
-
 
 @implementation WindowController
 
@@ -112,21 +97,16 @@
 	[self initSliders];
 	
 	// Init calibration object
-	calObject = [[ZOCalibrate alloc] initWithSize:size];
-
+	[calController setSize:size];
+	
 	
 	// Init transformation object
-	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calObject calibrationArray]];
+	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calController calibrationArray]];
 	
 	// Init notification of completed calibration
 	[[NSNotificationCenter defaultCenter]  addObserver:self
 											  selector:@selector(calibrationCompleted:)
 												  name:@"Calibration OK"
-												object:nil];
-	
-	[[NSNotificationCenter defaultCenter]  addObserver:self
-											  selector:@selector(setCalPoint:)
-												  name:@"Set calibration point"
 												object:nil];
 	
 	// Set running or paused
@@ -142,35 +122,33 @@
 - (void)camera:(CSGCamera *)aCamera didReceiveFrame:(CSGImage *)aFrame;
 {
 	lastImage=aFrame;
+		
+	NSPoint transPoint, outPoint;
 	
 	if (!running) return;
 	
-	[imageView setAnImage:lastImage];
+	outPoint = [procImage getLightestPointFromImage:lastImage];
+	
 	if (calInProgress) {
-		[calObject setLastImage:lastImage];
+		[calController setPoint:outPoint];
 	}
 	
-	outPoint=[procImage getLightestPointFromImage:lastImage];
-	
-	[maxSumSquareLabel setStringValue:
-	 [NSString stringWithFormat:@"%d,%d,%d",
-	 [procImage maxScoreR],
-	 [procImage maxScoreG],
-	 [procImage maxScoreB]]];
-	
+	[imageView setAnImage:lastImage];
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 	
-	NSPoint transPoint;
-	
-	//[projView setPoint1:outPoint];
-	//transPoint=[transform2Object transformPoint:NSMakePoint(outPoint.x*320, outPoint.y*240)];
-	transPoint=[transform2Object transformPoint:outPoint];
+	transPoint = [transform2Object transformPoint:outPoint];
 	
 	//[projView setPoint1:transPoint];
 	//[projView setNeedsDisplay:YES];
 	[drawView setPoint1:transPoint];
 	[drawView setNeedsDisplay:YES];
+	
+	[maxSumSquareLabel setStringValue:
+	 [NSString stringWithFormat:@"%d,%d,%d",
+	  [procImage maxR],
+	  [procImage maxG],
+	  [procImage maxB]]];
 	
 			
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
@@ -197,13 +175,6 @@
 	calData = [aNotification object];
 	calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
 	
-	[rMinSlider setIntValue:[calData maxR]];
-	[rMinLabel setIntValue:[calData maxG]];
-	[gMinSlider setIntValue:[calData maxG]];
-	[gMinLabel setIntValue:[calData maxG]];
-	[bMinSlider setIntValue:[calData maxB]];
-	[bMinLabel setIntValue:[calData maxB]];
-	
 	[imageView setCalPoints:[calData calPointsArray]];
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
 	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
@@ -218,17 +189,6 @@
 	}
 }
 
--(void)setCalPoint:(NSNotification *)aNotification
-{
-	int i;
-	[[aNotification object] getValue:&i];
-	i++;
-	NSLog(@"Set cal point: %d",i);
-	[drawView setCalPoint:i];
-	[drawView setNeedsDisplay:YES];
-	
-}
-
 /* GUI Interactivity */
 /* ----------------- */
 
@@ -237,7 +197,7 @@
 {	
 	calInProgress=YES;
 	[calibrateButton setEnabled:NO];
-	[calObject calibrate];
+	[calController calibrate];
 	
 	NSLog(@"Calibrate!");	
 }
@@ -303,10 +263,7 @@
 
 -(IBAction)minSliderMoved:(id)sender
 {
-	int minValues[3];
 	
-	
-	NSLog(@"%@",sender);
 	if ([minTogetherButton state]==NSOffState) 
 	{
 		if (sender==rMinSlider) 
@@ -357,19 +314,10 @@
 		[procImage setMinGValue:[gMinSlider intValue]];
 		[procImage setMinBValue:[bMinSlider intValue]];
 	}
-	minValues[0]= [rMinSlider intValue];
-	minValues[1]= [gMinSlider intValue];
-	minValues[2]= [bMinSlider intValue];
-	
-	[calObject setMinValues:minValues];
 }
 
 -(IBAction)maxSliderMoved:(id)sender
-{
-	int minValues[3];
-	
-	
-	NSLog(@"%@",sender);
+{	
 	if ([maxTogetherButton state]==NSOffState) 
 	{
 		if (sender==rMaxSlider) 
@@ -420,16 +368,10 @@
 		[procImage setMaxGValue:[gMaxSlider intValue]];
 		[procImage setMaxBValue:[bMaxSlider intValue]];
 	}
-	minValues[0]= [rMaxSlider intValue];
-	minValues[1]= [gMaxSlider intValue];
-	minValues[2]= [bMaxSlider intValue];
-	
-	[calObject setMaxValues:minValues];
 }
 
 -(IBAction)sumSquareSliderMoved:(id)sender
 {
-	int minSumValues[3];
 	NSLog(@"%@",sender);
 	if ([minTogetherSumButton state]==NSOffState) 
 	{
@@ -481,11 +423,6 @@
 		[procImage setMinGSumValue:[gMinSumSlider intValue]];
 		[procImage setMinBSumValue:[bMinSumSlider intValue]];
 	}
-	minSumValues[0]=[rMinSlider intValue];
-	minSumValues[1]=[gMinSlider intValue];
-	minSumValues[2]=[bMinSlider intValue];
-	
-	[calObject setMinSumValues:minSumValues];
 }
 
 @end

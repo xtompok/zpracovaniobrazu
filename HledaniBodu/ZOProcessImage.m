@@ -38,8 +38,8 @@
 	size.width=aSize.width;
 	size.height=aSize.height;
 	delka=size.width*size.height*4;
-	 
-	printf("Delka=%d\n",delka);
+	 	
+	NSLog(@"Process image initialized");
 	
 	return self;
 
@@ -85,18 +85,18 @@
 			}
 			else 
 			{
-				origbuffer[i]=255;
-				origbuffer[i+1]=43;
-				origbuffer[i+2]=150;
+				origbuffer[i]=0;
+				origbuffer[i+1]=100;
+				origbuffer[i+2]=100;
 			}
 
 				
 		}
 		else 
 		{
-			origbuffer[i]=253;
-			origbuffer[i+1]=240;
-			origbuffer[i+2]=0;
+			origbuffer[i]=0;
+			origbuffer[i+1]=255;
+			origbuffer[i+2]=255;
 		}
 
 	}

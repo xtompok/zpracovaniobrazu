@@ -52,6 +52,8 @@
 	PTK[3][0]=(double)calArray[0][0];
 	PTK[3][1]=(double)calArray[0][1];
 	
+	NSLog(@"Ratio transformation initialized");
+	
 	return self;
 }
 

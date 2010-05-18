@@ -18,6 +18,8 @@
         calPointSize=20;
     }
 	
+	NSLog(@"Projector View initialized");
+	
     return self;
 }
 
@@ -27,40 +29,12 @@
 	NSRectFill ( [self bounds] );
 	
 	// Draw calibration points if not 0
-	switch (calPoint) {
-		case 1:
-			[[NSColor whiteColor] set];
-			NSRectFill(NSMakeRect(0,
-								  0,
-								  calPointSize,  calPointSize));
-			break;
-		case 2:
-			[[NSColor whiteColor] set];
-			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
-								  0,
-								  calPointSize,  calPointSize));
-			break;
-		case 3:
-			[[NSColor whiteColor] set];
-			NSRectFill(NSMakeRect([self bounds].size.width-calPointSize,
-								  [self bounds].size.height-calPointSize,
-								  calPointSize,  calPointSize));
-			break;
-		case 4:
-			[[NSColor whiteColor] set];
-			NSRectFill(NSMakeRect(0,
-								  [self bounds].size.height-calPointSize,
-								  calPointSize,  calPointSize));
-			break;
-		// If 0, draw set points
-		default:
-			[[NSColor whiteColor ] set];
-			[[self crossAtPoint:point1] stroke ];
-			
-			[[NSColor yellowColor ] set];
-			[[self crossAtPoint:point2] stroke ];
-			break;
-	}
+	[[NSColor whiteColor ] set];
+	[[self crossAtPoint:point1] stroke ];
+	
+	[[NSColor yellowColor ] set];
+	[[self crossAtPoint:point2] stroke ];
+	
 }
 
 // Sets first point to draw
@@ -89,13 +63,6 @@
 	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y+r)];
 	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
 	return aPath;
-}
-
-// Sets calibration point or 0
--(void)setCalPoint:(int)index
-{
-	calPoint=index;
-	[self setNeedsDisplay:YES];
 }
 
 // x axis is flipped
