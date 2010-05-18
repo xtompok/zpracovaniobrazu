@@ -35,9 +35,7 @@
 	int maxG;
 	int maxB;
 	
-	unsigned char * origbuffer;
-	//unsigned char ** origBuffer;
-	
+	unsigned char * origbuffer;	
 
 }
 -(id)initWithSize:(NSSize)aSize;
