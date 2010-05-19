@@ -11,6 +11,8 @@
 
 @implementation ZOProjDrawingView
 
+@synthesize lineWidth;
+
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -66,6 +68,7 @@
 		}
 	}
 	[[NSColor greenColor] set];
+	[aPath setLineWidth:lineWidth];
 	[aPath stroke];
 
 }
@@ -98,6 +101,11 @@
 	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y+r)];
 	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
 	return aPath;
+}
+
+-(void)setWidth:(int)aWidth
+{
+	lineWidth = aWidth;
 }
 
 -(void)resetDrawing

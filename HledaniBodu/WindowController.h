@@ -18,11 +18,12 @@
 #import "ZOProcessImage.h"
 #import "ZOCalibrateView.h"
 #import "ZOCalibrateController.h"
+#import "ZODrawingController.h"
+#import "ZOProjectorController.h"
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
 
 
 @class CSGCamera;
-
 
 @interface WindowController : NSWindowController
 {	
@@ -73,13 +74,10 @@
 	
 		
 	//Projector screen
-	IBOutlet NSPanel *projPanel;
-	IBOutlet ZOProjectorView *projView;
-	IBOutlet NSPanel *drawPanel;
-	IBOutlet ZOProjDrawingView *drawView;
-	
+
 	IBOutlet ZOCalibrateController * calController;
-	NSWindow * projWindow;
+	IBOutlet ZODrawingController * drawController;
+	IBOutlet ZOProjectorController * projController;
 	
 	/* Images and points */
 	/* ----------------- */
@@ -110,9 +108,6 @@
 
 -(IBAction)Calibrate:(id)sender;
 -(IBAction)RunAndPause:(id)sender;
-
--(IBAction)resetDrawing:(id)sender;
-
 
 //Configuration action
 -(void)initSliders;

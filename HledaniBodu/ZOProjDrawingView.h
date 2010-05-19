@@ -19,6 +19,7 @@
 	bool drawing;
 	int magic;
 	bool nakresleno;
+	int lineWidth;
 	
 }
 
@@ -26,6 +27,7 @@
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)resetDrawing;
+@property int lineWidth;
 
 @end
 

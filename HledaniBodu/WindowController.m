@@ -58,36 +58,13 @@
 					  (NSTextField *) llLabel,nil];
 	
 	// Initialization of projector view
-	int windowLevel;
-	NSRect screeenRect;
-	NSScreen *aScreen;
+	
 	
 	STDOUTPRINT NSLog(@"screens: %i",[[NSScreen screens]count]);
 	
 	// Go fullscreen
-	if ([[NSScreen screens]count]>1)
-	{
-		aScreen = [[NSScreen screens] objectAtIndex:1];
-		windowLevel = CGShieldingWindowLevel();
-		screeenRect = [aScreen frame];
-		
-		projWindow = [[NSWindow alloc] initWithContentRect:screeenRect
-												 styleMask:NSBorderlessWindowMask
-												   backing:NSBackingStoreBuffered
-													 defer:NO screen: [NSScreen mainScreen]];
-		[projWindow setLevel:windowLevel];
-		[projWindow setBackgroundColor:[NSColor blueColor]];
-		[projWindow makeKeyAndOrderFront:nil];
-		
-		// Load our content view
-//		[projPanel setFrame:screeenRect display: YES];
-//		[projWindow setContentView:[projPanel contentView]];
-		
-		[drawPanel setFrame:screeenRect display: YES];
-		[projWindow setContentView:[drawPanel contentView]];
-
-	
-	}	
+	[drawController goFullscreen];
+	//[projController goFullscreen];
 	
 	/*Initialization own classes*/
 	/*--------------------------*/
@@ -129,20 +106,9 @@
 	
 	outPoint = [procImage getLightestPointFromImage:lastImage];
 	
-	if (calInProgress) {
-		[calController setPoint:outPoint];
-	}
-	
 	[imageView setAnImage:lastImage];
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
-	
-	transPoint = [transform2Object transformPoint:outPoint];
-	
-	//[projView setPoint1:transPoint];
-	//[projView setNeedsDisplay:YES];
-	[drawView setPoint1:transPoint];
-	[drawView setNeedsDisplay:YES];
 	
 	[maxSumSquareLabel setStringValue:
 	 [NSString stringWithFormat:@"%d,%d,%d",
@@ -150,6 +116,16 @@
 	  [procImage maxG],
 	  [procImage maxB]]];
 	
+	if (calInProgress) {
+		[calController setPoint:outPoint];
+		return;
+	}
+	
+	transPoint = [transform2Object transformPoint:outPoint];
+	
+
+	[drawController setPoint1:transPoint];
+	[projController setPoint1:transPoint];
 			
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
 	
@@ -161,7 +137,6 @@
 // Cleanup before end
 - (void)windowWillClose:(NSNotification *)notification;
 {
-	[projWindow orderOut:self];
 	[camera stop];
 }
 
@@ -215,12 +190,6 @@
 		[sender setTitle:@"Run"];
 		NSLog(@"Paused!");
 	}
-}
-
-// Resets drawing
--(IBAction)resetDrawing:(id)sender
-{
-	[drawView resetDrawing];
 }
 
 //Configuration
