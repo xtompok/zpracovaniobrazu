@@ -58,8 +58,6 @@
 	int aScore[3];
 	for(i=0;i<delka;i+=4)
 	{
-		//origbuffer[i] = origbuffer[i+1] = origbuffer[i+2] = (origbuffer[i]>  150? 255: 0);
-
 		if (1
 			&&(origbuffer[i]<maxRValue)
 			&&(origbuffer[i+1]<maxGValue)
@@ -82,24 +80,46 @@
 					maxScoreIndex=i;
 					
 				}
-			}
+			}				
+		}
+	}
+	
+	
+	//Coloring throwed-away pixels
+	for(i=0;i<delka;i+=4)
+	{
+		//origbuffer[i] = origbuffer[i+1] = origbuffer[i+2] = (origbuffer[i]>  150? 255: 0);
+		
+		if (1
+			&&(origbuffer[i]<maxRValue)
+			&&(origbuffer[i+1]<maxGValue)
+			&&(origbuffer[i+2]<maxBValue)
+			) 
+		{
+			if (1
+				&&(origbuffer[i]>minRValue)
+				&&(origbuffer[i+2]>minBValue)
+				&&(origbuffer[i+1]>minGValue)
+				) 
+			{}
 			else 
 			{
-				origbuffer[i]=0;
-				origbuffer[i+1]=100;
-				origbuffer[i+2]=100;
+				origbuffer[i]=255;
+				origbuffer[i+1]=250;
+				origbuffer[i+2]=250;
 			}
-
-				
+			
+			
 		}
 		else 
 		{
 			origbuffer[i]=0;
-			origbuffer[i+1]=255;
-			origbuffer[i+2]=255;
+			origbuffer[i+1]=0;
+			origbuffer[i+2]=0;
 		}
-
+		
 	}
+	
 	
 	
 	if ((maxScoreR<minRSumValue)
