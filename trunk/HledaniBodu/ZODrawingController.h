@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZOProjDrawingView.h"
-#import "ZOProjProtocol"
+#import "ZOProtocols"
 
 @interface ZODrawingController : NSWindowController <ProjectorProtocol> {
 	IBOutlet NSSlider * widthSlider;

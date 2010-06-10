@@ -12,7 +12,7 @@
 		4B1E63C2115A1BE400425139 /* ZOProjDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E63C1115A1BE400425139 /* ZOProjDrawingView.m */; };
 		4B3BC4A311A3D89800166D84 /* ZODrawingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BC4A211A3D89800166D84 /* ZODrawingController.m */; };
 		4B3BC4E411A3EE6600166D84 /* ZOProjectorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BC4E311A3EE6600166D84 /* ZOProjectorController.m */; };
-		4B3BC50511A3FEAD00166D84 /* ZOProjProtocol in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BC50411A3FEAD00166D84 /* ZOProjProtocol */; };
+		4B3BC50511A3FEAD00166D84 /* ZOProtocols in Resources */ = {isa = PBXBuildFile; fileRef = 4B3BC50411A3FEAD00166D84 /* ZOProtocols */; };
 		4B4D7A8D119D19F200731B4F /* ZOCalibrationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D7A8C119D19F200731B4F /* ZOCalibrationData.m */; };
 		4B4D7E2E11A2F62700731B4F /* ZOCalibrateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D7E2D11A2F62700731B4F /* ZOCalibrateView.m */; };
 		4B4D7F3A11A317C000731B4F /* ZOCalibrateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4D7F3911A317C000731B4F /* ZOCalibrateController.m */; };
@@ -47,7 +47,7 @@
 		4B3BC4A211A3D89800166D84 /* ZODrawingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZODrawingController.m; sourceTree = "<group>"; };
 		4B3BC4E211A3EE6600166D84 /* ZOProjectorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProjectorController.h; sourceTree = "<group>"; };
 		4B3BC4E311A3EE6600166D84 /* ZOProjectorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProjectorController.m; sourceTree = "<group>"; };
-		4B3BC50411A3FEAD00166D84 /* ZOProjProtocol */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZOProjProtocol; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		4B3BC50411A3FEAD00166D84 /* ZOProtocols */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZOProtocols; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4B4D7A8B119D19F200731B4F /* ZOCalibrationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOCalibrationData.h; sourceTree = "<group>"; };
 		4B4D7A8C119D19F200731B4F /* ZOCalibrationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOCalibrationData.m; sourceTree = "<group>"; };
 		4B4D7E2C11A2F62700731B4F /* ZOCalibrateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOCalibrateView.h; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B3BC50411A3FEAD00166D84 /* ZOProtocols */,
 				4B4D7FDE11A32B4F00731B4F /* Viewing */,
 				4B4D7FDD11A32B3500731B4F /* Transformations */,
 				4B4D7FDC11A32B2500731B4F /* Calibration */,
@@ -197,7 +198,6 @@
 		4B4D7FDE11A32B4F00731B4F /* Viewing */ = {
 			isa = PBXGroup;
 			children = (
-				4B3BC50411A3FEAD00166D84 /* ZOProjProtocol */,
 				4B3BC4E211A3EE6600166D84 /* ZOProjectorController.h */,
 				4B3BC4E311A3EE6600166D84 /* ZOProjectorController.m */,
 				4B3BC4A111A3D89800166D84 /* ZODrawingController.h */,
@@ -262,7 +262,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4B8EDC2B1119DD4F0076280A /* MainMenu.xib in Resources */,
-				4B3BC50511A3FEAD00166D84 /* ZOProjProtocol in Resources */,
+				4B3BC50511A3FEAD00166D84 /* ZOProtocols in Resources */,
 				4BBE601F11BCDE4B008A9F92 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

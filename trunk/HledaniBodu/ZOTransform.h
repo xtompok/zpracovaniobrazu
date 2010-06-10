@@ -7,15 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ZOPoint.h"
+#import "ZOProtocols"
 
 
-@interface ZOTransform : NSObject {
+@interface ZOTransform : NSObject <TransformProtocol> {
 	double PTK[4][2]; //Pomocné pole transformačních konstant pro poměrovou transformaci
 
 }
 
--(id)initWithCalibrationArray:(NSArray *)calArray;
--(NSPoint)transformPoint:(NSPoint)point;
 -(double)getRightRootOfPolynomWithA:(double)a B:(double)b andC:(double)c;
 
 @end

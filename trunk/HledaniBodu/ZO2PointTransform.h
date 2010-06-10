@@ -10,9 +10,11 @@
 
 
 #import <Cocoa/Cocoa.h>
+#import "ZOPoint.h"
+#import "ZOProtocols"
 
 
-@interface ZO2PointTransform : NSObject {
+@interface ZO2PointTransform : NSObject <TransformProtocol> {
 
 	NSPoint PTB[2];	//Pomocné transformační body - Helping transformation points
 	double PTD[4]; //Pomocné transformační délky - Helping transformation lengths
@@ -20,8 +22,5 @@
 	double g,h,k,l; //Koeficienty přímek - Line coeficients
 
 }
-
--(id)initWithCalibrationArray:(NSArray *)calArray;
--(NSPoint)transformPoint:(NSPoint)point;
 
 @end

@@ -11,14 +11,10 @@
 
 
 @interface ZOProjDrawingView : NSView {
-	NSMutableArray * pointArray;
+	NSBezierPath * drawedPath;
 	NSPoint point1;
 	NSPoint point2;
-	int calPoint;
-	int calPointSize;
 	bool drawing;
-	int magic;
-	bool nakresleno;
 	int lineWidth;
 	
 }
