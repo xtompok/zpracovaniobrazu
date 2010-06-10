@@ -6,7 +6,6 @@
 //  Copyright 2010 Jaroška. All rights reserved.
 //
 
-#import "ZOPoint.h"
 #import "ZO2PointTransform.h"
 
 

@@ -15,7 +15,6 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        calPointSize=20;
     }
 	
 	NSLog(@"Projector View initialized");

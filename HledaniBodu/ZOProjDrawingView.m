@@ -16,8 +16,8 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        calPointSize=20;
-		pointArray	= [[NSMutableArray alloc]init];
+		drawedPath = [[NSBezierPath alloc] init];
+		[drawedPath moveToPoint:NSMakePoint(0, 0)];
     }
 	
 	NSLog(@"Projector drawing View initialized");
@@ -36,40 +36,9 @@
 	[[NSColor yellowColor ] set];
 	[[self crossAtPoint:point2] stroke ];
 	
-	
-	
-	NSUInteger i;
-	NSPoint aPoint;
-	NSBezierPath * aPath;
-	aPath = [NSBezierPath bezierPath];
-	[aPath moveToPoint:NSMakePoint(0, 0)];
-	
-	if ([pointArray count]==0) return;
-	
-	for (i=0; i< [pointArray count]; i++)
-	{
-		aPoint.x=[[pointArray objectAtIndex:i] x];
-		aPoint.y=[[pointArray objectAtIndex:i] y];
-		if ((aPoint.x==0)&&(aPoint.y==0))
-		{
-			drawing = NO;
-		} 
-		else 
-		{
-			if (drawing == NO)
-			{
-				[aPath moveToPoint:aPoint];
-				drawing = YES;
-			}
-			else {
-				[aPath lineToPoint:aPoint];
-			}
-
-		}
-	}
 	[[NSColor greenColor] set];
-	[aPath setLineWidth:lineWidth];
-	[aPath stroke];
+	[drawedPath setLineWidth:lineWidth];
+	[drawedPath stroke];
 
 }
 
@@ -78,10 +47,24 @@
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
 	
-	[pointArray addObject:[[ZOPoint alloc]initWithPoint:point1]];
+	if ((point1.x==0)&&(point1.y==0))
+	{
+		drawing = NO;
+	} 
+	else 
+	{
+		if (drawing == NO)
+		{
+			[drawedPath moveToPoint:point1];
+			drawing = YES;
+		}
+		else {
+			[drawedPath lineToPoint:point1];
+		}
+		
+	}
 	
 	[self setNeedsDisplay:YES];
-	
 }
 
 -(void)setPoint2:(NSPoint)aPoint
@@ -111,7 +94,10 @@
 -(void)resetDrawing
 {
 	NSLog(@"Reseting Drawing");
-	[pointArray removeAllObjects];
+	[drawedPath release];
+	drawedPath = [[NSBezierPath alloc] init];
+	[drawedPath moveToPoint:NSMakePoint(0, 0)];
+	drawing=NO;
 }
 
 - (BOOL)isFlipped

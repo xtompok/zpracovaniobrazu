@@ -5,3 +5,8 @@
 -(void)goFullscreen;
 -(void)leftFullscreen;
 @end
+
+@protocol TransformProtocol
+-(id)initWithCalibrationArray:(NSArray *)calArray;
+-(NSPoint)transformPoint:(NSPoint)point;
+@end

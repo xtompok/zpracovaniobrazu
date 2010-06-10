@@ -5,7 +5,7 @@
 //  Created by Tomáš Pokorný on 13.1.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
-#import "ZOPoint.h"
+
 #import "ZOTransform.h"
 
 
