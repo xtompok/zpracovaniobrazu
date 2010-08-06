@@ -173,9 +173,8 @@
 {
 	NSString *result; 
 	result = [[NSString alloc] initWithFormat:@"Upper left: %@\nUpper right: %@\nLower right: %@\nLower left: %@\n",
-			  ulCalPoint,urCalPoint,lrCalPoint,llCalPoint]; 
+			  ulCalPoint,urCalPoint,lrCalPoint,llCalPoint];
 	return result;
-	
 }
 
 

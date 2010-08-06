@@ -16,6 +16,7 @@
 #import "ZOProjDrawingView.h"
 #import "ZOCalibrationData.h"
 #import "ZOProcessImage.h"
+#import "ZOProcess2Image.h"
 #import "ZOCalibrateView.h"
 #import "ZOCalibrateController.h"
 #import "ZODrawingController.h"
@@ -39,39 +40,8 @@
 	IBOutlet NSTextField *llLabel;
 	IBOutlet NSTextField *lrLabel;
 	
-	IBOutlet NSTextField *maxSumSquareLabel;
 	IBOutlet NSButton *calibrateButton;
 	IBOutlet NSButton *printToStdButton;
-	
-	//Config outlets
-	IBOutlet NSSlider *rMinSlider;
-	IBOutlet NSSlider *gMinSlider;
-	IBOutlet NSSlider *bMinSlider;
-	
-	IBOutlet NSSlider *rMaxSlider;
-	IBOutlet NSSlider *gMaxSlider;
-	IBOutlet NSSlider *bMaxSlider;
-	
-	IBOutlet NSSlider *rMinSumSlider;
-	IBOutlet NSSlider *gMinSumSlider;
-	IBOutlet NSSlider *bMinSumSlider;
-	
-	IBOutlet NSTextField *rMinLabel;
-	IBOutlet NSTextField *gMinLabel;
-	IBOutlet NSTextField *bMinLabel;
-	
-	IBOutlet NSTextField *rMaxLabel;
-	IBOutlet NSTextField *gMaxLabel;
-	IBOutlet NSTextField *bMaxLabel;
-	
-	IBOutlet NSTextField *rMinSumLabel;
-	IBOutlet NSTextField *gMinSumLabel;
-	IBOutlet NSTextField *bMinSumLabel;
-	
-	IBOutlet NSButton *minTogetherButton;
-	IBOutlet NSButton *minTogetherSumButton;
-	IBOutlet NSButton *maxTogetherButton;
-	
 		
 	//Projector screen
 
@@ -103,15 +73,12 @@
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
 		
-	ZOProcessImage *procImage;	
+	IBOutlet ZOProcessImage *procImage;
+	IBOutlet ZOProcess2Image *proc2Image;
+	//IBOutlet ZOProcess2Controller *proc2Controller;
 }
 
 -(IBAction)Calibrate:(id)sender;
 -(IBAction)RunAndPause:(id)sender;
 
-//Configuration action
--(void)initSliders;
--(IBAction)sumSquareSliderMoved:(id)sender;
--(IBAction)minSliderMoved:(id)sender;
--(IBAction)maxSliderMoved:(id)sender;
 @end

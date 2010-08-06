@@ -45,7 +45,7 @@
 
 }
 
--(NSPoint)getLightestPointFromImage:(NSImage *)anImage
+-(NSPoint)getThePointFromImage:(NSImage *)anImage
 {
 	NSBitmapImageRep * origRep;
 	

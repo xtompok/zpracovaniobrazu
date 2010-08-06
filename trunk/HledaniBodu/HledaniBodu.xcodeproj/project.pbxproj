@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0DA2DC120B4FBC003F9D04 /* ZOProcess2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */; };
+		4B0DA3A5120C4506003F9D04 /* ZOProcess2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DA3A4120C4506003F9D04 /* ZOProcess2Controller.m */; };
+		4B0DA54E120CA665003F9D04 /* ZOProcessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DA54D120CA665003F9D04 /* ZOProcessController.m */; };
 		4B17E15010DF7A6D000F3861 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */; };
 		4B17E16510DF8743000F3861 /* CocoaSequenceGrabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B17E16410DF8743000F3861 /* CocoaSequenceGrabber.framework */; };
 		4B1E63C2115A1BE400425139 /* ZOProjDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E63C1115A1BE400425139 /* ZOProjDrawingView.m */; };
@@ -38,6 +41,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		4B0DA2DA120B4FBC003F9D04 /* ZOProcess2Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProcess2Image.h; sourceTree = "<group>"; };
+		4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProcess2Image.m; sourceTree = "<group>"; };
+		4B0DA3A3120C4506003F9D04 /* ZOProcess2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProcess2Controller.h; sourceTree = "<group>"; };
+		4B0DA3A4120C4506003F9D04 /* ZOProcess2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProcess2Controller.m; sourceTree = "<group>"; };
+		4B0DA54C120CA665003F9D04 /* ZOProcessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProcessController.h; sourceTree = "<group>"; };
+		4B0DA54D120CA665003F9D04 /* ZOProcessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProcessController.m; sourceTree = "<group>"; };
 		4B17E14E10DF7A6D000F3861 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		4B17E16410DF8743000F3861 /* CocoaSequenceGrabber.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaSequenceGrabber.framework; path = /Library/Frameworks/CocoaSequenceGrabber.framework; sourceTree = "<absolute>"; };
@@ -88,13 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				4B3BC50411A3FEAD00166D84 /* ZOProtocols */,
-				4B4D7FDE11A32B4F00731B4F /* Viewing */,
-				4B4D7FDD11A32B3500731B4F /* Transformations */,
 				4B4D7FDC11A32B2500731B4F /* Calibration */,
+				4B0DA2D9120B4F02003F9D04 /* Processing */,
+				4B4D7FDD11A32B3500731B4F /* Transformations */,
+				4B4D7FDE11A32B4F00731B4F /* Viewing */,
 				4B8EDFC8111C21670076280A /* ZOPoint.h */,
 				4B8EDFC9111C21670076280A /* ZOPoint.m */,
-				4BE587F31158F18E0026796A /* ZOProcessImage.h */,
-				4BE587F41158F18E0026796A /* ZOProcessImage.m */,
 				4BD529C011197AD80090EBE6 /* ZOImageView.h */,
 				4BD529C111197AD80090EBE6 /* ZOImageView.m */,
 				4B17E14E10DF7A6D000F3861 /* WindowController.h */,
@@ -169,6 +177,21 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B0DA2D9120B4F02003F9D04 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				4BE587F31158F18E0026796A /* ZOProcessImage.h */,
+				4BE587F41158F18E0026796A /* ZOProcessImage.m */,
+				4B0DA54C120CA665003F9D04 /* ZOProcessController.h */,
+				4B0DA54D120CA665003F9D04 /* ZOProcessController.m */,
+				4B0DA2DA120B4FBC003F9D04 /* ZOProcess2Image.h */,
+				4B0DA3A3120C4506003F9D04 /* ZOProcess2Controller.h */,
+				4B0DA3A4120C4506003F9D04 /* ZOProcess2Controller.m */,
+				4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */,
+			);
+			name = Processing;
 			sourceTree = "<group>";
 		};
 		4B4D7FDC11A32B2500731B4F /* Calibration */ = {
@@ -288,6 +311,9 @@
 				4B4D7F3A11A317C000731B4F /* ZOCalibrateController.m in Sources */,
 				4B3BC4A311A3D89800166D84 /* ZODrawingController.m in Sources */,
 				4B3BC4E411A3EE6600166D84 /* ZOProjectorController.m in Sources */,
+				4B0DA2DC120B4FBC003F9D04 /* ZOProcess2Image.m in Sources */,
+				4B0DA3A5120C4506003F9D04 /* ZOProcess2Controller.m in Sources */,
+				4B0DA54E120CA665003F9D04 /* ZOProcessController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

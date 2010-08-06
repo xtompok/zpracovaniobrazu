@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ZOProtocols"
 
 
-@interface ZOProcessImage : NSObject {
+@interface ZOProcessImage : NSObject <ProcessProtocol> {
 	
 	NSSize size;
 	int delka;
@@ -38,11 +39,8 @@
 	unsigned char * origbuffer;	
 
 }
--(id)initWithSize:(NSSize)aSize;
--(NSPoint)getLightestPointFromImage:(NSImage *)anImage;
 -(void)sumSquareAtIndex:(int)index toArray:(int *)sum;
 -(NSPoint)pixelCoordinatesAtIndex:(int)index;
--(void)setBaseImage:(NSImage *)anImage;
 
 
 @property int minRSumValue;
