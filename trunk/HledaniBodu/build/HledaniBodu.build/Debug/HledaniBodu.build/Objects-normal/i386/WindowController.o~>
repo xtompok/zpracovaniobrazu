@@ -1,0 +1,5 @@
+/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m: In function '-[WindowController camera:didReceiveFrame:]':
+/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m:103: warning: 'ZOImageView' may not respond to '-setImage:'
+/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m:103: warning: (Messages without a matching method signature
+/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m:103: warning: will be assumed to return 'id' and accept
+/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/WindowController.m:103: warning: '...' as arguments.)

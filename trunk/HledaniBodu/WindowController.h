@@ -75,7 +75,6 @@
 		
 	IBOutlet ZOProcessImage *procImage;
 	IBOutlet ZOProcess2Image *proc2Image;
-	//IBOutlet ZOProcess2Controller *proc2Controller;
 }
 
 -(IBAction)Calibrate:(id)sender;

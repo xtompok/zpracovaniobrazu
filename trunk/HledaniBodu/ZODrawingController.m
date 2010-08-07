@@ -15,16 +15,14 @@
 {
 	if (![super init])
 		return nil;
+	NSLog(@"Drawing Controller initialized");
 	return self;
 }
 
 -(IBAction)widthSliderMoved:(id) sender
 {
-	NSLog(@"SliderMoved");
-	int aWidth;
-	aWidth = [widthSlider intValue];
-	[widthField setIntValue:aWidth];
-	[drawView setLineWidth:aWidth];
+	[widthField setIntValue:[sender intValue]];
+	[drawView setLineWidth:[sender intValue]];
 }
 -(void)setPoint1:(NSPoint)aPoint
 {

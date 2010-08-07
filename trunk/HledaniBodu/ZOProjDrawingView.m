@@ -15,27 +15,37 @@
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
-    if (self) {
+    if (self) 
+	{
 		drawedPath = [[NSBezierPath alloc] init];
 		[drawedPath moveToPoint:NSMakePoint(0, 0)];
-    }
 	
-	NSLog(@"Projector drawing View initialized");
+		NSLog(@"Projector drawing View initialized");
 	
-    return self;
+		return self;
+	} else 
+	{
+		return nil;
+	}
+
 	
 }
 
+// Drawing
 - (void)drawRect:(NSRect)dirtyRect {
+	// Background
     [[NSColor blackColor] set];
 	NSRectFill ( [self bounds] );
 	
+	// First point
 	[[NSColor whiteColor ] set];
 	[[self crossAtPoint:point1] stroke ];
 	
+	// Second point
 	[[NSColor yellowColor ] set];
 	[[self crossAtPoint:point2] stroke ];
 	
+	// Path
 	[[NSColor greenColor] set];
 	[drawedPath setLineWidth:lineWidth];
 	[drawedPath stroke];
@@ -47,17 +57,18 @@
 	point1.x = aPoint.x*[self bounds].size.width;
 	point1.y = aPoint.y*[self bounds].size.height;
 	
+	// If point wasn't found, end the path
 	if ((point1.x==0)&&(point1.y==0))
 	{
 		drawing = NO;
 	} 
 	else 
-	{
+	{	// If the point was found, jump to it and start drawing
 		if (drawing == NO)
 		{
 			[drawedPath moveToPoint:point1];
 			drawing = YES;
-		}
+		} // Or draw to next point
 		else {
 			[drawedPath lineToPoint:point1];
 		}
