@@ -21,7 +21,7 @@
 
 }
 
--(void)setAnImage:(NSImage *)anImage;
+-(void)setImage:(NSImage *)anImage;
 -(void)setCalPoints:(NSArray *)anArray;
 -(void)setPoint:(NSPoint)aPoint;
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint;

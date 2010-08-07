@@ -34,7 +34,7 @@
     return self;
 }
 
-// Sets coalibration points
+// Sets calibration points
 -(void)setCalPoints:(NSArray *)anArray
 {
 	int i;
@@ -56,7 +56,7 @@
 }
 
 // Sets image for view
--(void)setAnImage:(NSImage *)anImage
+-(void)setImage:(NSImage *)anImage
 {
 	[image release];
 	image=(NSImage *)anImage;

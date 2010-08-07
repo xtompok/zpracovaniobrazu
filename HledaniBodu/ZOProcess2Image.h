@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZOProtocols"
-//#import "ZOProcess2Controller.h"
 
 struct colResults {
 	int innerR;
@@ -23,7 +22,6 @@ struct colResults {
 
 	NSSize size;
 	int delka;
-	NSImage * baseImage;
 		
 	int minPointR;
 	int minPointG;

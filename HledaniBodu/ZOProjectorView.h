@@ -12,8 +12,6 @@
 
 @interface ZOProjectorView : NSView {
 	NSPoint point1,point2;
-	//int calPoint;
-	//int calPointSize;
 	bool drawing;
 
 }

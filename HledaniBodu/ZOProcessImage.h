@@ -14,7 +14,6 @@
 	
 	NSSize size;
 	int delka;
-	NSImage * baseImage;
 	
 	int minRSumValue;
 	int minGSumValue;

@@ -64,9 +64,9 @@
 	NSBitmapImageRep * origRep;
 	int i;
 	int maxScoreIndex;
-	
 	struct colResults res;
 	
+	// Get from image an array of bytes
 	origRep = [[anImage representations] lastObject];
 	origbuffer = [origRep bitmapData];
 	
@@ -76,7 +76,7 @@
 	//printf("Min:%.3d,%.3d,%.3d\nMax:%.3d,%.3d,%.3d\n",minPointR,maxPointR,minInnerR,maxInnerR,minOuterR,maxOuterR);
 
 	for(i=0;i<delka;i+=4)
-	{
+	{	// Testing point itself
 		if (1
 			&&(origbuffer[i]>=minPointR)
 			&&(origbuffer[i+1]>=minPointG)
@@ -88,10 +88,11 @@
 			) 
 		{
 
-			
+			// Compute cross sum
 			res=[self sumCrossAtIndex:i];
 
 			if (1
+				// Test inner cross
 				&&(res.innerR>=minInnerR)
 				&&(res.innerG>=minInnerG)
 				&&(res.innerB>=minInnerB)
@@ -100,6 +101,7 @@
 				&&(res.innerG<=maxInnerG)
 				&&(res.innerB<=maxInnerB) 
 				
+				//Test outer cross
 				&&(res.outerR>=minOuterR)
 				&&(res.outerG>=minOuterG)
 				&&(res.outerB>=minOuterB)
@@ -108,6 +110,7 @@
 				&&(res.outerG<=maxOuterG)
 				&&(res.outerB<=maxOuterB)
 				) {
+				// Find maximum
 				if (res.innerR>maxScoreR) 
 				{
 					maxScoreR=res.innerR;
@@ -121,21 +124,17 @@
 
 	}
 	
-	
+	// Color of found point
 	maxR=origbuffer[maxScoreIndex];
 	maxG=origbuffer[maxScoreIndex+1];
 	maxB=origbuffer[maxScoreIndex+2];
-	
 	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
 	
-
-	
-	
+	// Compute standard coordinates
 	NSPoint aPoint;
 	aPoint=[self pixelCoordinatesAtIndex:maxScoreIndex];
 	aPoint.x=aPoint.x/size.width;
 	aPoint.y=aPoint.y/size.height;
-	aPoint.x+=0.0001;
 	//printf("%f,%f",aPoint.x,aPoint.y);
 	return aPoint;
 	
@@ -145,7 +144,7 @@
 
 /* Index -> Coordinates */
 /* --------------------- */
-// Return coordinates as NSSize object of point with supplied index
+// Return coordinates as NSPoint object of point with supplied index
 
 -(NSPoint)pixelCoordinatesAtIndex:(int)index
 {
@@ -155,8 +154,8 @@
 	return souradnice;
 }
 
-
-
+/* Computing cross method */
+/*------------------------*/
 
 // Computes average of inner (I) and outer (O) cross around point (P)
 /*
@@ -185,6 +184,7 @@
 	innDelitel=0;
 	outDelitel=0;
 	
+	// Upper outer point
 	i=index-outerRange*radek;
 	if (i>=0) 
 	{
@@ -194,6 +194,7 @@
 		outDelitel++;
 	}
 	
+	// Lower outer point
 	i=index+outerRange*radek;
 	if (i<delka) 
 	{
@@ -203,6 +204,7 @@
 		outDelitel++;
 	}
 	
+	// Left outer point
 	i=index-12;
 	if ((i>=0)&&((i%(int)size.width)<(index%(int)size.width))) 
 	{
@@ -212,6 +214,7 @@
 		outDelitel++;
 	}
 	
+	// Right outer point
 	i=index+12;
 	if ((i<delka)&&((i%(int)size.width)>(index%(int)size.width)))
 	{
@@ -221,7 +224,7 @@
 		outDelitel++;
 	}
 		
-	
+	// Upper inner point
 	i=index-radek;
 	if (i>=0) 
 	{
@@ -231,7 +234,7 @@
 		innDelitel++;
 	}
 	
-
+	// Lower inner point
 	i=index+radek;
 	if (i<delka) 
 	{
@@ -241,6 +244,7 @@
 		innDelitel++;
 	}
 	
+	// Left inner point
 	i=index-4;
 	if ((i>=0)&&((i%(int)size.width)<(index%(int)size.width)))
 	{
@@ -250,6 +254,7 @@
 		innDelitel++;
 	}
 	
+	// Right inner point
 	i=index+4;
 	if ((i<delka)&&((i%(int)size.width)>(index%(int)size.width)))
 	{
@@ -260,7 +265,7 @@
 	}
 	
 
-	
+	// Average results
 	res.innerR/=innDelitel;
 	res.innerG/=innDelitel;
 	res.innerB/=innDelitel;
@@ -274,15 +279,5 @@
 	
 	return res;
 }
-
-
--(void)setBaseImage:(NSImage *)anImage
-{
-	[baseImage release];
-	baseImage = anImage;
-	[baseImage retain];
-	
-}
-
 
 @end

@@ -186,9 +186,9 @@
 				4BE587F41158F18E0026796A /* ZOProcessImage.m */,
 				4B0DA54C120CA665003F9D04 /* ZOProcessController.h */,
 				4B0DA54D120CA665003F9D04 /* ZOProcessController.m */,
-				4B0DA2DA120B4FBC003F9D04 /* ZOProcess2Image.h */,
 				4B0DA3A3120C4506003F9D04 /* ZOProcess2Controller.h */,
 				4B0DA3A4120C4506003F9D04 /* ZOProcess2Controller.m */,
+				4B0DA2DA120B4FBC003F9D04 /* ZOProcess2Image.h */,
 				4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */,
 			);
 			name = Processing;

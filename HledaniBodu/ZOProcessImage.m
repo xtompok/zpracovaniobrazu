@@ -48,17 +48,20 @@
 -(NSPoint)getThePointFromImage:(NSImage *)anImage
 {
 	NSBitmapImageRep * origRep;
+	int i;
+	int maxScoreIndex;
+	int aScore[3];
 	
+	// Get an array of bytes from image
 	origRep = [[anImage representations] lastObject];
 	origbuffer = [origRep bitmapData];
-	int i;
+	
 	maxScoreR=maxScoreG=maxScoreB=0;
-	int maxScoreIndex;
 	maxScoreIndex=0;
-	int aScore[3];
+	
 	for(i=0;i<delka;i+=4)
 	{
-		if (1
+		if (1 // Test point
 			&&(origbuffer[i]<maxRValue)
 			&&(origbuffer[i+1]<maxGValue)
 			&&(origbuffer[i+2]<maxBValue)
@@ -69,9 +72,10 @@
 				&&(origbuffer[i+2]>minBValue)
 				&&(origbuffer[i+1]>minGValue)
 				) 
-			{
+			{	// Compute sum square
 				[self sumSquareAtIndex:i toArray:(int *)&aScore];
 				
+				//Find maximum score
 				if (aScore[0]>maxScoreR) 
 				{
 					maxScoreR=aScore[0];
@@ -121,7 +125,7 @@
 	}
 	
 	
-	
+	// Testing sum value
 	if ((maxScoreR<minRSumValue)
 		||(maxScoreG<minGSumValue)
 		||(maxScoreB<minBSumValue)
@@ -132,13 +136,14 @@
 		maxScoreB=0;
 		maxScoreIndex=0;
 	}
+	
+	// Getting colors of found point
 	maxR=origbuffer[maxScoreIndex];
 	maxG=origbuffer[maxScoreIndex+1];
 	maxB=origbuffer[maxScoreIndex+2];
-
-	
 	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
 	
+	// Normalising point 
 	NSPoint aPoint;
 	aPoint=[self pixelCoordinatesAtIndex:maxScoreIndex];
 	aPoint.x=aPoint.x/size.width;
@@ -194,14 +199,6 @@
 		ulIndex+=size.width*4;
 	}
 	//printf("ulindex=%d, lrindex=%d",ulIndex,lrIndex);
-}
-
--(void)setBaseImage:(NSImage *)anImage
-{
-	[baseImage release];
-	baseImage = anImage;
-	[baseImage retain];
-
 }
 
 @end

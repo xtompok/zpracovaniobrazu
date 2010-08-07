@@ -13,6 +13,7 @@
 @interface ZODrawingController : NSWindowController <ProjectorProtocol> {
 	IBOutlet NSSlider * widthSlider;
 	IBOutlet NSTextField * widthField;
+	
 	IBOutlet ZOProjDrawingView * drawView;
 	IBOutlet NSPanel * drawPanel;
 	NSWindow * projWindow;

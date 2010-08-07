@@ -11,7 +11,7 @@
 
 @implementation ZOProjectorView
 
-// Initializes and sets size of calibration points
+// Initialize
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {

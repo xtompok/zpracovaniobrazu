@@ -13,5 +13,4 @@
 @protocol ProcessProtocol
 -(id)initWithSize:(NSSize)aSize;
 -(NSPoint)getThePointFromImage:(NSImage *)anImage;
--(void)setBaseImage:(NSImage *)anImage;
 @end

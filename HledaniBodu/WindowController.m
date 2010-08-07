@@ -26,7 +26,6 @@
 - (void)dealloc;
 {
 	[camera release];
-	
 	[super dealloc];
 }
 
@@ -57,11 +56,6 @@
 					  (NSTextField *) lrLabel,
 					  (NSTextField *) llLabel,nil];
 	
-	// Initialization of projector view
-	
-	
-	STDOUTPRINT NSLog(@"screens: %i",[[NSScreen screens]count]);
-	
 	// Go fullscreen
 	[drawController goFullscreen];
 	//[projController goFullscreen];
@@ -69,13 +63,12 @@
 	/*Initialization own classes*/
 	/*--------------------------*/
 	
-	// Init image processing object
+	// Init image processing objects
 	[procImage initWithSize:size];
 	[proc2Image  initWithSize:size];
 	
 	// Init calibration object
 	[calController setSize:size];
-	
 	
 	// Init transformation object
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calController calibrationArray]];
@@ -104,9 +97,10 @@
 		
 	NSPoint transPoint, outPoint;
 		
-	outPoint = [proc2Image getThePointFromImage:lastImage];
+	outPoint = [proc2Image getThePointFromImage:lastImage]; 
 	
-	[imageView setAnImage:lastImage];
+	// View picture from camera and found point in WindowController
+	[imageView setImage:lastImage];
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 	
@@ -116,15 +110,12 @@
 	}
 	
 	transPoint = [transform2Object transformPoint:outPoint];
-	
+	//transPoint=[transformObject transformPoint:outPoint];
 
 	[drawController setPoint1:transPoint];
 	[projController setPoint1:transPoint];
 			
-	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);
-	
-	//transPoint=[transformObject transformPoint:outPoint];
-
+	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);	
 	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
 }
 
@@ -145,10 +136,14 @@
 	calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
 	
 	[imageView setCalPoints:[calData calPointsArray]];
+	
+	[transformObject autorelease];
+	[transform2Object autorelease];
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
 	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
+	
+	// View in GUI
 	[calibrateButton setEnabled:YES];
-	calInProgress=NO;
 	for (i=0;i<4;i++)
 	{
 		[[calLabelsArray objectAtIndex:i] setStringValue:
@@ -156,6 +151,9 @@
 		  (int)([[calArray objectAtIndex:i] x]*size.width),
 		  (int)([[calArray objectAtIndex:i] y]*size.height)]];
 	}
+	
+	calInProgress=NO;
+
 }
 
 /* GUI Interactivity */
@@ -167,7 +165,6 @@
 	calInProgress=YES;
 	[calibrateButton setEnabled:NO];
 	[calController calibrate];
-	
 	NSLog(@"Calibrate!");	
 }
 
