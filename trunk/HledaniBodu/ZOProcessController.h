@@ -41,6 +41,9 @@
 
 //Configuration action
 
+-(void)handleShowSettingsWindow:(NSNotification *)aNotify;
+
+
 -(void)setMinSumR:(int)aR;
 -(void)setMinSumG:(int)aG;
 -(void)setMinSumB:(int)aB;
