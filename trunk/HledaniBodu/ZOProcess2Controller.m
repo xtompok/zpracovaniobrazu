@@ -10,6 +10,39 @@
 
 
 @implementation ZOProcess2Controller
+
+@synthesize minPointR;
+@synthesize minPointG;
+@synthesize minPointB;
+@synthesize isMinPointTogether;
+
+@synthesize maxPointR;
+@synthesize maxPointG;
+@synthesize maxPointB;
+@synthesize isMaxPointTogether;
+
+
+@synthesize minInnerR;
+@synthesize minInnerG;
+@synthesize minInnerB;
+@synthesize isMinInnerTogether;
+
+@synthesize maxInnerR;
+@synthesize maxInnerG;
+@synthesize maxInnerB;
+@synthesize isMaxInnerTogether;
+
+
+@synthesize minOuterR;
+@synthesize minOuterG;
+@synthesize minOuterB;
+@synthesize isMinOuterTogether;
+
+@synthesize maxOuterR;
+@synthesize maxOuterG;
+@synthesize maxOuterB;
+@synthesize isMaxOuterTogether;
+
 -(void)awakeFromNib
 {
 	[[NSNotificationCenter defaultCenter]  addObserver:self
@@ -17,29 +50,37 @@
 												  name:@"Show process settings"
 												object:procImage];
 	
-	[procImage setMinPointR:[minPointRSlider intValue]];
-	[procImage setMinPointG:[minPointGSlider intValue]];
-	[procImage setMinPointB:[minPointBSlider intValue]];
+	[self setMinPointR: 150];
+	[self setMinPointG: 0];
+	[self setMinPointB: 0];
+	[self setIsMinPointTogether: NO];
 	
-	[procImage setMaxPointR:[maxPointRSlider intValue]];
-	[procImage setMaxPointG:[maxPointGSlider intValue]];
-	[procImage setMaxPointB:[maxPointBSlider intValue]];
+	[self setMaxPointR: 255];
+	[self setMaxPointG: 255];
+	[self setMaxPointB: 255];
+	[self setIsMaxPointTogether: YES];
 	
-	[procImage setMinInnerR:[minInnerRSlider intValue]];
-	[procImage setMinInnerG:[minInnerGSlider intValue]];
-	[procImage setMinInnerB:[minInnerBSlider intValue]];
 	
-	[procImage setMaxInnerR:[maxInnerRSlider intValue]];	
-	[procImage setMaxInnerG:[maxInnerGSlider intValue]];
-	[procImage setMaxInnerB:[maxInnerBSlider intValue]];
+	[self setMinInnerR: 100];
+	[self setMinInnerG: 0];
+	[self setMinInnerB: 0];
+	[self setIsMinInnerTogether: NO];
 	
-	[procImage setMinOuterR:[minOuterRSlider intValue]];	
-	[procImage setMinOuterG:[minOuterGSlider intValue]];
-	[procImage setMinOuterB:[minOuterBSlider intValue]];
+	[self setMaxInnerR: 255];
+	[self setMaxInnerG: 255];
+	[self setMaxInnerB: 255];
+	[self setIsMaxInnerTogether: YES];
 	
-	[procImage setMaxOuterR:[maxOuterRSlider intValue]];
-	[procImage setMaxOuterG:[maxOuterGSlider intValue]];
-	[procImage setMaxOuterB:[maxOuterBSlider intValue]];
+	
+	[self setMinOuterR: 0];
+	[self setMinOuterG: 0];
+	[self setMinOuterB: 0];
+	[self setIsMinOuterTogether: YES];
+	
+	[self setMaxOuterR: 255];
+	[self setMaxOuterG: 255];
+	[self setMaxOuterB: 255];
+	[self setIsMaxOuterTogether: YES];
 
 }
 
@@ -50,181 +91,379 @@
 }
 
 
--(IBAction)minPointSliderMoved:(id)sender
-{	
-	if ([minPointTogetherButton state]==NSOnState) 
-	{
-		[minPointRSlider setIntValue:[sender intValue]];
-		[minPointGSlider setIntValue:[sender intValue]];
-		[minPointBSlider setIntValue:[sender intValue]];
-		
-		[minPointRLabel setIntValue:[sender intValue]];
-		[minPointGLabel setIntValue:[sender intValue]];
-		[minPointBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==minPointRSlider) {
-			[minPointRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minPointGSlider) {
-			[minPointGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minPointBSlider) {
-			[minPointBLabel setIntValue:[sender intValue]];
-		}
-	}
-	[procImage setMinPointR:[minPointRSlider intValue]];
-	[procImage setMinPointG:[minPointGSlider intValue]];
-	[procImage setMinPointB:[minPointBSlider intValue]];
-
-
-}
-
--(IBAction)maxPointSliderMoved:(id)sender
+-(NSMutableDictionary *)dictionaryWithConfigValues
 {
-	if ([maxPointTogetherButton state]==NSOnState) 
-	{
-		[maxPointRSlider setIntValue:[sender intValue]];
-		[maxPointGSlider setIntValue:[sender intValue]];
-		[maxPointBSlider setIntValue:[sender intValue]];
+	NSMutableDictionary * aDict;
+	aDict = [[NSMutableDictionary alloc] initWithCapacity: 20];
 		
-		[maxPointRLabel setIntValue:[sender intValue]];
-		[maxPointGLabel setIntValue:[sender intValue]];
-		[maxPointBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==maxPointRSlider) {
-			[maxPointRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxPointGSlider) {
-			[maxPointGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxPointBSlider) {
-			[maxPointBLabel setIntValue:[sender intValue]];
-		}
-	}
+	NSNumber * objMinPointR;
+	objMinPointR = [[NSNumber alloc] initWithInt:minPointR];
+	[aDict setValue:objMinPointR forKey:@"minPointR"];
 	
-	[procImage setMaxPointR:[maxPointRSlider intValue]];
-	[procImage setMaxPointG:[maxPointGSlider intValue]];
-	[procImage setMaxPointB:[maxPointBSlider intValue]];
-
+	NSNumber * objMinPointG;
+	objMinPointG = [[NSNumber alloc] initWithInt:minPointG];
+	[aDict setValue:objMinPointG forKey:@"minPointG"];
+	
+	NSNumber * objMinPointB;
+	objMinPointB = [[NSNumber alloc] initWithInt:minPointB];
+	[aDict setValue:objMinPointB forKey:@"minPointB"];
+	
+	
+	NSNumber * objMaxPointR;
+	objMaxPointR = [[NSNumber alloc] initWithInt:maxPointR];
+	[aDict setValue:objMaxPointR forKey:@"maxPointR"];
+	
+	NSNumber * objMaxPointG;
+	objMaxPointG = [[NSNumber alloc] initWithInt:maxPointG];
+	[aDict setValue:objMaxPointG forKey:@"maxPointG"];
+	
+	NSNumber * objMaxPointB;
+	objMaxPointB = [[NSNumber alloc] initWithInt:maxPointB];
+	[aDict setValue:objMaxPointB forKey:@"maxPointB"];
+	
+	
+	
+	NSNumber * objMinInnerR;
+	objMinInnerR = [[NSNumber alloc] initWithInt:minInnerR];
+	[aDict setValue:objMinInnerR forKey:@"minInnerR"];
+	
+	NSNumber * objMinInnerG;
+	objMinInnerG = [[NSNumber alloc] initWithInt:minInnerG];
+	[aDict setValue:objMinInnerG forKey:@"minInnerG"];
+	
+	NSNumber * objMinInnerB;
+	objMinInnerB = [[NSNumber alloc] initWithInt:minInnerB];
+	[aDict setValue:objMinInnerB forKey:@"minInnerB"];
+	
+	
+	NSNumber * objMaxInnerR;
+	objMaxInnerR = [[NSNumber alloc] initWithInt:maxInnerR];
+	[aDict setValue:objMaxInnerR forKey:@"maxInnerR"];
+	
+	NSNumber * objMaxInnerG;
+	objMaxInnerG = [[NSNumber alloc] initWithInt:maxInnerG];
+	[aDict setValue:objMaxInnerG forKey:@"maxInnerG"];
+	
+	NSNumber * objMaxInnerB;
+	objMaxInnerB = [[NSNumber alloc] initWithInt:maxInnerB];
+	[aDict setValue:objMaxInnerB forKey:@"maxInnerB"];
+	
+	
+	NSNumber * objMinOuterR;
+	objMinOuterR = [[NSNumber alloc] initWithInt:minOuterR];
+	[aDict setValue:objMinOuterR forKey:@"minOuterR"];
+	
+	NSNumber * objMinOuterG;
+	objMinOuterG = [[NSNumber alloc] initWithInt:minOuterG];
+	[aDict setValue:objMinOuterG forKey:@"minOuterG"];
+	
+	NSNumber * objMinOuterB;
+	objMinOuterB = [[NSNumber alloc] initWithInt:minOuterB];
+	[aDict setValue:objMinOuterB forKey:@"minOuterB"];
+	
+	
+	NSNumber * objMaxOuterR;
+	objMaxOuterR = [[NSNumber alloc] initWithInt:maxOuterR];
+	[aDict setValue:objMaxOuterR forKey:@"maxOuterR"];
+	
+	NSNumber * objMaxOuterG;
+	objMaxOuterG = [[NSNumber alloc] initWithInt:maxOuterG];
+	[aDict setValue:objMaxOuterG forKey:@"maxOuterG"];
+	
+	NSNumber * objMaxOuterB;
+	objMaxOuterB = [[NSNumber alloc] initWithInt:maxOuterB];
+	[aDict setValue:objMaxOuterB forKey:@"maxOuterB"];
+		
+	return aDict;
 }
 
--(IBAction)minInnerSliderMoved:(id)sender
+- (NSString *) pathForDataFile
 {
-	if ([minInnerTogetherButton state]==NSOnState) 
-	{
-		[minInnerRSlider setIntValue:[sender intValue]];
-		[minInnerGSlider setIntValue:[sender intValue]];
-		[minInnerBSlider setIntValue:[sender intValue]];
-		
-		[minInnerRLabel setIntValue:[sender intValue]];
-		[minInnerGLabel setIntValue:[sender intValue]];
-		[minInnerBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==minInnerRSlider) {
-			[minInnerRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minInnerGSlider) {
-			[minInnerGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minInnerBSlider) {
-			[minInnerBLabel setIntValue:[sender intValue]];
-		}
-	}
+	NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+	NSString *folder = @"~/Library/Application Support/HledaniBodu/";
+	folder = [folder stringByExpandingTildeInPath];
 	
-	[procImage setMinInnerR:[minInnerRSlider intValue]];
-	[procImage setMinInnerG:[minInnerGSlider intValue]];
-	[procImage setMinInnerB:[minInnerBSlider intValue]];
+	if ([fileManager fileExistsAtPath: folder] == NO)
+	{
+		[fileManager createDirectoryAtPath:folder 
+			   withIntermediateDirectories:YES 
+								attributes:nil 
+									 error:nil];
+	}
+    
+	NSString *fileName = @"Process2Data.hbsaveddata";
+	return [folder stringByAppendingPathComponent: fileName];    
 }
 
--(IBAction)maxInnerSliderMoved:(id)sender
+- (IBAction) saveDataToDisk:(id) sender
 {
-	if ([maxInnerTogetherButton state]==NSOnState) 
-	{
-		[maxInnerRSlider setIntValue:[sender intValue]];
-		[maxInnerGSlider setIntValue:[sender intValue]];
-		[maxInnerBSlider setIntValue:[sender intValue]];
-		
-		[maxInnerRLabel setIntValue:[sender intValue]];
-		[maxInnerGLabel setIntValue:[sender intValue]];
-		[maxInnerBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==maxInnerRSlider) {
-			[maxInnerRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxInnerGSlider) {
-			[maxInnerGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxInnerBSlider) {
-			[maxInnerBLabel setIntValue:[sender intValue]];
-		}
-	}
-	
-	[procImage setMaxInnerR:[maxInnerRSlider intValue]];
-	[procImage setMaxInnerG:[maxInnerGSlider intValue]];
-	[procImage setMaxInnerB:[maxInnerBSlider intValue]];
+	NSLog(@"Saving data to disk");
+	NSString * path = [self pathForDataFile];
+	NSLog(@"Mam cestu");
+	[NSKeyedArchiver archiveRootObject:[self dictionaryWithConfigValues] toFile: path];
 }
 
--(IBAction)minOuterSliderMoved:(id)sender
+- (IBAction) loadDataFromDisk:(id) sender
 {
-	if ([minOuterTogetherButton state]==NSOnState) 
-	{
-		[minOuterRSlider setIntValue:[sender intValue]];
-		[minOuterGSlider setIntValue:[sender intValue]];
-		[minOuterBSlider setIntValue:[sender intValue]];
-		
-		[minOuterRLabel setIntValue:[sender intValue]];
-		[minOuterGLabel setIntValue:[sender intValue]];
-		[minOuterBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==minOuterRSlider) {
-			[minOuterRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minOuterGSlider) {
-			[minOuterGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==minOuterBSlider) {
-			[minOuterBLabel setIntValue:[sender intValue]];
-		}
-	}
+	NSLog(@"Loading data form disk");
+	NSString     * path        = [self pathForDataFile];
+	NSDictionary * rootObject;
+    
+	rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path]; 
 	
-	[procImage setMinOuterR:[minOuterRSlider intValue]];
-	[procImage setMinOuterG:[minOuterGSlider intValue]];
-	[procImage setMinOuterB:[minOuterBSlider intValue]];
-
+	NSLog(@"Dict: %@",rootObject);
+	
+	[self setMinPointR:[[rootObject valueForKey:@"minPointR"] intValue]];
+	[self setMinPointG:[[rootObject valueForKey:@"minPointG"] intValue]];
+	[self setMinPointB:[[rootObject valueForKey:@"minPointB"] intValue]];
+	
+	[self setMaxPointR:[[rootObject valueForKey:@"maxPointR"] intValue]];
+	[self setMaxPointG:[[rootObject valueForKey:@"maxPointG"] intValue]];
+	[self setMaxPointB:[[rootObject valueForKey:@"maxPointB"] intValue]];
+	
+	[self setMinInnerR:[[rootObject valueForKey:@"minInnerR"] intValue]];
+	[self setMinInnerG:[[rootObject valueForKey:@"minInnerG"] intValue]];
+	[self setMinInnerB:[[rootObject valueForKey:@"minInnerB"] intValue]];
+	
+	[self setMaxInnerR:[[rootObject valueForKey:@"maxInnerR"] intValue]];
+	[self setMaxInnerG:[[rootObject valueForKey:@"maxInnerG"] intValue]];
+	[self setMaxInnerB:[[rootObject valueForKey:@"maxInnerB"] intValue]];
+	
+	[self setMinOuterR:[[rootObject valueForKey:@"minOuterR"] intValue]];
+	[self setMinOuterG:[[rootObject valueForKey:@"minOuterG"] intValue]];
+	[self setMinOuterB:[[rootObject valueForKey:@"minOuterB"] intValue]];
+	
+	[self setMaxOuterR:[[rootObject valueForKey:@"maxOuterR"] intValue]];
+	[self setMaxOuterG:[[rootObject valueForKey:@"maxOuterG"] intValue]];
+	[self setMaxOuterB:[[rootObject valueForKey:@"maxOuterB"] intValue]];
+	
 }
--(IBAction)maxOuterSliderMoved:(id)sender;
+
+
+
+-(void)setMinPointR:(int)aR
 {
-	if ([maxOuterTogetherButton state]==NSOnState) 
-	{
-		[maxOuterRSlider setIntValue:[sender intValue]];
-		[maxOuterGSlider setIntValue:[sender intValue]];
-		[maxOuterBSlider setIntValue:[sender intValue]];
-		
-		[maxOuterRLabel setIntValue:[sender intValue]];
-		[maxOuterGLabel setIntValue:[sender intValue]];
-		[maxOuterBLabel setIntValue:[sender intValue]];
-	}else 
-	{
-		if (sender==maxOuterRSlider) {
-			[maxOuterRLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxOuterGSlider) {
-			[maxOuterGLabel setIntValue:[sender intValue]];
-		}
-		if (sender==maxOuterBSlider) {
-			[maxOuterBLabel setIntValue:[sender intValue]];
-		}
+	minPointR=aR;
+	[procImage setMinPointR:aR];
+	if (isMinPointTogether) {
+		[self willChangeValueForKey:@"minPointG"];
+		[self willChangeValueForKey:@"minPointB"];
+		minPointG=minPointB=aR;
+		[self didChangeValueForKey:@"minPointG"];
+		[self didChangeValueForKey:@"minPointB"];
 	}
-	
-	[procImage setMaxOuterR:[maxOuterRSlider intValue]];
-	[procImage setMaxOuterG:[maxOuterGSlider intValue]];
-	[procImage setMaxOuterB:[maxOuterBSlider intValue]];
+}
+-(void)setMinPointG:(int)aG
+{
+	minPointG=aG;
+	[procImage setMinPointG:aG];
+	if (isMinPointTogether) {
+		[self willChangeValueForKey:@"minPointR"];
+		[self willChangeValueForKey:@"minPointB"];
+		minPointR=minPointB=aG;
+		[self didChangeValueForKey:@"minPointR"];
+		[self didChangeValueForKey:@"minPointB"];
+	}
+}
+-(void)setMinPointB:(int)aB
+{
+	minPointB=aB;
+	[procImage setMinPointB:aB];
+	if (isMinPointTogether) {
+		[self willChangeValueForKey:@"minPointG"];
+		[self willChangeValueForKey:@"minPointR"];
+		minPointR=minPointG=aB;
+		[self didChangeValueForKey:@"minPointG"];
+		[self didChangeValueForKey:@"minPointR"];
+	}
 }
 
+-(void)setMaxPointR:(int)aR
+{
+	maxPointR=aR;
+	[procImage setMaxPointR:aR];
+	if (isMaxPointTogether) {
+		[self willChangeValueForKey:@"maxPointG"];
+		[self willChangeValueForKey:@"maxPointB"];
+		maxPointG=maxPointB=aR;
+		[self didChangeValueForKey:@"maxPointG"];
+		[self didChangeValueForKey:@"maxPointB"];
+	}
+}
+-(void)setMaxPointG:(int)aG
+{
+	maxPointG=aG;
+	[procImage setMaxPointG:aG];
+	if (isMaxPointTogether) {
+		[self willChangeValueForKey:@"maxPointR"];
+		[self willChangeValueForKey:@"maxPointB"];
+		maxPointR=maxPointB=aG;
+		[self didChangeValueForKey:@"maxPointR"];
+		[self didChangeValueForKey:@"maxPointB"];
+	}
+}
+-(void)setMaxPointB:(int)aB
+{
+	maxPointB=aB;
+	[procImage setMaxPointB:aB];
+	if (isMaxPointTogether) {
+		[self willChangeValueForKey:@"maxPointG"];
+		[self willChangeValueForKey:@"maxPointR"];
+		maxPointR=maxPointG=aB;
+		[self didChangeValueForKey:@"maxPointG"];
+		[self didChangeValueForKey:@"maxPointR"];
+	}
+}
+
+
+-(void)setMinInnerR:(int)aR
+{
+	minInnerR=aR;
+	[procImage setMinInnerR:aR];
+	if (isMinInnerTogether) {
+		[self willChangeValueForKey:@"minInnerG"];
+		[self willChangeValueForKey:@"minInnerB"];
+		minInnerG=minInnerB=aR;
+		[self didChangeValueForKey:@"minInnerG"];
+		[self didChangeValueForKey:@"minInnerB"];
+	}
+}
+-(void)setMinInnerG:(int)aG
+{
+	minInnerG=aG;
+	[procImage setMinInnerG:aG];
+	if (isMinInnerTogether) {
+		[self willChangeValueForKey:@"minInnerR"];
+		[self willChangeValueForKey:@"minInnerB"];
+		minInnerR=minInnerB=aG;
+		[self didChangeValueForKey:@"minInnerR"];
+		[self didChangeValueForKey:@"minInnerB"];
+	}
+}
+-(void)setMinInnerB:(int)aB
+{
+	minInnerB=aB;
+	[procImage setMinInnerB:aB];
+	if (isMinInnerTogether) {
+		[self willChangeValueForKey:@"minInnerG"];
+		[self willChangeValueForKey:@"minInnerR"];
+		minInnerR=minInnerG=aB;
+		[self didChangeValueForKey:@"minInnerG"];
+		[self didChangeValueForKey:@"minInnerR"];
+	}
+}
+
+-(void)setMaxInnerR:(int)aR
+{
+	maxInnerR=aR;
+	[procImage setMaxInnerR:aR];
+	if (isMaxInnerTogether) {
+		[self willChangeValueForKey:@"maxInnerG"];
+		[self willChangeValueForKey:@"maxInnerB"];
+		maxInnerG=maxInnerB=aR;
+		[self didChangeValueForKey:@"maxInnerG"];
+		[self didChangeValueForKey:@"maxInnerB"];
+	}
+}
+-(void)setMaxInnerG:(int)aG
+{
+	maxInnerG=aG;
+	[procImage setMaxInnerG:aG];
+	if (isMaxInnerTogether) {
+		[self willChangeValueForKey:@"maxInnerR"];
+		[self willChangeValueForKey:@"maxInnerB"];
+		maxInnerR=maxInnerB=aG;
+		[self didChangeValueForKey:@"maxInnerR"];
+		[self didChangeValueForKey:@"maxInnerB"];
+	}
+}
+-(void)setMaxInnerB:(int)aB
+{
+	maxInnerB=aB;
+	[procImage setMaxInnerB:aB];
+	if (isMaxInnerTogether) {
+		[self willChangeValueForKey:@"maxInnerG"];
+		[self willChangeValueForKey:@"maxInnerR"];
+		maxInnerR=maxInnerG=aB;
+		[self didChangeValueForKey:@"maxInnerG"];
+		[self didChangeValueForKey:@"maxInnerR"];
+	}
+}
+
+
+-(void)setMinOuterR:(int)aR
+{
+	minOuterR=aR;
+	[procImage setMinOuterR:aR];
+	if (isMinOuterTogether) {
+		[self willChangeValueForKey:@"minOuterG"];
+		[self willChangeValueForKey:@"minOuterB"];
+		minOuterG=minOuterB=aR;
+		[self didChangeValueForKey:@"minOuterG"];
+		[self didChangeValueForKey:@"minOuterB"];
+	}
+}
+-(void)setMinOuterG:(int)aG
+{
+	minOuterG=aG;
+	[procImage setMinOuterG:aG];
+	if (isMinOuterTogether) {
+		[self willChangeValueForKey:@"minOuterR"];
+		[self willChangeValueForKey:@"minOuterB"];
+		minOuterR=minOuterB=aG;
+		[self didChangeValueForKey:@"minOuterR"];
+		[self didChangeValueForKey:@"minOuterB"];
+	}
+}
+-(void)setMinOuterB:(int)aB
+{
+	minOuterB=aB;
+	[procImage setMinOuterB:aB];
+	if (isMinOuterTogether) {
+		[self willChangeValueForKey:@"minOuterG"];
+		[self willChangeValueForKey:@"minOuterR"];
+		minOuterR=minOuterG=aB;
+		[self didChangeValueForKey:@"minOuterG"];
+		[self didChangeValueForKey:@"minOuterR"];
+	}
+}
+
+-(void)setMaxOuterR:(int)aR
+{
+	maxOuterR=aR;
+	[procImage setMaxOuterR:aR];
+	if (isMaxOuterTogether) {
+		[self willChangeValueForKey:@"maxOuterG"];
+		[self willChangeValueForKey:@"maxOuterB"];
+		maxOuterG=maxOuterB=aR;
+		[self didChangeValueForKey:@"maxOuterG"];
+		[self didChangeValueForKey:@"maxOuterB"];
+	}
+}
+-(void)setMaxOuterG:(int)aG
+{
+	maxOuterG=aG;
+	[procImage setMaxOuterG:aG];
+	if (isMaxOuterTogether) {
+		[self willChangeValueForKey:@"maxOuterR"];
+		[self willChangeValueForKey:@"maxOuterB"];
+		maxOuterR=maxOuterB=aG;
+		[self didChangeValueForKey:@"maxOuterR"];
+		[self didChangeValueForKey:@"maxOuterB"];
+	}
+}
+-(void)setMaxOuterB:(int)aB
+{
+	maxOuterB=aB;
+	[procImage setMaxOuterB:aB];
+	if (isMaxOuterTogether) {
+		[self willChangeValueForKey:@"maxOuterG"];
+		[self willChangeValueForKey:@"maxOuterR"];
+		maxOuterR=maxOuterG=aB;
+		[self didChangeValueForKey:@"maxOuterG"];
+		[self didChangeValueForKey:@"maxOuterR"];
+	}
+}
 
 @end
