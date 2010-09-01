@@ -13,46 +13,64 @@
 @interface ZOProcessController : NSWindowController {
 	
 	IBOutlet ZOProcessImage * procImage;
-	
-	//Config outlets
-	IBOutlet NSSlider *rMinSlider;
-	IBOutlet NSSlider *gMinSlider;
-	IBOutlet NSSlider *bMinSlider;
-	
-	IBOutlet NSSlider *rMaxSlider;
-	IBOutlet NSSlider *gMaxSlider;
-	IBOutlet NSSlider *bMaxSlider;
-	
-	IBOutlet NSSlider *rMinSumSlider;
-	IBOutlet NSSlider *gMinSumSlider;
-	IBOutlet NSSlider *bMinSumSlider;
-	
-	IBOutlet NSTextField *rMinLabel;
-	IBOutlet NSTextField *gMinLabel;
-	IBOutlet NSTextField *bMinLabel;
-	
-	IBOutlet NSTextField *rMaxLabel;
-	IBOutlet NSTextField *gMaxLabel;
-	IBOutlet NSTextField *bMaxLabel;
-	
-	IBOutlet NSTextField *rMinSumLabel;
-	IBOutlet NSTextField *gMinSumLabel;
-	IBOutlet NSTextField *bMinSumLabel;
-	
-	IBOutlet NSButton *minTogetherButton;
-	IBOutlet NSButton *minTogetherSumButton;
-	IBOutlet NSButton *maxTogetherButton;
-	
+		
 	IBOutlet NSTextField *maxSumSquareLabel;
-
 	
+	int minR;
+	int minG;
+	int minB;
+	BOOL isMinTogether;
+	
+	int maxR;
+	int maxG;
+	int maxB;
+	BOOL isMaxTogether;
+	
+	
+	int minSumR;
+	int minSumG;
+	int minSumB;
+	BOOL isSumTogether;
 
 }
+// Saving data
+- (NSString *) pathForDataFile;
+- (IBAction) saveDataToDisk:(id) sender;
+- (IBAction) loadDataFromDisk:(id) sender;
+-(NSMutableDictionary *)dictionaryWithConfigValues;
 
 //Configuration action
--(IBAction)sumSquareSliderMoved:(id)sender;
--(IBAction)minSliderMoved:(id)sender;
--(IBAction)maxSliderMoved:(id)sender;
+
+-(void)setMinSumR:(int)aR;
+-(void)setMinSumG:(int)aG;
+-(void)setMinSumB:(int)aB;
+
+-(void)setMinR:(int)aR;
+-(void)setMinG:(int)aG;
+-(void)setMinB:(int)aB;
+
+-(void)setMaxR:(int)aR;
+-(void)setMaxG:(int)aG;
+-(void)setMaxB:(int)aB;
+
+@property (readonly) int minSumR;
+@property (readonly) int minSumG;
+@property (readonly) int minSumB;
+@property BOOL isSumTogether;
+
+@property (readonly) int minR;
+@property (readonly) int minG;
+@property (readonly) int minB;
+@property BOOL isMinTogether;
+
+
+@property (readonly) int maxR;
+@property (readonly) int maxG;
+@property (readonly) int maxB;
+@property BOOL isMaxTogether;
+
+
+
 
 
 @end

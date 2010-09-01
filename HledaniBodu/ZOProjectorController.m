@@ -66,8 +66,13 @@
 		
 		
 	}	
+	NSLog(@"Projector controller went fullscreen");
 }
 
+-(void)showSettingsWindow
+{
+	//[self showWindow:nil];
+}
 
 
 @end

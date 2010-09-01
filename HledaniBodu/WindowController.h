@@ -10,13 +10,17 @@
 
 #import "ZOTransform.h"
 #import "ZO2PointTransform.h"
+#import "ZOQuadTransform.h"
+
 #import "ZOPoint.h"
 #import "ZOImageView.h"
 #import "ZOProjectorView.h"
 #import "ZOProjDrawingView.h"
 #import "ZOCalibrationData.h"
+
 #import "ZOProcessImage.h"
 #import "ZOProcess2Image.h"
+
 #import "ZOCalibrateView.h"
 #import "ZOCalibrateController.h"
 #import "ZODrawingController.h"
@@ -49,6 +53,12 @@
 	IBOutlet ZODrawingController * drawController;
 	IBOutlet ZOProjectorController * projController;
 	
+	//Choosing classes
+	IBOutlet NSPopUpButton * procChooseButton;
+	IBOutlet NSPopUpButton * transformChooseButton;
+	IBOutlet NSPopUpButton * viewChooseButton;
+
+	
 	/* Images and points */
 	/* ----------------- */
 	
@@ -72,12 +82,28 @@
 	
 	ZOTransform *transformObject;
 	ZO2PointTransform *transform2Object;
+	ZOQuadTransform *transQuadObject;
 		
 	IBOutlet ZOProcessImage *procImage;
 	IBOutlet ZOProcess2Image *proc2Image;
+	
+	/* Arrays of choosable classes */
+	/* --------------------------- */
+	
+	NSArray * procClassesArray;
+	NSArray * transformClassesArray;
+	NSArray * viewClassesArray;
 }
 
 -(IBAction)Calibrate:(id)sender;
 -(IBAction)RunAndPause:(id)sender;
+
+//Choosing classes
+-(IBAction)viewChooseChanged:(id)sender;
+
+-(IBAction)procSettingsClicked:(id)sender;
+-(IBAction)transformSettingsClicked:(id)sender;
+-(IBAction)viewSettingsClicked:(id)sender;
+
 
 @end

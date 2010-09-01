@@ -68,6 +68,8 @@
 // Transform supplied point
 -(NSPoint)transformPoint:(NSPoint)point
 {
+	//return point;
+	
 	NSPoint alfa,beta;
 	double xpomer,ypomer;
 	double e,f,o,p;

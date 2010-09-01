@@ -15,7 +15,7 @@
 	NSPoint point1;
 	NSPoint point2;
 	bool drawing;
-	int lineWidth;
+	float lineWidth;
 	
 }
 
@@ -23,7 +23,7 @@
 -(void)setPoint1:(NSPoint)aPoint;
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)resetDrawing;
-@property int lineWidth;
+@property float lineWidth;
 
 @end
 
