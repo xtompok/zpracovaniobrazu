@@ -15,6 +15,8 @@
 	NSSize size;
 	int delka;
 	
+	IBOutlet id controller;
+	
 	int minRSumValue;
 	int minGSumValue;
 	int minBSumValue;

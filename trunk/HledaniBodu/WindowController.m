@@ -56,9 +56,6 @@
 					  (NSTextField *) lrLabel,
 					  (NSTextField *) llLabel,nil];
 	
-	// Go fullscreen
-	[drawController goFullscreen];
-	//[projController goFullscreen];
 	
 	/*Initialization own classes*/
 	/*--------------------------*/
@@ -72,12 +69,38 @@
 	
 	// Init transformation object
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:[calController calibrationArray]];
+	transformObject = [[ZOTransform alloc] initWithCalibrationArray:[calController calibrationArray]];
+	transQuadObject = [[ZOQuadTransform alloc] initWithCalibrationArray:[calController calibrationArray]];
+	
+	//
+	[imageView setCalPoints:[calController calibrationArray]];
 	
 	// Init notification of completed calibration
 	[[NSNotificationCenter defaultCenter]  addObserver:self
 											  selector:@selector(calibrationCompleted:)
 												  name:@"Calibration OK"
 												object:nil];
+	
+	/* Creating arrays of choosable classes */
+	/* ------------------------------------ */
+	
+	procClassesArray = [[NSArray alloc] initWithObjects:
+						(ZOProcessImage * ) procImage,
+						(ZOProcess2Image *) proc2Image,nil];
+	transformClassesArray = [[NSArray alloc] initWithObjects:
+							 (ZOTransform *) transformObject,
+							 (ZO2PointTransform *) transform2Object,
+							 (ZOQuadTransform *) transQuadObject,
+							 nil];
+	viewClassesArray = [[NSArray alloc] initWithObjects:
+						(ZOProjectorController *) projController,
+						(ZODrawingController *) drawController, nil];
+	// Go fullscreen
+	[[viewClassesArray objectAtIndex:
+	  [viewChooseButton indexOfSelectedItem]] goFullscreen];
+	//[drawController goFullscreen];
+	//[projController goFullscreen];
+	
 	
 	// Set running or paused
 	running=YES;
@@ -97,7 +120,9 @@
 		
 	NSPoint transPoint, outPoint;
 		
-	outPoint = [proc2Image getThePointFromImage:lastImage]; 
+	outPoint = [[procClassesArray objectAtIndex:
+				 [procChooseButton indexOfSelectedItem]] 
+				getThePointFromImage:lastImage]; 
 	
 	// View picture from camera and found point in WindowController
 	[imageView setImage:lastImage];
@@ -109,8 +134,9 @@
 		return;
 	}
 	
-	transPoint = [transform2Object transformPoint:outPoint];
-	//transPoint=[transformObject transformPoint:outPoint];
+	transPoint = [[transformClassesArray objectAtIndex:
+				   [transformChooseButton indexOfSelectedItem]]
+				  transformPoint:outPoint];
 
 	[drawController setPoint1:transPoint];
 	[projController setPoint1:transPoint];
@@ -123,6 +149,8 @@
 - (void)windowWillClose:(NSNotification *)notification;
 {
 	[camera stop];
+	[projController leftFullscreen];
+	[drawController leftFullscreen];
 }
 
 // Notification receiver from ZOCalibrate, called when calibration is finished
@@ -130,17 +158,26 @@
 {
 	int i;
 	NSArray * calArray;
-	ZOCalibrationData * calData;
 	
-	calData = [aNotification object];
-	calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
+	//calData = [aNotification object];
+	//calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
 	
-	[imageView setCalPoints:[calData calPointsArray]];
+	calArray = [aNotification object];
 	
-	[transformObject autorelease];
-	[transform2Object autorelease];
+	NSLog(@"Kalibrace: %@",calArray);
+	
+	[imageView setCalPoints:calArray];
+		
+	for (i=0;i<[transformClassesArray count];i++)
+	{
+		[[transformClassesArray objectAtIndex:i] autorelease];
+		
+	
+	}
+
 	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
 	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
+	transQuadObject = [[ZOQuadTransform alloc] initWithCalibrationArray:calArray];
 	
 	// View in GUI
 	[calibrateButton setEnabled:YES];
@@ -181,6 +218,48 @@
 		[sender setTitle:@"Run"];
 		NSLog(@"Paused!");
 	}
+}
+
+//Choosing classes
+-(IBAction)viewChooseChanged:(id)sender
+{
+	int lastIndex;
+	int newIndex;
+	int i;
+	
+	lastIndex = [viewChooseButton indexOfItem:[viewChooseButton lastItem]];
+	newIndex = [viewChooseButton indexOfSelectedItem];
+	for (i=0;i<=lastIndex;i++)
+	{
+		if (i!=newIndex)
+		{
+			[[viewClassesArray objectAtIndex:i] leftFullscreen];
+		}
+	}
+	[[viewClassesArray objectAtIndex:newIndex] goFullscreen];
+	NSLog(@"Fullscreen view changed to index %d",newIndex);
+
+}
+
+-(IBAction)procSettingsClicked:(id)sender
+{
+/*	[[procClassesArray objectAtIndex:
+	 [procChooseButton indexOfSelectedItem]]
+	 showSettingsWindow];*/
+	[[NSNotificationCenter defaultCenter] 
+	 postNotificationName: @"Show process settings" 
+	 object: [procClassesArray objectAtIndex:
+			  [procChooseButton indexOfSelectedItem]]];
+	
+}
+-(IBAction)transformSettingsClicked:(id)sender
+{
+}
+-(IBAction)viewSettingsClicked:(id)sender
+{
+	[[viewClassesArray objectAtIndex:
+	  [viewChooseButton indexOfSelectedItem]]
+	 showSettingsWindow];
 }
 
 @end

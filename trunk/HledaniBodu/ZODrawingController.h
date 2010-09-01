@@ -11,16 +11,18 @@
 #import "ZOProtocols"
 
 @interface ZODrawingController : NSWindowController <ProjectorProtocol> {
-	IBOutlet NSSlider * widthSlider;
-	IBOutlet NSTextField * widthField;
+	float width;
 	
 	IBOutlet ZOProjDrawingView * drawView;
 	IBOutlet NSPanel * drawPanel;
 	NSWindow * projWindow;
 
 }
--(IBAction)widthSliderMoved:(id)sender;
+
+-(void)setWidth:(float)aWidth;
+
 -(IBAction)resetDrawing:(id)sender;
 
+@property (readonly) float width;
 
 @end

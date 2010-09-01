@@ -11,6 +11,8 @@
 
 @implementation ZODrawingController
 
+@synthesize width;
+
 -(id)init
 {
 	if (![super init])
@@ -19,11 +21,14 @@
 	return self;
 }
 
--(IBAction)widthSliderMoved:(id) sender
+
+// Using Key-Value coding to control from GUI
+-(void)setWidth:(float)aWidth
 {
-	[widthField setIntValue:[sender intValue]];
-	[drawView setLineWidth:[sender intValue]];
+	width=aWidth;
+	[drawView setLineWidth:aWidth];
 }
+
 -(void)setPoint1:(NSPoint)aPoint
 {
 	[drawView setPoint1:aPoint];
@@ -72,11 +77,19 @@
 		[projWindow setContentView:[drawPanel contentView]];
 		
 		
-	}	
+	}
+	NSLog(@"Drawing controller went fullscreen");
+
 }
 
 -(void)leftFullscreen
 {
 	[projWindow orderOut:self];
 }
+
+-(void)showSettingsWindow
+{
+	[self showWindow:nil];
+}
+
 @end

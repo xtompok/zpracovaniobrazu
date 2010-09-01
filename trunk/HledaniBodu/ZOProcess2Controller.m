@@ -12,6 +12,11 @@
 @implementation ZOProcess2Controller
 -(void)awakeFromNib
 {
+	[[NSNotificationCenter defaultCenter]  addObserver:self
+											  selector:@selector(handleShowSettingsWindow:)
+												  name:@"Show process settings"
+												object:procImage];
+	
 	[procImage setMinPointR:[minPointRSlider intValue]];
 	[procImage setMinPointG:[minPointGSlider intValue]];
 	[procImage setMinPointB:[minPointBSlider intValue]];
@@ -37,6 +42,13 @@
 	[procImage setMaxOuterB:[maxOuterBSlider intValue]];
 
 }
+
+-(void)handleShowSettingsWindow:(NSNotification *)aNotify
+{
+	NSLog(@"Showing settings window");
+	[self showWindow:nil];
+}
+
 
 -(IBAction)minPointSliderMoved:(id)sender
 {	
@@ -213,5 +225,6 @@
 	[procImage setMaxOuterG:[maxOuterGSlider intValue]];
 	[procImage setMaxOuterB:[maxOuterBSlider intValue]];
 }
+
 
 @end

@@ -1,8 +1,7 @@
-@protocol ProjectorProtocol
--(void)setPoint1:(NSPoint)aPoint;
--(void)setPoint2:(NSPoint)aPoint;
--(void)goFullscreen;
--(void)leftFullscreen;
+@protocol ProcessProtocol
+-(id)initWithSize:(NSSize)aSize;
+-(NSPoint)getThePointFromImage:(NSImage *)anImage;
+//-(void)showSettingsWindow;
 @end
 
 @protocol TransformProtocol
@@ -10,7 +9,11 @@
 -(NSPoint)transformPoint:(NSPoint)point;
 @end
 
-@protocol ProcessProtocol
--(id)initWithSize:(NSSize)aSize;
--(NSPoint)getThePointFromImage:(NSImage *)anImage;
+@protocol ProjectorProtocol
+-(void)setPoint1:(NSPoint)aPoint;
+-(void)setPoint2:(NSPoint)aPoint;
+-(void)goFullscreen;
+-(void)leftFullscreen;
+-(void)showSettingsWindow;
 @end
+

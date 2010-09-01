@@ -19,9 +19,9 @@
 		return nil;
 	
 	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.01, 0.01)];
-	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 1)];
+	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 0)];
 	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.99, 0.99)];
-	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 0)];
+	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 1)];
 	
 	
 	calPointsArray = [[NSArray alloc] initWithObjects:
@@ -151,7 +151,7 @@
 													  andBlue:maxBlue];
 		[[NSNotificationCenter defaultCenter] 
 		 postNotificationName: @"Calibration OK" 
-		 object: calData];
+		 object: calPointsArray];
 		
 		[calWindow orderOut:self];
 		

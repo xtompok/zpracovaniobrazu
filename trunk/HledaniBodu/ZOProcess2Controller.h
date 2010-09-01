@@ -65,6 +65,8 @@
 
 
 }
+-(void)handleShowSettingsWindow:(NSNotification *)aNotify;
+
 -(IBAction)minPointSliderMoved:(id)sender;
 -(IBAction)maxPointSliderMoved:(id)sender;
 
