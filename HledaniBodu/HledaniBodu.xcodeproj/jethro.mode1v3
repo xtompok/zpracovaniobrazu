@@ -279,14 +279,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>15</integer>
 									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 189}, {228, 464}}</string>
+							<string>{{0, 0}, {228, 464}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -323,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZOProcessController.m</string>
+								<string>ZOProcess2Controller.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ZOProcessController.m</string>
+										<string>ZOProcess2Controller.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4BE3A9C7122E53320068BE24</string>
+										<string>4BE3AA3F122E68360068BE24</string>
 										<key>history</key>
 										<array>
 											<string>4B89E784110052E700C77536</string>
@@ -364,21 +364,21 @@
 											<string>4B7D2C5A1225A8F900E7A9B5</string>
 											<string>4B7D2C751225AB7600E7A9B5</string>
 											<string>4B7D2C921225AFFE00E7A9B5</string>
-											<string>4B7D2C931225AFFE00E7A9B5</string>
 											<string>4B7D2CA01225B08800E7A9B5</string>
 											<string>4B7D2CA11225B08800E7A9B5</string>
 											<string>4B7D2CAF1225B27E00E7A9B5</string>
 											<string>4BE3A995122E4C320068BE24</string>
 											<string>4BE3A996122E4C320068BE24</string>
 											<string>4BE3A997122E4C320068BE24</string>
-											<string>4BE3A9BC122E53170068BE24</string>
 											<string>4BE3A9BD122E53170068BE24</string>
-											<string>4BE3A9BE122E53170068BE24</string>
-											<string>4BE3A9BF122E53170068BE24</string>
-											<string>4BE3A9C0122E53170068BE24</string>
-											<string>4BE3A9C1122E53170068BE24</string>
 											<string>4BE3A9C2122E53170068BE24</string>
-											<string>4BE3A9C3122E53170068BE24</string>
+											<string>4BE3A9C8122E55760068BE24</string>
+											<string>4BE3A9C9122E55760068BE24</string>
+											<string>4BE3A9D9122E57500068BE24</string>
+											<string>4BE3AA17122E62510068BE24</string>
+											<string>4BE3AA18122E62510068BE24</string>
+											<string>4BE3AA25122E63470068BE24</string>
+											<string>4BE3AA16122E62510068BE24</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,12 +578,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>4BE3AA40122E68360068BE24</string>
 		<string>4BE3A9A5122E4C320068BE24</string>
 		<string>4BE3A9A6122E4C320068BE24</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>4B17E13A10DF6F43000F3861</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/HledaniBodu.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
 	<string>94 228 826 523 0 0 1280 778 </string>
@@ -609,7 +610,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ZOProcessController.m</string>
+								<string>ZOProcess2Controller.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

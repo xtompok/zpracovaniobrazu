@@ -52,7 +52,7 @@
 -(NSMutableDictionary *)dictionaryWithConfigValues
 {
 	NSMutableDictionary * aDict;
-	aDict = [[NSMutableDictionary alloc] initWithCapacity: 20];
+	aDict = [[NSMutableDictionary alloc] initWithCapacity: 10];
 	
 	NSNumber * objMinR;
 	objMinR = [[NSNumber alloc] initWithInt:minR];

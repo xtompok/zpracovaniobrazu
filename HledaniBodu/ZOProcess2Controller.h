@@ -13,70 +13,107 @@
 @interface ZOProcess2Controller : NSWindowController {
 	IBOutlet ZOProcess2Image * procImage;
 	
-	IBOutlet NSButton * minPointTogetherButton;
-	IBOutlet NSSlider * minPointRSlider;
-	IBOutlet NSSlider * minPointGSlider;
-	IBOutlet NSSlider * minPointBSlider;
-	IBOutlet NSTextField * minPointRLabel;
-	IBOutlet NSTextField * minPointGLabel;
-	IBOutlet NSTextField * minPointBLabel;
-
-	IBOutlet NSButton * maxPointTogetherButton;
-	IBOutlet NSSlider * maxPointRSlider;
-	IBOutlet NSSlider * maxPointGSlider;
-	IBOutlet NSSlider * maxPointBSlider;
-	IBOutlet NSTextField * maxPointRLabel;
-	IBOutlet NSTextField * maxPointGLabel;
-	IBOutlet NSTextField * maxPointBLabel;
-
+	int minPointR;
+	int minPointG;
+	int minPointB;
+	BOOL isMinPointTogether;
 	
-	IBOutlet NSButton * minInnerTogetherButton;
-	IBOutlet NSSlider * minInnerRSlider;
-	IBOutlet NSSlider * minInnerGSlider;
-	IBOutlet NSSlider * minInnerBSlider;
-	IBOutlet NSTextField * minInnerRLabel;
-	IBOutlet NSTextField * minInnerGLabel;
-	IBOutlet NSTextField * minInnerBLabel;
-
-	IBOutlet NSButton * maxInnerTogetherButton;
-	IBOutlet NSSlider * maxInnerRSlider;
-	IBOutlet NSSlider * maxInnerGSlider;
-	IBOutlet NSSlider * maxInnerBSlider;
-	IBOutlet NSTextField * maxInnerRLabel;
-	IBOutlet NSTextField * maxInnerGLabel;
-	IBOutlet NSTextField * maxInnerBLabel;
-
+	int maxPointR;
+	int maxPointG;
+	int maxPointB;
+	BOOL isMaxPointTogether;
 	
-	IBOutlet NSButton * minOuterTogetherButton;
-	IBOutlet NSSlider * minOuterRSlider;
-	IBOutlet NSSlider * minOuterGSlider;
-	IBOutlet NSSlider * minOuterBSlider;
-	IBOutlet NSTextField * minOuterRLabel;
-	IBOutlet NSTextField * minOuterGLabel;
-	IBOutlet NSTextField * minOuterBLabel;
-
-	IBOutlet NSButton * maxOuterTogetherButton;
-	IBOutlet NSSlider * maxOuterRSlider;
-	IBOutlet NSSlider * maxOuterGSlider;
-	IBOutlet NSSlider * maxOuterBSlider;
-	IBOutlet NSTextField * maxOuterRLabel;
-	IBOutlet NSTextField * maxOuterGLabel;
-	IBOutlet NSTextField * maxOuterBLabel;
+	
+	int minInnerR;
+	int minInnerG;
+	int minInnerB;
+	BOOL isMinInnerTogether;
+	
+	int maxInnerR;
+	int maxInnerG;
+	int maxInnerB;
+	BOOL isMaxInnerTogether;
+	
+	
+	int minOuterR;
+	int minOuterG;
+	int minOuterB;
+	BOOL isMinOuterTogether;
+	
+	int maxOuterR;
+	int maxOuterG;
+	int maxOuterB;
+	BOOL isMaxOuterTogether;
 
 
 }
 
 -(void)handleShowSettingsWindow:(NSNotification *)aNotify;
 
+// Saving data
+- (NSString *) pathForDataFile;
+- (IBAction) saveDataToDisk:(id) sender;
+- (IBAction) loadDataFromDisk:(id) sender;
+-(NSMutableDictionary *)dictionaryWithConfigValues;
 
--(IBAction)minPointSliderMoved:(id)sender;
--(IBAction)maxPointSliderMoved:(id)sender;
+// Setters
+-(void)setMinPointR:(int)aR;
+-(void)setMinPointG:(int)aG;
+-(void)setMinPointB:(int)aB;
 
--(IBAction)minInnerSliderMoved:(id)sender;
--(IBAction)maxInnerSliderMoved:(id)sender;
+-(void)setMaxPointR:(int)aR;
+-(void)setMaxPointG:(int)aG;
+-(void)setMaxPointB:(int)aB;
 
--(IBAction)minOuterSliderMoved:(id)sender;
--(IBAction)maxOuterSliderMoved:(id)sender;
 
+-(void)setMinInnerR:(int)aR;
+-(void)setMinInnerG:(int)aG;
+-(void)setMinInnerB:(int)aB;
+
+-(void)setMaxInnerR:(int)aR;
+-(void)setMaxInnerG:(int)aG;
+-(void)setMaxInnerB:(int)aB;
+
+
+-(void)setMinOuterR:(int)aR;
+-(void)setMinOuterG:(int)aG;
+-(void)setMinOuterB:(int)aB;
+
+-(void)setMaxOuterR:(int)aR;
+-(void)setMaxOuterG:(int)aG;
+-(void)setMaxOuterB:(int)aB;
+
+
+@property(readonly) int  minPointR;
+@property(readonly) int  minPointG;
+@property(readonly) int  minPointB;
+@property BOOL isMinPointTogether;
+
+@property(readonly) int  maxPointR;
+@property(readonly) int  maxPointG;
+@property(readonly) int  maxPointB;
+@property BOOL isMaxPointTogether;
+
+
+@property(readonly) int  minInnerR;
+@property(readonly) int  minInnerG;
+@property(readonly) int  minInnerB;
+@property BOOL isMinInnerTogether;
+
+@property(readonly) int  maxInnerR;
+@property(readonly) int  maxInnerG;
+@property(readonly) int  maxInnerB;
+@property BOOL isMaxInnerTogether;
+
+
+@property(readonly) int  minOuterR;
+@property(readonly) int  minOuterG;
+@property(readonly) int  minOuterB;
+@property BOOL isMinOuterTogether;
+
+@property(readonly) int  maxOuterR;
+@property(readonly) int  maxOuterG;
+@property(readonly) int  maxOuterB;
+@property BOOL isMaxOuterTogether;
 
 @end
