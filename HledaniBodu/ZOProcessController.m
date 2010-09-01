@@ -49,98 +49,6 @@
 		[self showWindow:nil];
 }
 
-/*
--(int)minSumR
-{
-	NSLog(@"R is %d",minSumR);
-	return minSumR;
-}
--(int)minSumG
-{
-	NSLog(@"G is %d",minSumG);
-	return minSumG;
-}
--(int)minSumB
-{
-	NSLog(@"B is %d",minSumB);
-	return minSumB;
-}
-
-/*
--(IBAction)minSliderMoved:(id)sender
-{
-	
-	if ([minTogetherButton state]==NSOffState) 
-	{
-		if (sender==rMinSlider) 
-		{	
-			[rMinLabel setIntValue:[rMinSlider intValue]];
-			[procImage setMinRValue:[rMinSlider intValue]];
-		} 
-		else if (sender==gMinSlider)
-		{
-			[gMinLabel setIntValue:[gMinSlider intValue]];
-			[procImage setMinGValue:[gMinSlider intValue]];
-		} 
-		else if (sender==bMinSlider) 
-		{
-			[bMinLabel setIntValue:[bMinSlider intValue]];
-			[procImage setMinBValue:[bMinSlider intValue]];
-		}
-		
-	} else {
-		[rMinSlider setIntValue:[sender intValue]];
-		[gMinSlider setIntValue:[sender intValue]];
-		[bMinSlider setIntValue:[sender intValue]];
-		
-		[rMinLabel setIntValue:[sender intValue]];
-		[gMinLabel setIntValue:[sender intValue]];
-		[bMinLabel setIntValue:[sender intValue]];
-
-		[procImage setMinRValue:[rMinSlider intValue]];
-		[procImage setMinGValue:[gMinSlider intValue]];
-		[procImage setMinBValue:[bMinSlider intValue]];
-	}
-}
-
--(IBAction)maxSliderMoved:(id)sender
-{	
-	if ([maxTogetherButton state]==NSOffState) 
-	{
-		if (sender==rMaxSlider) 
-		{	
-			[rMaxLabel setIntValue:[rMaxSlider intValue]];
-			[procImage setMaxRValue:[rMaxSlider intValue]];
-		} 
-		else if (sender==gMaxSlider)
-		{
-			[gMaxLabel setIntValue:[gMaxSlider intValue]];
-			[procImage setMaxGValue:[gMaxSlider intValue]];
-		} 
-		else if (sender==bMaxSlider) 
-		{
-			[bMaxLabel setIntValue:[bMaxSlider intValue]];
-			[procImage setMaxBValue:[bMaxSlider intValue]];
-		}
-		
-	} else {
-
-		[rMaxSlider setIntValue:[sender intValue]];
-		[gMaxSlider setIntValue:[sender intValue]];
-		[bMaxSlider setIntValue:[sender intValue]];
-		
-		[rMaxLabel setIntValue:[sender intValue]];
-		[gMaxLabel setIntValue:[sender intValue]];
-		[bMaxLabel setIntValue:[sender intValue]];
-
-		[procImage setMaxRValue:[rMaxSlider intValue]];
-		[procImage setMaxGValue:[gMaxSlider intValue]];
-		[procImage setMaxBValue:[bMaxSlider intValue]];
-	}
-}
-
-
-*/
 -(NSMutableDictionary *)dictionaryWithConfigValues
 {
 	NSMutableDictionary * aDict;
@@ -196,7 +104,10 @@
 	
 	if ([fileManager fileExistsAtPath: folder] == NO)
 	{
-		[fileManager createDirectoryAtPath: folder attributes: nil];
+		[fileManager createDirectoryAtPath:folder 
+			   withIntermediateDirectories:YES 
+								attributes:nil 
+									 error:nil];
 	}
     
 	NSString *fileName = @"ProcessData.hbsaveddata";

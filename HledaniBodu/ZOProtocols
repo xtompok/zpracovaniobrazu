@@ -1,7 +1,6 @@
 @protocol ProcessProtocol
 -(id)initWithSize:(NSSize)aSize;
 -(NSPoint)getThePointFromImage:(NSImage *)anImage;
--(void)handleShowSettingsWindow:(NSNotification *)aNotify;
 @end
 
 @protocol TransformProtocol
