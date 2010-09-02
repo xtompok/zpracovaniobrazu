@@ -146,8 +146,6 @@
 		
 }
 
-
-
 -(void)setMinR:(int)aR
 {
 	minR=aR;
@@ -259,10 +257,5 @@
 		[self didChangeValueForKey:@"minSumR"];
 	}
 }
-/*-(void)didChangeValueForKey:(NSString *)key
-{
-	NSLog(@"Key= %@",key);
-	NSLog(@"Value = %@", [self valueForKey:key]);
-}*/
 
 @end

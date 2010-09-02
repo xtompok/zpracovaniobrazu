@@ -15,6 +15,17 @@
 {
 	if (![super init])
 		return nil;
+			
+	[self setCalibrationArray:modCalArray];
+	
+	NSLog(@"Ratio transformation initialized");
+
+	
+	return self;
+}
+
+-(void)setCalibrationArray:(NSArray *)modCalArray
+{
 	int posun;
 	double calArray[4][2];
 	
@@ -31,30 +42,30 @@
 	
 	calArray[3][0]=[[modCalArray objectAtIndex:3] x];
 	calArray[3][1]=[[modCalArray objectAtIndex:3] y];
-
+	
 	
 	PTK[0][0]=
-		(double)(calArray[0][0]+calArray[2][0]-calArray[1][0]-calArray[3][0]);
-		/*/((size.width-posun)*(size.height-posun));*/
+	(double)(calArray[0][0]+calArray[2][0]-calArray[1][0]-calArray[3][0]);
+	/*/((size.width-posun)*(size.height-posun));*/
 	PTK[0][1]=
-		(double)(calArray[0][1]+calArray[2][1]-calArray[1][1]-calArray[3][1]);
+	(double)(calArray[0][1]+calArray[2][1]-calArray[1][1]-calArray[3][1]);
 	
 	PTK[1][0]=
-		(double)(-calArray[0][0]+calArray[3][0]);
+	(double)(-calArray[0][0]+calArray[3][0]);
 	PTK[1][1]=
-		(double)(-calArray[0][1]+calArray[3][1]);
+	(double)(-calArray[0][1]+calArray[3][1]);
 	
 	PTK[2][0]=
-		(double)(calArray[1][0]-calArray[0][0]);
+	(double)(calArray[1][0]-calArray[0][0]);
 	PTK[2][1]=
-		(double)(calArray[1][1]-calArray[0][1]);
+	(double)(calArray[1][1]-calArray[0][1]);
 	
 	PTK[3][0]=(double)calArray[0][0];
 	PTK[3][1]=(double)calArray[0][1];
 	
-	NSLog(@"Ratio transformation initialized");
+	NSLog(@"New Ratio transformation initialized");
+
 	
-	return self;
 }
 
 -(double)getRightRootOfPolynomWithA:(double)a B:(double)b andC:(double)c

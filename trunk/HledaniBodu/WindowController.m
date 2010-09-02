@@ -98,8 +98,6 @@
 	// Go fullscreen
 	[[viewClassesArray objectAtIndex:
 	  [viewChooseButton indexOfSelectedItem]] goFullscreen];
-	//[drawController goFullscreen];
-	//[projController goFullscreen];
 	
 	
 	// Set running or paused
@@ -138,9 +136,12 @@
 				   [transformChooseButton indexOfSelectedItem]]
 				  transformPoint:outPoint];
 
-	[drawController setPoint1:transPoint];
-	[projController setPoint1:transPoint];
-			
+	int i;
+	for (i=0;i<[viewClassesArray count];i++)
+	{
+		[[viewClassesArray objectAtIndex:i] setPoint1:transPoint];
+	}
+	
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);	
 	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
 }
@@ -149,8 +150,11 @@
 - (void)windowWillClose:(NSNotification *)notification;
 {
 	[camera stop];
-	[projController leftFullscreen];
-	[drawController leftFullscreen];
+	int i;
+	for (i=0;i<[viewClassesArray count];i++)
+	{
+		[[viewClassesArray objectAtIndex:i] leftFullscreen];
+	}
 }
 
 // Notification receiver from ZOCalibrate, called when calibration is finished
@@ -158,26 +162,16 @@
 {
 	int i;
 	NSArray * calArray;
-	
-	//calData = [aNotification object];
-	//calArray = [[NSArray alloc] initWithArray:[calData calPointsArray]];
-	
+		
 	calArray = [aNotification object];
-	
-	NSLog(@"Kalibrace: %@",calArray);
-	
+		
 	[imageView setCalPoints:calArray];
 		
 	for (i=0;i<[transformClassesArray count];i++)
 	{
-		[[transformClassesArray objectAtIndex:i] autorelease];
+		[[transformClassesArray objectAtIndex:i] setCalibrationArray:calArray];
 		
-	
 	}
-
-	transform2Object = [[ZO2PointTransform alloc] initWithCalibrationArray:calArray];
-	transformObject = [[ZOTransform alloc] initWithCalibrationArray:calArray];
-	transQuadObject = [[ZOQuadTransform alloc] initWithCalibrationArray:calArray];
 	
 	// View in GUI
 	[calibrateButton setEnabled:YES];
@@ -209,7 +203,7 @@
 // Pause and resume running program
 -(IBAction)RunAndPause:(id)sender
 {
-	if ([sender title]==@"Run") {
+	if (!running) {
 		running=YES;
 		[sender setTitle:@"Pause"];
 		NSLog(@"Running!");
@@ -243,9 +237,6 @@
 
 -(IBAction)procSettingsClicked:(id)sender
 {
-/*	[[procClassesArray objectAtIndex:
-	 [procChooseButton indexOfSelectedItem]]
-	 showSettingsWindow];*/
 	[[NSNotificationCenter defaultCenter] 
 	 postNotificationName: @"Show process settings" 
 	 object: [procClassesArray objectAtIndex:

@@ -16,6 +16,15 @@
 {
 	if (![super init])
 		return nil;
+	
+	[self setCalibrationArray:calArray];
+	NSLog(@"2 point transformation initialized");
+	
+	return self;
+}
+
+-(void)setCalibrationArray:(NSArray *)calArray
+{
 	double m,n,i,j;
 	
 	// Sets array with calibration points
@@ -60,9 +69,7 @@
 	PTD[2]=sqrt((CP[2].x-CP[1].x)*(CP[2].x-CP[1].x)+(CP[2].y-CP[1].y)*(CP[2].y-CP[1].y));
 	PTD[3]=sqrt((CP[3].x-CP[2].x)*(CP[3].x-CP[2].x)+(CP[3].y-CP[2].y)*(CP[3].y-CP[2].y));
 	
-	NSLog(@"2 point transformation initialized");
-	
-	return self;
+	NSLog(@"New 2 point transformation initialized");
 }
 
 // Transform supplied point
