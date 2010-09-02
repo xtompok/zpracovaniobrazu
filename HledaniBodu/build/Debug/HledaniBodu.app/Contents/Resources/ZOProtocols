@@ -5,6 +5,7 @@
 
 @protocol TransformProtocol
 -(id)initWithCalibrationArray:(NSArray *)calArray;
+-(void)setCalibrationArray:(NSArray *)calArray;
 -(NSPoint)transformPoint:(NSPoint)point;
 @end
 
