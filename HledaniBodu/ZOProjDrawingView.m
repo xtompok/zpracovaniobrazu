@@ -12,6 +12,7 @@
 @implementation ZOProjDrawingView
 
 @synthesize lineWidth;
+@synthesize drawedPath;
 
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];

@@ -92,4 +92,28 @@
 	[self showWindow:nil];
 }
 
+-(IBAction)saveBezier:(id)sender
+{
+	NSSavePanel *sp;
+	int runResult;
+	
+	/* create or get the shared instance of NSSavePanel */
+	sp = [NSSavePanel savePanel];
+	
+	/* set up new attributes */
+	//[sp setAccessoryView:drawView];
+	//[sp setRequiredFileType:@"txt"];
+	
+	/* display the NSSavePanel */
+	runResult = [sp runModalForDirectory:NSHomeDirectory() file:@""];
+	
+	/* if successful, save file under designated name */
+	if (runResult == NSOKButton) {
+		if (![[[drawView drawedPath] description] writeToFile:[sp filename] atomically:YES encoding:NSUTF8StringEncoding error:nil])
+			NSBeep();
+	}
+	NSLog(@"Drawing saved.");
+
+}
+
 @end
