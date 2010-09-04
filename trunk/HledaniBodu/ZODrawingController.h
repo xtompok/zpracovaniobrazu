@@ -22,6 +22,7 @@
 -(void)setWidth:(float)aWidth;
 
 -(IBAction)resetDrawing:(id)sender;
+-(IBAction)saveBezier:(id)sender;
 
 @property (readonly) float width;
 

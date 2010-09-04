@@ -24,6 +24,7 @@
 -(void)setPoint2:(NSPoint)aPoint;
 -(void)resetDrawing;
 @property float lineWidth;
+@property (readonly)  NSBezierPath * drawedPath;
 
 @end
 
