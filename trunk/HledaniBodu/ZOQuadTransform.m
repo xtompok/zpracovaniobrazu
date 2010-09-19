@@ -111,16 +111,6 @@ quad_transform(double* xin, double* yin, int x, int y, void* data)
 	 sw.y = [[calArray objectAtIndex:3] y];
 	
 	
-/*	
-	nw.x = [[calArray objectAtIndex:0] x];
-	nw.y = [[calArray objectAtIndex:0] y];
-	se.x = [[calArray objectAtIndex:1] x];
-	se.y = [[calArray objectAtIndex:1] y];
-	sw.x = [[calArray objectAtIndex:2] x];
-	sw.y = [[calArray objectAtIndex:2] y];
-	ne.x = [[calArray objectAtIndex:3] x];
-	ne.y = [[calArray objectAtIndex:3] y];*/
-	
 	d0 = nw.x; //x0,            #1
 	d1 = ne.x-nw.x; // , #2
 	d2 = sw.x-nw.x; //, #3

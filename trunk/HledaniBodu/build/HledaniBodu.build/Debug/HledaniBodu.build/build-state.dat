@@ -1,7 +1,7 @@
 THledaniBodu
 v7
 r0
-t305197949.060556
+t305928466.203113
 cCheck dependencies
 cProcessInfoPlistFile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Info.plist HledaniBodu-Info.plist
 cCopyStringsFile /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/build/Debug/HledaniBodu.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
@@ -218,9 +218,9 @@ i"ZOProjDrawingView.h"
 i"ZOProtocols"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZODrawingController.m
-c000000004C80BBE10000000000000941
-t1283505121
-s2369
+c000000004C93402000000000000008D4
+t1284718624
+s2260
 i"ZODrawingController.h"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOImageView.h
@@ -359,9 +359,9 @@ i"ZOProtocols"
 i"ZOPoint.h"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOQuadTransform.m
-c000000004C8011DD000000000000102B
-t1283461597
-s4139
+c000000004C93403B0000000000000EE3
+t1284718651
+s3811
 i"ZOQuadTransform.h"
 
 N/Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ZOTransform.h
@@ -834,7 +834,7 @@ s1006
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies305197949#305197949#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies305928466#305928466#0(0"0(0#1#0"4300934600#0"0#
 
 CCompileC build/HledaniBodu.build/Debug/HledaniBodu.build/Objects-normal/i386/ConfigController.o /Users/jethro/Programy/zpracovaniobrazu/HledaniBodu/ConfigController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s288912720.543205
