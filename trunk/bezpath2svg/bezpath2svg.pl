@@ -2,12 +2,25 @@
 
 my @lines; # obsah poskytnuteho souboru
 my $svg_header; # hlavicka SVG
-my $svg_footer; #ukonceni SVG
-my $svg_body; #telo SVG
+my $svg_footer; # ukonceni SVG
+my $svg_body; # telo SVG
 my $line; # aktualni radek
-my $name_param; #jmeno prvniho parametru
+my $name_param; # jmeno prvniho parametru
+my @svg_path_begins; # zacatky cest jednostlivych baev
+my @colors; # barvy jednotlivych cest
 
 $name_param = $ARGV[0];
+
+my @colors = ('00ff00','0000ff','ffff00');
+
+$i=0;
+for ($i=0;$i<@colors;$i++)
+{
+	$svg_path_begins[$i]='<path
+     style="fill:none;stroke:#'.$colors[$i].';stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
+     d="';
+}
+
 
 @lines = <ARGV>;
 
@@ -20,28 +33,38 @@ $svg_header = '<?xml version="1.0" encoding="UTF-8"?>
      xmlns:xlink="http://www.w3.org/1999/xlink">';
 $svg_footer = '</svg>';
 
-$svg_body='<path
-     style="fill:none;stroke:#00ff00;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1"
-     d="';
+$svg_body='';
+$svg_path_end = '" />';
+
+$svg_body.=$svg_path_begin;
+
+$i = 0;
 
 foreach $line (@lines)
 {
    #print $line;
-   if ($line!~/[0-9]+\.[0-9]+ [0-9]+\.[0-9]+ [a-z]+/)
+   if ($line!~/[0-9]+\.[0-9]+ [-]?[0-9]+\.[0-9]+ [a-z]+/)
    {
+	if ($line=~/Path <0x[0-9a-f]*>/)
+	{
+		$svg_body.=$svg_path_end;	
+		$svg_body.=$svg_path_begins[$i];
+		$i++;
+	}
    	next;
    } else
    {
-  	$line =~ s/^ +([0-9]+\.[0-9]+) ([0-9]+\.[0-9]+) ([a-z])[a-z]+$/\u\3 \1 \2/;
-	#print $line;
+  	$line =~ s/^ +([-]?[0-9]+\.[0-9]+) ([-]?[0-9]+\.[0-9]+) ([a-z])[a-z]+$/\u\3 \1 \2/;
 	$svg_body .= $line;
    }
 
 }
 
-$svg_body .= '" />';
 
-$name_param =~ s/\..*$//;
+$svg_body.=$svg_path_end;
+
+
+$name_param =~ s/\.[^\/]*$//;
 
 open (SVGFILE,">".$name_param.".svg");
 

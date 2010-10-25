@@ -20,8 +20,8 @@
 	
 	ulCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.01, 0.01)];
 	llCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(1, 0)];
-	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.99, 0.99)];
-	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0, 1)];
+	urCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0,1)];
+	lrCalPoint = [[ZOPoint alloc] initWithPoint:NSMakePoint(0.99, 0.99)];
 	
 	
 	calPointsArray = [[NSArray alloc] initWithObjects:

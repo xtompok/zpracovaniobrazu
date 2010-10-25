@@ -1,17 +1,20 @@
 //
-//  ZODrawingController.m
+//  ZOMultiColorDrawingController.m
 //  HledaniBodu
 //
-//  Created by Tomáš Pokorný on 19.5.10.
+//  Created by Tomáš Pokorný on 18.10.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
 
-#import "ZODrawingController.h"
+#import "ZOMultiColorDrawingController.h"
 
 
-@implementation ZODrawingController
+@implementation ZOMultiColorDrawingController
 
-@synthesize width;
+
+@synthesize blueWidth;
+@synthesize greenWidth;
+@synthesize yellowWidth;
 
 -(id)init
 {
@@ -23,23 +26,35 @@
 
 
 // Using Key-Value coding to control from GUI
--(void)setWidth:(float)aWidth
+
+
+-(void)setBlueWidth:(float)aWidth
 {
-	width=aWidth;
-	[drawView setLineWidth:aWidth];
+	blueWidth=aWidth;
+	[drawView setBlueLineWidth:aWidth];
 }
+-(void)setGreenWidth:(float)aWidth
+{
+	greenWidth=aWidth;
+	[drawView setGreenLineWidth:aWidth];
+}
+-(void)setYellowWidth:(float)aWidth
+{
+	yellowWidth=aWidth;
+	[drawView setYellowLineWidth:aWidth];
+}
+
 
 -(void)setPoint1:(NSPoint)aPoint
 {
 	[drawView setPoint1:aPoint];
-	[drawView setNeedsDisplay:YES];
-
+	[drawView setNeedsDisplay:YES];	
 }
 -(void)setPoint2:(NSPoint)aPoint
 {
 	[drawView setPoint2:aPoint];
 	[drawView setNeedsDisplay:YES];
-
+	
 }
 // Resets drawing
 -(IBAction)resetDrawing:(id)sender
@@ -79,7 +94,7 @@
 		
 	}
 	NSLog(@"Drawing controller went fullscreen");
-
+	
 }
 
 -(void)leftFullscreen
@@ -91,6 +106,15 @@
 {
 	[self showWindow:nil];
 }
+
+-(NSString *)generateString
+{
+	return [NSString stringWithFormat:@"%@\n%@\n%@",
+			[[drawView pathArray] objectAtIndex:0],
+			[[drawView pathArray] objectAtIndex:1],
+			[[drawView pathArray] objectAtIndex:2]];
+}
+
 
 -(IBAction)saveBezier:(id)sender
 {
@@ -105,12 +129,13 @@
 	
 	/* if successful, save file under designated name */
 	if (runResult == NSOKButton) {
-		if (![[[drawView drawedPath] description] 
+		if (![[self generateString]
 			  writeToFile:[sp filename] atomically:YES encoding:NSUTF8StringEncoding error:nil])
 		{}
 	}
 	NSLog(@"Drawing saved.");
-
+	
 }
+
 
 @end

@@ -11,8 +11,8 @@
 #import "ZOProtocols"
 
 @interface ZODrawingController : NSWindowController <ProjectorProtocol> {
-	float width;
 	
+	float width;
 	IBOutlet ZOProjDrawingView * drawView;
 	IBOutlet NSPanel * drawPanel;
 	NSWindow * projWindow;
