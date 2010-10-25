@@ -12,14 +12,15 @@
 
 
 @interface ZOQuadTransform : NSObject <TransformProtocol> {
-	float d0;
-	float d1;
-	float d2;
-	float d3;
-	float d4;
-	float d5;
-	float d6;
-	float d7;
+	float m0;
+	float m1;
+	float m2;
+	float m3;
+	float m4;
+	float m5;
+	float m6;
+	float m7;
+	float m8;
 
 }
 

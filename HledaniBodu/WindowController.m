@@ -94,7 +94,9 @@
 							 nil];
 	viewClassesArray = [[NSArray alloc] initWithObjects:
 						(ZOProjectorController *) projController,
-						(ZODrawingController *) drawController, nil];
+						(ZODrawingController *) drawController, 
+						(ZOMultiColorDrawingController *) multiColController,
+						nil];
 	// Go fullscreen
 	[[viewClassesArray objectAtIndex:
 	  [viewChooseButton indexOfSelectedItem]] goFullscreen];

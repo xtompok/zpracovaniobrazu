@@ -28,6 +28,8 @@
 		4BCC4CCA11105208001CB5F7 /* ZO2PointTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC4CC911105208001CB5F7 /* ZO2PointTransform.m */; };
 		4BD529C211197AD80090EBE6 /* ZOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD529C111197AD80090EBE6 /* ZOImageView.m */; };
 		4BE587F51158F18E0026796A /* ZOProcessImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE587F41158F18E0026796A /* ZOProcessImage.m */; };
+		4BF8BD03126C71D6002E5C2A /* ZOMultiColorDrawingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8BD02126C71D6002E5C2A /* ZOMultiColorDrawingController.m */; };
+		4BF8BD08126C7205002E5C2A /* ZOMultiColorDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -79,6 +81,10 @@
 		4BD529C111197AD80090EBE6 /* ZOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOImageView.m; sourceTree = "<group>"; };
 		4BE587F31158F18E0026796A /* ZOProcessImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOProcessImage.h; sourceTree = "<group>"; };
 		4BE587F41158F18E0026796A /* ZOProcessImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOProcessImage.m; sourceTree = "<group>"; };
+		4BF8BD01126C71D6002E5C2A /* ZOMultiColorDrawingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOMultiColorDrawingController.h; sourceTree = "<group>"; };
+		4BF8BD02126C71D6002E5C2A /* ZOMultiColorDrawingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOMultiColorDrawingController.m; sourceTree = "<group>"; };
+		4BF8BD06126C7205002E5C2A /* ZOMultiColorDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZOMultiColorDrawingView.h; sourceTree = "<group>"; };
+		4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZOMultiColorDrawingView.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HledaniBodu-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HledaniBodu-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* HledaniBodu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HledaniBodu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -234,6 +240,10 @@
 				4B1E63C1115A1BE400425139 /* ZOProjDrawingView.m */,
 				4B8EDDC6111A16840076280A /* ZOProjectorView.h */,
 				4B8EDDC7111A16840076280A /* ZOProjectorView.m */,
+				4BF8BD01126C71D6002E5C2A /* ZOMultiColorDrawingController.h */,
+				4BF8BD02126C71D6002E5C2A /* ZOMultiColorDrawingController.m */,
+				4BF8BD06126C7205002E5C2A /* ZOMultiColorDrawingView.h */,
+				4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */,
 			);
 			name = Viewing;
 			sourceTree = "<group>";
@@ -320,6 +330,8 @@
 				4B0DA3A5120C4506003F9D04 /* ZOProcess2Controller.m in Sources */,
 				4B0DA54E120CA665003F9D04 /* ZOProcessController.m in Sources */,
 				4B7D2C4C1225A42400E7A9B5 /* ZOQuadTransform.m in Sources */,
+				4BF8BD03126C71D6002E5C2A /* ZOMultiColorDrawingController.m in Sources */,
+				4BF8BD08126C7205002E5C2A /* ZOMultiColorDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
