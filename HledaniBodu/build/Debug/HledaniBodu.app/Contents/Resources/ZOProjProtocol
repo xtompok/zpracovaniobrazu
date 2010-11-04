@@ -1,7 +1,0 @@
-@protocol ProjectorProtocol
-
--(void)setPoint1:(NSPoint)aPoint;
--(void)setPoint2:(NSPoint)aPoint;
--(void)goFullscreen;
--(void)leftFullscreen;
-@end
