@@ -153,11 +153,7 @@
 	return aPath;
 }
 
-/*-(void)setWidth:(int)aWidth
-{
-	lineWidth = aWidth;
-}
-*/
+
 -(void)resetDrawing
 {
 	NSLog(@"Reseting Drawing");
