@@ -5,42 +5,6 @@
 //  Created by Tomáš Pokorný on 25.8.10.
 //  Copyright 2010 Jaroška. All rights reserved.
 //
-/*
- --------------------------------------------------------------------
- Software License
- --------------------------------------------------------------------
- 
- The Python Imaging Library is
- 
- Copyright (c) 1997-2009 by Secret Labs AB
- Copyright (c) 1995-2009 by Fredrik Lundh
- 
- By obtaining, using, and/or copying this software and/or its
- associated documentation, you agree that you have read, understood,
- and will comply with the following terms and conditions:
- 
- Permission to use, copy, modify, and distribute this software and its
- associated documentation for any purpose and without fee is hereby
- granted, provided that the above copyright notice appears in all
- copies, and that both that copyright notice and this permission notice
- appear in supporting documentation, and that the name of Secret Labs
- AB or the author not be used in advertising or publicity pertaining to
- distribution of the software without specific, written prior
- permission.
- 
- SECRET LABS AB AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO
- THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
- FITNESS.  IN NO EVENT SHALL SECRET LABS AB OR THE AUTHOR BE LIABLE FOR
- ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
- WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
- ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
- OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- 
- 
- */
-
-
-
 #import "ZOQuadTransform.h"
 
 
@@ -57,44 +21,7 @@
 	return self;
 
 }
-/*
-####### This is the most interesting part ###########	
- 
-elif method == QUAD:
-# quadrilateral warp.  data specifies the four corners
-# given as NW, SW, SE, and NE.
-#
-# 03
-# 12
 
-nw = data[0:2]; sw = data[2:4]; se = data[4:6]; ne = data[6:8]
-x0, y0 = nw; As = 1.0 / w; At = 1.0 / h
-data = ( 
-		x0,            #1
-		(ne[0]-x0)*As, #2
-		(sw[0]-x0)*At, #3
-		(se[0]-sw[0]-ne[0]+x0)*As*At, #4
-		y0,            #5 
-		(ne[1]-y0)*As, #6
-		(sw[1]-y0)*At, #7
-		(se[1]-sw[1]-ne[1]+y0)*As*At) #8
-static int
-quad_transform(double* xin, double* yin, int x, int y, void* data)
-{
-    // quad warp: map quadrilateral to rectangle 
-
-    double* a = (double*) data;
-    double a0 = a[0]; double a1 = a[1]; double a2 = a[2]; double a3 = a[3];
-    double a4 = a[4]; double a5 = a[5]; double a6 = a[6]; double a7 = a[7];
-
-    xin[0] = a0 + a1*x + a2*y + a3*x*y;
-    yin[0] = a4 + a5*x + a6*y + a7*x*y;
-
-    return 1;
-}
-
-######## End of the interesting part ################
-*/
 -(void)setCalibrationArray:(NSArray *)calArray
 {
 	float x1, x2, x3, x4;

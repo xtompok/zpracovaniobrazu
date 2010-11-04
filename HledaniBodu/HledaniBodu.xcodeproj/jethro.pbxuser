@@ -62,7 +62,7 @@
 			4B4D7C9B11A074DA00731B4F /* ZOProcessImage.m:41 */,
 			4B0DA4D8120CA101003F9D04 /* ZOProcess2Image.m:120 */,
 			4B0DA6B3120DFC44003F9D04 /* ZO2PointTransform.m:20 */,
-			4BE23E9A12569AA400F1EAF0 /* ZOQuadTransform.m:98 */,
+			4BE23E9A12569AA400F1EAF0 /* ZOQuadTransform.m:25 */,
 		);
 		codeSenseManager = 4B17E13D10DF6F43000F3861 /* Code sense */;
 		executables = (
@@ -421,7 +421,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 403}}";
 			sepNavSelRange = "{221, 313}";
-			sepNavVisRange = "{137, 404}";
+			sepNavVisRange = "{181, 360}";
 		};
 	};
 	4B1E63C1115A1BE400425139 /* ZOProjDrawingView.m */ = {
@@ -908,14 +908,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 364}}";
 			sepNavSelRange = "{364, 0}";
-			sepNavVisRange = "{85, 284}";
+			sepNavVisRange = "{162, 212}";
 		};
 	};
 	4B7D2C4B1225A42400E7A9B5 /* ZOQuadTransform.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {999, 2015}}";
-			sepNavSelRange = "{3245, 0}";
-			sepNavVisRange = "{2858, 815}";
+			sepNavIntBoundsRect = "{{0, 0}, {999, 988}}";
+			sepNavSelRange = "{137, 0}";
+			sepNavVisRange = "{2448, 248}";
 			sepNavWindowFrame = "{{329, 207}, {609, 561}}";
 		};
 	};
@@ -1394,7 +1394,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	4BE23E9A12569AA400F1EAF0 /* ZOQuadTransform.m:98 */ = {
+	4BE23E9A12569AA400F1EAF0 /* ZOQuadTransform.m:25 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1406,7 +1406,7 @@
 		functionName = "-setCalibrationArray:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 98;
+		lineNumber = 25;
 		location = HledaniBodu;
 		modificationTime = 307665731.619998;
 		originalNumberOfMultipleMatches = 1;
@@ -1588,30 +1588,30 @@
 	};
 	4BF8BD01126C71D6002E5C2A /* ZOMultiColorDrawingController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 520}}";
-			sepNavSelRange = "{574, 0}";
-			sepNavVisRange = "{340, 414}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 533}}";
+			sepNavSelRange = "{669, 0}";
+			sepNavVisRange = "{439, 362}";
 		};
 	};
 	4BF8BD02126C71D6002E5C2A /* ZOMultiColorDrawingController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 2002}}";
+			sepNavIntBoundsRect = "{{0, 0}, {684, 1846}}";
 			sepNavSelRange = "{471, 0}";
-			sepNavVisRange = "{664, 323}";
+			sepNavVisRange = "{831, 333}";
 		};
 	};
 	4BF8BD06126C7205002E5C2A /* ZOMultiColorDrawingView.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 585}}";
 			sepNavSelRange = "{430, 0}";
-			sepNavVisRange = "{364, 374}";
+			sepNavVisRange = "{407, 337}";
 		};
 	};
 	4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {538, 2470}}";
-			sepNavSelRange = "{309, 0}";
-			sepNavVisRange = "{0, 1015}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 2431}}";
+			sepNavSelRange = "{1932, 0}";
+			sepNavVisRange = "{1597, 478}";
 		};
 	};
 	4BF8BD16126CDD6C002E5C2A /* PBXTextBookmark */ = {
@@ -1746,7 +1746,7 @@
 		fRef = 4B7D2C4B1225A42400E7A9B5 /* ZOQuadTransform.m */;
 		name = "ZOQuadTransform.m: 114";
 		rLen = 0;
-		rLoc = 3245;
+		rLoc = 824;
 		rType = 0;
 		vrLen = 815;
 		vrLoc = 2858;
