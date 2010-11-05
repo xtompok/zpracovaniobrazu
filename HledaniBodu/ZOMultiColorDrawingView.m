@@ -42,6 +42,11 @@
 		blueColorRect = NSMakeRect(20, 20, 40, 40);
 		greenColorRect = NSMakeRect(20, 80, 40, 40);
 		yellowColorRect = NSMakeRect(20, 140, 40, 40);
+		resetRect = NSMakeRect(20,550 , 40, 40);
+		pauseRect = NSMakeRect(20, 200, 20, 20);
+		
+		resetCountdown=20;
+		paused=NO;
 		
 		NSLog(@"Projector drawing View initialized");
 		
@@ -69,6 +74,24 @@
 	[[self crossAtPoint:point2] stroke ];
 
 	
+	//Reset rect
+	if (resetCountdown>15) {
+		[[[NSColor whiteColor] shadowWithLevel:0.5] set];
+	} else {
+		[[[NSColor redColor] shadowWithLevel:0.7] set];
+	}
+	NSRectFill(resetRect);
+	
+	//Pause rect
+	if (paused) {
+		[[[NSColor greenColor] shadowWithLevel:0.5] set];
+	}else {
+		[[[NSColor yellowColor] shadowWithLevel:0.5] set];
+	}
+	NSRectFill(pauseRect);
+	
+
+	
 	// Blue color
 	
 	[[[NSColor blueColor] shadowWithLevel:0.5] set];
@@ -93,6 +116,8 @@
 	[[pathArray objectAtIndex:2] setLineWidth:yellowLineWidth];
 	[[pathArray objectAtIndex:2] stroke];
 	
+
+	
 	
 	
 }
@@ -111,7 +136,25 @@
 	} else if (NSPointInRect(point1, yellowColorRect)) {
 		pathIndex = 2;
 		drawing = NO;
+	} else if (NSPointInRect(point1, resetRect)) {
+		if (resetCountdown==0) {
+			[self resetDrawing];
+			resetCountdown=20;
+		} else {
+			resetCountdown--;
+		}
+
+	} else if (NSPointInRect(point1, pauseRect)) {
+		paused=!paused;
 	}
+	
+	
+	else {
+		resetCountdown=20;
+	}
+	
+	if (paused) {return;}
+
 	
 	// If point wasn't found, end the path
 	if ((point1.x==0)&&(point1.y==0))
