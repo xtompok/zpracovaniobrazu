@@ -176,25 +176,100 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Processing image}{name=process,column=0,below=abstract}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Images are captured by framework CocoaSequenceGrabber. We need to find the lighted point, if it is on image. To find it, it is used cross method. In this method there are three types of points:\\
+\begin{center}
+\includegraphics[scale=.2]{../CrossImageProcess.pdf}\\
+\end{center}
+\begin{itemize}
+ \item Central point $P$, which is the current tested point
+ \item Inner points $I$, whose are on the top, bottom left and right of the central point.
+ \item Outer points $O$, whose are five pixels on the top, bottom, left and right of the central point and represents the background
+\end{itemize}
+The central point goes point by point through all image and computes average of inner and outer points, whose are aviable and compare them with configured values. If it's lower than in configuration, they are discarted. From not discarted points is chosen point with maximal values.
+
+\vspace{0.3em}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Transformation}{name=transformation,column=1,below=abstract}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+We need to transform coordinates from image to projector, because the axis of the camera isn't parallel with axis of the screen, so the image is distorted -- the screen is not rectangle on the image from camera, but some quadrilateral.
+%%%% DOPLNIT OBRÁZEK %%%%%%
+To transform it to rectangle is used perspective transformation, where each point is transformed with these equations:  
+
+\begin{align}
+x'&=\frac{a_0x+a_1y+a_2}{a_6x+a_7y+1}\\ 
+ y'&=\frac{a_3x+a_4y+a_5}{a_6x+a_7y+1} 
+\end{align}
+The transformation could be written to matrix:
+$$
+\left[ \begin{array}{c}
+u \\
+v \\
+w \end{array} \right]
+=
+\left[ \begin{array}{c}
+x \\
+y \\
+1 \end{array} \right]
+\cdot
+\left[ \begin{array}{ccc}
+a_0 & a_1 & a_2 \\
+a_3 & a_4 & a_5 \\
+a_6 & a_7 & 1 \end{array} \right]
+$$
+To get transformed values of $x$ and $y$ we need to normalise them:
+\begin{eqnarray*}
+ x' &=& \frac{u}{w}\\
+ y' &=& \frac{v}{w}\\
+\end{eqnarray*}
+  \vspace{0.5em}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Calibration}{name=calibration,column=1,below=transformation}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  To get the right values of $a_0, \dots, a_7$ we need some calibration points. For this reason, there is an calibration. After start of calibration, four calibration points are showed in sequence by dataprojector in corners of drawable area.
+  \begin{center}
+  \includegraphics[scale=.3]{../Calibration_image.pdf}
+  \end{center}
   \vspace{0.3em}
+ For each point program finds its position in image using cross method from Processing image. After all points are showed, coordinates of their positions are sent to transformation classes, which computes its constants for transformation. 
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Viewing}{name=viewing,column=2,below=abstract}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  There are many possible ways how to visualise results, some of them are mentioned below.
   \vspace{0.3em}
   }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Single color drawing}{name=singlecol,column=2,below=viewing}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  On the current position of laser pointer is showed cross and the position is added to the \texttt{NSBezierPath} object which is drawed with green color. If there isn't a point from laser pointer, cross isn't drawed and the path is diconnected. If the light is back again, virtual "pen" is moved to new position and starts drawing again. The width of "pen" could be changed from GUI. From GUI could be also reseted a drawing.
+  \vspace{0.3em}
+  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Transformation}{name=transformation,column=1,below=abstract}{
+  \headerbox{Multi color drawing}{name=multicol,column=2,below=singlecol}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \vspace{0.5em}
+  Principle of this drawing is the same as in single color drawing. There are some aditional things -- three squares with three colors. If the point from pointer is in this square, color of the virtual "pen" changes to the color of square.
+  \vspace{0.3em}
   }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Shooting baloons}{name=baloons,column=2,below=multicol}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  This is future application, which will be probably developed in few weeks or months. There will be moving baloons represented by circles on the screen. there will be moving with variable speeds and player will try to shoot them with laser pointer. In more advanced version of this game there could be more lasers with different colors, one for each player.
+  \vspace{0.3em}
+  }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Thanks}{name=thanks,column=1,span=2,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \smaller 
+  Thanks to Marek Blaha, Tomáš Gavenčak, Lukáš Langer, Jan Olšina and other people, who helped me with the project.
   \hspace{1em}  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{References}{name=references,column=0,above=bottom}{

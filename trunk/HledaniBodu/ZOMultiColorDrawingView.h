@@ -26,6 +26,11 @@
 	NSRect blueColorRect;
 	NSRect greenColorRect;
 	NSRect yellowColorRect;
+	NSRect resetRect;
+	NSRect pauseRect;
+	
+	int resetCountdown;
+	bool paused;
 	
 }
 

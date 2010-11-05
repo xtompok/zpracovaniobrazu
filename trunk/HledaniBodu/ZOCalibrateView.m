@@ -14,7 +14,7 @@
 - (id)initWithFrame:(NSRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-		calPointSize=15;
+		calPointSize=30;
 		calPoint=-1;
 	}
 	
