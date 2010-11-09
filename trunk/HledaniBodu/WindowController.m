@@ -35,7 +35,7 @@
 	/* ------------------------ */
 	
 	// Set resolution of camera
-	size=NSMakeSize(320, 240);
+	size=NSMakeSize(640, 480);
 	
 	// Start recording
 	camera = [[CSGCamera alloc] init];
@@ -125,7 +125,20 @@
 				getThePointFromImage:lastImage]; 
 	
 	// View picture from camera and found point in WindowController
-	[imageView setImage:lastImage];
+	if (size.width!=320) {
+		[viewImage release];
+		viewImage = [[NSImage alloc] initWithSize: NSMakeSize(320, 240)];
+		[viewImage lockFocus];
+		[lastImage drawInRect: NSMakeRect(0, 0, 320, 240) 
+					 fromRect: NSMakeRect(0, 0, [lastImage size].width, [lastImage size].height)
+					operation: NSCompositeSourceOver
+					 fraction: 1.0];
+		[viewImage unlockFocus];
+		[imageView setImage:viewImage];
+	} else {
+		[imageView setImage:lastImage];
+	}
+
 	[imageView setPoint:outPoint];
 	[imageView setNeedsDisplay:YES];
 	

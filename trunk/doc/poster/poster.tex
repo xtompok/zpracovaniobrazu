@@ -38,8 +38,6 @@
 %%%% Some math symbols used in the text
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Format 
-\newcommand{\Matrix}[1]{\begin{bmatrix} #1 \end{bmatrix}}
-\newcommand{\Vector}[1]{\Matrix{#1}}
 \newcommand*{\SET}[1]  {\ensuremath{\mathcal{#1}}}
 \newcommand*{\MAT}[1]  {\ensuremath{\mathbf{#1}}}
 \newcommand*{\VEC}[1]  {\ensuremath{\bm{#1}}}
@@ -47,9 +45,6 @@
 \newcommand*{\norm}[1]{\mathopen\| #1 \mathclose\|}% use instead of $\|x\|$
 \newcommand*{\abs}[1]{\mathopen| #1 \mathclose|}% use instead of $\|x\|$
 \newcommand*{\absLR}[1]{\left| #1 \right|}% use instead of $\|x\|$
-
-\def\norm#1{\mathopen\| #1 \mathclose\|}% use instead of $\|x\|$
-\newcommand{\normLR}[1]{\left\| #1 \right\|}% use instead of $\|x\|$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Multicol Settings
@@ -174,7 +169,20 @@
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Processing image}{name=process,column=0,below=abstract}{
+  \headerbox{Equipment}{name=equipment,column=0,below=abstract}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+This equipment is needed to run the project:
+\begin{itemize}
+ \item Mac
+ \item webcam
+ \item dataprojector
+ \item laser pointer
+\end{itemize}
+The project uses CocoaSequenceGrabber for getting images from camera, so it works best with the integrated iSight. Working with externals camera is not tested. Used resolution of the camera is $320 \times 240$. Recommended Mac has 2 GHz processor to process images fast enough. Used resolution of dataprojector is $800 \times 600$ and the color of the laser pointer is red.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Processing image}{name=process,column=0,below=equipment}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Images are captured by framework CocoaSequenceGrabber. We need to find the lighted point, if it is on image. To find it, it is used cross method. In this method there are three types of points:\\
 \begin{center}
@@ -255,6 +263,9 @@ To get transformed values of $x$ and $y$ we need to normalise them:
   \headerbox{Multi color drawing}{name=multicol,column=2,below=singlecol}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   Principle of this drawing is the same as in single color drawing. There are some aditional things -- three squares with three colors. If the point from pointer is in this square, color of the virtual "pen" changes to the color of square.
+  \begin{center}
+  \includegraphics[scale=.2]{./xicht.pdf}
+  \end{center}
   \vspace{0.3em}
   }
 

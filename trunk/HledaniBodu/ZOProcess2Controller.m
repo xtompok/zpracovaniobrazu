@@ -50,15 +50,15 @@
 												  name:@"Show process settings"
 												object:procImage];
 	
-	[self setMinPointR: 150];
+	[self setMinPointR: 100];
 	[self setMinPointG: 0];
 	[self setMinPointB: 0];
 	[self setIsMinPointTogether: NO];
 	
 	[self setMaxPointR: 255];
-	[self setMaxPointG: 255];
-	[self setMaxPointB: 255];
-	[self setIsMaxPointTogether: YES];
+	[self setMaxPointG: 100];
+	[self setMaxPointB: 100];
+	[self setIsMaxPointTogether: NO];
 	
 	
 	[self setMinInnerR: 100];

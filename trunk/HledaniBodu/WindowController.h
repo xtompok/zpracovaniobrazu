@@ -66,6 +66,7 @@
 	
 	CSGCamera *camera;
 	NSImage *lastImage;
+	NSImage *viewImage;
 	
 	/* Calibration stuff */
 	/* ----------------- */
