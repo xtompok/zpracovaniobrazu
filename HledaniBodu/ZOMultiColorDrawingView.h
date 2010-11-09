@@ -31,6 +31,7 @@
 	
 	int resetCountdown;
 	bool paused;
+	bool onPaused;
 	
 }
 

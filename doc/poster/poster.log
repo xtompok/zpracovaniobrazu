@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdfcslatex 2009.10.16)  5 NOV 2010 10:27
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdfcslatex 2009.10.16)  8 NOV 2010 10:58
 entering extended mode
  %&-line parsing enabled.
 **poster.tex
@@ -775,21 +775,21 @@ LaTeX Warning: Unused global option(s):
 (./poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for IL2+ppl on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for IL2/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Try loading font information for IL2+ppl on input line 70.
  (/usr/local/texlive/2008/texmf-dist/tex/cslatex/base/il2ppl.fd
 File: il2ppl.fd 1998/12/27 CS Palatino
 LaTeX Font Info:     CS Palatino on input line 2.
@@ -861,7 +861,7 @@ Columns: 3
 3
 BAPOSTER: Using plain background.
 \sf Laser pointer drawing
-LaTeX Font Info:    Try loading font information for IL2+phv on input line 148.
+LaTeX Font Info:    Try loading font information for IL2+phv on input line 143.
 
 (/usr/local/texlive/2008/texmf-dist/tex/cslatex/base/il2phv.fd
 File: il2phv.fd 1998/12/27 CS Helvetica
@@ -870,12 +870,12 @@ LaTeX Font Info:    (C) Z. Wagner,1998/12/27 on input line 3.
 LaTeX Font Info:    Created by CsPsFont utility v.1.0f (C) Z. Wagner, 1998/12/2
 7 on input line 4.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 143.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+LaTeX Font Info:    Try loading font information for U+msb on input line 143.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
@@ -897,9 +897,34 @@ Header
 Header-Shape: roundedright
 Sidebars
 Drawing Text
-name=process,column=0,below=abstract
+name=equipment,column=0,below=abstract
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 182.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--191
+(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 182.
+
+Setting Coordinates
+Upper Right
+equipment
+Below
+Lower Left
+Above=not set
+height=auto or fixed
+Fixing Coordinates
+Header-Shade: Plain
+Box-Shade: plain
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Header
+Header-Shape: roundedright
+Sidebars
+Drawing Text
+name=process,column=0,below=equipment
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 
  []
 
@@ -907,15 +932,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--191
 File: ../CrossImageProcess.pdf Graphic file (type pdf)
 
 <use ../CrossImageProcess.pdf>
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 191.
-
-
-(/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
-
 Setting Coordinates
 Upper Right
 process
@@ -988,7 +1004,7 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=singlecol,column=2,below=viewing
-LaTeX Font Info:    Try loading font information for IL2+pcr on input line 252.
+LaTeX Font Info:    Try loading font information for IL2+pcr on input line 260.
 
 (/usr/local/texlive/2008/texmf-dist/tex/cslatex/base/il2pcr.fd
 File: il2pcr.fd 1998/12/27 CS Courier
@@ -1014,6 +1030,9 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=multicol,column=2,below=singlecol
+<./xicht.pdf, id=6, 642.4pt x 481.8pt>
+File: ./xicht.pdf Graphic file (type pdf)
+ <use ./xicht.pdf>
 Setting Coordinates
 Upper Right
 multicol
@@ -1082,15 +1101,15 @@ Drawing Text
 [2
 
 {/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Cros
-sImageProcess.pdf> <../Calibration_image.pdf>]
-Memory usage before: 33903&243123; after: 17731&239698; still untouched: 270341
-5
+sImageProcess.pdf> <../Calibration_image.pdf> <./xicht.pdf>]
+Memory usage before: 37717&245910; after: 19745&242063; still untouched: 269805
+1
 (./poster.aux) ) 
 Here is how much of TeX's memory you used:
- 11076 strings out of 494944
- 195509 string characters out of 1180538
- 296585 words of memory out of 3000000
- 14108 multiletter control sequences out of 10000+50000
+ 11150 strings out of 494944
+ 197315 string characters out of 1180538
+ 301949 words of memory out of 3000000
+ 14181 multiletter control sequences out of 10000+50000
  17494 words of font info for 51 fonts, out of 3000000 for 5000
  24 hyphenation exceptions out of 8191
  54i,13n,58p,439b,808s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1104,9 +1123,9 @@ fonts/type1/public/cs/csr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1
 /ucrr8a.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
 .pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/local/texlive/2008/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on poster.pdf (1 page, 100967 bytes).
+Output written on poster.pdf (1 page, 111020 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

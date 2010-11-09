@@ -29,9 +29,9 @@
 					 nil];
 		pathIndex = 1;
 		
-		blueLineWidth = 1;
-		greenLineWidth = 1;
-		yellowLineWidth = 1;
+		blueLineWidth = 2;
+		greenLineWidth = 2;
+		yellowLineWidth = 2;
 		
 		int i;
 		for(i=0;i<[pathArray count];i++)
@@ -47,6 +47,7 @@
 		
 		resetCountdown=20;
 		paused=NO;
+		onPaused=NO;
 		
 		NSLog(@"Projector drawing View initialized");
 		
@@ -84,9 +85,9 @@
 	
 	//Pause rect
 	if (paused) {
-		[[[NSColor greenColor] shadowWithLevel:0.5] set];
+		[[[NSColor blueColor] shadowWithLevel:0.5] set];
 	}else {
-		[[[NSColor yellowColor] shadowWithLevel:0.5] set];
+		[[[NSColor greenColor] shadowWithLevel:0.5] set];
 	}
 	NSRectFill(pauseRect);
 	
@@ -145,11 +146,15 @@
 		}
 
 	} else if (NSPointInRect(point1, pauseRect)) {
-		paused=!paused;
+		if (onPaused) {
+			paused=!paused;
+		}
+		onPaused=YES;
 	}
 	
 	
 	else {
+		onPaused=NO;
 		resetCountdown=20;
 	}
 	

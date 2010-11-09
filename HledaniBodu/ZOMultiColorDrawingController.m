@@ -20,6 +20,7 @@
 {
 	if (![super init])
 		return nil;
+
 	NSLog(@"Drawing Controller initialized");
 	return self;
 }
