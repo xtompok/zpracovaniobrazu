@@ -32,7 +32,7 @@
 
 \selectcolormodel{cmyk}
 
-\graphicspath{{images/}}
+\graphicspath{{../images/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Some math symbols used in the text
@@ -75,6 +75,7 @@
 %%% Format it to your taste with the options
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Define some colors
+
 \definecolor{silver}{cmyk}{0,0,0,0.3}
 \definecolor{yellow}{cmyk}{0,0,0.9,0.0}
 \definecolor{reddishyellow}{cmyk}{0,0.22,1.0,0.0}
@@ -86,14 +87,8 @@
 \definecolor{lighteryellow}{cmyk}{0,0,0.1,0.0}
 \definecolor{lighteryellow}{cmyk}{0,0,0.1,0.0}
 \definecolor{lightestyellow}{cmyk}{0,0,0.05,0.0}
-
 %%
 \typeout{Poster Starts}
-\background{
-  \begin{tikzpicture}[remember picture,overlay]%
-    \draw (current page.north west)+(-2em,2em) node[anchor=north west] {\includegraphics[height=1.1\textheight]{silhouettes_background}};
-  \end{tikzpicture}%
-}
 
 \newlength{\leftimgwidth}
 \begin{poster}%
@@ -186,7 +181,7 @@ The project uses CocoaSequenceGrabber for getting images from camera, so it work
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Images are captured by framework CocoaSequenceGrabber. We need to find the lighted point, if it is on image. To find it, it is used cross method. In this method there are three types of points:\\
 \begin{center}
-\includegraphics[scale=.2]{../CrossImageProcess.pdf}\\
+\includegraphics[scale=.185]{CrossImageProcess.pdf}\\
 \end{center}
 \begin{itemize}
  \item Central point $P$, which is the current tested point
@@ -231,7 +226,7 @@ To get transformed values of $x$ and $y$ we need to normalise them:
  x' &=& \frac{u}{w}\\
  y' &=& \frac{v}{w}\\
 \end{eqnarray*}
-  \vspace{0.5em}
+There were some other transformations, such as 2 point transformation or ratio transformation, which wasn't so accurate, so now they aren't used, but they were invented only by members of this project.
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -239,10 +234,10 @@ To get transformed values of $x$ and $y$ we need to normalise them:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   To get the right values of $a_0, \dots, a_7$ we need some calibration points. For this reason, there is an calibration. After start of calibration, four calibration points are showed in sequence by dataprojector in corners of drawable area.
   \begin{center}
-  \includegraphics[scale=.3]{../Calibration_image.pdf}
+  \includegraphics[scale=.31]{Calibration_image.pdf}
   \end{center}
-  \vspace{0.3em}
- For each point program finds its position in image using cross method from Processing image. After all points are showed, coordinates of their positions are sent to transformation classes, which computes its constants for transformation. 
+ For each point program finds its position in image using cross method from Processing image. After all points are showed, coordinates of their positions are sent to transformation classes, which computes its constants for transformation.
+  \vspace{0.5em}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -262,20 +257,29 @@ To get transformed values of $x$ and $y$ we need to normalise them:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Multi color drawing}{name=multicol,column=2,below=singlecol}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  Principle of this drawing is the same as in single color drawing. There are some aditional things -- three squares with three colors. If the point from pointer is in this square, color of the virtual "pen" changes to the color of square.
+  Principle of this drawing is the same as in single color drawing. There are some aditional things -- three squares with three colors. If the point from pointer is in this square, color of the virtual "pen" changes to the color of square. There are two other squares on the screen -- resetting square and pausing square. Resetting square is placed in the lower left corner of the screen and if the pointer is pointing onto it for twenty processed images, the image is reseted. The pause square is square placed under the color setting squares and if it's pointed onto it, drawing image is paused until is pointed on it again.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \headerbox{Exporting to SVG}{name=svg,column=2,below=multicol}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The saved drawed image 
   \begin{center}
-  \includegraphics[scale=.2]{./xicht.pdf}
+  \includegraphics[scale=.195]{kopecky.png}
+  \end{center}
+should be converted to the simple SVG file using Perl script \texttt{bezpath2svg.pl}
+  \begin{center}
+  \includegraphics[scale=.245]{kopecky.pdf}
   \end{center}
   \vspace{0.3em}
   }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Shooting baloons}{name=baloons,column=2,below=multicol}{
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  This is future application, which will be probably developed in few weeks or months. There will be moving baloons represented by circles on the screen. there will be moving with variable speeds and player will try to shoot them with laser pointer. In more advanced version of this game there could be more lasers with different colors, one for each player.
-  \vspace{0.3em}
-  }
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  \headerbox{Shooting baloons}{name=baloons,column=2,below=svg}{
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This is future application, which will be probably developed in few weeks or months. There will be moving baloons represented by circles on the screen. there will be moving with variable speeds and player will try to shoot them with laser pointer. In more advanced version of this game there could be more lasers with different colors, one for each player.
+%  \vspace{0.3em}
+%  }
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \headerbox{Thanks}{name=thanks,column=1,span=2,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -295,6 +299,10 @@ To get transformed values of $x$ and $y$ we need to normalise them:
        D.-K.~Kim, B.-T. Jang, C.-J. Hwang
        \newblock {A} {P}lanar Perspective Image Matching using Point Correspondences and Rectangle-to-Quadrilateral Mapping
        \newblock in {\em Image Analysis and Interpretation, IEEE Southwest Symposium 2002}
+       \bibitem{}
+       B. Andersen
+       \newblock How to Resize an NSImage [online]. 2010 [cit 2010-11-10]. 
+        Aviable on WWW: http://weblog.scifihifi.com/2005/06/25/how-to-resize-an-nsimage/
 
       \end{thebibliography}
   }

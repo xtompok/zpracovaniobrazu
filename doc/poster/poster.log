@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdfcslatex 2009.10.16)  8 NOV 2010 10:58
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdfcslatex 2009.10.16)  10 NOV 2010 15:39
 entering extended mode
  %&-line parsing enabled.
 **poster.tex
@@ -772,7 +772,11 @@ Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR)
 LaTeX Warning: Unused global option(s):
     [portrait,final].
 
-(./poster.aux)
+(./poster.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `poster.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -861,7 +865,7 @@ Columns: 3
 3
 BAPOSTER: Using plain background.
 \sf Laser pointer drawing
-LaTeX Font Info:    Try loading font information for IL2+phv on input line 143.
+LaTeX Font Info:    Try loading font information for IL2+phv on input line 138.
 
 (/usr/local/texlive/2008/texmf-dist/tex/cslatex/base/il2phv.fd
 File: il2phv.fd 1998/12/27 CS Helvetica
@@ -870,12 +874,12 @@ LaTeX Font Info:    (C) Z. Wagner,1998/12/27 on input line 3.
 LaTeX Font Info:    Created by CsPsFont utility v.1.0f (C) Z. Wagner, 1998/12/2
 7 on input line 4.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 143.
+LaTeX Font Info:    Try loading font information for U+msa on input line 138.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 143.
+LaTeX Font Info:    Try loading font information for U+msb on input line 138.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
@@ -898,13 +902,13 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=equipment,column=0,below=abstract
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 182.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 177.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 182.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
 
 Setting Coordinates
 Upper Right
@@ -924,14 +928,14 @@ Sidebars
 Drawing Text
 name=process,column=0,below=equipment
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
 
  []
 
-<../CrossImageProcess.pdf, id=4, 803.0pt x 803.0pt>
-File: ../CrossImageProcess.pdf Graphic file (type pdf)
+<../images/CrossImageProcess.pdf, id=4, 803.0pt x 803.0pt>
+File: ../images/CrossImageProcess.pdf Graphic file (type pdf)
 
-<use ../CrossImageProcess.pdf>
+<use ../images/CrossImageProcess.pdf>
 Setting Coordinates
 Upper Right
 process
@@ -966,10 +970,10 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=calibration,column=1,below=transformation
-<../Calibration_image.pdf, id=5, 642.4pt x 481.8pt>
-File: ../Calibration_image.pdf Graphic file (type pdf)
+<../images/Calibration_image.pdf, id=5, 642.4pt x 481.8pt>
+File: ../images/Calibration_image.pdf Graphic file (type pdf)
 
-<use ../Calibration_image.pdf>
+<use ../images/Calibration_image.pdf>
 Setting Coordinates
 Upper Right
 calibration
@@ -1004,7 +1008,7 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=singlecol,column=2,below=viewing
-LaTeX Font Info:    Try loading font information for IL2+pcr on input line 260.
+LaTeX Font Info:    Try loading font information for IL2+pcr on input line 255.
 
 (/usr/local/texlive/2008/texmf-dist/tex/cslatex/base/il2pcr.fd
 File: il2pcr.fd 1998/12/27 CS Courier
@@ -1030,9 +1034,6 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=multicol,column=2,below=singlecol
-<./xicht.pdf, id=6, 642.4pt x 481.8pt>
-File: ./xicht.pdf Graphic file (type pdf)
- <use ./xicht.pdf>
 Setting Coordinates
 Upper Right
 multicol
@@ -1049,10 +1050,16 @@ Header
 Header-Shape: roundedright
 Sidebars
 Drawing Text
-name=baloons,column=2,below=multicol
+name=svg,column=2,below=multicol
+<../images/kopecky.png, id=6, 803.0pt x 602.25pt>
+File: ../images/kopecky.png Graphic file (type png)
+ <use ../images/kopecky.png>
+<../images/kopecky.pdf, id=7, 642.4pt x 481.8pt>
+File: ../images/kopecky.pdf Graphic file (type pdf)
+ <use ../images/kopecky.pdf>
 Setting Coordinates
 Upper Right
-baloons
+svg
 Below
 Lower Left
 Above=not set
@@ -1083,6 +1090,21 @@ Header-Shape: roundedright
 Sidebars
 Drawing Text
 name=references,column=0,above=bottom
+
+Underfull \hbox (badness 1418) in paragraph at lines 308--308
+[]\IL2/ppl/m/n/8 B. An-der-sen  How to Re-size an NSI-mage [on-
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 308--308
+\IL2/ppl/m/n/8 line]. 2010 [cit 2010-11-10]. Avi-a-ble on WWW:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--308
+\IL2/ppl/m/n/8 http://weblog.scifihifi.com/2005/06/25/how-to-
+ []
+
 Setting Coordinates
 Upper Right
 references
@@ -1100,32 +1122,37 @@ Sidebars
 Drawing Text
 [2
 
-{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../Cros
-sImageProcess.pdf> <../Calibration_image.pdf> <./xicht.pdf>]
-Memory usage before: 37717&245910; after: 19745&242063; still untouched: 269805
-1
-(./poster.aux) ) 
+{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../imag
+es/CrossImageProcess.pdf> <../images/Calibration_image.pdf> <../images/kopecky.
+png (PNG copy)> <../images/kopecky.pdf>]
+Memory usage before: 39299&246825; after: 20576&242553; still untouched: 269540
+8
+(./poster.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 11150 strings out of 494944
- 197315 string characters out of 1180538
- 301949 words of memory out of 3000000
- 14181 multiletter control sequences out of 10000+50000
+ 11155 strings out of 494944
+ 197243 string characters out of 1180538
+ 304592 words of memory out of 3000000
+ 14185 multiletter control sequences out of 10000+50000
  17494 words of font info for 51 fonts, out of 3000000 for 5000
  24 hyphenation exceptions out of 8191
- 54i,13n,58p,439b,808s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2008/texmf-dist/fonts/enc/dvips/base/8a.enc
-}</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/lo
-cal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texli
-ve/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/t
-exmf-dist/fonts/type1/bluesky/cm/cmsy7.pfb></usr/local/texlive/2008/texmf-dist/
-fonts/type1/public/cs/csr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1
-/public/cs/csr7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/courier
-/ucrr8a.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/helvetic/uhvr8a
-.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
-usr/local/texlive/2008/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on poster.pdf (1 page, 111020 bytes).
+ 54i,13n,58p,639b,808s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2008/texmf-dist/fonts/enc/dvips/base/8a.enc}</usr/local/t
+exlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/local/texlive/20
+08/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texlive/2008/texmf-
+dist/fonts/type1/bluesky/cm/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/font
+s/type1/bluesky/cm/cmsy7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/pu
+blic/cs/csr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/cs/csr
+7.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></
+usr/local/texlive/2008/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/loc
+al/texlive/2008/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texl
+ive/2008/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on poster.pdf (1 page, 215239 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
