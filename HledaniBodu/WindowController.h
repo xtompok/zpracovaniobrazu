@@ -26,6 +26,7 @@
 #import "ZODrawingController.h"
 #import "ZOProjectorController.h"
 #import "ZOMultiColorDrawingController.h"
+#import "ZOShootingController.h"
 #import <CocoaSequenceGrabber/CocoaSequenceGrabber.h>
 
 
@@ -54,6 +55,7 @@
 	IBOutlet ZODrawingController * drawController;
 	IBOutlet ZOProjectorController * projController;
 	IBOutlet ZOMultiColorDrawingController * multiColController;
+	IBOutlet ZOShootingController * shootController;
 	
 	//Choosing classes
 	IBOutlet NSPopUpButton * procChooseButton;
