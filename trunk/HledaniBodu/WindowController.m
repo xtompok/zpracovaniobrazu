@@ -6,14 +6,6 @@
 //  Copyright 2009 Jaroška. All rights reserved.
 //
 
-/*
- TO DO:
- ------
- - ukládání prvotního nastavení sliderů na disk
- - vykuchat perspektivní transformaci
- - licence PIL
- */
-
 
 #define STDOUTPRINT if([printToStdButton state]==NSOnState)
 
@@ -96,6 +88,7 @@
 						(ZOProjectorController *) projController,
 						(ZODrawingController *) drawController, 
 						(ZOMultiColorDrawingController *) multiColController,
+						(ZOShootingController *) shootController,
 						nil];
 	// Go fullscreen
 	[[viewClassesArray objectAtIndex:
@@ -152,10 +145,11 @@
 				  transformPoint:outPoint];
 
 	int i;
-	for (i=0;i<[viewClassesArray count];i++)
+	/*for (i=0;i<[viewClassesArray count];i++)
 	{
 		[[viewClassesArray objectAtIndex:i] setPoint1:transPoint];
-	}
+	}*/ // Good for drawing but bad for shooting...
+	[[viewClassesArray objectAtIndex:[viewChooseButton indexOfSelectedItem]] setPoint1:transPoint];
 	
 	STDOUTPRINT printf("x=%f, y=%f\n",outPoint.x,outPoint.y);	
 	STDOUTPRINT printf("xt=%f, yt=%f",transPoint.x,transPoint.y);
