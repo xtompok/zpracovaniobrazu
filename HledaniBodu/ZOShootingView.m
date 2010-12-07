@@ -18,11 +18,17 @@
 		width = 800;
 		height = 600;
 		
+		score = 0;
+		lostBalloons = 0;
+		
 		GAMEDATA data;
 		data.maxSpeed = 10;
 		data.maxBalloons = 10;
-		data.maxBalloons = 10;
+		data.maxLost = 100;
 		data.delay = 0.05;
+		data.maxShots = 10;
+		data.minSize = 10;
+		data.maxiSize = 50;
 		[self resetGameWithData:&data];
 		        // Initialization code here.
     }
@@ -43,10 +49,23 @@
 		
 		[aPath fill];
 		[aPath stroke];
-		
-
-		
+	}
 	
+	NSDictionary * textAttr;
+	textAttr = [[NSDictionary alloc] initWithObjectsAndKeys:
+				[NSFont boldSystemFontOfSize:32.0], NSFontAttributeName,
+				[NSColor grayColor],NSForegroundColorAttributeName,
+				nil];
+	[[NSString stringWithFormat:@"%d",score] drawAtPoint:NSMakePoint(0,0) withAttributes:textAttr];
+	[[NSString stringWithFormat:@"%d",lostBalloons] drawAtPoint:NSMakePoint(width-50, 0) withAttributes: textAttr];
+	[textAttr release];
+	if (lostBalloons>maxLost) {
+		textAttr = [[NSDictionary alloc] initWithObjectsAndKeys:
+					[NSFont boldSystemFontOfSize:64.0], NSFontAttributeName, 
+					[NSColor greenColor], NSForegroundColorAttributeName,
+					nil];
+		[[NSString stringWithFormat:@"You loose!" ] drawAtPoint:NSMakePoint(width/2-100, height/2) withAttributes: textAttr];
+		[textAttr release];
 	}
     // Drawing code here.
 }
@@ -60,11 +79,21 @@
 		if (!NSIntersectsRect([self bounds], [[[balloonsArray objectAtIndex:i] balloonPath] bounds])) {
 			[balloonsArray removeObjectAtIndex:i];
 			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
-																 Radius:rand()%20 
+																 Radius:(int)[self randFrom:minSize to:maxiSize]
 																  Speed:[self randFrom:0.1 to:maxSpeed]
 															   andColor:[NSColor blueColor]]
 								atIndex:i];
 			lostBalloons++;
+		}
+		if (([[balloonsArray objectAtIndex:i] shots]>=maxShots)&&(lostBalloons<=maxShots)) {
+			[balloonsArray removeObjectAtIndex:i];
+			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
+																 Radius:(int)[self randFrom:minSize to:maxiSize]
+																  Speed:[self randFrom:0.1 to:maxSpeed]
+															   andColor:[NSColor blueColor]]
+								atIndex:i];
+			score++;			
+			
 		}
 	}
 	[self setNeedsDisplay:YES];
@@ -97,6 +126,10 @@
 	numBalloons = aData->maxBalloons;
 	maxSpeed = aData->maxSpeed;
 	maxLost = aData->maxLost;
+	maxShots = aData->maxShots;
+	
+	maxiSize = aData->maxiSize;
+	minSize = aData->minSize;
 	
 	lostBalloons = 0;
 	
@@ -107,7 +140,7 @@
 	{
 		[balloonsArray addObject:(ZOBaloon *)
 		 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
-								  Radius:rand()%20 
+								  Radius:(int)[self randFrom:minSize to:maxiSize]
 								   Speed:[self randFrom:0.1 to:aData->maxSpeed]
 								andColor:[NSColor blueColor]]];
 	}
