@@ -11,7 +11,7 @@
 
 @implementation ZOShootingController
 
-@synthesize numBalloons;
+@synthesize maxBalloons;
 @synthesize maxLost;
 @synthesize maxSpeed;
 
@@ -65,6 +65,24 @@
 }
 -(void)showSettingsWindow
 {
+	[self showWindow:nil];
+}
+
+
+
+-(IBAction)resetClicked:(id)sender
+{
+	GAMEDATA * data;
+	data = (GAMEDATA *)malloc(sizeof(GAMEDATA));
+	data->maxSpeed = maxSpeed;
+	data->maxLost = maxLost;
+	data->maxBalloons = maxBalloons;
+	data->delay = (20-speed)/100;
+	
+	[shootView resetGameWithData:data];
+	
+	free((void *)data);
+
 }
 
 
