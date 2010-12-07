@@ -11,15 +11,29 @@
 
 @implementation ZOShootingController
 
-@synthesize maxBalloons;
-@synthesize maxLost;
-@synthesize maxSpeed;
+@synthesize	maxBalloons;
+@synthesize	maxLost;
+@synthesize	maxShots;
+@synthesize	minSize;
+@synthesize	maxiSize;
+@synthesize	maxSpeed;
+@synthesize	speed;
+
 
 
 -(id)init
 {
 	if (![super init])
 		return nil;
+	[self setMaxLost:100];
+	[self setMaxSpeed:10];
+	[self setSpeed:8];
+	[self setMaxBalloons:20];
+	[self setMaxShots:10];
+	
+	[self setMinSize:10];
+	[self setMaxiSize:100];
+	
 	
 	NSLog(@"Shooting Controller initialized");
 	return self;
@@ -78,6 +92,16 @@
 	data->maxLost = maxLost;
 	data->maxBalloons = maxBalloons;
 	data->delay = (20-speed)/100;
+	data->maxShots = maxShots;
+	
+	if (maxiSize<minSize) {
+		data->minSize = 10;
+		data->maxiSize = 50;
+	} else {
+		data->minSize = minSize;
+		data->maxiSize = maxiSize;
+	}
+
 	
 	[shootView resetGameWithData:data];
 	

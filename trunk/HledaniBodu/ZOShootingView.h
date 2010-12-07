@@ -14,6 +14,9 @@ typedef struct {
 	float maxSpeed;
 	int maxLost;
 	float delay;
+	int maxShots;
+	int minSize;
+	int maxiSize;
 } GAMEDATA;
 
 @interface ZOShootingView : NSView {
@@ -26,12 +29,17 @@ typedef struct {
 	int maxLost;
 	float maxSpeed;
 	int numBalloons;
+	int maxShots;
+	
+	int minSize;
+	int maxiSize;
 	
 	NSMutableArray *balloonsArray;
 	
 	NSTimer *timer;
 	
 	int lostBalloons;
+	int score;
 
 }
 -(float)randFrom:(float)a to:(float)b;

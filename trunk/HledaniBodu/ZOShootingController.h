@@ -16,6 +16,10 @@
 	
 	int maxBalloons;
 	int maxLost;
+	int maxShots;
+	int minSize;
+	int maxiSize;
+	
 	float maxSpeed;
 	float speed;
 	
@@ -26,8 +30,13 @@
 }
 -(IBAction)resetClicked:(id)sender;
 
-@property int maxBalloons;
-@property int maxLost;
-@property float maxSpeed;
+@property	int maxBalloons;
+@property	int maxLost;
+@property	int maxShots;
+@property	int minSize;
+@property	int maxiSize;
+	
+@property	float maxSpeed;
+@property	float speed;
 
 @end
