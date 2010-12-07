@@ -18,21 +18,13 @@
 		width = 800;
 		height = 600;
 		
-		numBalloons = 10;
-		maxSpeed = 10;
-		
-		
-		balloonsArray = [[NSMutableArray alloc] initWithCapacity:numBalloons];
-		int i;
-		for (i=0;i<numBalloons;i++)
-		{
-			[balloonsArray addObject:(ZOBaloon *)
-			 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
-									  Radius:rand()%20 
-									andSpeed:[self randFrom:0.1 to:maxSpeed]]];
-		}
-		timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(timerExpired:) userInfo:nil repeats:YES];
-        // Initialization code here.
+		GAMEDATA data;
+		data.maxSpeed = 10;
+		data.maxBalloons = 10;
+		data.maxBalloons = 10;
+		data.delay = 0.05;
+		[self resetGameWithData:&data];
+		        // Initialization code here.
     }
     return self;
 }
@@ -40,11 +32,13 @@
 - (void)drawRect:(NSRect)dirtyRect {
 	
 	[[NSColor blackColor] set];
-	NSRectFill(NSMakeRect(0, 0, 50, 50));
+//	NSRectFill([self bounds]);
 	int i;
 	for (i=0;i<numBalloons;i++)
 	{
 		NSBezierPath * aPath;
+		
+		[[[balloonsArray objectAtIndex:i] color] set];
 		aPath = [[balloonsArray objectAtIndex:i] balloonPath];
 		
 		[aPath fill];
@@ -67,8 +61,10 @@
 			[balloonsArray removeObjectAtIndex:i];
 			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
 																 Radius:rand()%20 
-															   andSpeed:[self randFrom:0.1 to:maxSpeed]]
+																  Speed:[self randFrom:0.1 to:maxSpeed]
+															   andColor:[NSColor blueColor]]
 								atIndex:i];
+			lostBalloons++;
 		}
 	}
 	[self setNeedsDisplay:YES];
@@ -79,6 +75,13 @@
 {
 	point1.x = aPoint.x;
 	point1.y = aPoint.y;
+	int i;
+	for (i=0;i<[balloonsArray count];i++)
+	{
+		if ([[[balloonsArray objectAtIndex:i] balloonPath] containsPoint:point1]) {
+			[[balloonsArray objectAtIndex:i] shooted];
+		}
+	}
 	[self setNeedsDisplay:YES];
 }
 -(void)setPoint2:(NSPoint)aPoint
@@ -89,8 +92,28 @@
 
 }
 
--(void)resetGame
-{
+-(void)resetGameWithData:(GAMEDATA *) aData
+{	
+	numBalloons = aData->maxBalloons;
+	maxSpeed = aData->maxSpeed;
+	maxLost = aData->maxLost;
+	
+	lostBalloons = 0;
+	
+	[balloonsArray release];
+	balloonsArray = [[NSMutableArray alloc] initWithCapacity:aData->maxBalloons];
+	int i;
+	for (i=0;i<numBalloons;i++)
+	{
+		[balloonsArray addObject:(ZOBaloon *)
+		 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
+								  Radius:rand()%20 
+								   Speed:[self randFrom:0.1 to:aData->maxSpeed]
+								andColor:[NSColor blueColor]]];
+	}
+	[timer invalidate];
+	timer = [NSTimer scheduledTimerWithTimeInterval:aData->delay target:self selector:@selector(timerExpired:) userInfo:nil repeats:YES];
+	
 }
 
 -(float)randFrom:(float)a to:(float)b

@@ -14,17 +14,19 @@
 	NSPoint point1;
 	NSPoint point2;
 	
-	int numBalloons;
+	int maxBalloons;
 	int maxLost;
 	float maxSpeed;
+	float speed;
 	
 	NSWindow *projWindow;
 	IBOutlet NSPanel *shootPanel;
 	IBOutlet ZOShootingView *shootView;
 
 }
+-(IBAction)resetClicked:(id)sender;
 
-@property int numBalloons;
+@property int maxBalloons;
 @property int maxLost;
 @property float maxSpeed;
 

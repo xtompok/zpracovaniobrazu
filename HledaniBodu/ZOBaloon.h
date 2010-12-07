@@ -14,9 +14,18 @@
 	float speed;
 	NSColor * color;
 	float radius;
+	int shots;
+	
+	NSBezierPath * shape;
 }
--(id)initWithOrigin:(NSPoint) anOrigin Radius:(float) aRadius andSpeed:(float)aSpeed;
+-(id)initWithOrigin:(NSPoint) anOrigin 
+			 Radius:(float) aRadius 
+			  Speed:(float)aSpeed 
+		   andColor:(NSColor *)aColor;
 -(void)move;
 -(NSBezierPath *)balloonPath;
+-(void)shooted;
 
+@property int shots;
+@property (assign) NSColor * color;
 @end
