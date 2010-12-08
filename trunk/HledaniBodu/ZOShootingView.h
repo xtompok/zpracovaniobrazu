@@ -38,6 +38,8 @@ typedef struct {
 	
 	NSTimer *timer;
 	
+	NSColor * color;
+	
 	int lostBalloons;
 	int score;
 
@@ -49,5 +51,8 @@ typedef struct {
 -(void)resetGameWithData:(GAMEDATA *) aData;
 
 -(void)timerExpired:(NSTimer *)aTimer;
+
+-(NSBezierPath *)crossAtPoint:(NSPoint)aPoint;
+
 
 @end

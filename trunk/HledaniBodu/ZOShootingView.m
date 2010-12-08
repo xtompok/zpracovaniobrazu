@@ -21,12 +21,15 @@
 		score = 0;
 		lostBalloons = 0;
 		
+		color = [[[NSColor blueColor] shadowWithLevel:0.5] retain];
+		
+		
 		GAMEDATA data;
 		data.maxSpeed = 10;
 		data.maxBalloons = 10;
 		data.maxLost = 100;
 		data.delay = 0.05;
-		data.maxShots = 10;
+		data.maxShots = 1;
 		data.minSize = 10;
 		data.maxiSize = 50;
 		[self resetGameWithData:&data];
@@ -38,7 +41,7 @@
 - (void)drawRect:(NSRect)dirtyRect {
 	
 	[[NSColor blackColor] set];
-//	NSRectFill([self bounds]);
+	NSRectFill([self bounds]);
 	int i;
 	for (i=0;i<numBalloons;i++)
 	{
@@ -66,7 +69,11 @@
 					nil];
 		[[NSString stringWithFormat:@"You loose!" ] drawAtPoint:NSMakePoint(width/2-100, height/2) withAttributes: textAttr];
 		[textAttr release];
+		
 	}
+	[[NSColor greenColor] set];
+	[[self crossAtPoint:point1] stroke];
+
     // Drawing code here.
 }
 
@@ -78,19 +85,19 @@
 		[[balloonsArray objectAtIndex:i] move];
 		if (!NSIntersectsRect([self bounds], [[[balloonsArray objectAtIndex:i] balloonPath] bounds])) {
 			[balloonsArray removeObjectAtIndex:i];
-			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
+			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], height) 
 																 Radius:(int)[self randFrom:minSize to:maxiSize]
 																  Speed:[self randFrom:0.1 to:maxSpeed]
-															   andColor:[NSColor blueColor]]
+															   andColor:color]
 								atIndex:i];
 			lostBalloons++;
 		}
 		if (([[balloonsArray objectAtIndex:i] shots]>=maxShots)&&(lostBalloons<=maxShots)) {
 			[balloonsArray removeObjectAtIndex:i];
-			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
+			[balloonsArray insertObject:[[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], height) 
 																 Radius:(int)[self randFrom:minSize to:maxiSize]
 																  Speed:[self randFrom:0.1 to:maxSpeed]
-															   andColor:[NSColor blueColor]]
+															   andColor:color]
 								atIndex:i];
 			score++;			
 			
@@ -102,21 +109,23 @@
 
 -(void)setPoint1:(NSPoint)aPoint
 {
-	point1.x = aPoint.x;
-	point1.y = aPoint.y;
+	point1.x = aPoint.x*[self bounds].size.width;
+	point1.y = aPoint.y*[self bounds].size.height;
 	int i;
+	//NSLog(@"Set");
 	for (i=0;i<[balloonsArray count];i++)
 	{
 		if ([[[balloonsArray objectAtIndex:i] balloonPath] containsPoint:point1]) {
 			[[balloonsArray objectAtIndex:i] shooted];
+			NSLog(@"Shooted");
 		}
 	}
 	[self setNeedsDisplay:YES];
 }
 -(void)setPoint2:(NSPoint)aPoint
 {
-	point2.x = aPoint.x;
-	point2.y = aPoint.y;
+	point2.x = aPoint.x*[self bounds].size.width;
+	point2.y = aPoint.y*[self bounds].size.height;
 	[self setNeedsDisplay:YES];
 
 }
@@ -139,14 +148,33 @@
 	for (i=0;i<numBalloons;i++)
 	{
 		[balloonsArray addObject:(ZOBaloon *)
-		 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], 0) 
+		 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], height) 
 								  Radius:(int)[self randFrom:minSize to:maxiSize]
 								   Speed:[self randFrom:0.1 to:aData->maxSpeed]
-								andColor:[NSColor blueColor]]];
+								andColor:color]];
 	}
+	score = 0;
 	[timer invalidate];
 	timer = [NSTimer scheduledTimerWithTimeInterval:aData->delay target:self selector:@selector(timerExpired:) userInfo:nil repeats:YES];
 	
+}
+
+-(BOOL)isFlipped
+{
+	return YES;
+}
+
+-(NSBezierPath *)crossAtPoint:(NSPoint)aPoint
+{
+	int r;
+	r=10;
+	NSBezierPath *aPath;
+	aPath=[NSBezierPath bezierPath];
+	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y-r)];
+	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y+r)];
+	[aPath moveToPoint:NSMakePoint(aPoint.x-r, aPoint.y+r)];
+	[aPath lineToPoint:NSMakePoint(aPoint.x+r, aPoint.y-r)];
+	return aPath;
 }
 
 -(float)randFrom:(float)a to:(float)b
