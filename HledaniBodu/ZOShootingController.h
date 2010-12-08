@@ -20,6 +20,9 @@
 	int minSize;
 	int maxiSize;
 	
+	BOOL startByLaser;
+	BOOL isPaused;
+	
 	float maxSpeed;
 	float speed;
 	
@@ -29,6 +32,7 @@
 
 }
 -(IBAction)resetClicked:(id)sender;
+-(IBAction)pauseClicked:(id)sender;
 
 @property	int maxBalloons;
 @property	int maxLost;

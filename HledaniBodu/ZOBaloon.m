@@ -29,8 +29,23 @@
 	
 	color = aColor;
 	
+	float delta;
+	delta = 0.01*radius;
 	shape = [[NSBezierPath alloc] init];
-	[shape appendBezierPathWithOvalInRect:NSMakeRect(0,0, 2*radius, 2*radius)];
+	[shape appendBezierPathWithOvalInRect:NSMakeRect(0,0, 2*radius, 3*radius)];
+	[shape moveToPoint:NSMakePoint(radius, 3*radius-delta)];
+	[shape curveToPoint:NSMakePoint(radius, 4*radius-delta) 
+		  controlPoint1:NSMakePoint(1.2*radius, 3.5*radius) 
+		  controlPoint2:NSMakePoint(1.2*radius, 3.5*radius)];
+	[shape curveToPoint:NSMakePoint(radius, 5*radius-delta) 
+		  controlPoint1:NSMakePoint(0.8*radius, 4.5*radius) 
+		  controlPoint2:NSMakePoint(0.8*radius, 4.5*radius)];
+	[shape curveToPoint:NSMakePoint(radius, 4*radius+delta) 
+		  controlPoint1:NSMakePoint(0.8*radius, 4.5*radius) 
+		  controlPoint2:NSMakePoint(0.8*radius, 4.5*radius)];
+	[shape curveToPoint:NSMakePoint(radius, 3*radius+delta) 
+		  controlPoint1:NSMakePoint(1.2*radius, 3.5*radius) 
+		  controlPoint2:NSMakePoint(1.2*radius, 3.5*radius)];
 	return self;
 	
 }

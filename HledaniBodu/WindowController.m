@@ -27,7 +27,7 @@
 	/* ------------------------ */
 	
 	// Set resolution of camera
-	size=NSMakeSize(320, 240);
+	size=NSMakeSize(640, 480);
 	
 	// Start recording
 	camera = [[CSGCamera alloc] init];

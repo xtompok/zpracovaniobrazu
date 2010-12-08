@@ -34,6 +34,8 @@
 	[self setMinSize:10];
 	[self setMaxiSize:100];
 	
+	isPaused = YES;
+	
 	
 	NSLog(@"Shooting Controller initialized");
 	return self;
@@ -42,7 +44,11 @@
 
 -(void)setPoint1:(NSPoint)aPoint
 {
-	[shootView setPoint1:aPoint];
+	if(!isPaused || startByLaser)
+	{
+		[shootView setPoint1:aPoint];
+		isPaused = NO;
+	}
 }
 -(void)setPoint2:(NSPoint)aPoint
 {
@@ -106,6 +112,13 @@
 	[shootView resetGameWithData:data];
 	
 	free((void *)data);
+
+}
+
+-(IBAction)pauseClicked:(id)sender
+{
+	isPaused = !isPaused;
+	[shootView setPaused:isPaused];
 
 }
 
