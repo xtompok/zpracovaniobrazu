@@ -31,6 +31,9 @@ typedef struct {
 	int numBalloons;
 	int maxShots;
 	
+	float delay;
+	BOOL paused;
+	
 	int minSize;
 	int maxiSize;
 	
@@ -53,6 +56,7 @@ typedef struct {
 -(void)timerExpired:(NSTimer *)aTimer;
 
 -(NSBezierPath *)crossAtPoint:(NSPoint)aPoint;
+-(void)setPaused:(BOOL) isPaused;
 
-
+-(void)insertBalloonAtIndex:(int)i;
 @end
