@@ -128,7 +128,7 @@
 	maxR=origbuffer[maxScoreIndex];
 	maxG=origbuffer[maxScoreIndex+1];
 	maxB=origbuffer[maxScoreIndex+2];
-	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
+	//printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
 	
 	// Compute standard coordinates
 	NSPoint aPoint;

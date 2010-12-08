@@ -26,13 +26,13 @@
 			4BBC1DA110E2F44B0002D759 /* *0x921f765d */,
 			4BBC1DA410E2F44C0002D759 /* *0x921f765f */,
 			4B8EDEB9111A2F580076280A /* WindowController.m:207 */,
-			4BA5ABF012AE3F49004EB8D1 /* ZOShootingView.m:40 */,
+			4BA5ABF012AE3F49004EB8D1 /* ZOShootingView.m:43 */,
 			4BA5AC5312AE4348004EB8D1 /* ZOShootingController.m:25 */,
-			4BA5ACA612AE4666004EB8D1 /* ZOShootingView.m:114 */,
-			4BD3057612AE707A007C6D8C /* ZOShootingView.m:48 */,
+			4BA5ACA612AE4666004EB8D1 /* ZOShootingView.m:123 */,
+			4BD3057612AE707A007C6D8C /* ZOShootingView.m:51 */,
 			4BD305AC12AE7333007C6D8C /* ZOShootingController.m:92 */,
 			4BD305B412AE7349007C6D8C /* ZOShootingController.m:24 */,
-			4BD305BA12AE73DB007C6D8C /* ZOShootingView.m:125 */,
+			4BD305BA12AE73DB007C6D8C /* ZOShootingView.m:134 */,
 		);
 		codeSenseManager = 4B17E13D10DF6F43000F3861 /* Code sense */;
 		executables = (
@@ -270,6 +270,48 @@
 			4BD306B912AED8BB007C6D8C /* PBXTextBookmark */ = 4BD306B912AED8BB007C6D8C /* PBXTextBookmark */;
 			4BD306BD12AED907007C6D8C /* PBXTextBookmark */ = 4BD306BD12AED907007C6D8C /* PBXTextBookmark */;
 			4BD306BE12AED907007C6D8C /* PBXTextBookmark */ = 4BD306BE12AED907007C6D8C /* PBXTextBookmark */;
+			4BD306C412AF7439007C6D8C /* PBXTextBookmark */ = 4BD306C412AF7439007C6D8C /* PBXTextBookmark */;
+			4BD306C512AF7439007C6D8C /* PBXTextBookmark */ = 4BD306C512AF7439007C6D8C /* PBXTextBookmark */;
+			4BD306C912AF7583007C6D8C /* PBXTextBookmark */ = 4BD306C912AF7583007C6D8C /* PBXTextBookmark */;
+			4BD306CA12AF7583007C6D8C /* PBXTextBookmark */ = 4BD306CA12AF7583007C6D8C /* PBXTextBookmark */;
+			4BD306D112AF763F007C6D8C /* PBXTextBookmark */ = 4BD306D112AF763F007C6D8C /* PBXTextBookmark */;
+			4BD306D212AF763F007C6D8C /* PBXTextBookmark */ = 4BD306D212AF763F007C6D8C /* PBXTextBookmark */;
+			4BD306D312AF763F007C6D8C /* PBXTextBookmark */ = 4BD306D312AF763F007C6D8C /* PBXTextBookmark */;
+			4BD306D412AF763F007C6D8C /* PBXTextBookmark */ = 4BD306D412AF763F007C6D8C /* PBXTextBookmark */;
+			4BD306D812AF7666007C6D8C /* PBXTextBookmark */ = 4BD306D812AF7666007C6D8C /* PBXTextBookmark */;
+			4BD306D912AF7666007C6D8C /* PBXTextBookmark */ = 4BD306D912AF7666007C6D8C /* PBXTextBookmark */;
+			4BD306DA12AF7666007C6D8C /* PBXTextBookmark */ = 4BD306DA12AF7666007C6D8C /* PBXTextBookmark */;
+			4BD306DB12AF7666007C6D8C /* PBXTextBookmark */ = 4BD306DB12AF7666007C6D8C /* PBXTextBookmark */;
+			4BD306DF12AF7690007C6D8C /* PBXTextBookmark */ = 4BD306DF12AF7690007C6D8C /* PBXTextBookmark */;
+			4BD306E012AF7690007C6D8C /* PBXTextBookmark */ = 4BD306E012AF7690007C6D8C /* PBXTextBookmark */;
+			4BD306E412AF76A4007C6D8C /* PBXTextBookmark */ = 4BD306E412AF76A4007C6D8C /* PBXTextBookmark */;
+			4BD306E512AF76A4007C6D8C /* PBXTextBookmark */ = 4BD306E512AF76A4007C6D8C /* PBXTextBookmark */;
+			4BD306ED12AF7837007C6D8C /* PBXTextBookmark */ = 4BD306ED12AF7837007C6D8C /* PBXTextBookmark */;
+			4BD306EE12AF7837007C6D8C /* PBXTextBookmark */ = 4BD306EE12AF7837007C6D8C /* PBXTextBookmark */;
+			4BD306EF12AF7837007C6D8C /* PBXTextBookmark */ = 4BD306EF12AF7837007C6D8C /* PBXTextBookmark */;
+			4BD306F012AF7837007C6D8C /* PBXTextBookmark */ = 4BD306F012AF7837007C6D8C /* PBXTextBookmark */;
+			4BD306F412AF7863007C6D8C /* PBXTextBookmark */ = 4BD306F412AF7863007C6D8C /* PBXTextBookmark */;
+			4BD306F512AF7863007C6D8C /* PBXTextBookmark */ = 4BD306F512AF7863007C6D8C /* PBXTextBookmark */;
+			4BD306F612AF7863007C6D8C /* PBXTextBookmark */ = 4BD306F612AF7863007C6D8C /* PBXTextBookmark */;
+			4BD306F712AF7863007C6D8C /* PBXTextBookmark */ = 4BD306F712AF7863007C6D8C /* PBXTextBookmark */;
+			4BD306F812AF7863007C6D8C /* PBXTextBookmark */ = 4BD306F812AF7863007C6D8C /* PBXTextBookmark */;
+			4BD306FC12AF78DF007C6D8C /* PBXTextBookmark */ = 4BD306FC12AF78DF007C6D8C /* PBXTextBookmark */;
+			4BD306FD12AF78DF007C6D8C /* PBXTextBookmark */ = 4BD306FD12AF78DF007C6D8C /* PBXTextBookmark */;
+			4BD306FE12AF78DF007C6D8C /* PBXTextBookmark */ = 4BD306FE12AF78DF007C6D8C /* PBXTextBookmark */;
+			4BD306FF12AF78DF007C6D8C /* PBXTextBookmark */ = 4BD306FF12AF78DF007C6D8C /* PBXTextBookmark */;
+			4BD3070012AF78DF007C6D8C /* PBXTextBookmark */ = 4BD3070012AF78DF007C6D8C /* PBXTextBookmark */;
+			4BD3070412AF792C007C6D8C /* PBXTextBookmark */ = 4BD3070412AF792C007C6D8C /* PBXTextBookmark */;
+			4BD3070512AF792C007C6D8C /* PBXTextBookmark */ = 4BD3070512AF792C007C6D8C /* PBXTextBookmark */;
+			4BD3070912AF79ED007C6D8C /* PBXTextBookmark */ = 4BD3070912AF79ED007C6D8C /* PBXTextBookmark */;
+			4BD3070A12AF79ED007C6D8C /* PBXTextBookmark */ = 4BD3070A12AF79ED007C6D8C /* PBXTextBookmark */;
+			4BD3070B12AF79ED007C6D8C /* PBXTextBookmark */ = 4BD3070B12AF79ED007C6D8C /* PBXTextBookmark */;
+			4BD3070C12AF79ED007C6D8C /* PBXTextBookmark */ = 4BD3070C12AF79ED007C6D8C /* PBXTextBookmark */;
+			4BD3070D12AF79ED007C6D8C /* PBXTextBookmark */ = 4BD3070D12AF79ED007C6D8C /* PBXTextBookmark */;
+			4BD3071112AF7C72007C6D8C /* PBXTextBookmark */ = 4BD3071112AF7C72007C6D8C /* PBXTextBookmark */;
+			4BD3071212AF7C72007C6D8C /* PBXTextBookmark */ = 4BD3071212AF7C72007C6D8C /* PBXTextBookmark */;
+			4BD3071312AF7C72007C6D8C /* PBXTextBookmark */ = 4BD3071312AF7C72007C6D8C /* PBXTextBookmark */;
+			4BD3071412AF7C72007C6D8C /* PBXTextBookmark */ = 4BD3071412AF7C72007C6D8C /* PBXTextBookmark */;
+			4BD3071512AF7C72007C6D8C /* PBXTextBookmark */ = 4BD3071512AF7C72007C6D8C /* PBXTextBookmark */;
 			4BE3A9D9122E57500068BE24 = 4BE3A9D9122E57500068BE24 /* PBXTextBookmark */;
 			4BE3AA72122F77730068BE24 = 4BE3AA72122F77730068BE24 /* PBXTextBookmark */;
 			4BE3AA7A122FB51E0068BE24 = 4BE3AA7A122FB51E0068BE24 /* PBXTextBookmark */;
@@ -321,9 +363,9 @@
 	};
 	4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {999, 3757}}";
-			sepNavSelRange = "{2373, 6}";
-			sepNavVisRange = "{2213, 211}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 3744}}";
+			sepNavSelRange = "{2530, 0}";
+			sepNavVisRange = "{2389, 336}";
 		};
 	};
 	4B0DA3A3120C4506003F9D04 /* ZOProcess2Controller.h */ = {
@@ -449,18 +491,18 @@
 	};
 	4B17E14E10DF7A6D000F3861 /* WindowController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 1547}}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 1560}}";
 			sepNavSelRange = "{627, 0}";
-			sepNavVisRange = "{1832, 354}";
+			sepNavVisRange = "{1832, 351}";
 			sepNavWindowFrame = "{{234, 0}, {618, 778}}";
 		};
 	};
 	4B17E14F10DF7A6D000F3861 /* WindowController.m */ = {
 		uiCtxt = {
 			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{5356, 108}\";\n            s = 0;\n        },\n                {\n            r = \"{5763, 401}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 6600}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {775, 2977}}";
-			sepNavSelRange = "{3957, 0}";
-			sepNavVisRange = "{3804, 623}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 3302}}";
+			sepNavSelRange = "{490, 0}";
+			sepNavVisRange = "{346, 345}";
 			sepNavWindowFrame = "{{136, 193}, {702, 585}}";
 		};
 	};
@@ -565,7 +607,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 325}}";
 			sepNavSelRange = "{216, 0}";
-			sepNavVisRange = "{168, 234}";
+			sepNavVisRange = "{168, 229}";
 		};
 	};
 	4B3BC4E311A3EE6600166D84 /* ZOProjectorController.m */ = {
@@ -775,16 +817,16 @@
 	};
 	4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 754}}";
-			sepNavSelRange = "{515, 0}";
-			sepNavVisRange = "{419, 171}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 767}}";
+			sepNavSelRange = "{866, 0}";
+			sepNavVisRange = "{0, 236}";
 		};
 	};
 	4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {887, 2067}}";
-			sepNavSelRange = "{2454, 0}";
-			sepNavVisRange = "{1781, 1423}";
+			sepNavIntBoundsRect = "{{0, 0}, {887, 2470}}";
+			sepNavSelRange = "{3129, 0}";
+			sepNavVisRange = "{557, 1360}";
 		};
 	};
 	4BA5AB7D12ACE9A5004EB8D1 /* PBXTextBookmark */ = {
@@ -851,14 +893,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 416}}";
 			sepNavSelRange = "{478, 0}";
-			sepNavVisRange = "{266, 276}";
+			sepNavVisRange = "{254, 288}";
 		};
 	};
 	4BA5ABB712ACF700004EB8D1 /* ZOBaloon.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 754}}";
-			sepNavSelRange = "{872, 0}";
-			sepNavVisRange = "{655, 225}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 728}}";
+			sepNavSelRange = "{645, 0}";
+			sepNavVisRange = "{131, 249}";
 		};
 	};
 	4BA5ABBD12AD1399004EB8D1 /* PBXTextBookmark */ = {
@@ -961,7 +1003,7 @@
 		vrLen = 198;
 		vrLoc = 446;
 	};
-	4BA5ABF012AE3F49004EB8D1 /* ZOShootingView.m:40 */ = {
+	4BA5ABF012AE3F49004EB8D1 /* ZOShootingView.m:43 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -973,7 +1015,7 @@
 		functionName = "-drawRect:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 40;
+		lineNumber = 43;
 		location = HledaniBodu;
 		modificationTime = 313422814.896324;
 		originalNumberOfMultipleMatches = 1;
@@ -1007,7 +1049,7 @@
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
-	4BA5ACA612AE4666004EB8D1 /* ZOShootingView.m:114 */ = {
+	4BA5ACA612AE4666004EB8D1 /* ZOShootingView.m:123 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1019,7 +1061,7 @@
 		functionName = "-setPoint1:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 114;
+		lineNumber = 123;
 		location = HledaniBodu;
 		modificationTime = 313422814.896729;
 		originalNumberOfMultipleMatches = 1;
@@ -1060,7 +1102,7 @@
 		fRef = 4BE587F41158F18E0026796A /* ZOProcessImage.m */;
 		name = "ZOProcessImage.m: 203";
 		rLen = 1;
-		rLoc = 3769;
+		rLoc = 3773;
 		rType = 0;
 		vrLen = 222;
 		vrLoc = 3554;
@@ -1148,7 +1190,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 32";
 		rLen = 0;
-		rLoc = 668;
+		rLoc = 735;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 435;
@@ -1158,7 +1200,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 566;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 133;
@@ -1168,7 +1210,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 89";
 		rLen = 0;
-		rLoc = 3532;
+		rLoc = 3792;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 1751;
@@ -1178,12 +1220,12 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 566;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 133;
 	};
-	4BD3057612AE707A007C6D8C /* ZOShootingView.m:48 */ = {
+	4BD3057612AE707A007C6D8C /* ZOShootingView.m:51 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1195,7 +1237,7 @@
 		functionName = "-drawRect:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 48;
+		lineNumber = 51;
 		location = HledaniBodu;
 		modificationTime = 313422814.896879;
 		originalNumberOfMultipleMatches = 1;
@@ -1206,7 +1248,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 89";
 		rLen = 0;
-		rLoc = 3532;
+		rLoc = 3792;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 1751;
@@ -1233,7 +1275,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 566;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 748;
 		vrLoc = 133;
@@ -1263,7 +1305,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 92";
 		rLen = 0;
-		rLoc = 3506;
+		rLoc = 3766;
 		rType = 0;
 		vrLen = 1157;
 		vrLoc = 1295;
@@ -1273,7 +1315,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 92";
 		rLen = 0;
-		rLoc = 3506;
+		rLoc = 3766;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 848;
@@ -1303,7 +1345,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 38";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 249;
 		vrLoc = 426;
@@ -1313,7 +1355,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
@@ -1323,7 +1365,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 38";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 249;
 		vrLoc = 426;
@@ -1343,7 +1385,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
@@ -1363,7 +1405,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
@@ -1383,7 +1425,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 43;
@@ -1403,7 +1445,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 839;
 		vrLoc = 43;
@@ -1451,7 +1493,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
@@ -1489,12 +1531,12 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
 	};
-	4BD305BA12AE73DB007C6D8C /* ZOShootingView.m:125 */ = {
+	4BD305BA12AE73DB007C6D8C /* ZOShootingView.m:134 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1506,7 +1548,7 @@
 		functionName = "-resetGameWithData:";
 		hitCount = 2;
 		ignoreCount = 0;
-		lineNumber = 125;
+		lineNumber = 134;
 		location = HledaniBodu;
 		modificationTime = 313422933.395585;
 		originalNumberOfMultipleMatches = 1;
@@ -1527,7 +1569,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 38";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 276;
 		vrLoc = 358;
@@ -1537,7 +1579,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 93";
 		rLen = 0;
-		rLoc = 3532;
+		rLoc = 3792;
 		rType = 0;
 		vrLen = 318;
 		vrLoc = 1649;
@@ -1547,7 +1589,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 93";
 		rLen = 0;
-		rLoc = 3532;
+		rLoc = 3792;
 		rType = 0;
 		vrLen = 286;
 		vrLoc = 1649;
@@ -1557,7 +1599,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 560;
+		rLoc = 627;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 43;
@@ -1567,7 +1609,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 93";
 		rLen = 0;
-		rLoc = 3532;
+		rLoc = 3792;
 		rType = 0;
 		vrLen = 484;
 		vrLoc = 1726;
@@ -1597,7 +1639,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 104";
 		rLen = 0;
-		rLoc = 3946;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1424;
@@ -1617,7 +1659,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 104";
 		rLen = 0;
-		rLoc = 3946;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 1424;
@@ -1807,7 +1849,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 38";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 259;
 		vrLoc = 375;
@@ -1817,7 +1859,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 41";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 167;
 		vrLoc = 375;
@@ -1837,7 +1879,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 34";
 		rLen = 0;
-		rLoc = 601;
+		rLoc = 621;
 		rType = 0;
 		vrLen = 703;
 		vrLoc = 0;
@@ -1847,7 +1889,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 104";
 		rLen = 0;
-		rLoc = 3946;
+		rLoc = 4209;
 		rType = 0;
 		vrLen = 1115;
 		vrLoc = 849;
@@ -1857,7 +1899,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 67";
 		rLen = 0;
-		rLoc = 2367;
+		rLoc = 2494;
 		rType = 0;
 		vrLen = 1037;
 		vrLoc = 842;
@@ -1867,7 +1909,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 42";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 179;
 		vrLoc = 375;
@@ -1877,7 +1919,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 35";
 		rLen = 0;
-		rLoc = 601;
+		rLoc = 621;
 		rType = 0;
 		vrLen = 715;
 		vrLoc = 0;
@@ -1887,7 +1929,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 56";
 		rLen = 0;
-		rLoc = 1752;
+		rLoc = 1888;
 		rType = 0;
 		vrLen = 1127;
 		vrLoc = 508;
@@ -1897,7 +1939,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 59";
 		rLen = 0;
-		rLoc = 1752;
+		rLoc = 1888;
 		rType = 0;
 		vrLen = 1105;
 		vrLoc = 569;
@@ -1907,7 +1949,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 42";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 140;
 		vrLoc = 375;
@@ -1917,7 +1959,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 60";
 		rLen = 0;
-		rLoc = 1752;
+		rLoc = 1888;
 		rType = 0;
 		vrLen = 1218;
 		vrLoc = 570;
@@ -1927,7 +1969,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 42";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 140;
 		vrLoc = 375;
@@ -1937,7 +1979,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 60";
 		rLen = 0;
-		rLoc = 1363;
+		rLoc = 1428;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 569;
@@ -1947,7 +1989,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 44";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 390;
@@ -1967,7 +2009,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 79";
 		rLen = 1;
-		rLoc = 2371;
+		rLoc = 2498;
 		rType = 0;
 		vrLen = 1324;
 		vrLoc = 1044;
@@ -1977,7 +2019,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 29";
 		rLen = 0;
-		rLoc = 488;
+		rLoc = 555;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 3;
@@ -1987,7 +2029,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 44";
 		rLen = 0;
-		rLoc = 750;
+		rLoc = 770;
 		rType = 0;
 		vrLen = 155;
 		vrLoc = 390;
@@ -2027,7 +2069,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 29";
 		rLen = 0;
-		rLoc = 488;
+		rLoc = 555;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 3;
@@ -2057,7 +2099,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 31";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 589;
 		rType = 0;
 		vrLen = 465;
 		vrLoc = 1887;
@@ -2067,7 +2109,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 428;
 		vrLoc = 1320;
@@ -2077,7 +2119,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 29";
 		rLen = 0;
-		rLoc = 488;
+		rLoc = 555;
 		rType = 0;
 		vrLen = 894;
 		vrLoc = 3;
@@ -2117,7 +2159,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 428;
 		vrLoc = 1320;
@@ -2147,7 +2189,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 519;
 		vrLoc = 1320;
@@ -2157,7 +2199,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 428;
 		vrLoc = 1320;
@@ -2187,7 +2229,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 519;
 		vrLoc = 1320;
@@ -2207,7 +2249,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 86";
 		rLen = 0;
-		rLoc = 2672;
+		rLoc = 2804;
 		rType = 0;
 		vrLen = 519;
 		vrLoc = 1320;
@@ -2297,7 +2339,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 138";
 		rLen = 0;
-		rLoc = 3823;
+		rLoc = 4088;
 		rType = 0;
 		vrLen = 598;
 		vrLoc = 3015;
@@ -2357,7 +2399,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 138";
 		rLen = 0;
-		rLoc = 3823;
+		rLoc = 4088;
 		rType = 0;
 		vrLen = 579;
 		vrLoc = 3034;
@@ -2367,7 +2409,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 77";
 		rLen = 0;
-		rLoc = 2188;
+		rLoc = 2329;
 		rType = 0;
 		vrLen = 549;
 		vrLoc = 1410;
@@ -2387,7 +2429,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 77";
 		rLen = 0;
-		rLoc = 2219;
+		rLoc = 2360;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 1410;
@@ -2407,7 +2449,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 83";
 		rLen = 0;
-		rLoc = 2420;
+		rLoc = 2547;
 		rType = 0;
 		vrLen = 463;
 		vrLoc = 1917;
@@ -2427,7 +2469,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 83";
 		rLen = 0;
-		rLoc = 2420;
+		rLoc = 2547;
 		rType = 0;
 		vrLen = 293;
 		vrLoc = 378;
@@ -2478,7 +2520,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 66;
+		rLoc = 69;
 		rType = 1;
 	};
 	4BD306AB12AED806007C6D8C /* PBXTextBookmark */ = {
@@ -2507,7 +2549,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 66;
+		rLoc = 69;
 		rType = 1;
 	};
 	4BD306AE12AED806007C6D8C /* PBXTextBookmark */ = {
@@ -2515,7 +2557,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 65";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 1091;
@@ -2535,7 +2577,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 65";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 700;
@@ -2546,7 +2588,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 66;
+		rLoc = 69;
 		rType = 1;
 	};
 	4BD306B312AED86E007C6D8C /* PBXTextBookmark */ = {
@@ -2554,7 +2596,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 65";
 		rLen = 0;
-		rLoc = 1689;
+		rLoc = 1754;
 		rType = 0;
 		vrLen = 737;
 		vrLoc = 971;
@@ -2564,7 +2606,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 65";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 1091;
@@ -2574,7 +2616,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 65";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 1659;
 		vrLoc = 700;
@@ -2584,7 +2626,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 67";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 721;
 		vrLoc = 1029;
@@ -2594,7 +2636,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 57";
 		rLen = 0;
-		rLoc = 1112;
+		rLoc = 1177;
 		rType = 0;
 		vrLen = 1678;
 		vrLoc = 671;
@@ -2604,7 +2646,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 67";
 		rLen = 0;
-		rLoc = 1608;
+		rLoc = 1673;
 		rType = 0;
 		vrLen = 721;
 		vrLoc = 1029;
@@ -2614,10 +2656,430 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 88";
 		rLen = 0;
-		rLoc = 2454;
+		rLoc = 2581;
 		rType = 0;
 		vrLen = 1423;
 		vrLoc = 1781;
+	};
+	4BD306C412AF7439007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 67";
+		rLen = 0;
+		rLoc = 1673;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 943;
+	};
+	4BD306C512AF7439007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 41";
+		rLen = 0;
+		rLoc = 767;
+		rType = 0;
+		vrLen = 880;
+		vrLoc = 40;
+	};
+	4BD306C912AF7583007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 67";
+		rLen = 0;
+		rLoc = 1673;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 943;
+	};
+	4BD306CA12AF7583007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 146";
+		rLen = 0;
+		rLoc = 4167;
+		rType = 0;
+		vrLen = 1699;
+		vrLoc = 669;
+	};
+	4BD306D112AF763F007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 71";
+		rLen = 0;
+		rLoc = 1673;
+		rType = 0;
+		vrLen = 654;
+		vrLoc = 1018;
+	};
+	4BD306D212AF763F007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
+		name = "ZOShootingView.h: 41";
+		rLen = 0;
+		rLoc = 588;
+		rType = 0;
+		vrLen = 731;
+		vrLoc = 3;
+	};
+	4BD306D312AF763F007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 146";
+		rLen = 0;
+		rLoc = 4167;
+		rType = 0;
+		vrLen = 1899;
+		vrLoc = 728;
+	};
+	4BD306D412AF763F007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 150";
+		rLen = 0;
+		rLoc = 4174;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 3156;
+	};
+	4BD306D812AF7666007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 71";
+		rLen = 0;
+		rLoc = 1673;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 1018;
+	};
+	4BD306D912AF7666007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14E10DF7A6D000F3861 /* WindowController.h */;
+		name = "WindowController.h: 29";
+		rLen = 0;
+		rLoc = 627;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 1832;
+	};
+	4BD306DA12AF7666007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 30";
+		rLen = 0;
+		rLoc = 490;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 346;
+	};
+	4BD306DB12AF7666007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 150";
+		rLen = 0;
+		rLoc = 4174;
+		rType = 0;
+		vrLen = 1445;
+		vrLoc = 683;
+	};
+	4BD306DF12AF7690007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 30";
+		rLen = 0;
+		rLoc = 490;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 346;
+	};
+	4BD306E012AF7690007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 25";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 842;
+		vrLoc = 3;
+	};
+	4BD306E412AF76A4007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 30";
+		rLen = 0;
+		rLoc = 490;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 346;
+	};
+	4BD306E512AF76A4007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 24";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 857;
+		vrLoc = 3;
+	};
+	4BD306ED12AF7837007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B17E14F10DF7A6D000F3861 /* WindowController.m */;
+		name = "WindowController.m: 30";
+		rLen = 0;
+		rLoc = 490;
+		rType = 0;
+		vrLen = 345;
+		vrLoc = 346;
+	};
+	4BD306EE12AF7837007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B3BC4E211A3EE6600166D84 /* ZOProjectorController.h */;
+		name = "ZOProjectorController.h: 11";
+		rLen = 0;
+		rLoc = 216;
+		rType = 0;
+		vrLen = 229;
+		vrLoc = 168;
+	};
+	4BD306EF12AF7837007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE587F41158F18E0026796A /* ZOProcessImage.m */;
+		name = "ZOProcessImage.m: 152";
+		rLen = 0;
+		rLoc = 2742;
+		rType = 0;
+		vrLen = 281;
+		vrLoc = 2517;
+	};
+	4BD306F012AF7837007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1109;
+		vrLoc = 2423;
+	};
+	4BD306F412AF7863007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BE587F41158F18E0026796A /* ZOProcessImage.m */;
+		name = "ZOProcessImage.m: 152";
+		rLen = 0;
+		rLoc = 2742;
+		rType = 0;
+		vrLen = 272;
+		vrLoc = 2245;
+	};
+	4BD306F512AF7863007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4B0DA2DB120B4FBC003F9D04 /* ZOProcess2Image.m */;
+		name = "ZOProcess2Image.m: 131";
+		rLen = 0;
+		rLoc = 2530;
+		rType = 0;
+		vrLen = 336;
+		vrLoc = 2389;
+	};
+	4BD306F612AF7863007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 70";
+		rLen = 0;
+		rLoc = 1673;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 1036;
+	};
+	4BD306F712AF7863007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3115;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 2950;
+	};
+	4BD306F812AF7863007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1111;
+		vrLoc = 2423;
+	};
+	4BD306FC12AF78DF007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BF8BD06126C7205002E5C2A /* ZOMultiColorDrawingView.h */;
+		name = "ZOMultiColorDrawingView.h: 34";
+		rLen = 0;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 280;
+		vrLoc = 549;
+	};
+	4BD306FD12AF78DF007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */;
+		name = "ZOMultiColorDrawingView.m: 182";
+		rLen = 29;
+		rLoc = 3644;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 2534;
+	};
+	4BD306FE12AF78DF007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3115;
+		rType = 0;
+		vrLen = 307;
+		vrLoc = 2950;
+	};
+	4BD306FF12AF78DF007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 124";
+		rLen = 0;
+		rLoc = 3484;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 3224;
+	};
+	4BD3070012AF78DF007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1162;
+		vrLoc = 2423;
+	};
+	4BD3070412AF792C007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 109";
+		rLen = 0;
+		rLoc = 3102;
+		rType = 0;
+		vrLen = 347;
+		vrLoc = 2890;
+	};
+	4BD3070512AF792C007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 111";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1213;
+		vrLoc = 2423;
+	};
+	4BD3070912AF79ED007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */;
+		name = "ZOMultiColorDrawingView.m: 191";
+		rLen = 367;
+		rLoc = 3809;
+		rType = 0;
+		vrLen = 284;
+		vrLoc = 3644;
+	};
+	4BD3070A12AF79ED007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
+		name = "ZOShootingView.h: 55";
+		rLen = 0;
+		rLoc = 866;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	4BD3070B12AF79ED007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 162";
+		rLen = 46;
+		rLoc = 4387;
+		rType = 0;
+		vrLen = 384;
+		vrLoc = 4273;
+	};
+	4BD3070C12AF79ED007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 74";
+		rLen = 0;
+		rLoc = 1849;
+		rType = 0;
+		vrLen = 629;
+		vrLoc = 1221;
+	};
+	4BD3070D12AF79ED007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 115";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1362;
+		vrLoc = 2147;
+	};
+	4BD3071112AF7C72007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5ABB612ACF700004EB8D1 /* ZOBaloon.h */;
+		name = "ZOBaloon.h: 27";
+		rLen = 0;
+		rLoc = 478;
+		rType = 0;
+		vrLen = 288;
+		vrLoc = 254;
+	};
+	4BD3071212AF7C72007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5ABB712ACF700004EB8D1 /* ZOBaloon.m */;
+		name = "ZOBaloon.m: 40";
+		rLen = 0;
+		rLoc = 645;
+		rType = 0;
+		vrLen = 249;
+		vrLoc = 131;
+	};
+	4BD3071312AF7C72007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 156";
+		rLen = 0;
+		rLoc = 4190;
+		rType = 0;
+		vrLen = 461;
+		vrLoc = 3736;
+	};
+	4BD3071412AF7C72007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 151";
+		rLen = 0;
+		rLoc = 4033;
+		rType = 0;
+		vrLen = 471;
+		vrLoc = 3880;
+	};
+	4BD3071512AF7C72007C6D8C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
+		name = "ZOShootingView.m: 115";
+		rLen = 0;
+		rLoc = 3129;
+		rType = 0;
+		vrLen = 1360;
+		vrLoc = 557;
 	};
 	4BD529C011197AD80090EBE6 /* ZOImageView.h */ = {
 		uiCtxt = {
@@ -2694,9 +3156,9 @@
 	};
 	4BE587F41158F18E0026796A /* ZOProcessImage.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {574, 2795}}";
-			sepNavSelRange = "{3769, 1}";
-			sepNavVisRange = "{3554, 222}";
+			sepNavIntBoundsRect = "{{0, 0}, {574, 2782}}";
+			sepNavSelRange = "{2742, 0}";
+			sepNavVisRange = "{2245, 272}";
 			sepNavWindowFrame = "{{95, 108}, {702, 585}}";
 		};
 	};
@@ -2805,7 +3267,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 29";
 		rLen = 0;
-		rLoc = 702;
+		rLoc = 767;
 		rType = 0;
 		vrLen = 1089;
 		vrLoc = 165;
@@ -2825,7 +3287,7 @@
 		fRef = 4BA5AB7312ACDD60004EB8D1 /* ZOShootingView.h */;
 		name = "ZOShootingView.h: 40";
 		rLen = 0;
-		rLoc = 798;
+		rLoc = 867;
 		rType = 0;
 		vrLen = 678;
 		vrLoc = 0;
@@ -2854,7 +3316,7 @@
 		isa = PBXTextBookmark;
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		rLen = 0;
-		rLoc = 39;
+		rLoc = 42;
 		rType = 1;
 	};
 	4BF2DD8012AE6FB0007C2047 /* PBXTextBookmark */ = {
@@ -2862,7 +3324,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 32";
 		rLen = 0;
-		rLoc = 668;
+		rLoc = 735;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 435;
@@ -2872,7 +3334,7 @@
 		fRef = 4BA5AB7412ACDD60004EB8D1 /* ZOShootingView.m */;
 		name = "ZOShootingView.m: 26";
 		rLen = 0;
-		rLoc = 566;
+		rLoc = 633;
 		rType = 0;
 		vrLen = 787;
 		vrLoc = 133;
@@ -2895,14 +3357,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 663}}";
 			sepNavSelRange = "{546, 0}";
-			sepNavVisRange = "{549, 286}";
+			sepNavVisRange = "{549, 280}";
 		};
 	};
 	4BF8BD07126C7205002E5C2A /* ZOMultiColorDrawingView.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {574, 2990}}";
-			sepNavSelRange = "{3644, 29}";
-			sepNavVisRange = "{1153, 210}";
+			sepNavSelRange = "{3809, 367}";
+			sepNavVisRange = "{3644, 284}";
 		};
 	};
 	4BF8BD63126EDC8D002E5C2A /* PBXTextBookmark */ = {

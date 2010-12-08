@@ -141,7 +141,7 @@
 	maxR=origbuffer[maxScoreIndex];
 	maxG=origbuffer[maxScoreIndex+1];
 	maxB=origbuffer[maxScoreIndex+2];
-	printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
+	//printf("Max: R: %.3d, G: %.3d, B:%.3d\n",maxR,maxG,maxB);
 	
 	// Normalising point 
 	NSPoint aPoint;
@@ -149,7 +149,7 @@
 	aPoint.x=aPoint.x/size.width;
 	aPoint.y=aPoint.y/size.height;
 	
-	printf("%f,%f",aPoint.x,aPoint.y);
+	//printf("%f,%f",aPoint.x,aPoint.y);
 	return aPoint;
 	
 }

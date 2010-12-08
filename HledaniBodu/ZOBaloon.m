@@ -37,7 +37,7 @@
 
 -(void)move
 {
-	origin.y+=speed;
+	origin.y-=speed;
 }
 
 -(NSBezierPath *)balloonPath
