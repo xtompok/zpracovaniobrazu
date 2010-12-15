@@ -15,7 +15,7 @@
 
 
 -(id)initWithOrigin:(NSPoint) anOrigin 
-			 Radius:(float) aRadius 
+			   Size:(float) aRadius 
 			  Speed:(float)aSpeed
 		   andColor:(NSColor *)aColor
 {

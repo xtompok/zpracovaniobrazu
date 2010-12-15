@@ -206,7 +206,7 @@
 {
 	[balloonsArray insertObject:(ZOBaloon *)
 	 [[ZOBaloon alloc]initWithOrigin:NSMakePoint([self randFrom:0 to:width], height) 
-							  Radius:(int)[self randFrom:minSize to:maxiSize]
+								Size:(int)[self randFrom:minSize to:maxiSize]
 							   Speed:[self randFrom:0.1 to:maxSpeed]
 							andColor:[[NSColor colorWithDeviceRed:0 
 															green:[self randFrom:0.1 to:0.5] 

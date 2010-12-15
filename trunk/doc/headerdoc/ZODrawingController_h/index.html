@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZODrawingController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZODrawingController.h;   name=ZODrawingController -->
+<a name="//apple_ref/doc/header/ZODrawingController.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZODrawingController">ZODrawingController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Controller for drawing.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This is a controller for one color drawing. It conforms to Projector protocol and has 
+its GUI for configuration the drawing. It also can save drawed images to disk to process
+with bezpath2svg.pl.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/resetDrawing:" target="_top">-resetDrawing:</a></tt></dt>
+<dd><p>Resets drawing
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/saveBezier:" target="_top">-saveBezier:</a></tt></dt>
+<dd><p>Saves drawed path to disk.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setWidth:" target="_top">-setWidth:</a></tt></dt>
+<dd><p>Sets width of drawed line
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/resetDrawing:;   name=resetDrawing: -->
+<a name="//apple_ref/c/instm/resetDrawing:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="resetDrawing:">resetDrawing:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Resets drawing
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/resetDrawing //apple_ref/c/clm/resetDrawing //apple_ref/c/intfcm/resetDrawing //apple_ref/c/intfm/resetDrawing //apple_ref/c/func/resetDrawing //apple_ref/c/ftmplt/resetDrawing //apple_ref/c/defn/resetDrawing //apple_ref/c/macro/resetDrawing" --><span class="function">resetDrawing</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Tells ZODrawingView to reset current drawed path.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/saveBezier:;   name=saveBezier: -->
+<a name="//apple_ref/c/instm/saveBezier:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="saveBezier:">saveBezier:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Saves drawed path to disk.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/saveBezier //apple_ref/c/clm/saveBezier //apple_ref/c/intfcm/saveBezier //apple_ref/c/intfm/saveBezier //apple_ref/c/func/saveBezier //apple_ref/c/ftmplt/saveBezier //apple_ref/c/defn/saveBezier //apple_ref/c/macro/saveBezier" --><span class="function">saveBezier</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Opens dialog for saving files and saves description of currently drawed path to
+provided file. This colud be used for conversion to SVG using bezpath2svg.pl.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setWidth:;   name=setWidth: -->
+<a name="//apple_ref/c/instm/setWidth:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setWidth:">setWidth:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets width of drawed line
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setWidth //apple_ref/c/clm/setWidth //apple_ref/c/intfcm/setWidth //apple_ref/c/intfm/setWidth //apple_ref/c/func/setWidth //apple_ref/c/ftmplt/setWidth //apple_ref/c/defn/setWidth //apple_ref/c/macro/setWidth" --><span class="function">setWidth</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aWidth //apple_ref/c/data/aWidth" --><span class="var">aWidth</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Tells ZODrawingView to change width of drawed line to given value.
+<!-- end discussion -->
+<p></p><p>Last Updated: pondělí, prosince 13, 2010
+</p></body></html>

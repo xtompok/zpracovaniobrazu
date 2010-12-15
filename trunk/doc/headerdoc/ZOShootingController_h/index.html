@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOShootingController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOShootingController.h;   name=ZOShootingController -->
+<a name="//apple_ref/doc/header/ZOShootingController.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOShootingController">ZOShootingController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Window controller for shooting balloons
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This controller provides communication layer between application and ZOShootingView.
+It conforms to ProjectorProtocol, gets point from WindowController a serves it to
+ZOShooting View. It also interacts with GUI, sends ZOShootingView data for game and
+resets and pauses the game.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/pauseClicked:" target="_top">-pauseClicked:</a></tt></dt>
+<dd><p>Pauses the game
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/resetClicked:" target="_top">-resetClicked:</a></tt></dt>
+<dd><p>Resets the game and sets new data
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/pauseClicked:;   name=pauseClicked: -->
+<a name="//apple_ref/c/instm/pauseClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="pauseClicked:">pauseClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Pauses the game
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/pauseClicked //apple_ref/c/clm/pauseClicked //apple_ref/c/intfcm/pauseClicked //apple_ref/c/intfm/pauseClicked //apple_ref/c/func/pauseClicked //apple_ref/c/ftmplt/pauseClicked //apple_ref/c/defn/pauseClicked //apple_ref/c/macro/pauseClicked" --><span class="function">pauseClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method sends ZOShootingController message setPaused and toggles isPaused.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/resetClicked:;   name=resetClicked: -->
+<a name="//apple_ref/c/instm/resetClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="resetClicked:">resetClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Resets the game and sets new data
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/resetClicked //apple_ref/c/clm/resetClicked //apple_ref/c/intfcm/resetClicked //apple_ref/c/intfm/resetClicked //apple_ref/c/func/resetClicked //apple_ref/c/ftmplt/resetClicked //apple_ref/c/defn/resetClicked //apple_ref/c/macro/resetClicked" --><span class="function">resetClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method sends ZOShootingController message resetGameWithData with GAMEDATA
+structure created from GUI.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxBalloons" target="_top">maxBalloons</a></tt></dt>
+<dd><p>Maximum number of balloons on the screen
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxiSize" target="_top">maxiSize</a></tt></dt>
+<dd><p>Maximal size of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxLost" target="_top">maxLost</a></tt></dt>
+<dd><p>Maximum number of lost balloons
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxShots" target="_top">maxShots</a></tt></dt>
+<dd><p>Maximum number of shots needed to destroy the balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxSpeed" target="_top">maxSpeed</a></tt></dt>
+<dd><p>Maximal speed of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minSize" target="_top">minSize</a></tt></dt>
+<dd><p>Minimal size of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/speed" target="_top">speed</a></tt></dt>
+<dd><p>Speed of game
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxBalloons;   name=maxBalloons -->
+<a name="//apple_ref/c/data/maxBalloons"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxBalloons">maxBalloons</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of balloons on the screen
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxBalloons //apple_ref/c/data/maxBalloons" --><span class="var">maxBalloons</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxiSize;   name=maxiSize -->
+<a name="//apple_ref/c/data/maxiSize"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxiSize">maxiSize</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal size of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxiSize //apple_ref/c/data/maxiSize" --><span class="var">maxiSize</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxLost;   name=maxLost -->
+<a name="//apple_ref/c/data/maxLost"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxLost">maxLost</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of lost balloons
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxLost //apple_ref/c/data/maxLost" --><span class="var">maxLost</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxShots;   name=maxShots -->
+<a name="//apple_ref/c/data/maxShots"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxShots">maxShots</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of shots needed to destroy the balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxShots //apple_ref/c/data/maxShots" --><span class="var">maxShots</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxSpeed;   name=maxSpeed -->
+<a name="//apple_ref/c/data/maxSpeed"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxSpeed">maxSpeed</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal speed of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxSpeed //apple_ref/c/data/maxSpeed" --><span class="var">maxSpeed</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minSize;   name=minSize -->
+<a name="//apple_ref/c/data/minSize"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minSize">minSize</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal size of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minSize //apple_ref/c/data/minSize" --><span class="var">minSize</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/speed;   name=speed -->
+<a name="//apple_ref/c/data/speed"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="speed">speed</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Speed of game
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/speed //apple_ref/c/data/speed" --><span class="var">speed</span><!-- /a -->;  </pre>
+</div>
+<p></p><p>Last Updated: pondělí, prosince 13, 2010
+</p></body></html>

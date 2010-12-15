@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOImageView</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOImageView.h;   name=ZOImageView -->
+<a name="//apple_ref/doc/header/ZOImageView.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOImageView">ZOImageView</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>View for showing image from camera
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This View is used to view image from camera and calibration
+points found in that image. It is also showed the found point
+from laser pointer.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/crossAtPoint:" target="_top">-crossAtPoint:</a></tt></dt>
+<dd><p>Makes a cross.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setCalPoints:" target="_top">-setCalPoints:</a></tt></dt>
+<dd><p>Sets calibration array
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setImage:" target="_top">-setImage:</a></tt></dt>
+<dd><p>Sets image for viewing
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPoint:" target="_top">-setPoint:</a></tt></dt>
+<dd><p>Sets found point
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/crossAtPoint:;   name=crossAtPoint: -->
+<a name="//apple_ref/c/instm/crossAtPoint:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="crossAtPoint:">crossAtPoint:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Makes a cross.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSBezierPath //apple_ref/c/tdef/NSBezierPath //apple_ref/c/tag/NSBezierPath //apple_ref/c/econst/NSBezierPath //apple_ref/c/struct/NSBezierPath //apple_ref/c/clconst/NSBezierPath //apple_ref/c/intf/NSBezierPath" --><span class="type">NSBezierPath</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/instm/crossAtPoint //apple_ref/c/clm/crossAtPoint //apple_ref/c/intfcm/crossAtPoint //apple_ref/c/intfm/crossAtPoint //apple_ref/c/func/crossAtPoint //apple_ref/c/ftmplt/crossAtPoint //apple_ref/c/defn/crossAtPoint //apple_ref/c/macro/crossAtPoint" --><span class="function">crossAtPoint</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method makes a NSBezierPath with cross on given coordinates.
+The path is returned.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setCalPoints:;   name=setCalPoints: -->
+<a name="//apple_ref/c/instm/setCalPoints:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setCalPoints:">setCalPoints:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets calibration array
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setCalPoints //apple_ref/c/clm/setCalPoints //apple_ref/c/intfcm/setCalPoints //apple_ref/c/intfm/setCalPoints //apple_ref/c/func/setCalPoints //apple_ref/c/ftmplt/setCalPoints //apple_ref/c/defn/setCalPoints //apple_ref/c/macro/setCalPoints" --><span class="function">setCalPoints</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSArray //apple_ref/c/tdef/NSArray //apple_ref/c/tag/NSArray //apple_ref/c/econst/NSArray //apple_ref/c/struct/NSArray //apple_ref/c/clconst/NSArray //apple_ref/c/intf/NSArray" --><span class="type">NSArray</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/anArray //apple_ref/c/data/anArray" --><span class="var">anArray</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class='param_indent'>
+<dl>
+<dt><code>anArray</code></dt><dd><p>NSArray of four ZOPoints in this order on dataprojector:
+upper left, upper right, lower right, lower left.</dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Sets array of calibration points, which will be showed on
+the image from camera as blue squares.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setImage:;   name=setImage: -->
+<a name="//apple_ref/c/instm/setImage:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setImage:">setImage:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets image for viewing
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setImage //apple_ref/c/clm/setImage //apple_ref/c/intfcm/setImage //apple_ref/c/intfm/setImage //apple_ref/c/func/setImage //apple_ref/c/ftmplt/setImage //apple_ref/c/defn/setImage //apple_ref/c/macro/setImage" --><span class="function">setImage</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSImage //apple_ref/c/tdef/NSImage //apple_ref/c/tag/NSImage //apple_ref/c/econst/NSImage //apple_ref/c/struct/NSImage //apple_ref/c/clconst/NSImage //apple_ref/c/intf/NSImage" --><span class="type">NSImage</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/anImage //apple_ref/c/data/anImage" --><span class="var">anImage</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Sets an image from camera. It doesn't care on resolution
+image will be resized.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPoint:;   name=setPoint: -->
+<a name="//apple_ref/c/instm/setPoint:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint:">setPoint:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets found point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPoint //apple_ref/c/clm/setPoint //apple_ref/c/intfcm/setPoint //apple_ref/c/intfm/setPoint //apple_ref/c/func/setPoint //apple_ref/c/ftmplt/setPoint //apple_ref/c/defn/setPoint //apple_ref/c/macro/setPoint" --><span class="function">setPoint</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Sets a point found in image. Point is normalised and it is shown as
+a red cross in the image.
+<!-- end discussion -->
+<p></p><p>Last Updated: pondělí, prosince 13, 2010
+</p></body></html>
