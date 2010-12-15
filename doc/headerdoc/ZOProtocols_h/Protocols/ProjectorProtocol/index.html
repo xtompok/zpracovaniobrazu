@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ProjectorProtocol</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ascii" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=intf; uid=//apple_ref/occ/intf/ProjectorProtocol;  name=ProjectorProtocol-->
+<a name="//apple_ref/occ/intf/ProjectorProtocol"></a><div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ProjectorProtocol">ProjectorProtocol</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Protocol for viewing points
+<!-- end abstract --></p>
+<p><b>Declared In:</b> <a href="../../index.html" target="_top">ZOProtocols</a><br>
+</p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This protocol lists all methods needed to communicate with viewing classes.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/ProjectorProtocol/goFullscreen" target="_top">-goFullscreen</a></tt></dt>
+<dd><p>Tells class to go fullscreen
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/ProjectorProtocol/leftFullscreen" target="_top">-leftFullscreen</a></tt></dt>
+<dd><p>Tells class to left fullscreen
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/ProjectorProtocol/setPoint1:" target="_top">-setPoint1:</a></tt></dt>
+<dd><p>Sets new lighted point
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/ProjectorProtocol/setPoint2:" target="_top">-setPoint2:</a></tt></dt>
+<dd><p>Sets new lighted point
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/intfm/ProjectorProtocol/showSettingsWindow" target="_top">-showSettingsWindow</a></tt></dt>
+<dd><p>Opens settings window of the viewing class
+</dd>
+</dl>
+<hr><!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/ProjectorProtocol/goFullscreen;   name=ProjectorProtocol::goFullscreen -->
+<a name="//apple_ref/occ/intfm/ProjectorProtocol/goFullscreen"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="goFullscreen">goFullscreen</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Tells class to go fullscreen
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/econst/void //apple_ref/occ/struct/void //apple_ref/occ/clconst/void //apple_ref/occ/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/goFullscreen //apple_ref/occ/data/goFullscreen" --><span class="var">goFullscreen</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Because the classes for viewing uses fullscreen, this method is called when the
+viewing class changed and tells class that the screen is its.
+</p>
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/ProjectorProtocol/leftFullscreen;   name=ProjectorProtocol::leftFullscreen -->
+<a name="//apple_ref/occ/intfm/ProjectorProtocol/leftFullscreen"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="leftFullscreen">leftFullscreen</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Tells class to left fullscreen
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/econst/void //apple_ref/occ/struct/void //apple_ref/occ/clconst/void //apple_ref/occ/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/leftFullscreen //apple_ref/occ/data/leftFullscreen" --><span class="var">leftFullscreen</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Because the classes for viewing uses fullscreen, this method is called when the
+viewing class changed and tells class to clean the screen for another class.
+</p>
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/ProjectorProtocol/setPoint1:;   name=ProjectorProtocol::setPoint1: -->
+<a name="//apple_ref/occ/intfm/ProjectorProtocol/setPoint1:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint1:">setPoint1:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets new lighted point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/econst/void //apple_ref/occ/struct/void //apple_ref/occ/clconst/void //apple_ref/occ/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/instm/setPoint1 //apple_ref/occ/clm/setPoint1 //apple_ref/occ/intfcm/setPoint1 //apple_ref/occ/intfm/setPoint1 //apple_ref/occ/func/setPoint1 //apple_ref/occ/ftmplt/setPoint1 //apple_ref/occ/defn/setPoint1 //apple_ref/occ/macro/setPoint1" --><span class="function">setPoint1</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSPoint //apple_ref/occ/tdef/NSPoint //apple_ref/occ/tag/NSPoint //apple_ref/occ/econst/NSPoint //apple_ref/occ/struct/NSPoint //apple_ref/occ/clconst/NSPoint //apple_ref/occ/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/aPoint //apple_ref/occ/data/aPoint" --><span class="var">aPoint</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class='param_indent'>
+<dl>
+<dt><code>aPoint</code></dt><dd><p>Normalised point. If the point was not found in image, aPoint is (0,0)</dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is used to inform viewing classes that the new image was processed.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/ProjectorProtocol/setPoint2:;   name=ProjectorProtocol::setPoint2: -->
+<a name="//apple_ref/occ/intfm/ProjectorProtocol/setPoint2:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint2:">setPoint2:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets new lighted point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/econst/void //apple_ref/occ/struct/void //apple_ref/occ/clconst/void //apple_ref/occ/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/instm/setPoint2 //apple_ref/occ/clm/setPoint2 //apple_ref/occ/intfcm/setPoint2 //apple_ref/occ/intfm/setPoint2 //apple_ref/occ/func/setPoint2 //apple_ref/occ/ftmplt/setPoint2 //apple_ref/occ/defn/setPoint2 //apple_ref/occ/macro/setPoint2" --><span class="function">setPoint2</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/NSPoint //apple_ref/occ/tdef/NSPoint //apple_ref/occ/tag/NSPoint //apple_ref/occ/econst/NSPoint //apple_ref/occ/struct/NSPoint //apple_ref/occ/clconst/NSPoint //apple_ref/occ/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/aPoint //apple_ref/occ/data/aPoint" --><span class="var">aPoint</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class='param_indent'>
+<dl>
+<dt><code>aPoint</code></dt><dd><p>Normalised point. If the point was not found in image, aPoint is (0,0)</dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is used to inform viewing classes that the new image was processed.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=intfm;  uid=//apple_ref/occ/intfm/ProjectorProtocol/showSettingsWindow;   name=ProjectorProtocol::showSettingsWindow -->
+<a name="//apple_ref/occ/intfm/ProjectorProtocol/showSettingsWindow"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="showSettingsWindow">showSettingsWindow</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Opens settings window of the viewing class
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/void //apple_ref/occ/tdef/void //apple_ref/occ/tag/void //apple_ref/occ/econst/void //apple_ref/occ/struct/void //apple_ref/occ/clconst/void //apple_ref/occ/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/showSettingsWindow //apple_ref/occ/data/showSettingsWindow" --><span class="var">showSettingsWindow</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method tells class to open the settings window. If it doesn't have the window, 
+nothing should be done.
+<!-- end discussion -->
+<p></p><p>Last Updated: pondělí, prosince 13, 2010
+</p></body></html>

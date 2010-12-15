@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOMultiColorDrawingView</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOMultiColorDrawingView.h;   name=ZOMultiColorDrawingView -->
+<a name="//apple_ref/doc/header/ZOMultiColorDrawingView.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOMultiColorDrawingView">ZOMultiColorDrawingView</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>View for multi color drawing
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This view is used for drawing with three colors. It is driven by 
+ZOMultiColorDrawingController. It draws three NSBezierPath elements
+with different colors, squares for changing color of drawing, pausing
+and resetting the drawing.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_functions"></a>
+<h2>Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_5" target="_top">property</a></tt></dt>
+<dd><p>NSArray of drawed paths
+</dd>
+</dl>
+<hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_5;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_5"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property">property</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>NSArray of drawed paths
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/NSArray //apple_ref/c/tdef/NSArray //apple_ref/c/tag/NSArray //apple_ref/c/econst/NSArray //apple_ref/c/struct/NSArray //apple_ref/c/clconst/NSArray //apple_ref/c/intf/NSArray" --><span class="type">NSArray</span><!-- /a --> <span class="type">*</span> <!-- a logicalPath="//apple_ref/c/econst/pathArray //apple_ref/c/data/pathArray" --><span class="var">pathArray</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This property is used to get the drawed paths. It contains three
+NSBezierPaths, one for each color. 
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/crossAtPoint:_DONTLINK_0" target="_top">-crossAtPoint:</a></tt></dt>
+<dd><p>Returns NSBezierPath with drawed cross
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/resetDrawing" target="_top">-resetDrawing</a></tt></dt>
+<dd><p>Resets drawing
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPoint1:" target="_top">-setPoint1:</a></tt></dt>
+<dd><p>Sets first lighted point
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPoint2:" target="_top">-setPoint2:</a></tt></dt>
+<dd><p>Sets second lighted point
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/crossAtPoint:_DONTLINK_0;   name=crossAtPoint: -->
+<a name="//apple_ref/c/instm/crossAtPoint:_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="crossAtPoint:">crossAtPoint:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns NSBezierPath with drawed cross
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSBezierPath //apple_ref/c/tdef/NSBezierPath //apple_ref/c/tag/NSBezierPath //apple_ref/c/econst/NSBezierPath //apple_ref/c/struct/NSBezierPath //apple_ref/c/clconst/NSBezierPath //apple_ref/c/intf/NSBezierPath" --><span class="type">NSBezierPath</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/instm/crossAtPoint //apple_ref/c/clm/crossAtPoint //apple_ref/c/intfcm/crossAtPoint //apple_ref/c/intfm/crossAtPoint //apple_ref/c/func/crossAtPoint //apple_ref/c/ftmplt/crossAtPoint //apple_ref/c/defn/crossAtPoint //apple_ref/c/macro/crossAtPoint" --><span class="function">crossAtPoint</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is used to show ligted point on screen. It is a simple
+cross.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/resetDrawing;   name=resetDrawing -->
+<a name="//apple_ref/c/instm/resetDrawing"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="resetDrawing">resetDrawing</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Resets drawing
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/resetDrawing //apple_ref/c/data/resetDrawing" --><span class="var">resetDrawing</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This methods releases NSArray of drawed paths and inits with new empty 
+paths.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPoint1:;   name=setPoint1: -->
+<a name="//apple_ref/c/instm/setPoint1:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint1:">setPoint1:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets first lighted point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPoint1 //apple_ref/c/clm/setPoint1 //apple_ref/c/intfcm/setPoint1 //apple_ref/c/intfm/setPoint1 //apple_ref/c/func/setPoint1 //apple_ref/c/ftmplt/setPoint1 //apple_ref/c/defn/setPoint1 //apple_ref/c/macro/setPoint1" --><span class="function">setPoint1</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method converts normalised coordinates to real coordinates of the
+screen, saves coordinates of lighted point and appeds it to apropriate 
+drawed path.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPoint2:;   name=setPoint2: -->
+<a name="//apple_ref/c/instm/setPoint2:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint2:">setPoint2:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets second lighted point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPoint2 //apple_ref/c/clm/setPoint2 //apple_ref/c/intfcm/setPoint2 //apple_ref/c/intfm/setPoint2 //apple_ref/c/func/setPoint2 //apple_ref/c/ftmplt/setPoint2 //apple_ref/c/defn/setPoint2 //apple_ref/c/macro/setPoint2" --><span class="function">setPoint2</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Now only converts coordinates and saves the point.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/blueLineWidth" target="_top">blueLineWidth</a></tt></dt>
+<dd><p>Width of blue path
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/greenLineWidth" target="_top">greenLineWidth</a></tt></dt>
+<dd><p>Width of green path
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/yellowLineWidth" target="_top">yellowLineWidth</a></tt></dt>
+<dd><p>Width of yellow path
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/blueLineWidth;   name=blueLineWidth -->
+<a name="//apple_ref/c/data/blueLineWidth"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="blueLineWidth">blueLineWidth</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Width of blue path
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/blueLineWidth //apple_ref/c/data/blueLineWidth" --><span class="var">blueLineWidth</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This property is used for setting width of blue line.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/greenLineWidth;   name=greenLineWidth -->
+<a name="//apple_ref/c/data/greenLineWidth"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="greenLineWidth">greenLineWidth</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Width of green path
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/greenLineWidth //apple_ref/c/data/greenLineWidth" --><span class="var">greenLineWidth</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This property is used for setting width of green line.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/yellowLineWidth;   name=yellowLineWidth -->
+<a name="//apple_ref/c/data/yellowLineWidth"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="yellowLineWidth">yellowLineWidth</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Width of yellow path
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/yellowLineWidth //apple_ref/c/data/yellowLineWidth" --><span class="var">yellowLineWidth</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This property is used for setting width of yellow line.
+<!-- end discussion -->
+<p></p><p>Last Updated: pondělí, prosince 13, 2010
+</p></body></html>

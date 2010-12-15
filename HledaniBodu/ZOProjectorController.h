@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZOProjectorView.h"
-#import "ZOProtocols"
+#import "ZOProtocols.h"
 
 
 @interface ZOProjectorController : NSWindowController <ProjectorProtocol> {

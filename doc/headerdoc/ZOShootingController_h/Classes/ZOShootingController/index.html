@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOShootingController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=cl; uid=//apple_ref/occ/cl/ZOShootingController;  name=ZOShootingController-->
+<a name="//apple_ref/occ/cl/ZOShootingController"></a><div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOShootingController">ZOShootingController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Window controller for shooting balloons
+<!-- end abstract --></p>
+<p><b>Conforms&nbsp;to:</b> <!-- a logicalPath="//apple_ref/occ/intf/ProjectorProtocol" -->ProjectorProtocol<!-- /a --><br>
+<b>Superclass:</b> <!-- a logicalPath="//apple_ref/occ/cl/NSWindowController" -->NSWindowController<!-- /a --><br>
+<b>Declared In:</b> <a href="../../index.html" target="_top">ZOShootingController</a><br>
+</p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This controller provides communication layer between application and ZOShootingView.
+It conforms to ProjectorProtocol, gets point from WindowController a serves it to
+ZOShooting View. It also interacts with GUI, sends ZOShootingView data for game and
+resets and pauses the game.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/ZOShootingController/pauseClicked:" target="_top">-pauseClicked:</a></tt></dt>
+<dd><p>Pauses the game
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instm/ZOShootingController/resetClicked:" target="_top">-resetClicked:</a></tt></dt>
+<dd><p>Resets the game and sets new data
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/occ/instm/ZOShootingController/pauseClicked:;   name=ZOShootingController::pauseClicked: -->
+<a name="//apple_ref/occ/instm/ZOShootingController/pauseClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="pauseClicked:">pauseClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Pauses the game
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/IBAction //apple_ref/occ/tdef/IBAction //apple_ref/occ/tag/IBAction //apple_ref/occ/econst/IBAction //apple_ref/occ/struct/IBAction //apple_ref/occ/clconst/IBAction //apple_ref/occ/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/instm/pauseClicked //apple_ref/occ/clm/pauseClicked //apple_ref/occ/intfcm/pauseClicked //apple_ref/occ/intfm/pauseClicked //apple_ref/occ/func/pauseClicked //apple_ref/occ/ftmplt/pauseClicked //apple_ref/occ/defn/pauseClicked //apple_ref/occ/macro/pauseClicked" --><span class="function">pauseClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/econst/id //apple_ref/occ/struct/id //apple_ref/occ/clconst/id //apple_ref/occ/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/sender //apple_ref/occ/data/sender" --><span class="var">sender</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method sends ZOShootingController message setPaused and toggles isPaused.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/occ/instm/ZOShootingController/resetClicked:;   name=ZOShootingController::resetClicked: -->
+<a name="//apple_ref/occ/instm/ZOShootingController/resetClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="resetClicked:">resetClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Resets the game and sets new data
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/IBAction //apple_ref/occ/tdef/IBAction //apple_ref/occ/tag/IBAction //apple_ref/occ/econst/IBAction //apple_ref/occ/struct/IBAction //apple_ref/occ/clconst/IBAction //apple_ref/occ/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/instm/resetClicked //apple_ref/occ/clm/resetClicked //apple_ref/occ/intfcm/resetClicked //apple_ref/occ/intfm/resetClicked //apple_ref/occ/func/resetClicked //apple_ref/occ/ftmplt/resetClicked //apple_ref/occ/defn/resetClicked //apple_ref/occ/macro/resetClicked" --><span class="function">resetClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/econst/id //apple_ref/occ/struct/id //apple_ref/occ/clconst/id //apple_ref/occ/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/occ/econst/sender //apple_ref/occ/data/sender" --><span class="var">sender</span><!-- /a -->; </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method sends ZOShootingController message resetGameWithData with GAMEDATA
+structure created from GUI.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_props"></a>
+<h2>Properties</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/maxBalloons" target="_top">maxBalloons</a></tt></dt>
+<dd><p>Maximum number of balloons on the screen
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/maxiSize" target="_top">maxiSize</a></tt></dt>
+<dd><p>Maximal size of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/maxLost" target="_top">maxLost</a></tt></dt>
+<dd><p>Maximum number of lost balloons
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/maxShots" target="_top">maxShots</a></tt></dt>
+<dd><p>Maximum number of shots needed to destroy the balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/maxSpeed" target="_top">maxSpeed</a></tt></dt>
+<dd><p>Maximal speed of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/minSize" target="_top">minSize</a></tt></dt>
+<dd><p>Minimal size of balloon
+</dd>
+<dt><tt><a href="index.html#//apple_ref/occ/instp/ZOShootingController/speed" target="_top">speed</a></tt></dt>
+<dd><p>Speed of game
+</dd>
+</dl>
+<hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/maxBalloons;   name=ZOShootingController::maxBalloons -->
+<a name="//apple_ref/occ/instp/ZOShootingController/maxBalloons"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxBalloons">maxBalloons</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of balloons on the screen
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/econst/int //apple_ref/occ/struct/int //apple_ref/occ/clconst/int //apple_ref/occ/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/maxBalloons //apple_ref/occ/data/maxBalloons" --><span class="var">maxBalloons</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/maxiSize;   name=ZOShootingController::maxiSize -->
+<a name="//apple_ref/occ/instp/ZOShootingController/maxiSize"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxiSize">maxiSize</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal size of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/econst/int //apple_ref/occ/struct/int //apple_ref/occ/clconst/int //apple_ref/occ/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/maxiSize //apple_ref/occ/data/maxiSize" --><span class="var">maxiSize</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/maxLost;   name=ZOShootingController::maxLost -->
+<a name="//apple_ref/occ/instp/ZOShootingController/maxLost"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxLost">maxLost</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of lost balloons
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/econst/int //apple_ref/occ/struct/int //apple_ref/occ/clconst/int //apple_ref/occ/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/maxLost //apple_ref/occ/data/maxLost" --><span class="var">maxLost</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/maxShots;   name=ZOShootingController::maxShots -->
+<a name="//apple_ref/occ/instp/ZOShootingController/maxShots"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxShots">maxShots</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximum number of shots needed to destroy the balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/econst/int //apple_ref/occ/struct/int //apple_ref/occ/clconst/int //apple_ref/occ/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/maxShots //apple_ref/occ/data/maxShots" --><span class="var">maxShots</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/maxSpeed;   name=ZOShootingController::maxSpeed -->
+<a name="//apple_ref/occ/instp/ZOShootingController/maxSpeed"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxSpeed">maxSpeed</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal speed of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/float //apple_ref/occ/tdef/float //apple_ref/occ/tag/float //apple_ref/occ/econst/float //apple_ref/occ/struct/float //apple_ref/occ/clconst/float //apple_ref/occ/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/maxSpeed //apple_ref/occ/data/maxSpeed" --><span class="var">maxSpeed</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/minSize;   name=ZOShootingController::minSize -->
+<a name="//apple_ref/occ/instp/ZOShootingController/minSize"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minSize">minSize</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal size of balloon
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/int //apple_ref/occ/tdef/int //apple_ref/occ/tag/int //apple_ref/occ/econst/int //apple_ref/occ/struct/int //apple_ref/occ/clconst/int //apple_ref/occ/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/minSize //apple_ref/occ/data/minSize" --><span class="var">minSize</span><!-- /a -->; </pre>
+</div>
+<p></p><hr><!-- headerDoc=instp;  uid=//apple_ref/occ/instp/ZOShootingController/speed;   name=ZOShootingController::speed -->
+<a name="//apple_ref/occ/instp/ZOShootingController/speed"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="speed">speed</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Speed of game
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@property <!-- a logicalPath="//apple_ref/occ/cl/float //apple_ref/occ/tdef/float //apple_ref/occ/tag/float //apple_ref/occ/econst/float //apple_ref/occ/struct/float //apple_ref/occ/clconst/float //apple_ref/occ/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/occ/econst/speed //apple_ref/occ/data/speed" --><span class="var">speed</span><!-- /a -->; </pre>
+</div>
+<p></p><p>Last Updated: neděle, prosince 12, 2010
+</p></body></html>

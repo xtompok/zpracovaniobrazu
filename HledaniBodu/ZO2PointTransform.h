@@ -11,7 +11,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ZOPoint.h"
-#import "ZOProtocols"
+#import "ZOProtocols.h"
 
 
 @interface ZO2PointTransform : NSObject <TransformProtocol> {

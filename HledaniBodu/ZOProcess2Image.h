@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "ZOProtocols"
+#import "ZOProtocols.h"
 
 struct colResults {
 	int innerR;
