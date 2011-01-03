@@ -5,6 +5,14 @@
 //  Created by Tomáš Pokorný on 21.12.09.
 //  Copyright 2009 Jaroška. All rights reserved.
 //
+/*!
+    @header WindowController
+    @abstract   Main clas of application.
+    @discussion This is the main class of application. This class connects all parts
+				of the applications together. Methods of this class are all actions
+				called from GUI.
+*/
+
 
 #import <Cocoa/Cocoa.h>
 
@@ -100,14 +108,47 @@
 	NSArray * viewClassesArray;
 }
 
+/*!
+    @method     
+    @abstract   Starts the calibration
+    @discussion This methods tells calibration controller to start calibration.
+*/
+
 -(IBAction)Calibrate:(id)sender;
+/*!
+    @method     
+    @abstract   Starts and pauses the game.
+*/
+
 -(IBAction)RunAndPause:(id)sender;
 
 //Choosing classes
+/*!
+    @method     
+    @abstract   Changes the fullscreen view.
+    @discussion This method is called after the viewing class is changed from GUI.
+				It tells all classes to left fullscreen ande then the choosed class
+				to go fullscreen.
+*/
 -(IBAction)viewChooseChanged:(id)sender;
 
+/*!
+    @method     
+    @abstract   Shows settings dialog of selected class.
+*/
+
 -(IBAction)procSettingsClicked:(id)sender;
+
+/*!
+ @method     
+ @abstract   Shows settings dialog of selected class.
+ */
 -(IBAction)transformSettingsClicked:(id)sender;
+
+/*!
+ @method     
+ @abstract   Shows settings dialog of selected class.
+ */
 -(IBAction)viewSettingsClicked:(id)sender;
 
 
