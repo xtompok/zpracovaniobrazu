@@ -144,7 +144,7 @@
 				   [transformChooseButton indexOfSelectedItem]]
 				  transformPoint:outPoint];
 
-	int i;
+	//int i;
 	/*for (i=0;i<[viewClassesArray count];i++)
 	{
 		[[viewClassesArray objectAtIndex:i] setPoint1:transPoint];
