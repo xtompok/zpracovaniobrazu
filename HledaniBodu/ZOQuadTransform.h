@@ -6,6 +6,16 @@
 //  Copyright 2010 Jaroška. All rights reserved.
 //
 
+/*!
+    @header ZOQuadTransform
+    @abstract   Class for quadrilateral transform
+    @discussion This class is used for transforming points from camera 
+				using quadrilateral transform. Description of this transform
+				could be found in documentation of project. This class conforms
+				to protocol TransformProtocol. 
+*/
+
+
 #import <Cocoa/Cocoa.h>
 #import "ZOProtocols.h"
 #import "ZOPoint.h"

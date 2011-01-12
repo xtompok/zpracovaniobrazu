@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOProcessImage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOProcessImage.h;   name=ZOProcessImage -->
+<a name="//apple_ref/doc/header/ZOProcessImage.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOProcessImage">ZOProcessImage</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Class for processing image
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This class is used to process the image. It computes
+the sum square of 5x5 points and gets the maximum sum
+square of all.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_functions"></a>
+<h2>Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_66" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Maximal found score of sum square. Red part.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_67" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Maximal found score of sum square. Green part.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_70" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Maximal found score of sum square. Blue part.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_71" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Red part of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_74" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Green part of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_75" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Blue part of found point.
+</dd>
+</dl>
+<hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_66;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_66"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal found score of sum square. Red part.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreR //apple_ref/c/data/maxScoreR" --><span class="var">maxScoreR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_67;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_67"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal found score of sum square. Green part.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreG //apple_ref/c/data/maxScoreG" --><span class="var">maxScoreG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_70;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_70"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal found score of sum square. Blue part.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreB //apple_ref/c/data/maxScoreB" --><span class="var">maxScoreB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_71;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_71"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Red part of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxR //apple_ref/c/data/maxR" --><span class="var">maxR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_74;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_74"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Green part of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxG //apple_ref/c/data/maxG" --><span class="var">maxG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_75;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_75"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Blue part of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a -->(
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxB //apple_ref/c/data/maxB" --><span class="var">maxB</span><!-- /a -->;  </pre>
+</div>
+<p></p><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/pixelCoordinatesAtIndex:_DONTLINK_0" target="_top">-pixelCoordinatesAtIndex:</a></tt></dt>
+<dd><p>Transforms index into coordinates.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/sumSquareAtIndex:toArray:" target="_top">-sumSquareAtIndex:toArray:</a></tt></dt>
+<dd><p>Computes the sum square.
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/pixelCoordinatesAtIndex:_DONTLINK_0;   name=pixelCoordinatesAtIndex: -->
+<a name="//apple_ref/c/instm/pixelCoordinatesAtIndex:_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="pixelCoordinatesAtIndex:">pixelCoordinatesAtIndex:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Transforms index into coordinates.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/pixelCoordinatesAtIndex //apple_ref/c/clm/pixelCoordinatesAtIndex //apple_ref/c/intfcm/pixelCoordinatesAtIndex //apple_ref/c/intfm/pixelCoordinatesAtIndex //apple_ref/c/func/pixelCoordinatesAtIndex //apple_ref/c/ftmplt/pixelCoordinatesAtIndex //apple_ref/c/defn/pixelCoordinatesAtIndex //apple_ref/c/macro/pixelCoordinatesAtIndex" --><span class="function">pixelCoordinatesAtIndex</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/index //apple_ref/c/data/index" --><span class="var">index</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This methods transforms the index in array into real coordinates
+in image.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/sumSquareAtIndex:toArray:;   name=sumSquareAtIndex:toArray: -->
+<a name="//apple_ref/c/instm/sumSquareAtIndex:toArray:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="sumSquareAtIndex:toArray:">sumSquareAtIndex:toArray:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Computes the sum square.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/sumSquareAtIndex //apple_ref/c/clm/sumSquareAtIndex //apple_ref/c/intfcm/sumSquareAtIndex //apple_ref/c/intfm/sumSquareAtIndex //apple_ref/c/func/sumSquareAtIndex //apple_ref/c/ftmplt/sumSquareAtIndex //apple_ref/c/defn/sumSquareAtIndex //apple_ref/c/macro/sumSquareAtIndex" --><span class="function">sumSquareAtIndex</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<span class="param">index</span> <!-- a logicalPath="//apple_ref/c/instm/toArray //apple_ref/c/clm/toArray //apple_ref/c/intfcm/toArray //apple_ref/c/intfm/toArray //apple_ref/c/func/toArray //apple_ref/c/ftmplt/toArray //apple_ref/c/defn/toArray //apple_ref/c/macro/toArray" --><span class="function">toArray</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/sum //apple_ref/c/data/sum" --><span class="var">sum</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Parameters</font></h5>
+<div class='param_indent'>
+<dl>
+<dt><code>index</code></dt><dd><p>Index of the point in image where compute the sum square.</dd>
+<dt><code>sum</code></dt><dd><p>Pointer to array of three integers, where are stored the
+results.</dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method computes the sum square around given index and 
+saves it to the given array.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxBValue" target="_top">maxBValue</a></tt></dt>
+<dd><p>Maximal blue value of the point. If it is higher, sum square isn't computed.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxGValue" target="_top">maxGValue</a></tt></dt>
+<dd><p>Maximal green value of the point. If it is higher, sum square isn't computed.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxRValue" target="_top">maxRValue</a></tt></dt>
+<dd><p>Maximal red value of the point. If it is higher, sum square isn't computed.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minBSumValue" target="_top">minBSumValue</a></tt></dt>
+<dd><p>Minimal blue value of sum square.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minBValue" target="_top">minBValue</a></tt></dt>
+<dd><p>Minimal blue value of the point. If it is lower, sum square isn't computed.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minGSumValue" target="_top">minGSumValue</a></tt></dt>
+<dd><p>Minimal green value of sum square.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minGValue" target="_top">minGValue</a></tt></dt>
+<dd><p>Minimal green value of the point. If it is lower, sum square isn't computed.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minRSumValue" target="_top">minRSumValue</a></tt></dt>
+<dd><p>Minimal red value of sum square.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minRValue" target="_top">minRValue</a></tt></dt>
+<dd><p>Minimal red value of the point. If it is lower, sum square isn't computed.
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxBValue;   name=maxBValue -->
+<a name="//apple_ref/c/data/maxBValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxBValue">maxBValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal blue value of the point. If it is higher, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxBValue //apple_ref/c/data/maxBValue" --><span class="var">maxBValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxGValue;   name=maxGValue -->
+<a name="//apple_ref/c/data/maxGValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxGValue">maxGValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal green value of the point. If it is higher, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxGValue //apple_ref/c/data/maxGValue" --><span class="var">maxGValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxRValue;   name=maxRValue -->
+<a name="//apple_ref/c/data/maxRValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxRValue">maxRValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal red value of the point. If it is higher, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxRValue //apple_ref/c/data/maxRValue" --><span class="var">maxRValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minBSumValue;   name=minBSumValue -->
+<a name="//apple_ref/c/data/minBSumValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minBSumValue">minBSumValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of sum square.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minBSumValue //apple_ref/c/data/minBSumValue" --><span class="var">minBSumValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minBValue;   name=minBValue -->
+<a name="//apple_ref/c/data/minBValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minBValue">minBValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of the point. If it is lower, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minBValue //apple_ref/c/data/minBValue" --><span class="var">minBValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minGSumValue;   name=minGSumValue -->
+<a name="//apple_ref/c/data/minGSumValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minGSumValue">minGSumValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of sum square.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minGSumValue //apple_ref/c/data/minGSumValue" --><span class="var">minGSumValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minGValue;   name=minGValue -->
+<a name="//apple_ref/c/data/minGValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minGValue">minGValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of the point. If it is lower, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minGValue //apple_ref/c/data/minGValue" --><span class="var">minGValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minRSumValue;   name=minRSumValue -->
+<a name="//apple_ref/c/data/minRSumValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minRSumValue">minRSumValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of sum square.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minRSumValue //apple_ref/c/data/minRSumValue" --><span class="var">minRSumValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minRValue;   name=minRValue -->
+<a name="//apple_ref/c/data/minRValue"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minRValue">minRValue</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of the point. If it is lower, sum square isn't computed.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minRValue //apple_ref/c/data/minRValue" --><span class="var">minRValue</span><!-- /a -->;  </pre>
+</div>
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>
