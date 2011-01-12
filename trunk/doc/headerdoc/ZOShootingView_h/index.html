@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOShootingView</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOShootingView.h;   name=ZOShootingView -->
+<a name="//apple_ref/doc/header/ZOShootingView.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOShootingView">ZOShootingView</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>View class for shooting balloons.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This class implements the balloon shooting game. In the class are
+included methods for drawing and application logic.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/crossAtPoint:_DONTLINK_3" target="_top">-crossAtPoint:</a></tt></dt>
+<dd><p>Makes a cross path
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/insertBalloonAtIndex:" target="_top">-insertBalloonAtIndex:</a></tt></dt>
+<dd><p>Inserts balloon into balloon array.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/randFrom:to:" target="_top">-randFrom:to:</a></tt></dt>
+<dd><p>Random float generator
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/resetGameWithData:" target="_top">-resetGameWithData:</a></tt></dt>
+<dd><p>Resets the game with given data
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPaused:" target="_top">-setPaused:</a></tt></dt>
+<dd><p>Pauses or unpauses the game
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPoint1:_DONTLINK_2" target="_top">-setPoint1:</a></tt></dt>
+<dd><p>Sets the first found point
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setPoint2:_DONTLINK_2" target="_top">-setPoint2:</a></tt></dt>
+<dd><p>Sets the second found point
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/timerExpired:" target="_top">-timerExpired:</a></tt></dt>
+<dd><p>Preparing things for draw
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/crossAtPoint:_DONTLINK_3;   name=crossAtPoint: -->
+<a name="//apple_ref/c/instm/crossAtPoint:_DONTLINK_3"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="crossAtPoint:">crossAtPoint:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Makes a cross path
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSBezierPath //apple_ref/c/tdef/NSBezierPath //apple_ref/c/tag/NSBezierPath //apple_ref/c/econst/NSBezierPath //apple_ref/c/struct/NSBezierPath //apple_ref/c/clconst/NSBezierPath //apple_ref/c/intf/NSBezierPath" --><span class="type">NSBezierPath</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/instm/crossAtPoint //apple_ref/c/clm/crossAtPoint //apple_ref/c/intfcm/crossAtPoint //apple_ref/c/intfm/crossAtPoint //apple_ref/c/func/crossAtPoint //apple_ref/c/ftmplt/crossAtPoint //apple_ref/c/defn/crossAtPoint //apple_ref/c/macro/crossAtPoint" --><span class="function">crossAtPoint</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This methods returns a NSBezierPath with cross on the given coordinates.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/insertBalloonAtIndex:;   name=insertBalloonAtIndex: -->
+<a name="//apple_ref/c/instm/insertBalloonAtIndex:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="insertBalloonAtIndex:">insertBalloonAtIndex:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Inserts balloon into balloon array.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/insertBalloonAtIndex //apple_ref/c/clm/insertBalloonAtIndex //apple_ref/c/intfcm/insertBalloonAtIndex //apple_ref/c/intfm/insertBalloonAtIndex //apple_ref/c/func/insertBalloonAtIndex //apple_ref/c/ftmplt/insertBalloonAtIndex //apple_ref/c/defn/insertBalloonAtIndex //apple_ref/c/macro/insertBalloonAtIndex" --><span class="function">insertBalloonAtIndex</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/i //apple_ref/c/data/i" --><span class="var">i</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method generates new balloon and saves it on the selected position in balloonsArray.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/randFrom:to:;   name=randFrom:to: -->
+<a name="//apple_ref/c/instm/randFrom:to:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="randFrom:to:">randFrom:to:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Random float generator
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/randFrom //apple_ref/c/clm/randFrom //apple_ref/c/intfcm/randFrom //apple_ref/c/intfm/randFrom //apple_ref/c/func/randFrom //apple_ref/c/ftmplt/randFrom //apple_ref/c/defn/randFrom //apple_ref/c/macro/randFrom" --><span class="function">randFrom</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a -->)<span class="param">a</span> <!-- a logicalPath="//apple_ref/c/instm/to //apple_ref/c/clm/to //apple_ref/c/intfcm/to //apple_ref/c/intfm/to //apple_ref/c/func/to //apple_ref/c/ftmplt/to //apple_ref/c/defn/to //apple_ref/c/macro/to" --><span class="function">to</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/b //apple_ref/c/data/b" --><span class="var">b</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Generates random float in given range.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/resetGameWithData:;   name=resetGameWithData: -->
+<a name="//apple_ref/c/instm/resetGameWithData:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="resetGameWithData:">resetGameWithData:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Resets the game with given data
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/resetGameWithData //apple_ref/c/clm/resetGameWithData //apple_ref/c/intfcm/resetGameWithData //apple_ref/c/intfm/resetGameWithData //apple_ref/c/func/resetGameWithData //apple_ref/c/ftmplt/resetGameWithData //apple_ref/c/defn/resetGameWithData //apple_ref/c/macro/resetGameWithData" --><span class="function">resetGameWithData</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/GAMEDATA //apple_ref/c/tdef/GAMEDATA //apple_ref/c/tag/GAMEDATA //apple_ref/c/econst/GAMEDATA //apple_ref/c/struct/GAMEDATA //apple_ref/c/clconst/GAMEDATA //apple_ref/c/intf/GAMEDATA" --><span class="type">GAMEDATA</span><!-- /a --> <span class="type">*</span>) <!-- a logicalPath="//apple_ref/c/econst/aData //apple_ref/c/data/aData" --><span class="var">aData</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Gets the data from given GAMEDATA structure, saves it in the global variables,
+prepare new balloon array, resets score, invalidates timer and pauses the game.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPaused:;   name=setPaused: -->
+<a name="//apple_ref/c/instm/setPaused:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPaused:">setPaused:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Pauses or unpauses the game
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPaused //apple_ref/c/clm/setPaused //apple_ref/c/intfcm/setPaused //apple_ref/c/intfm/setPaused //apple_ref/c/func/setPaused //apple_ref/c/ftmplt/setPaused //apple_ref/c/defn/setPaused //apple_ref/c/macro/setPaused" --><span class="function">setPaused</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/econst/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/clconst/BOOL //apple_ref/c/intf/BOOL" --><span class="type">BOOL</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/econst/isPaused //apple_ref/c/data/isPaused" --><span class="var">isPaused</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>If the want to be paused, the timer is invalidated, if not, the timer is started.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPoint1:_DONTLINK_2;   name=setPoint1: -->
+<a name="//apple_ref/c/instm/setPoint1:_DONTLINK_2"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint1:">setPoint1:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets the first found point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPoint1 //apple_ref/c/clm/setPoint1 //apple_ref/c/intfcm/setPoint1 //apple_ref/c/intfm/setPoint1 //apple_ref/c/func/setPoint1 //apple_ref/c/ftmplt/setPoint1 //apple_ref/c/defn/setPoint1 //apple_ref/c/macro/setPoint1" --><span class="function">setPoint1</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is called, when the point is found. The method transforms 
+the point into screen coordinates. It checks, if the point is in balloon
+and increments the number of shots for shooted balloons.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setPoint2:_DONTLINK_2;   name=setPoint2: -->
+<a name="//apple_ref/c/instm/setPoint2:_DONTLINK_2"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setPoint2:">setPoint2:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets the second found point
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setPoint2 //apple_ref/c/clm/setPoint2 //apple_ref/c/intfcm/setPoint2 //apple_ref/c/intfm/setPoint2 //apple_ref/c/func/setPoint2 //apple_ref/c/ftmplt/setPoint2 //apple_ref/c/defn/setPoint2 //apple_ref/c/macro/setPoint2" --><span class="function">setPoint2</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aPoint //apple_ref/c/data/aPoint" --><span class="var">aPoint</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method trasforms the point into screen coordinates and saves it.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/timerExpired:;   name=timerExpired: -->
+<a name="//apple_ref/c/instm/timerExpired:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="timerExpired:">timerExpired:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Preparing things for draw
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/timerExpired //apple_ref/c/clm/timerExpired //apple_ref/c/intfcm/timerExpired //apple_ref/c/intfm/timerExpired //apple_ref/c/func/timerExpired //apple_ref/c/ftmplt/timerExpired //apple_ref/c/defn/timerExpired //apple_ref/c/macro/timerExpired" --><span class="function">timerExpired</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSTimer //apple_ref/c/tdef/NSTimer //apple_ref/c/tag/NSTimer //apple_ref/c/econst/NSTimer //apple_ref/c/struct/NSTimer //apple_ref/c/clconst/NSTimer //apple_ref/c/intf/NSTimer" --><span class="type">NSTimer</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/aTimer //apple_ref/c/data/aTimer" --><span class="var">aTimer</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is called every time, when the timer expires. It moves all balloons,
+replace the lost balloons with new and replace shooted balloons and increments score.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_datatypes"></a>
+<h2>Typedefs</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tdef/GAMEDATA" target="_top">GAMEDATA</a></tt></dt>
+<dd><p>Structure for game data
+</dd>
+</dl>
+<hr><!-- headerDoc=tdef;  uid=//apple_ref/c/tdef/GAMEDATA;   name=GAMEDATA -->
+<a name="//apple_ref/c/tdef/GAMEDATA"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="GAMEDATA">GAMEDATA</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Structure for game data
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre><span class="keyword">typedef</span> <span class="keyword">struct</span> { 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxBalloons //apple_ref/c/data/maxBalloons" --><span class="var">maxBalloons</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxSpeed //apple_ref/c/data/maxSpeed" --><span class="var">maxSpeed</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxLost //apple_ref/c/data/maxLost" --><span class="var">maxLost</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/float //apple_ref/c/tdef/float //apple_ref/c/tag/float //apple_ref/c/econst/float //apple_ref/c/struct/float //apple_ref/c/clconst/float //apple_ref/c/intf/float" --><span class="type">float</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/delay //apple_ref/c/data/delay" --><span class="var">delay</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxShots //apple_ref/c/data/maxShots" --><span class="var">maxShots</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minSize //apple_ref/c/data/minSize" --><span class="var">minSize</span><!-- /a -->; 
+    <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxiSize //apple_ref/c/data/maxiSize" --><span class="var">maxiSize</span><!-- /a -->; 
+} <!-- a logicalPath="//apple_ref/c/econst/GAMEDATA //apple_ref/c/data/GAMEDATA" --><span class="var">GAMEDATA</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Fields</font></h5>
+<div class='param_indent'>
+<dl>
+<dt><code>maxBalloons</code></dt><dd><p>The maximum number of balloons on the screen.</dd>
+<dt><code>maxSpeed</code></dt><dd><p>The maximum speed of balloon. In pixels per cycle.</dd>
+<dt><code>maxLost</code></dt><dd><p>The maximum number of lost balloons.</dd>
+<dt><code>delay</code></dt><dd><p>The delay between redarwing the screen and moving balloons.</dd>
+<dt><code>maxShots</code></dt><dd><p>The number of shots needed to destroy the balloon.</dd>
+<dt><code>minSize</code></dt><dd><p>The minimum size of balloon. In pixels.</dd>
+<dt><code>maxiSize</code></dt><dd><p>The maximum size of balloon. In pixels.</dd>
+</dl>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This structure is used for send the game data from controller and
+could be used for saving game data. In this strucutre there are
+all settings usable in game.
+<!-- end discussion -->
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>

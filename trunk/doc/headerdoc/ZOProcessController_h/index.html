@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOProcessController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOProcessController.h;   name=ZOProcessController -->
+<a name="//apple_ref/doc/header/ZOProcessController.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOProcessController">ZOProcessController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Controller for ZOProcessImage
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This controller is used for communication with ZOProcessImage
+class. It has a GUI for setting minimal and maximal brightnesses
+of point and sum squares and saving and loading this data.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_functions"></a>
+<h2>Functions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_63" target="_top">property</a></tt></dt>
+<dd><p>Maximal blue value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_49" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal red sum square value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_50" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal green sum square value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_53" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal blue sum square value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_54" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal red value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_57" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal green value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_58" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Minimal blue value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_61" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Maximal red value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/func/property_DONTLINK_62" target="_top">property(readonly)</a></tt></dt>
+<dd><p>Maximal green value of found point.
+</dd>
+</dl>
+<hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_63;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_63"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property">property</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal blue value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxB //apple_ref/c/data/maxB" --><span class="var">maxB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_49;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_49"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red sum square value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minSumR //apple_ref/c/data/minSumR" --><span class="var">minSumR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_50;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_50"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green sum square value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minSumG //apple_ref/c/data/minSumG" --><span class="var">minSumG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_53;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_53"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue sum square value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minSumB //apple_ref/c/data/minSumB" --><span class="var">minSumB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_54;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_54"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minR //apple_ref/c/data/minR" --><span class="var">minR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_57;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_57"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minG //apple_ref/c/data/minG" --><span class="var">minG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_58;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_58"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minB //apple_ref/c/data/minB" --><span class="var">minB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_61;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_61"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal red value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxR //apple_ref/c/data/maxR" --><span class="var">maxR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=func;  uid=//apple_ref/c/func/property_DONTLINK_62;   name=property -->
+<a name="//apple_ref/c/func/property_DONTLINK_62"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="property(readonly)">property(readonly)</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal green value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/instm/property //apple_ref/c/clm/property //apple_ref/c/intfcm/property //apple_ref/c/intfm/property //apple_ref/c/func/property //apple_ref/c/ftmplt/property //apple_ref/c/defn/property //apple_ref/c/macro/property" --><span class="function">property</span><!-- /a --> (
+    <span class="param">readonly</span>) <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxG //apple_ref/c/data/maxG" --><span class="var">maxG</span><!-- /a -->;  </pre>
+</div>
+<p></p><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/dictionaryWithConfigValues_DONTLINK_0" target="_top">-dictionaryWithConfigValues</a></tt></dt>
+<dd><p>Makes a dictionary from settings.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/handleShowSettingsWindow:_DONTLINK_0" target="_top">-handleShowSettingsWindow:</a></tt></dt>
+<dd><p>Shows settings window.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/loadDataFromDisk:_DONTLINK_0" target="_top">-loadDataFromDisk:</a></tt></dt>
+<dd><p>Loads the settings from disk
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/pathForDataFile_DONTLINK_0" target="_top">-pathForDataFile</a></tt></dt>
+<dd><p>Returns path, where to save the settings
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/saveDataToDisk:_DONTLINK_0" target="_top">-saveDataToDisk:</a></tt></dt>
+<dd><p>Saves the settings to disk
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMaxB:" target="_top">-setMaxB:</a></tt></dt>
+<dd><p>Sends maximal blue value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMaxG:" target="_top">-setMaxG:</a></tt></dt>
+<dd><p>Sends maximal green value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMaxR:" target="_top">-setMaxR:</a></tt></dt>
+<dd><p>Sends maximal red value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinB:" target="_top">-setMinB:</a></tt></dt>
+<dd><p>Sends minimal blue value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinG:" target="_top">-setMinG:</a></tt></dt>
+<dd><p>Sends minimal green value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinR:" target="_top">-setMinR:</a></tt></dt>
+<dd><p>Sends minimal red value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinSumB:" target="_top">-setMinSumB:</a></tt></dt>
+<dd><p>Sends minimal blue sum square value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinSumG:" target="_top">-setMinSumG:</a></tt></dt>
+<dd><p>Sends minimal green sum square value from GUI to ZOProcessImage.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setMinSumR:" target="_top">-setMinSumR:</a></tt></dt>
+<dd><p>Sends minimal red sum square value from GUI to ZOProcessImage.
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/dictionaryWithConfigValues_DONTLINK_0;   name=dictionaryWithConfigValues -->
+<a name="//apple_ref/c/instm/dictionaryWithConfigValues_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="dictionaryWithConfigValues">dictionaryWithConfigValues</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Makes a dictionary from settings.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSMutableDictionary //apple_ref/c/tdef/NSMutableDictionary //apple_ref/c/tag/NSMutableDictionary //apple_ref/c/econst/NSMutableDictionary //apple_ref/c/struct/NSMutableDictionary //apple_ref/c/clconst/NSMutableDictionary //apple_ref/c/intf/NSMutableDictionary" --><span class="type">NSMutableDictionary</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/dictionaryWithConfigValues //apple_ref/c/data/dictionaryWithConfigValues" --><span class="var">dictionaryWithConfigValues</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method takes all config variables and saves it as NSNumber
+objects into NSMutableDictionary object, which is returned.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/handleShowSettingsWindow:_DONTLINK_0;   name=handleShowSettingsWindow: -->
+<a name="//apple_ref/c/instm/handleShowSettingsWindow:_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="handleShowSettingsWindow:">handleShowSettingsWindow:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Shows settings window.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/handleShowSettingsWindow //apple_ref/c/clm/handleShowSettingsWindow //apple_ref/c/intfcm/handleShowSettingsWindow //apple_ref/c/intfm/handleShowSettingsWindow //apple_ref/c/func/handleShowSettingsWindow //apple_ref/c/ftmplt/handleShowSettingsWindow //apple_ref/c/defn/handleShowSettingsWindow //apple_ref/c/macro/handleShowSettingsWindow" --><span class="function">handleShowSettingsWindow</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSNotification //apple_ref/c/tdef/NSNotification //apple_ref/c/tag/NSNotification //apple_ref/c/econst/NSNotification //apple_ref/c/struct/NSNotification //apple_ref/c/clconst/NSNotification //apple_ref/c/intf/NSNotification" --><span class="type">NSNotification</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/aNotify //apple_ref/c/data/aNotify" --><span class="var">aNotify</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/loadDataFromDisk:_DONTLINK_0;   name=loadDataFromDisk: -->
+<a name="//apple_ref/c/instm/loadDataFromDisk:_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="loadDataFromDisk:">loadDataFromDisk:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Loads the settings from disk
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>- (<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/instm/loadDataFromDisk //apple_ref/c/clm/loadDataFromDisk //apple_ref/c/intfcm/loadDataFromDisk //apple_ref/c/intfm/loadDataFromDisk //apple_ref/c/func/loadDataFromDisk //apple_ref/c/ftmplt/loadDataFromDisk //apple_ref/c/defn/loadDataFromDisk //apple_ref/c/macro/loadDataFromDisk" --><span class="function">loadDataFromDisk</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method takes a dictionary of settings from given path
+from method pathForDataFile and sets the variables to the 
+loaded values.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/pathForDataFile_DONTLINK_0;   name=pathForDataFile -->
+<a name="//apple_ref/c/instm/pathForDataFile_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="pathForDataFile">pathForDataFile</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns path, where to save the settings
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>- (<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>) <!-- a logicalPath="//apple_ref/c/econst/pathForDataFile //apple_ref/c/data/pathForDataFile" --><span class="var">pathForDataFile</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method returns the NSString with path in Application Support
+folder, where the settings could be saved.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/saveDataToDisk:_DONTLINK_0;   name=saveDataToDisk: -->
+<a name="//apple_ref/c/instm/saveDataToDisk:_DONTLINK_0"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="saveDataToDisk:">saveDataToDisk:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Saves the settings to disk
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>- (<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/instm/saveDataToDisk //apple_ref/c/clm/saveDataToDisk //apple_ref/c/intfcm/saveDataToDisk //apple_ref/c/intfm/saveDataToDisk //apple_ref/c/func/saveDataToDisk //apple_ref/c/ftmplt/saveDataToDisk //apple_ref/c/defn/saveDataToDisk //apple_ref/c/macro/saveDataToDisk" --><span class="function">saveDataToDisk</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method makes a dictionary from settings using method 
+dictionaryWithConfigValues and saves it to the path returned 
+from method pathForDataFile.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMaxB:;   name=setMaxB: -->
+<a name="//apple_ref/c/instm/setMaxB:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMaxB:">setMaxB:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends maximal blue value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMaxB //apple_ref/c/clm/setMaxB //apple_ref/c/intfcm/setMaxB //apple_ref/c/intfm/setMaxB //apple_ref/c/func/setMaxB //apple_ref/c/ftmplt/setMaxB //apple_ref/c/defn/setMaxB //apple_ref/c/macro/setMaxB" --><span class="function">setMaxB</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aB //apple_ref/c/data/aB" --><span class="var">aB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMaxG:;   name=setMaxG: -->
+<a name="//apple_ref/c/instm/setMaxG:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMaxG:">setMaxG:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends maximal green value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMaxG //apple_ref/c/clm/setMaxG //apple_ref/c/intfcm/setMaxG //apple_ref/c/intfm/setMaxG //apple_ref/c/func/setMaxG //apple_ref/c/ftmplt/setMaxG //apple_ref/c/defn/setMaxG //apple_ref/c/macro/setMaxG" --><span class="function">setMaxG</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aG //apple_ref/c/data/aG" --><span class="var">aG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMaxR:;   name=setMaxR: -->
+<a name="//apple_ref/c/instm/setMaxR:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMaxR:">setMaxR:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends maximal red value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMaxR //apple_ref/c/clm/setMaxR //apple_ref/c/intfcm/setMaxR //apple_ref/c/intfm/setMaxR //apple_ref/c/func/setMaxR //apple_ref/c/ftmplt/setMaxR //apple_ref/c/defn/setMaxR //apple_ref/c/macro/setMaxR" --><span class="function">setMaxR</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aR //apple_ref/c/data/aR" --><span class="var">aR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinB:;   name=setMinB: -->
+<a name="//apple_ref/c/instm/setMinB:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinB:">setMinB:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal blue value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinB //apple_ref/c/clm/setMinB //apple_ref/c/intfcm/setMinB //apple_ref/c/intfm/setMinB //apple_ref/c/func/setMinB //apple_ref/c/ftmplt/setMinB //apple_ref/c/defn/setMinB //apple_ref/c/macro/setMinB" --><span class="function">setMinB</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aB //apple_ref/c/data/aB" --><span class="var">aB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinG:;   name=setMinG: -->
+<a name="//apple_ref/c/instm/setMinG:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinG:">setMinG:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal green value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinG //apple_ref/c/clm/setMinG //apple_ref/c/intfcm/setMinG //apple_ref/c/intfm/setMinG //apple_ref/c/func/setMinG //apple_ref/c/ftmplt/setMinG //apple_ref/c/defn/setMinG //apple_ref/c/macro/setMinG" --><span class="function">setMinG</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aG //apple_ref/c/data/aG" --><span class="var">aG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinR:;   name=setMinR: -->
+<a name="//apple_ref/c/instm/setMinR:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinR:">setMinR:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal red value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinR //apple_ref/c/clm/setMinR //apple_ref/c/intfcm/setMinR //apple_ref/c/intfm/setMinR //apple_ref/c/func/setMinR //apple_ref/c/ftmplt/setMinR //apple_ref/c/defn/setMinR //apple_ref/c/macro/setMinR" --><span class="function">setMinR</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aR //apple_ref/c/data/aR" --><span class="var">aR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinSumB:;   name=setMinSumB: -->
+<a name="//apple_ref/c/instm/setMinSumB:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinSumB:">setMinSumB:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal blue sum square value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinSumB //apple_ref/c/clm/setMinSumB //apple_ref/c/intfcm/setMinSumB //apple_ref/c/intfm/setMinSumB //apple_ref/c/func/setMinSumB //apple_ref/c/ftmplt/setMinSumB //apple_ref/c/defn/setMinSumB //apple_ref/c/macro/setMinSumB" --><span class="function">setMinSumB</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aB //apple_ref/c/data/aB" --><span class="var">aB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinSumG:;   name=setMinSumG: -->
+<a name="//apple_ref/c/instm/setMinSumG:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinSumG:">setMinSumG:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal green sum square value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinSumG //apple_ref/c/clm/setMinSumG //apple_ref/c/intfcm/setMinSumG //apple_ref/c/intfm/setMinSumG //apple_ref/c/func/setMinSumG //apple_ref/c/ftmplt/setMinSumG //apple_ref/c/defn/setMinSumG //apple_ref/c/macro/setMinSumG" --><span class="function">setMinSumG</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aG //apple_ref/c/data/aG" --><span class="var">aG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setMinSumR:;   name=setMinSumR: -->
+<a name="//apple_ref/c/instm/setMinSumR:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setMinSumR:">setMinSumR:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sends minimal red sum square value from GUI to ZOProcessImage.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setMinSumR //apple_ref/c/clm/setMinSumR //apple_ref/c/intfcm/setMinSumR //apple_ref/c/intfm/setMinSumR //apple_ref/c/func/setMinSumR //apple_ref/c/ftmplt/setMinSumR //apple_ref/c/defn/setMinSumR //apple_ref/c/macro/setMinSumR" --><span class="function">setMinSumR</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aR //apple_ref/c/data/aR" --><span class="var">aR</span><!-- /a -->;  </pre>
+</div>
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/isMaxTogether" target="_top">isMaxTogether</a></tt></dt>
+<dd><p>Are the maximal config sliders moving together?
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/isMinTogether" target="_top">isMinTogether</a></tt></dt>
+<dd><p>Are the minimal point config sliders moving together?
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/isSumTogether" target="_top">isSumTogether</a></tt></dt>
+<dd><p>Are the sum square config sliders moving together?
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/isMaxTogether;   name=isMaxTogether -->
+<a name="//apple_ref/c/data/isMaxTogether"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="isMaxTogether">isMaxTogether</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Are the maximal config sliders moving together?
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/econst/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/clconst/BOOL //apple_ref/c/intf/BOOL" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/isMaxTogether //apple_ref/c/data/isMaxTogether" --><span class="var">isMaxTogether</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/isMinTogether;   name=isMinTogether -->
+<a name="//apple_ref/c/data/isMinTogether"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="isMinTogether">isMinTogether</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Are the minimal point config sliders moving together?
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/econst/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/clconst/BOOL //apple_ref/c/intf/BOOL" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/isMinTogether //apple_ref/c/data/isMinTogether" --><span class="var">isMinTogether</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/isSumTogether;   name=isSumTogether -->
+<a name="//apple_ref/c/data/isSumTogether"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="isSumTogether">isSumTogether</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Are the sum square config sliders moving together?
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/BOOL //apple_ref/c/tdef/BOOL //apple_ref/c/tag/BOOL //apple_ref/c/econst/BOOL //apple_ref/c/struct/BOOL //apple_ref/c/clconst/BOOL //apple_ref/c/intf/BOOL" --><span class="type">BOOL</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/isSumTogether //apple_ref/c/data/isSumTogether" --><span class="var">isSumTogether</span><!-- /a -->;  </pre>
+</div>
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>

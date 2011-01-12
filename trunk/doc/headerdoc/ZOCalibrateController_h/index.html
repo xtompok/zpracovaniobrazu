@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOCalibrateController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOCalibrateController.h;   name=ZOCalibrateController -->
+<a name="//apple_ref/doc/header/ZOCalibrateController.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOCalibrateController">ZOCalibrateController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Controller for calibration
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This controller implements calibration of the camera. 
+It tells calibration view to show points, handles the
+timer and posts notification, when the calibration is
+completed.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/calibrate" target="_top">-calibrate</a></tt></dt>
+<dd><p>Starts the calibraiton
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/calibrationArray" target="_top">-calibrationArray</a></tt></dt>
+<dd><p>Returns array of calibration points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/calibrationData" target="_top">-calibrationData</a></tt></dt>
+<dd><p>Returns ZOCalibrationData object with calibration data.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/description" target="_top">-description</a></tt></dt>
+<dd><p>Returns a string with calibration points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/setSize:" target="_top">-setSize:</a></tt></dt>
+<dd><p>Sets the resolution of the camera.
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/calibrate;   name=calibrate -->
+<a name="//apple_ref/c/instm/calibrate"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="calibrate">calibrate</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Starts the calibraiton
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/calibrate //apple_ref/c/data/calibrate" --><span class="var">calibrate</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>When this method is called, it takes the calibration view to
+fullscreen and starts calibration timer.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/calibrationArray;   name=calibrationArray -->
+<a name="//apple_ref/c/instm/calibrationArray"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="calibrationArray">calibrationArray</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns array of calibration points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSArray //apple_ref/c/tdef/NSArray //apple_ref/c/tag/NSArray //apple_ref/c/econst/NSArray //apple_ref/c/struct/NSArray //apple_ref/c/clconst/NSArray //apple_ref/c/intf/NSArray" --><span class="type">NSArray</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/calibrationArray //apple_ref/c/data/calibrationArray" --><span class="var">calibrationArray</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>Returns array of four normalised ZOPoints in order: Upper left
+point, upper right point, lower right point, lower left point.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/calibrationData;   name=calibrationData -->
+<a name="//apple_ref/c/instm/calibrationData"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="calibrationData">calibrationData</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns ZOCalibrationData object with calibration data.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/ZOCalibrationData //apple_ref/c/tdef/ZOCalibrationData //apple_ref/c/tag/ZOCalibrationData //apple_ref/c/econst/ZOCalibrationData //apple_ref/c/struct/ZOCalibrationData //apple_ref/c/clconst/ZOCalibrationData //apple_ref/c/intf/ZOCalibrationData" --><span class="type">ZOCalibrationData</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/calibrationData //apple_ref/c/data/calibrationData" --><span class="var">calibrationData</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This methods returns the object of ZOCalibrationData, which is
+described in its own class.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/description;   name=description -->
+<a name="//apple_ref/c/instm/description"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="description">description</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns a string with calibration points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSString //apple_ref/c/tdef/NSString //apple_ref/c/tag/NSString //apple_ref/c/econst/NSString //apple_ref/c/struct/NSString //apple_ref/c/clconst/NSString //apple_ref/c/intf/NSString" --><span class="type">NSString</span><!-- /a --> <span class="type">*</span>)<!-- a logicalPath="//apple_ref/c/econst/description //apple_ref/c/data/description" --><span class="var">description</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method returns a string with description of each calibration
+point nad its coordinates.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/setSize:;   name=setSize: -->
+<a name="//apple_ref/c/instm/setSize:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="setSize:">setSize:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Sets the resolution of the camera.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/void //apple_ref/c/tdef/void //apple_ref/c/tag/void //apple_ref/c/econst/void //apple_ref/c/struct/void //apple_ref/c/clconst/void //apple_ref/c/intf/void" --><span class="type">void</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/setSize //apple_ref/c/clm/setSize //apple_ref/c/intfcm/setSize //apple_ref/c/intfm/setSize //apple_ref/c/func/setSize //apple_ref/c/ftmplt/setSize //apple_ref/c/defn/setSize //apple_ref/c/macro/setSize" --><span class="function">setSize</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/NSSize //apple_ref/c/tdef/NSSize //apple_ref/c/tag/NSSize //apple_ref/c/econst/NSSize //apple_ref/c/struct/NSSize //apple_ref/c/clconst/NSSize //apple_ref/c/intf/NSSize" --><span class="type">NSSize</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/aSize //apple_ref/c/data/aSize" --><span class="var">aSize</span><!-- /a -->;  </pre>
+</div>
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/point" target="_top">point</a></tt></dt>
+<dd><p>Property for setting found point.
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/point;   name=point -->
+<a name="//apple_ref/c/data/point"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="point">point</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Property for setting found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/point //apple_ref/c/data/point" --><span class="var">point</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This property is used to tell the class, what point was found.
+<!-- end discussion -->
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>

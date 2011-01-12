@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>WindowController</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/WindowController.h;   name=WindowController -->
+<a name="//apple_ref/doc/header/WindowController.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="WindowController">WindowController</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Main clas of application.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This is the main class of application. This class connects all parts
+of the applications together. Methods of this class are all actions
+called from GUI.
+<!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/Calibrate:" target="_top">-Calibrate:</a></tt></dt>
+<dd><p>Starts the calibration
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/procSettingsClicked:" target="_top">-procSettingsClicked:</a></tt></dt>
+<dd><p>Shows settings dialog of selected class.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/RunAndPause:" target="_top">-RunAndPause:</a></tt></dt>
+<dd><p>Starts and pauses the game.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/transformSettingsClicked:" target="_top">-transformSettingsClicked:</a></tt></dt>
+<dd><p>Shows settings dialog of selected class.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/viewChooseChanged:" target="_top">-viewChooseChanged:</a></tt></dt>
+<dd><p>Changes the fullscreen view.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/instm/viewSettingsClicked:" target="_top">-viewSettingsClicked:</a></tt></dt>
+<dd><p>Shows settings dialog of selected class.
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/Calibrate:;   name=Calibrate: -->
+<a name="//apple_ref/c/instm/Calibrate:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="Calibrate:">Calibrate:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Starts the calibration
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/Calibrate //apple_ref/c/clm/Calibrate //apple_ref/c/intfcm/Calibrate //apple_ref/c/intfm/Calibrate //apple_ref/c/func/Calibrate //apple_ref/c/ftmplt/Calibrate //apple_ref/c/defn/Calibrate //apple_ref/c/macro/Calibrate" --><span class="function">Calibrate</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This methods tells calibration controller to start calibration.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/procSettingsClicked:;   name=procSettingsClicked: -->
+<a name="//apple_ref/c/instm/procSettingsClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="procSettingsClicked:">procSettingsClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Shows settings dialog of selected class.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/procSettingsClicked //apple_ref/c/clm/procSettingsClicked //apple_ref/c/intfcm/procSettingsClicked //apple_ref/c/intfm/procSettingsClicked //apple_ref/c/func/procSettingsClicked //apple_ref/c/ftmplt/procSettingsClicked //apple_ref/c/defn/procSettingsClicked //apple_ref/c/macro/procSettingsClicked" --><span class="function">procSettingsClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/RunAndPause:;   name=RunAndPause: -->
+<a name="//apple_ref/c/instm/RunAndPause:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="RunAndPause:">RunAndPause:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Starts and pauses the game.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/RunAndPause //apple_ref/c/clm/RunAndPause //apple_ref/c/intfcm/RunAndPause //apple_ref/c/intfm/RunAndPause //apple_ref/c/func/RunAndPause //apple_ref/c/ftmplt/RunAndPause //apple_ref/c/defn/RunAndPause //apple_ref/c/macro/RunAndPause" --><span class="function">RunAndPause</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/transformSettingsClicked:;   name=transformSettingsClicked: -->
+<a name="//apple_ref/c/instm/transformSettingsClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="transformSettingsClicked:">transformSettingsClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Shows settings dialog of selected class.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/transformSettingsClicked //apple_ref/c/clm/transformSettingsClicked //apple_ref/c/intfcm/transformSettingsClicked //apple_ref/c/intfm/transformSettingsClicked //apple_ref/c/func/transformSettingsClicked //apple_ref/c/ftmplt/transformSettingsClicked //apple_ref/c/defn/transformSettingsClicked //apple_ref/c/macro/transformSettingsClicked" --><span class="function">transformSettingsClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/viewChooseChanged:;   name=viewChooseChanged: -->
+<a name="//apple_ref/c/instm/viewChooseChanged:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="viewChooseChanged:">viewChooseChanged:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Changes the fullscreen view.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/viewChooseChanged //apple_ref/c/clm/viewChooseChanged //apple_ref/c/intfcm/viewChooseChanged //apple_ref/c/intfm/viewChooseChanged //apple_ref/c/func/viewChooseChanged //apple_ref/c/ftmplt/viewChooseChanged //apple_ref/c/defn/viewChooseChanged //apple_ref/c/macro/viewChooseChanged" --><span class="function">viewChooseChanged</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method is called after the viewing class is changed from GUI.
+It tells all classes to left fullscreen ande then the choosed class
+to go fullscreen.
+<!-- end discussion -->
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/viewSettingsClicked:;   name=viewSettingsClicked: -->
+<a name="//apple_ref/c/instm/viewSettingsClicked:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="viewSettingsClicked:">viewSettingsClicked:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Shows settings dialog of selected class.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/IBAction //apple_ref/c/tdef/IBAction //apple_ref/c/tag/IBAction //apple_ref/c/econst/IBAction //apple_ref/c/struct/IBAction //apple_ref/c/clconst/IBAction //apple_ref/c/intf/IBAction" --><span class="type">IBAction</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/viewSettingsClicked //apple_ref/c/clm/viewSettingsClicked //apple_ref/c/intfcm/viewSettingsClicked //apple_ref/c/intfm/viewSettingsClicked //apple_ref/c/func/viewSettingsClicked //apple_ref/c/ftmplt/viewSettingsClicked //apple_ref/c/defn/viewSettingsClicked //apple_ref/c/macro/viewSettingsClicked" --><span class="function">viewSettingsClicked</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/id //apple_ref/c/tdef/id //apple_ref/c/tag/id //apple_ref/c/econst/id //apple_ref/c/struct/id //apple_ref/c/clconst/id //apple_ref/c/intf/id" --><span class="type">id</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/sender //apple_ref/c/data/sender" --><span class="var">sender</span><!-- /a -->;  </pre>
+</div>
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>

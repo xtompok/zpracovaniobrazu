@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.0 beta4b2 concept-map (schema_kompletni.vue) 2010-08-07 -->
+<!-- Tufts VUE 3.0 beta4b2 concept-map (schema_kompletni.vue) 2010-12-16 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/Users/jethro/Downloads/VUE.app/Contents/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Sat Aug 07 14:29:36 CEST 2010 by jethro on platform Mac OS X 10.6.4 in JVM 1.6.0_20-b02-279-10M3065 -->
+<!-- Do Not Remove: Saved date Thu Dec 16 19:22:15 CET 2010 by jethro on platform Mac OS X 10.6.5 in JVM 1.6.0_22-b04-307-10M3261 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built December 15 2009 at 1306 by vue on Linux 2.4.21-57.EL i386 JVM 1.5.0_06-b05(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0"
     label="schema_kompletni.vue" created="1264409047198" x="0.0" y="0.0"
     width="984.6666" height="500.20004" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1281184176856" size="50888"
+    <resource referenceCreated="1292523736615" size="57571"
         spec="/Users/jethro/Programy/zpracovaniobrazu/doc/schema_kompletni.vue"
         type="1" xsi:type="URLResource">
         <title>schema_kompletni.vue</title>
@@ -397,8 +397,8 @@
         <ctrlPoint0 x="268.6228" y="-2075.6196" xsi:type="point"/>
     </child>
     <child ID="232" label="ProcessProtocol" layerID="1"
-        created="1281181916195" x="220.27045" y="-2132.7698"
-        width="82.0" height="60.818115" strokeWidth="3.0"
+        created="1281181916195" x="220.77045" y="-2132.7698"
+        width="81.0" height="60.818115" strokeWidth="3.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -443,8 +443,8 @@
         <ctrlPoint0 x="257.6228" y="-2047.6196" xsi:type="point"/>
     </child>
     <child ID="234" label="ProcessProtocol" layerID="1"
-        created="1281181934298" x="209.99721" y="-2048.2754"
-        width="82.0" height="62.805298" strokeWidth="3.0"
+        created="1281181934298" x="210.49721" y="-2048.2754"
+        width="81.0" height="62.805298" strokeWidth="3.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -489,8 +489,8 @@
         <ctrlPoint0 x="247.59497" y="-1840.6196" xsi:type="point"/>
     </child>
     <child ID="236" label="TransformProtocol" layerID="1"
-        created="1281181950034" x="210.33728" y="-1951.7695"
-        width="105.27579" height="126.46216" strokeWidth="3.0"
+        created="1281181950034" x="210.83728" y="-1951.7695"
+        width="104.77579" height="126.46216" strokeWidth="3.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -535,7 +535,7 @@
         <ctrlPoint0 x="266.59497" y="-1808.6196" xsi:type="point"/>
     </child>
     <child ID="238" label="TransformProtocol" layerID="1"
-        created="1281181969274" x="229.9371" y="-1804.4149" width="92.0"
+        created="1281181969274" x="230.4371" y="-1804.4149" width="91.0"
         height="43.94519" strokeWidth="3.0" autoSized="false"
         controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
@@ -582,7 +582,7 @@
     </child>
     <child ID="240" label="ProjectorProtocol" layerID="1"
         created="1281181982507" x="200.99715" y="-1726.7695"
-        width="95.26831" height="60.664185" strokeWidth="3.0"
+        width="94.76831" height="60.664185" strokeWidth="3.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -604,8 +604,8 @@
         <ctrlPoint0 x="272.04858" y="-1705.7043" xsi:type="point"/>
     </child>
     <child ID="242" label="Set minimal and maximal values" layerID="1"
-        created="1281182041040" x="27.113083" y="-2111.5625"
-        width="155.0" height="39.251465" strokeWidth="1.0"
+        created="1281182041040" x="27.613083" y="-2111.5625"
+        width="154.0" height="39.251465" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -626,8 +626,8 @@
         <ID2 xsi:type="node">222</ID2>
     </child>
     <child ID="243" label="Set minimal and maximal values" layerID="1"
-        created="1281182043112" x="367.75525" y="-2122.5696"
-        width="155.0" height="47.729004" strokeWidth="1.0"
+        created="1281182043112" x="368.25525" y="-2122.5696"
+        width="154.0" height="47.729004" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -648,8 +648,8 @@
         <ID2 xsi:type="node">215</ID2>
     </child>
     <child ID="244" label="setCalPoint" layerID="1"
-        created="1281182046568" x="37.085052" y="-1921.5195"
-        width="56.0" height="35.87854" strokeWidth="1.0"
+        created="1281182046568" x="37.585052" y="-1921.5195"
+        width="55.0" height="35.87854" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#FC938D</strokeColor>
         <textColor>#404040</textColor>
@@ -778,8 +778,8 @@
         <ctrlPoint0 x="136.59503" y="-1976.6196" xsi:type="point"/>
     </child>
     <child ID="253" label="Calibrate" layerID="1"
-        created="1281182953870" x="45.813446" y="-2043.1819"
-        width="44.0" height="35.712402" strokeWidth="1.0"
+        created="1281182953870" x="46.313446" y="-2043.1819"
+        width="43.0" height="35.712402" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#FC938D</strokeColor>
         <textColor>#404040</textColor>
@@ -800,7 +800,7 @@
         <ID2 xsi:type="node">228</ID2>
     </child>
     <child ID="254" label="calibrate" layerID="1"
-        created="1281182958238" x="46.07843" y="-1971.7695" width="42.0"
+        created="1281182958238" x="46.57843" y="-1971.7695" width="41.0"
         height="29.25" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="2" xsi:type="link">
         <strokeColor>#FC938D</strokeColor>
@@ -869,7 +869,7 @@
     </child>
     <child ID="256" label="initWithCalibrationArray" layerID="1"
         created="1281183176756" x="230.72554" y="-1876.4196"
-        width="169.01268" height="53.972534" strokeWidth="1.0"
+        width="168.51268" height="53.972534" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#FC938D</strokeColor>
         <textColor>#404040</textColor>
@@ -891,8 +891,8 @@
         <ctrlPoint0 x="379.59497" y="-1853.6196" xsi:type="point"/>
     </child>
     <child ID="258" label="setCalPoints" layerID="1"
-        created="1281183208361" x="399.81052" y="-1964.2231"
-        width="62.0" height="52.103516" strokeWidth="1.0"
+        created="1281183208361" x="400.31052" y="-1964.2231"
+        width="61.0" height="52.103516" strokeWidth="1.0"
         autoSized="false" controlCount="1" arrowState="2" xsi:type="link">
         <strokeColor>#FC938D</strokeColor>
         <textColor>#404040</textColor>
@@ -914,8 +914,8 @@
         <ctrlPoint0 x="431.59497" y="-1935.6196" xsi:type="point"/>
     </child>
     <child ID="259" label="cameraDidReceiveFrame" layerID="1"
-        created="1281183567723" x="211.95966" y="-2231.1196"
-        width="126.0" height="64.6499" strokeWidth="3.0"
+        created="1281183567723" x="212.45966" y="-2231.1196"
+        width="125.0" height="64.6499" strokeWidth="3.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
         <strokeColor>#30D643</strokeColor>
         <textColor>#404040</textColor>
@@ -937,7 +937,7 @@
     <child ID="264"
         label="Schema p&#x159;ed&#xe1;v&#xe1;n&#xed; informac&#xed; v r&#xe1;mci programu&#xa;    &#xa;    &#xa;      Popisuje hlavn&#xed; &#x10d;&#xe1;st programu, kter&#xe1; se vykon&#xe1;v&#xe1; po p&#x159;ijet&#xed; obr&#xe1;zku z &#xa;      kamery.&#xa;    &#xa;    &#xa;      Nejsou zde zobrazeny t&#x159;&#xed;dy ZOPoint a ZOCalibrationData, proto&#x17e;e samy nic &#xa;      ned&#x11b;laj&#xed;, ale jsou pouze kontejnery.&#xa;    &#xa;    &#xa;      &#x10c;erven&#x11b; ozna&#x10d;en&#xe9; linie jsou prov&#xe1;d&#x11b;ny pouze b&#x11b;hem kalibrace."
         layerID="1" created="1281183753353" x="-247.40497"
-        y="-2197.1196" width="135.0" height="184.0" strokeWidth="0.0"
+        y="-2197.1196" width="134.0" height="186.0" strokeWidth="0.0"
         autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -953,30 +953,30 @@
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4c871b07c0a80108005f4e03ca25c60e</URIString>
         <richText>&lt;html&gt;
-  &lt;head style="color: #404040" color="#404040"&gt;
+  &lt;head color="#404040" style="color: #404040"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { margin-right: 0px; margin-left: 0px; margin-bottom: 0px; font-family: Arial; color: #404040; margin-top: 0px; font-size: 11 }
-        ol { margin-left: 30; margin-top: 6; font-family: Arial; list-style-position: outside; font-size: 11; vertical-align: middle }
-        p { margin-right: 0; margin-left: 0; margin-bottom: 0; color: #404040; margin-top: 0 }
-        ul { margin-left: 30; margin-top: 6; font-family: Arial; list-style-position: outside; font-size: 11; vertical-align: middle }
+        body { margin-bottom: 0px; margin-right: 0px; margin-top: 0px; color: #404040; font-size: 11; font-family: Arial; margin-left: 0px }
+        ol { vertical-align: middle; margin-top: 6; font-size: 11; list-style-position: outside; font-family: Arial; margin-left: 30 }
+        p { margin-bottom: 0; margin-right: 0; margin-top: 0; color: #404040; margin-left: 0 }
+        ul { vertical-align: middle; margin-top: 6; font-size: 11; list-style-position: outside; font-family: Arial; margin-left: 30 }
       --&gt;
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
-       Schema p&amp;#345;ed&amp;#225;v&amp;#225;n&amp;#237; informac&amp;#237; v r&amp;#225;mci programu
+    &lt;p color="#404040" style="color: #404040"&gt;
+      Schema p&amp;#345;ed&amp;#225;v&amp;#225;n&amp;#237; informac&amp;#237; v r&amp;#225;mci programu
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       Popisuje hlavn&amp;#237; &amp;#269;&amp;#225;st programu, kter&amp;#225; se vykon&amp;#225;v&amp;#225; po p&amp;#345;ijet&amp;#237; obr&amp;#225;zku z 
       kamery.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       Nejsou zde zobrazeny t&amp;#345;&amp;#237;dy ZOPoint a ZOCalibrationData, proto&amp;#382;e samy nic 
       ned&amp;#283;laj&amp;#237;, ale jsou pouze kontejnery.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       &amp;#268;erven&amp;#283; ozna&amp;#269;en&amp;#233; linie jsou prov&amp;#225;d&amp;#283;ny pouze b&amp;#283;hem kalibrace.
     &lt;/p&gt;
   &lt;/body&gt;
@@ -996,9 +996,9 @@
       &#x10c;erven&#x11b; ozna&#x10d;en&#xe9; linie jsou prov&#xe1;d&#x11b;ny pouze b&#x11b;hem kalibrace.</label>
     </child>
     <child ID="265"
-        label="Schematic of information exchange in the program.&#xa;    &#xa;    &#xa;      Here is described the main part of program, which is executed after &#xa;      receiving an image from camera.&#xa;    &#xa;    &#xa;      Missing classes ZOPoint and ZOCalibrationData are only containers and &#xa;      don't do anything itself.&#xa;    &#xa;    &#xa;      Red links are executed only if calibration is in progress."
+        label="Schematic of information exchange in the program.&#xa;    &#xa;    &#xa;      Here is described the main part of program, which is executed after &#xa;      receiving an image from camera.&#xa;    &#xa;    &#xa;      Missing classes ZOPoint and ZOCalibrationData are only containers for &#xa;      data and don't do anything itself.&#xa;    &#xa;    &#xa;      Red links are executed only if calibration is in progress."
         layerID="1" created="1281183891741" x="-251.40497"
-        y="-1992.1196" width="161.0" height="184.0" strokeWidth="0.0"
+        y="-1992.1196" width="160.0" height="186.0" strokeWidth="0.0"
         autoSized="false" xsi:type="text">
         <strokeColor>#404040</strokeColor>
         <textColor>#000000</textColor>
@@ -1014,36 +1014,36 @@
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/4c871b1cc0a80108005f4e03797d3584</URIString>
         <richText>&lt;html&gt;
-  &lt;head style="color: #000000" color="#000000"&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { margin-right: 0px; margin-left: 0px; margin-bottom: 0px; font-family: Arial; color: #000000; margin-top: 0px; font-size: 11 }
-        ol { margin-left: 30; margin-top: 6; font-family: Arial; list-style-position: outside; font-size: 11; vertical-align: middle }
-        p { margin-right: 0; margin-left: 0; margin-bottom: 0; color: #000000; margin-top: 0 }
-        ul { margin-left: 30; margin-top: 6; font-family: Arial; list-style-position: outside; font-size: 11; vertical-align: middle }
+        body { margin-bottom: 0px; margin-right: 0px; margin-top: 0px; color: #000000; font-size: 11; font-family: Arial; margin-left: 0px }
+        ol { vertical-align: middle; margin-top: 6; font-size: 11; list-style-position: outside; font-family: Arial; margin-left: 30 }
+        p { margin-bottom: 0; margin-right: 0; margin-top: 0; color: #000000; margin-left: 0 }
+        ul { vertical-align: middle; margin-top: 6; font-size: 11; list-style-position: outside; font-family: Arial; margin-left: 30 }
       --&gt;
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       Schematic of information exchange in the program.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       Here is described the main part of program, which is executed after 
       receiving an image from camera.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
-      Missing classes ZOPoint and ZOCalibrationData are only containers and 
-      don't do anything itself.
+    &lt;p color="#404040" style="color: #404040"&gt;
+      Missing classes ZOPoint and ZOCalibrationData are only containers for 
+      data and don't do anything itself.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       Red links are executed only if calibration is in progress.
     &lt;/p&gt;
-    &lt;p style="color: #404040" color="#404040"&gt;
+    &lt;p color="#404040" style="color: #404040"&gt;
       
     &lt;/p&gt;
-    &lt;p style="color: #000000" color="#000000"&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
       
     &lt;/p&gt;
   &lt;/body&gt;
@@ -1056,8 +1056,8 @@
       receiving an image from camera.
     
     
-      Missing classes ZOPoint and ZOCalibrationData are only containers and 
-      don't do anything itself.
+      Missing classes ZOPoint and ZOCalibrationData are only containers for 
+      data and don't do anything itself.
     
     
       Red links are executed only if calibration is in progress.</label>
@@ -1070,7 +1070,7 @@
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/64d704f9c0a8056d0076a247807a3f75</URIString>
     </layer>
-    <userZoom>1.0</userZoom>
+    <userZoom>0.8730984356238869</userZoom>
     <userOrigin x="-919.40497" y="-2243.1196"/>
     <presentationBackground>#202020</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">

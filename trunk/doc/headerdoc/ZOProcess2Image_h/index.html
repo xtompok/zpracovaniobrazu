@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>ZOProcessImage</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+ <meta name="generator" content="HeaderDoc" />
+<meta name="xcode-display" content="render" />
+<style><!--
+#tocMenu {
+		display: block;
+		position:fixed;
+		top:0px;
+		left:0px;
+		width:210px;
+		height:100%;
+		background:transparent;
+}
+#bodyText {
+		margin-left: 210px;
+}
+--></style>
+<script language="JavaScript" type="text/javascript"><!--
+function hidetoc() {
+	var origURL = parent.document.URL;
+	var contentURL = origURL.substring(origURL.indexOf('?')+1, origURL.length);
+	if (contentURL.length == origURL.length) {
+		jumpPos = origURL.substring(origURL.indexOf('#')+1, origURL.length);
+	}
+	if (contentURL == "hidetoc") {
+		var toc = document.getElementById('tocMenu');
+		var body = document.getElementById('bodyText');
+		if (toc && body) {
+			toc.style.display = 'none';
+			body.style.marginLeft = '0px';
+		}
+	}
+}
+--></script>
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}.list_indent { margin-left: 40px; }.declaration_indent { margin-left: 40px; }.param_indent { margin-left: 40px; }.group_indent { margin-left: 40px; }.group_desc_indent { margin-left: 20px; }.warning_indent { margin-left: 40px; }.important_indent { margin-left: 40px; }.hd_tocAccess { font-style: italic; font-size: 10px; font-weight: normal; color: #303030; }--></style></head><body bgcolor="#ffffff" onload="hidetoc();">
+</div>
+<!-- headerDoc=Header;  uid=//apple_ref/doc/header/ZOProcess2Image.h;   name=ZOProcessImage -->
+<a name="//apple_ref/doc/header/ZOProcess2Image.h"></a>
+<div id='tocMenu'>
+<iframe id='toc_content' name='toc_content' SRC='toc.html' width='210' height='100%' align='left' frameborder='0'>This document set is best viewed in a browser that supports iFrames.</iframe>
+</div>
+<div id='bodyText'>
+<a name="top"></a>
+<hr><table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h1><a name="ZOProcessImage">ZOProcessImage</a></h1>
+</td></tr></table><hr><p><!-- begin abstract --><p>Class for processing image
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This class is used to process the image. It computes brightness of
+the four points around processed points and four points in distance
+5 from processed point. From values in selected range it returns
+maximum brighted point.
+</p>
+</li></ol><!-- end discussion -->
+<p></p><hr><br><a name="HeaderDoc_methods"></a>
+<h2>Methods</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/instm/pixelCoordinatesAtIndex:" target="_top">-pixelCoordinatesAtIndex:</a></tt></dt>
+<dd><p>Computes real coordinates.
+</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/c/instm/pixelCoordinatesAtIndex:;   name=pixelCoordinatesAtIndex: -->
+<a name="//apple_ref/c/instm/pixelCoordinatesAtIndex:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="pixelCoordinatesAtIndex:">pixelCoordinatesAtIndex:</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Computes real coordinates.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(<!-- a logicalPath="//apple_ref/c/cl/NSPoint //apple_ref/c/tdef/NSPoint //apple_ref/c/tag/NSPoint //apple_ref/c/econst/NSPoint //apple_ref/c/struct/NSPoint //apple_ref/c/clconst/NSPoint //apple_ref/c/intf/NSPoint" --><span class="type">NSPoint</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/instm/pixelCoordinatesAtIndex //apple_ref/c/clm/pixelCoordinatesAtIndex //apple_ref/c/intfcm/pixelCoordinatesAtIndex //apple_ref/c/intfm/pixelCoordinatesAtIndex //apple_ref/c/func/pixelCoordinatesAtIndex //apple_ref/c/ftmplt/pixelCoordinatesAtIndex //apple_ref/c/defn/pixelCoordinatesAtIndex //apple_ref/c/macro/pixelCoordinatesAtIndex" --><span class="function">pixelCoordinatesAtIndex</span><!-- /a -->:(<!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a -->)<!-- a logicalPath="//apple_ref/c/econst/index //apple_ref/c/data/index" --><span class="var">index</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method computes real coordinates in image from given index.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_structs"></a>
+<h2>Structs and Unions</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/tag/sumCrossAtIndex" target="_top">sumCrossAtIndex</a></tt></dt>
+<dd><p>Returns color results for given index.
+</dd>
+</dl>
+<hr><!-- headerDoc=tag;  uid=//apple_ref/c/tag/sumCrossAtIndex;   name=sumCrossAtIndex -->
+<a name="//apple_ref/c/tag/sumCrossAtIndex"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="sumCrossAtIndex">sumCrossAtIndex</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Returns color results for given index.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>-(
+        <span class="keyword">struct</span> <span class="param">colResults</span>)<!-- a logicalPath="//apple_ref/c/cl/sumCrossAtIndex //apple_ref/c/tdef/sumCrossAtIndex //apple_ref/c/tag/sumCrossAtIndex //apple_ref/c/econst/sumCrossAtIndex //apple_ref/c/struct/sumCrossAtIndex //apple_ref/c/clconst/sumCrossAtIndex //apple_ref/c/intf/sumCrossAtIndex" --><span class="type">sumCrossAtIndex</span><!-- /a -->:(
+        <span class="param">int</span>)<!-- a logicalPath="//apple_ref/c/econst/index //apple_ref/c/data/index" --><span class="var">index</span><!-- /a -->;  </pre>
+</div>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><!-- begin discussion --><p>This method returns the colResults structure filled with computed
+average of inner and outer points.
+<!-- end discussion -->
+<p></p><a name="HeaderDoc_vars"></a>
+<h2>Globals</h2>
+<dl>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxB" target="_top">maxB</a></tt></dt>
+<dd><p>Blue part of score of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxG" target="_top">maxG</a></tt></dt>
+<dd><p>Green part of score of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxInnerB" target="_top">maxInnerB</a></tt></dt>
+<dd><p>Maximal blue value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxInnerG" target="_top">maxInnerG</a></tt></dt>
+<dd><p>Maximal green value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxInnerR" target="_top">maxInnerR</a></tt></dt>
+<dd><p>Maximal red value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxOuterB" target="_top">maxOuterB</a></tt></dt>
+<dd><p>Maximal blue value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxOuterG" target="_top">maxOuterG</a></tt></dt>
+<dd><p>Maximal green value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxOuterR" target="_top">maxOuterR</a></tt></dt>
+<dd><p>Maximal red value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxPointB" target="_top">maxPointB</a></tt></dt>
+<dd><p>Maximal blue value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxPointG" target="_top">maxPointG</a></tt></dt>
+<dd><p>Maximal green value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxPointR" target="_top">maxPointR</a></tt></dt>
+<dd><p>Maximal red value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxR" target="_top">maxR</a></tt></dt>
+<dd><p>Red part of score of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxScoreB" target="_top">maxScoreB</a></tt></dt>
+<dd><p>Blue part of score of inner points of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxScoreG" target="_top">maxScoreG</a></tt></dt>
+<dd><p>Green part of score of inner points of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/maxScoreR" target="_top">maxScoreR</a></tt></dt>
+<dd><p>Red part of score of inner points of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minInnerB" target="_top">minInnerB</a></tt></dt>
+<dd><p>Minimal blue value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minInnerG" target="_top">minInnerG</a></tt></dt>
+<dd><p>Minimal green value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minInnerR" target="_top">minInnerR</a></tt></dt>
+<dd><p>Minimal red value of inner points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minOuterB" target="_top">minOuterB</a></tt></dt>
+<dd><p>Minimal blue value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minOuterG" target="_top">minOuterG</a></tt></dt>
+<dd><p>Minimal green value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minOuterR" target="_top">minOuterR</a></tt></dt>
+<dd><p>Minimal red value of outer points.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minPointB" target="_top">minPointB</a></tt></dt>
+<dd><p>Minimal blue value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minPointG" target="_top">minPointG</a></tt></dt>
+<dd><p>Minimal green value of found point.
+</dd>
+<dt><tt><a href="index.html#//apple_ref/c/data/minPointR" target="_top">minPointR</a></tt></dt>
+<dd><p>Minimal red value of found point.
+</dd>
+</dl>
+<hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxB;   name=maxB -->
+<a name="//apple_ref/c/data/maxB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxB">maxB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Blue part of score of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxB //apple_ref/c/data/maxB" --><span class="var">maxB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxG;   name=maxG -->
+<a name="//apple_ref/c/data/maxG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxG">maxG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Green part of score of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxG //apple_ref/c/data/maxG" --><span class="var">maxG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxInnerB;   name=maxInnerB -->
+<a name="//apple_ref/c/data/maxInnerB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxInnerB">maxInnerB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal blue value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxInnerB //apple_ref/c/data/maxInnerB" --><span class="var">maxInnerB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxInnerG;   name=maxInnerG -->
+<a name="//apple_ref/c/data/maxInnerG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxInnerG">maxInnerG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal green value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxInnerG //apple_ref/c/data/maxInnerG" --><span class="var">maxInnerG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxInnerR;   name=maxInnerR -->
+<a name="//apple_ref/c/data/maxInnerR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxInnerR">maxInnerR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal red value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxInnerR //apple_ref/c/data/maxInnerR" --><span class="var">maxInnerR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxOuterB;   name=maxOuterB -->
+<a name="//apple_ref/c/data/maxOuterB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxOuterB">maxOuterB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal blue value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxOuterB //apple_ref/c/data/maxOuterB" --><span class="var">maxOuterB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxOuterG;   name=maxOuterG -->
+<a name="//apple_ref/c/data/maxOuterG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxOuterG">maxOuterG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal green value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxOuterG //apple_ref/c/data/maxOuterG" --><span class="var">maxOuterG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxOuterR;   name=maxOuterR -->
+<a name="//apple_ref/c/data/maxOuterR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxOuterR">maxOuterR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal red value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxOuterR //apple_ref/c/data/maxOuterR" --><span class="var">maxOuterR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxPointB;   name=maxPointB -->
+<a name="//apple_ref/c/data/maxPointB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxPointB">maxPointB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal blue value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxPointB //apple_ref/c/data/maxPointB" --><span class="var">maxPointB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxPointG;   name=maxPointG -->
+<a name="//apple_ref/c/data/maxPointG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxPointG">maxPointG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal green value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxPointG //apple_ref/c/data/maxPointG" --><span class="var">maxPointG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxPointR;   name=maxPointR -->
+<a name="//apple_ref/c/data/maxPointR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxPointR">maxPointR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Maximal red value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxPointR //apple_ref/c/data/maxPointR" --><span class="var">maxPointR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxR;   name=maxR -->
+<a name="//apple_ref/c/data/maxR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxR">maxR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Red part of score of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxR //apple_ref/c/data/maxR" --><span class="var">maxR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxScoreB;   name=maxScoreB -->
+<a name="//apple_ref/c/data/maxScoreB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxScoreB">maxScoreB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Blue part of score of inner points of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreB //apple_ref/c/data/maxScoreB" --><span class="var">maxScoreB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxScoreG;   name=maxScoreG -->
+<a name="//apple_ref/c/data/maxScoreG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxScoreG">maxScoreG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Green part of score of inner points of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreG //apple_ref/c/data/maxScoreG" --><span class="var">maxScoreG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/maxScoreR;   name=maxScoreR -->
+<a name="//apple_ref/c/data/maxScoreR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="maxScoreR">maxScoreR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Red part of score of inner points of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/maxScoreR //apple_ref/c/data/maxScoreR" --><span class="var">maxScoreR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minInnerB;   name=minInnerB -->
+<a name="//apple_ref/c/data/minInnerB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minInnerB">minInnerB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minInnerB //apple_ref/c/data/minInnerB" --><span class="var">minInnerB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minInnerG;   name=minInnerG -->
+<a name="//apple_ref/c/data/minInnerG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minInnerG">minInnerG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minInnerG //apple_ref/c/data/minInnerG" --><span class="var">minInnerG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minInnerR;   name=minInnerR -->
+<a name="//apple_ref/c/data/minInnerR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minInnerR">minInnerR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of inner points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minInnerR //apple_ref/c/data/minInnerR" --><span class="var">minInnerR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minOuterB;   name=minOuterB -->
+<a name="//apple_ref/c/data/minOuterB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minOuterB">minOuterB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minOuterB //apple_ref/c/data/minOuterB" --><span class="var">minOuterB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minOuterG;   name=minOuterG -->
+<a name="//apple_ref/c/data/minOuterG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minOuterG">minOuterG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minOuterG //apple_ref/c/data/minOuterG" --><span class="var">minOuterG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minOuterR;   name=minOuterR -->
+<a name="//apple_ref/c/data/minOuterR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minOuterR">minOuterR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of outer points.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minOuterR //apple_ref/c/data/minOuterR" --><span class="var">minOuterR</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minPointB;   name=minPointB -->
+<a name="//apple_ref/c/data/minPointB"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minPointB">minPointB</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal blue value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minPointB //apple_ref/c/data/minPointB" --><span class="var">minPointB</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minPointG;   name=minPointG -->
+<a name="//apple_ref/c/data/minPointG"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minPointG">minPointG</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal green value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minPointG //apple_ref/c/data/minPointG" --><span class="var">minPointG</span><!-- /a -->;  </pre>
+</div>
+<p></p><hr><!-- headerDoc=data;  uid=//apple_ref/c/data/minPointR;   name=minPointR -->
+<a name="//apple_ref/c/data/minPointR"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="minPointR">minPointR</a></h3>
+</td></tr></table><hr><p><!-- begin abstract --><p>Minimal red value of found point.
+<!-- end abstract --></p>
+<p></p><div class='declaration_indent'>
+<pre>@<!-- a logicalPath="//apple_ref/c/cl/property //apple_ref/c/tdef/property //apple_ref/c/tag/property //apple_ref/c/econst/property //apple_ref/c/struct/property //apple_ref/c/clconst/property //apple_ref/c/intf/property" --><span class="type">property</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/cl/int //apple_ref/c/tdef/int //apple_ref/c/tag/int //apple_ref/c/econst/int //apple_ref/c/struct/int //apple_ref/c/clconst/int //apple_ref/c/intf/int" --><span class="type">int</span><!-- /a --> <!-- a logicalPath="//apple_ref/c/econst/minPointR //apple_ref/c/data/minPointR" --><span class="var">minPointR</span><!-- /a -->;  </pre>
+</div>
+<p></p><p>Last Updated: středa, ledna 12, 2011
+</p></body></html>

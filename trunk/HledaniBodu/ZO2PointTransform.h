@@ -7,6 +7,14 @@
 //
 //  Detailní popis v pomerova_transformace.pdf
 //  Detailed info in pomerova_transformace.pdf
+/*!
+ @header ZO2PointTransform
+ @abstract   Class for 2 point transform
+ @discussion This class is used for transforming points from camera 
+ using two point transform. Description of this transform
+ could be found in documentation of project. This class conforms
+ to protocol TransformProtocol. 
+ */
 
 
 #import <Cocoa/Cocoa.h>
