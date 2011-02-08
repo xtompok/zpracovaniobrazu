@@ -1,7 +1,8 @@
 \documentclass[twoside,12pt]{article}
 \usepackage{czech}
 \usepackage[utf8]{inputenc}
-\usepackage{dipp}
+\usepackage {graphicx}
+\usepackage{dip}
 \usepackage{amsmath}
 \newcommand{\podpodsekce}[1]{\paragraph{#1}\quad\vskip 6pt}
 
@@ -14,7 +15,7 @@
 
 
 \prohlaseni{Prohlašuji, že jsem tuto závěrečnou maturitní práci vyřešil samostatně s použitím literatury, kterou uvádím v seznamu.}{V Brně dne \today}
-\abstract{Tomáš, P. Using a laser pointer to control a computer. Final maturita thesis. Brno, 2011}{Here will be an abstract in English.}
+\abstract{Tomáš, P. Using a laser pointer to control a computer. Final maturita thesis. Brno, 2011}{The goal of this project is to allow user to interactively point on objects on screen using laser pointer. The screen is captured by webcam and the program is written for Mac OS X in Objective C. Application has following functions: calibration webcam, capturing an image, analysis and finding the lighted point, transformation the coordinates of found point nad final visualisation as simple drawing or game.}
 
 \abstrakt{Tomáš, P. Použití laserového ukazovátka k obvládání počítače. Závěrečná maturitní práce. Brno, 2011}{Projekt {\it Použití laserového ukazovátka k ovládání počítače} si klade za cíl pomocí kamery a projektoru připojeného k  počítači umožnit uživateli, aby mohl využívat laserového ukazovátka jako ukazatele na objekty zobrazené projektorem na plátně. Aplikace je napsána v Objective C. Funkce aplikace jsou tyto: kalibrace webkamery pro dané umístění, zachycení a načtení obrazu z webkamery, analýza a hledání nasvíceného bodu, transformace snímaného obrazu pomocí transformační funkce a kalibračních dat a finální vykreslení vizualizace výsledků pomocí jednoduchého kreslení či hry.}
 
@@ -56,8 +57,15 @@ Z jednotlivých blokových součtů je zjištěno maximum hodnoty součtu hledan
 Tato metoda se ukázala být poměrně spolehlivá, ale je potřeba najít vhodné nastavení konstant pro zahazování bodů, protože obzvláště při denním osvětlení či osvětlení různými zdroji světla  jsou snímané body různých barev a je potřeba co nejvíce špatných zahodit, ale nezahodit s nimi i ty, co chceme najít.
 
 \podpodsekce{Křížová metoda}
-% Přidat obrázek!!!!
+
 Tato metoda je zjednodušenou verzí metody, o níž jsem dlouho uvažoval, ale je implementačně náročná. Metoda je založena na faktu, že hledáme bod, tzn. nějaké malé osvícené kolečko, kde má střed a několik bodů v okolí výrazně jiné vlastnosti než zbytek obrázku. Ideální stav je hledat 2 mezikruží, což je ale poměrně obtížné a tak jsem v této metodě použil jen výrazně zjednodušenou verzi.
+
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{1}{\includegraphics{kriz-1.pdf}}  
+ \end{center}
+ \caption{Pixely používané při křížové metodě hledání bodu.}
+\end{figure}
 
 V této verzi jsou sledovány pouze barvy aktuálně zkoumaného bodu $P$, jeho nejbližších sousedů $I$ a poté čtyř bodů $O$ vzdálených 5 pixelů na každou ze čtyř stran od bodu $P$. Pokud zrovna svítím na bod $P$, pak body $I$ budou díky své blízkosti také osvíceny poměrně výrazně a naopak na body $O$ nebude mít již nasvícení bodu $P$ žádný vliv a budou tedy reprezentovat barvu pozadí. U bodů $I$ a $O$ se počítá vždy průměr jednotlivých barevných složek ze všech 4 bodů. 
 
@@ -76,7 +84,12 @@ Pokud snímáme útvar mimo osu projektoru, bude snímaný útvar určitým řez
 
 \podpodsekce{Transformace se 2 body}
 
-%Obrázek
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{1}{\includegraphics{2p-transform-1.pdf}}  
+ \end{center}
+ \caption{Schéma dvoubodové transformace}
+\end{figure}
 Tato transformace je vymyšlená Lukášem Langerem. Základem je to, že při zachycení zkresleného obrazu se původně rovnoběžné přímky určené rohovými body $A$, $B$, $C$ a $D$ budou sbíhat a tudíž se protnou v nějakém bodě ($Q$, $W$). Tento bod jednoduše nalezneme prodloužením stran. Přímka procházející zachyceným bodem $P$ a rovnoběžná se stranou  $AC$ nebo $AB$ na skutečném plátně bude při zkreslení procházet nalezeným průsečíkem $Q$ či $W$. Nalezneme průsečík této přímky se stranou $AB$ nebo $AC$, nazveme ho $\alpha$ a $\beta$ a určíme poměr části k průsečíku k celé této straně. Toto provedeme pro obě rovnoběžné strany a získané poměry stačí vynásobit šířkou a výškou zobrazovaného obrazu. Tato transformace dává výsledky s přesností okolo 5 cm.
 
 \podpodsekce{ Poměrová transformace}
