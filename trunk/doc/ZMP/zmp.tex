@@ -22,12 +22,15 @@
 \obsah
 
 \kapitola{Úvod a cíl práce}
+
+!!! Jak to je teď a co jsem s tím udělal. !!!
+%\sekce{Úvod do problematiky}
+%Zpracování obrazu je velmi obsáhlá oblast, která zahrnuje mnoho různých oborů a problémů. Já jsem si vybral oblast hledání bodu o dané barvě v obrazu z kamery a další práce s ním. Toto v sobě zahrnuje několik kroků. Nejprve je třeba získat obraz z kamery, následně v něm najít bod\dots\footnote{A tady právě nevím, co bych tam moc napsal, protože se tím zabývám dále v sekci Popis softwaru.}
+%\sekce{Cíl práce}
+%Cílem práce bylo vytvořit program, který pomocí webkamery zachytává polohu laserového ukazovátka na plátně dataprojektoru a převádí ji na souřadnice, podle kterrých vykresluje na plátno počítač. Součástí práce také měly být ukázky možného využití.
+
 \sekce{Historie projektu}
 K myšlence použití laserového ukazovátka k ovládání počítače mne přivedla konfera na semináři M\&M, ve které jsme se s pomocí webkamery snažili zachytávat polohu laserového ukazovátka a ukazovat ji na projektoru. Tato konfera mne velmi zaujala a rozhodl jsem se pokračovat v ní a dovést práci dále, než se nám za krátký čas na soustředění povedlo.\footnote{Mám se tu trochu více rozepsat o tom, jak se projekt dále vyvíjel?}
-\sekce{Úvod do problematiky}
-Zpracování obrazu je velmi obsáhlá oblast, která zahrnuje mnoho různých oborů a problémů. Já jsem si vybral oblast hledání bodu o dané barvě v obrazu z kamery a další práce s ním. Toto v sobě zahrnuje několik kroků. Nejprve je třeba získat obraz z kamery, následně v něm najít bod\dots\footnote{A tady právě nevím, co bych tam moc napsal, protože se tím zabývám dále v sekci Popis softwaru.}
-\sekce{Cíl práce}
-Cílem práce bylo vytvořit program, který pomocí webkamery zachytává polohu laserového ukazovátka na plátně dataprojektoru a převádí ji na souřadnice, podle kterrých vykresluje na plátno počítač. Součástí práce také měly být ukázky možného využití.
 
 \kapitola{Současný stav řešené problematiky}
 Ohledně zpracování obrazu je na webu prací poměrně mnoho, avšak nenašel jsem mnoho prací, které by využívaly zpracovaný obraz k ovládání počítače (autonomní roboty pomiňme, jedná se o diametrálně odlišnou problematiku). Projektem nejbližším mé tematice je L.A.S.E.R. Tag od Graffiti Research Lab\footnote{http://graffitiresearchlab.com/projects/laser-tag/}, který se zabývá podobným cílem, avšak nemá automatickou kalibraci a bohužel se mi tento program nepodařilo zkompilovat. Dalším podobným projektem je PySight SprayPaint\footnote{http://killertux.org/projects/pysight-spraypaint}, na který jsem ale přišel až když už byla aplikace hotová. Tento program využívá Pythonovskou knihovnu PySight a neprovádí žádnou transformaci souřadnic, tudíž je poměrně nepřesný. Posledním programem, který jsem našel a zabývá se podobnou tématikou byl program, kdy laserové ukazovátko bylo použito k ovládání hry, ale tuto hru se mi bohužel nepodařilo znovu najít. Všechny tyto programy mi sloužily jako inspirace, bohužel se mi nepodařilo v jejich zdrojovém kódu nalézt části, které by mi pomohly při řešení mých problémů. 
@@ -75,10 +78,21 @@ U každé skupiny bodů je možné nastavovat maximální a minimální hodnoty 
 Kalibrace je prvním z dějů souvisejících s transformací. Cílem kalibrace je zjistit, v jakých bodech na snímaném obraze se zobrazují rohy obrazu zobrazovaného dataprojektorem. To je důležité proto, abychom dokázali přepočítat bod nalezený na obrazu webkamery na bod, který zobrazíme na projektoru. Nyní k funkci kalibrace. Program postupně rozsvítí 4 čtverečky v rozích obrazu projektoru a vždy chvíli počká, aby se kamera přizpůsobila. Pak je sejme již popsaným způsobem a najde je. Tímto získáváme 4 kalibrační body, se kterými již můžeme počítat v transformacích.
 
 \podsekce{Transformace}
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{.75}{\includegraphics{../transforms/3DSituace-3D.pdf}}  
+ \end{center}
+ \caption{Snímání obdélníku $ABCD$ kamerou $K$ mimo osu}
+\end{figure}
 Toto je nejdůležitější a matematicky nejobtížnější část celého projektu, která zajišťuje správné zobrazení bodu na projektoru. Co to je a proč je potřeba?
 
 Předpokládejme, že máme projektor, který promítá na plátno obdélníkový obraz. Pokud by ho promítal zkreslený, má své vlastní funkce ke korekci tohoto zkreslení. Pokud nyní obraz snímáme kamerou, získáme nějaký útvar. Optimální situace nastává, pokud kamera snímá ze stejného bodu, jako promítá projektor. V tom případě je snímaný útvar obdélník se stejným poměrem stran k promítanému obrazu. Tady nám stačí úplně základní transformace a to jednoduché přinásobení konstantou odpovídající poměru délky strany snímaného a promítaného obrazu. Toto je ale situace, která nastane velmi zřídka. Většinou snímáme kamerou obraz zkreslený, protože pokud si představíme to, co snímá kamera, jde o jakýsi nekonečně vysoký čtyřboký jehlan.
-%Obrázek???
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{.75}{\includegraphics{../transforms/3DSituace-2D.pdf}}  
+ \end{center}
+ \caption{Zkreslený útvar $A'B'C'D'$ tak, jak ho vidí kamera}
+\end{figure}
 
 Pokud snímáme útvar mimo osu projektoru, bude snímaný útvar určitým řezem daného jehlanu, tudíž to bude docela obecný čtyřúhelník. My potřebujeme tento čtyřúhelník roztáhnout vhodně tak, abychom získali obdélník, který bude odpovídat obdélníku promítanému projektorem, abychom mohli tento obdélník zobrazit. To je právě záležitost transformace.
 
@@ -86,7 +100,7 @@ Pokud snímáme útvar mimo osu projektoru, bude snímaný útvar určitým řez
 
 \begin{figure}[ht]
  \begin{center}
-   \scalebox{1}{\includegraphics{2p-transform-1.pdf}}  
+   \scalebox{.75}{\includegraphics{2p-transform-1.pdf}}  
  \end{center}
  \caption{Schéma dvoubodové transformace}
 \end{figure}
@@ -152,14 +166,24 @@ Pokud známe umístění bodu vůči plátnu, tzn. jeho polohu v souřadnicích 
 
 \sekce{ Kreslení jednou barvou}
 % Obrázek
-V tomto případě se přepočítaný bod uloží do Beziérovy křivky, která se při každém nově příchozím bodu opět vykreslí. Pokud se bod nepodaří nalézt, tak se čeká, než je nalezen nějaký platný bod a do tohoto bodu se kreslení přesune bez toho, aby kreslilo čáru. Tímto se tedy dají kreslit i přerušované čáry. Kresba se dá resetovat a dá se zvolit tloušťka čáry.
+V tomto případě se přepočítaný bod uloží do Beziérovy křivky, která se při každém nově příchozím bodu opět vykreslí. Pokud se bod nepodaří nalézt, tak se čeká, než je nalezen nějaký platný bod a do tohoto bodu se kreslení přesune bez toho, aby kreslilo čáru. Tímto se tedy dají kreslit i přerušované čáry. Kresba se dá resetovat a dá se zvolit tloušťka čáry. Kresba se dá uložit a pomocí externího perlového skriptu bezpath2svg.pl převést na SVG soubor.
 
 \sekce{ Kreslení třemi barvami}
-%Obrázek
-Princip je stejný jako u kreslení jednou barvou, ale v tomto případě jsou Bézierovy křivky tři, pro každou barvu jedna. Přepínání mezi barvami je pomocí tří barevných čtverců v levém horním rohu obrazu promítaného projektorem. Pod těmito barvami je čtverec pozastavující kreslení a v levém dolním rohu je čtverec, na kterém když je setrváno alespoň 20 zpracovaných snímků, kresba se resetuje.
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{.5}{\includegraphics{../images/kopecky.pdf}}  
+ \end{center}
+ \caption{Ukázka možností kresby třemi barvami}
+\end{figure}
+Princip je stejný jako u kreslení jednou barvou, ale v tomto případě jsou Bézierovy křivky tři, pro každou barvu jedna. Přepínání mezi barvami je pomocí tří barevných čtverců v levém horním rohu obrazu promítaného projektorem. Pod těmito barvami je čtverec pozastavující kreslení a v levém dolním rohu je čtverec, na kterém když je setrváno alespoň 20 zpracovaných snímků, kresba se resetuje. Stejně jako při kreslení jednou barvou se dá kresba uložit a převést do SVG.
 
 \sekce{Střílení balonků}
-%Obrázek
+\begin{figure}[ht]
+ \begin{center}
+   \scalebox{.5}{\includegraphics{../images/shooting.png}}  
+ \end{center}
+ \caption{Střílení balonků}
+\end{figure}
 Toto je ukázka, jak lze využít laserového ukazovátka pro ovládání hry. Na plátno se promítají různě velké a barevné balonky, které stoupají vzhůru a laserového ukazovátka se využívá k jejich sestřelování. Je možné si zvolit parametry hry, na obrazovce je zobrazen počet ulétlých a sestřelených balonků.
 
 \kapitola{Diskuse}

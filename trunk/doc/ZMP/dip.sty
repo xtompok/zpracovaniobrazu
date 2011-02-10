@@ -127,9 +127,10 @@
                    {-1em}%
                    {\normalfont\normalsize\sffamily\bfseries}}
 
+
 \def\kapitola#1{\clearpage\section{#1}
-     \markboth{\thesection\quad \uppercase{#1}}{\thesection\quad
-                                \uppercase{#1}}}
+     \markboth{\thesection\quad #1}{\thesection\quad
+                                #1}}
 \def\sekce#1{\subsection{#1}\markright{\thesubsection\quad #1}}
 \def\podsekce#1{\subsubsection{#1}}
 
