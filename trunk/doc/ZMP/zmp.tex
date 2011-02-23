@@ -23,14 +23,15 @@
 
 \kapitola{Úvod a cíl práce}
 
-!!! Jak to je teď a co jsem s tím udělal. !!!
+%!!! Jak to je teď a co jsem s tím udělal. !!!
+V současné době se při prezentacích často využívá dataprojektor, který promítá statické připravené snímky, a laserové ukazovátko, které se používá pro zvýraznění aktuálně nejdůležitějších věcí. Nevýhoda tohoto způsobu spočívá v nutnosti mít zaráz laserové ukazovátko a nástroj k ovládání prezentace. Moje práce si klade za cíl ukázat, jakým způsobem by se z laserového ukazovátka mohl stát univerzální nástroj jak pro zvýrazňování, které by navíc ihned nezmizelo, a ovládání počítače. K zachycování obrazu je využita webkamera notebooku a výsledek zpracování je přidán do obrazu vytvářeného dataprojektorem.
 %\sekce{Úvod do problematiky}
 %Zpracování obrazu je velmi obsáhlá oblast, která zahrnuje mnoho různých oborů a problémů. Já jsem si vybral oblast hledání bodu o dané barvě v obrazu z kamery a další práce s ním. Toto v sobě zahrnuje několik kroků. Nejprve je třeba získat obraz z kamery, následně v něm najít bod\dots\footnote{A tady právě nevím, co bych tam moc napsal, protože se tím zabývám dále v sekci Popis softwaru.}
 %\sekce{Cíl práce}
 %Cílem práce bylo vytvořit program, který pomocí webkamery zachytává polohu laserového ukazovátka na plátně dataprojektoru a převádí ji na souřadnice, podle kterrých vykresluje na plátno počítač. Součástí práce také měly být ukázky možného využití.
 
-\sekce{Historie projektu}
-K myšlence použití laserového ukazovátka k ovládání počítače mne přivedla konfera na semináři M\&M, ve které jsme se s pomocí webkamery snažili zachytávat polohu laserového ukazovátka a ukazovat ji na projektoru. Tato konfera mne velmi zaujala a rozhodl jsem se pokračovat v ní a dovést práci dále, než se nám za krátký čas na soustředění povedlo.\footnote{Mám se tu trochu více rozepsat o tom, jak se projekt dále vyvíjel?}
+%\sekce{Historie projektu}
+%K myšlence použití laserového ukazovátka k ovládání počítače mne přivedla konfera na semináři M\&M, ve které jsme se s pomocí webkamery snažili zachytávat polohu laserového ukazovátka a ukazovat ji na projektoru. Tato konfera mne velmi zaujala a rozhodl jsem se pokračovat v ní a dovést práci dále, než se nám za krátký čas na soustředění povedlo.\footnote{Mám se tu trochu více rozepsat o tom, jak se projekt dále vyvíjel?}
 
 \kapitola{Současný stav řešené problematiky}
 Ohledně zpracování obrazu je na webu prací poměrně mnoho, avšak nenašel jsem mnoho prací, které by využívaly zpracovaný obraz k ovládání počítače (autonomní roboty pomiňme, jedná se o diametrálně odlišnou problematiku). Projektem nejbližším mé tematice je L.A.S.E.R. Tag od Graffiti Research Lab\footnote{http://graffitiresearchlab.com/projects/laser-tag/}, který se zabývá podobným cílem, avšak nemá automatickou kalibraci a bohužel se mi tento program nepodařilo zkompilovat. Dalším podobným projektem je PySight SprayPaint\footnote{http://killertux.org/projects/pysight-spraypaint}, na který jsem ale přišel až když už byla aplikace hotová. Tento program využívá Pythonovskou knihovnu PySight a neprovádí žádnou transformaci souřadnic, tudíž je poměrně nepřesný. Posledním programem, který jsem našel a zabývá se podobnou tématikou byl program, kdy laserové ukazovátko bylo použito k ovládání hry, ale tuto hru se mi bohužel nepodařilo znovu najít. Všechny tyto programy mi sloužily jako inspirace, bohužel se mi nepodařilo v jejich zdrojovém kódu nalézt části, které by mi pomohly při řešení mých problémů. 
@@ -188,7 +189,13 @@ Toto je ukázka, jak lze využít laserového ukazovátka pro ovládání hry. N
 
 \kapitola{Diskuse}
 \sekce{Srovnání s podobnými aplikacemi}
-Souhrn aplikací s podobnými vlastnosti jsem již uvedl na začátku. L.A.S.E.R Tag je aplikace o mnoho větší a umožňuje velmi pokročilé činnosti, jediná výhoda mé aplikace spočívá v automatické kalibraci plátna. Oproti dalším aplikacím je největší výhodou projektivní transformace, která zajišťuje vysokou přesnost, i když kamera se nedívá na plátno kolmo.
+Souhrn aplikací s podobnými vlastnosti jsem již uvedl na začátku.L.A.S.E.R Tag je aplikace o mnoho větší a umožňuje velmi pokročilé činnosti, ovšem je dělaný pouze na kreslení a nemá automatickou kalibraci. Toto jsou hlavní výhody mé aplikace oproti tomuto projektu. V kreslení, protože na něj je L.A.S.E.R Tag stavěný, je ovšem řádově lepší a umožňuje oproti mé aplikaci výrazně pokročilejší možnosti.
+
+Program PySight SprayPaint je opravu velmi jednoduché kreslení, neumožňuje automatickou kalibraci, ukládání kreseb a další schopnosti, které zvládá má aplikace.
+
+Hry je těžší porovnávat, každá nabízí něco jiného, všechny jsou ale podobně jednoduché jako kreslení balonků. Stejně tak jako mé střílení balonků ukazují možnosti laserového ukazovátka, ale nejsou dlouhodoběji vyvíjeny. Jejich nevýhoda spočívá ve využití Pythonu, protože interpretovaný jazyk není vhodný na zpracování obrazu v reálném čase, což se projevuje na rychlosti her.
+
+
 \sekce{Problémy v průběhu práce}
 Prvním, zásadním a nejhloupějším problémem byl problém s poměrovou transformací. Jeho podstata byla v odlišném číslování rohů obdélníka při kalibraci a při transformaci. Tato chyba nás zdržela o jedno odpoledne, kdy jsme mohli pokračovat v programování. Byla odhalena až asi v polovině prezentace konfery na soustředění M\&M. 
 
@@ -207,7 +214,7 @@ Občas se také vyskytly problémy se SVN, kdy některý commit nechtěl být p�
 \kapitola{Využití v praxi}
 Využití pro kreslení a střílení balonků je zmíněno výše. Jako další využití se nabízí možnost náhrady interaktivní tabule pomocí laserového ukazovátka nebo svítícího pera. Pro toto použití by bylo nezbytné použít dostatečně silného světelného zdroje, aby byl odlšitelný od obrazu na plátně. Také by byla potřeba kamera bez automatické regulace jasu, protože by se dala lépe nastavit na daný zdroj světla. 
 
-Další možností využití jsou, při použití více barev laserů, různé multiplayerové hry ukazovátky ovládané. Při vhodném pozadí a správném nastavení barev by se mohlo kreslení využívat pro zkoumání trajektorií například vržených předmětů.
+Další možností využití jsou, při použití více barev laserů, různé multiplayerové hry ovládané ukazovátky. Při vhodném pozadí a správném nastavení barev by se mohlo kreslení využívat pro zkoumání trajektorií například vržených předmětů. Další možnosti by přinášelo rozpoznávání pohybu, ale to už je poměrně vzdálený cíl, na který bych potřeboval ještě mnoho věcí nastudovat.
 
 \kapitola{Závěr}
 V současné době je projekt plně použitelný s výše zmíněnými aplikacemi. Nyní je projekt stabilní, hledání bodu je poměrně spolehlivé, transformace přesná. Práce na projektu trvaly dlouhou dobu, během které se zlepšily některé počáteční nedostatky (např. rozdělení zdojového kódu do mnoha tříd, protokoly). Aplikace je oproti dřívějším dobám rychlejší a umožňuje pracovat s vyšším rozlišením. 
@@ -218,6 +225,7 @@ V současné době je projekt plně použitelný s výše zmíněnými aplikacem
 \item automatické nastavení maximálních a minimálních jasů
 \item odfiltrování oblastí mimo plátno s využitím kalibračních dat
 \item možnost volby rozlišení v GUI
+\item celé zpracování převést na knihovnu jednoduše připojitelnou k dalším programům
 \end{itemize}
 \podpodsekce{Kalibrace}
 \begin{itemize}
